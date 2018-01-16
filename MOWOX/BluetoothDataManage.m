@@ -13,7 +13,7 @@
 #define QD_BLE_SEND_MAX_LEN 20
 
 ///@brife 可判断的数据帧类型数量
-#define LEN 8
+#define LEN 9
 
 static BluetoothDataManage *sgetonInstanceData = nil;
 
@@ -205,6 +205,12 @@ static BluetoothDataManage *sgetonInstanceData = nil;
             NSNumber *CPUTemperature = _receiveData[5];
             NSNumber *batterTemperature = _receiveData[6];
             NSNumber *mowerState = _receiveData[7];
+            NSNumber *version1 = _receiveData[8];
+            NSNumber *version2 = _receiveData[9];
+            NSNumber *version3 = _receiveData[10];
+            _version1 = [version1 intValue];
+            _version2 = [version2 intValue];
+            _version3 = [version3 intValue];
             [dataDic setObject:batterData forKey:@"batterData"];
             [dataDic setObject:CPUTemperature forKey:@"CPUTemperature"];
             [dataDic setObject:batterTemperature forKey:@"batterTemperature"];
@@ -295,6 +301,12 @@ static BluetoothDataManage *sgetonInstanceData = nil;
         }else if (self.frameType == updateFirmware)
         {
             [[NSNotificationCenter defaultCenter] postNotificationName:@"recieveUpdateFirmware" object:nil userInfo:nil];
+        }else if (self.frameType == getPinCode){
+            NSNumber *thousand = _receiveData[4];
+            NSNumber *hungred = _receiveData[5];
+            NSNumber *ten = _receiveData[6];
+            NSNumber *one = _receiveData[7];
+            _pincode = [thousand intValue] * 1000 +[hungred intValue] * 100 + [ten intValue] * 10 + [one intValue];
         }
     }
 }
@@ -321,7 +333,7 @@ static BluetoothDataManage *sgetonInstanceData = nil;
     unsigned char dataType;
     
     unsigned char type[LEN]= {
-        0x80,0x82,0x83,0x84,0x85,0x87,0x89,0x8a
+        0x80,0x82,0x83,0x84,0x85,0x87,0x89,0x8a,0x8c
     };
     
     dataType = [data[3] unsignedIntegerValue];
@@ -362,6 +374,9 @@ static BluetoothDataManage *sgetonInstanceData = nil;
                 
                 case 7:
                     returnVal = updateFirmware;
+                    break;
+                case 8:
+                    returnVal = getPinCode;
                     break;
                     
                 default:

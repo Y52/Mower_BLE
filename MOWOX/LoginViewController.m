@@ -27,7 +27,9 @@
 @property (strong, nonatomic)  LMPopInputPasswordView *popView;
 
 @property (strong, nonatomic)  UILabel *bluetoothNameLabel;
+@property (strong,nonatomic) BluetoothDataManage *bluetoothDataManage;
 
+@property (strong, nonatomic) AppDelegate *appDelegate;
 @end
 
 @implementation LoginViewController
@@ -73,7 +75,7 @@
 }
 
 - (void)viewLayoutSet{
-    _bluetoothNameLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:20.0f] textColor:[UIColor whiteColor] text:LocalString(@"Active blue tooth")];
+    _bluetoothNameLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:20.0f] textColor:[UIColor whiteColor] text:LocalString(@"Connected bluetooth")];
     _passwordTextfield = [UITextField textFieldWithPlaceholderText:LocalString(@"")];
     _passwordTextfield.textAlignment = NSTextAlignmentCenter;
     UIColor *color = [UIColor whiteColor];
@@ -168,16 +170,30 @@
 #pragma mark - ViewController push and back
 - (void)connectMower
 {
-    _resultLabel = [[UILabel alloc] init];
-    _popView = [[LMPopInputPasswordView alloc]init];
-    _popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
-    _popView.delegate = self;
-    [_popView pop];
-    /*
-    RDVViewController *rdvView = [[RDVViewController alloc] init];
-    rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:rdvView animated:YES completion:nil];
-    */
+    self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    if (_appDelegate.currentPeripheral == nil) {
+        [NSObject showHudTipStr:@"Bluetooth is not connected"];
+    }else{
+        NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+        
+        [self.bluetoothDataManage setDataType:0x0c];
+        [self.bluetoothDataManage setDataContent: dataContent];
+        [self.bluetoothDataManage sendBluetoothFrame];
+        
+        _resultLabel = [[UILabel alloc] init];
+        _popView = [[LMPopInputPasswordView alloc]init];
+        _popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
+        _popView.delegate = self;
+        [_popView pop];
+    }
 }
 
 - (void)changeView{
@@ -201,16 +217,25 @@
     NSLog(@"buttonIndex = %li password=%@",(long)index,text);
     if(index == 1){
         if(text.length == 0){
-            NSLog(@"密码长度不正确");
+            NSLog(@"密码长度不正确Incorrect password length");
+            [NSObject showHudTipStr:LocalString(@"Incorrect password length")];
         }else if(text.length < 4){
             NSLog(@"密码长度不正确");
+            [NSObject showHudTipStr:LocalString(@"Incorrect password length")];
         }else{
             _resultLabel.text = text;
-            if ([_resultLabel.text isEqualToString:@"1234"]) {
+            if ([text intValue] == [BluetoothDataManage shareInstance].pincode) {
                 RDVViewController *rdvView = [[RDVViewController alloc] init];
                 rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
                 [self presentViewController:rdvView animated:YES completion:nil];
+            }else{
+                [NSObject showHudTipStr:LocalString(@"Incorrect password")];
             }
+            /*if ([_resultLabel.text isEqualToString:@"1234"]) {
+                RDVViewController *rdvView = [[RDVViewController alloc] init];
+                rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+                [self presentViewController:rdvView animated:YES completion:nil];
+            }*/
         }
     }
 }

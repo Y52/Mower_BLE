@@ -201,7 +201,7 @@
         if (peripheralName == NULL) {
             return NO;
         }
-        return NO;
+        return YES;
         
         //设置查找规则是名称大于0 ， the search rule is peripheral.name length > 0
         //if (peripheralName.length >0) {
@@ -408,17 +408,52 @@
     
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 1) {
+        return 50;
+    }else{
+        return 30;
+    }
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 1) {
+        UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
+        headerView.backgroundColor = [UIColor darkGrayColor];
+        UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 2, ScreenWidth - 20, 23)];
+        [firstLabel setFont:[UIFont systemFontOfSize:18.0]];
+        firstLabel.text = LocalString(@"available devices");
+        UILabel *secondLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 25, ScreenWidth - 20, 23)];
+        secondLable.text = LocalString(@"(please choose DYM2206)");
+        [secondLable setFont:[UIFont systemFontOfSize:18.0]];
+        [headerView addSubview:firstLabel];
+        [headerView addSubview:secondLable];
+        return headerView;
+    }else{
+        UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 30)];
+        headerView.backgroundColor = [UIColor darkGrayColor];
+        UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 3.5, ScreenWidth - 20, 23)];
+        [firstLabel setFont:[UIFont systemFontOfSize:18.0]];
+        firstLabel.text = LocalString(@"connected device");
+        [headerView addSubview:firstLabel];
+        return headerView;
+
+    }
+}
+
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if (section == 0)
     {
-        
-        return NSLocalizedString(@"connectedevices", nil) ;
+        return nil;
+        //return NSLocalizedString(@"connected device", nil) ;
         
     }
     else
     {
-        return NSLocalizedString(@"unconnecteddevice", nil);
+        return nil;
+        //return NSLocalizedString(@"Available devices\n(please choose DYM2206)", nil);
     }
 }
 

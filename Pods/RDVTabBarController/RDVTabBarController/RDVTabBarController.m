@@ -25,6 +25,9 @@
 #import "RDVTabBarItem.h"
 #import <objc/runtime.h>
 
+#define ScreenHeight                        [[UIScreen mainScreen] bounds].size.height
+
+
 @interface UIViewController (RDVTabBarControllerItemInternal)
 
 - (void)rdv_setTabBarController:(RDVTabBarController *)tabBarController;
@@ -198,6 +201,9 @@
         
         if (!tabBarHeight) {
             tabBarHeight = 49;
+            if (ScreenHeight > 700) {
+                tabBarHeight = 60;
+            }
         }
         
         if (!hidden) {

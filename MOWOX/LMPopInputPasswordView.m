@@ -46,7 +46,7 @@
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.font = [UIFont systemFontOfSize:15];
     _titleLabel.textColor = [UIColor blackColor];
-    _titleLabel.text = @"请输入密码";
+    _titleLabel.text = @"Please input PIN code";
     [self addSubview:_titleLabel];
     
     _lineLabel = [[UILabel alloc]init];
@@ -78,8 +78,8 @@
     _cancelButton.titleLabel.font = [UIFont systemFontOfSize:16];
     [_cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_cancelButton setTitleColor:[[UIColor blackColor]colorWithAlphaComponent:0.7] forState:UIControlStateHighlighted];
-    [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
-    [_cancelButton setTitle:@"取消" forState:UIControlStateHighlighted];
+    [_cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+    [_cancelButton setTitle:@"Cancel" forState:UIControlStateHighlighted];
     _cancelButton.tag = 0;
     [_cancelButton addTarget:self action:@selector(buttonClickedAction:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_cancelButton];
@@ -91,8 +91,8 @@
     _ensureButton.titleLabel.font = [UIFont systemFontOfSize:16];
     [_ensureButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_ensureButton setTitleColor:[[UIColor whiteColor]colorWithAlphaComponent:0.7] forState:UIControlStateHighlighted];
-    [_ensureButton setTitle:@"确定" forState:UIControlStateNormal];
-    [_ensureButton setTitle:@"确定" forState:UIControlStateHighlighted];
+    [_ensureButton setTitle:@"Done" forState:UIControlStateNormal];
+    [_ensureButton setTitle:@"Done" forState:UIControlStateHighlighted];
     _ensureButton.tag = 1;
     [_ensureButton addTarget:self action:@selector(buttonClickedAction:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_ensureButton];

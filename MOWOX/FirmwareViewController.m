@@ -19,7 +19,6 @@
 @property (strong, nonatomic)  UIButton *okButton;
 @property (strong, nonatomic)  UIButton *checkButton;
 @property (strong, nonatomic)  ProgressView *progressView;
-@property (strong, nonatomic)  UILabel *tipLabel;
 @property (strong, nonatomic)  UILabel *latestVerLabel;
 @property (strong, nonatomic)  UITextView *curVerTV;
 
@@ -30,7 +29,9 @@
 
 @implementation FirmwareViewController
 
-static int version = 1.0;
+static int version1 = 1;
+static int version2 = 0;
+static int version3 = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -72,8 +73,6 @@ static int version = 1.0;
     //_progressView.packageNum = packageNum;
     //设置从第1包开始
     [BluetoothDataManage shareInstance].progress_num = 0;
-    [self.progressViewNew showPopUpViewAnimated:YES];
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -119,14 +118,6 @@ static int version = 1.0;
     _progressViewNew.delegate = self;
     _progressViewNew.dataSource = self;
     [self.view addSubview:_progressViewNew];
-    
-    _tipLabel = [[UILabel alloc] init];
-    //_tipLabel.hidden = YES;
-    _tipLabel.backgroundColor = [UIColor clearColor];
-    _tipLabel.textAlignment = NSTextAlignmentCenter;
-    _tipLabel.textColor = [UIColor redColor];
-    _tipLabel.text = LocalString(@"####Waiting for signal####");
-    [self.view addSubview:_tipLabel];
     
     _latestVerLabel = [[UILabel alloc] init];
     _latestVerLabel.backgroundColor = [UIColor clearColor];
@@ -237,41 +228,24 @@ static int version = 1.0;
 
 #pragma mark - bluetooth control
 - (void)checkCurrentVersion{
-    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    
-    [self.bluetoothDataManage setDataType:0x19];
-    [self.bluetoothDataManage setDataContent: dataContent];
-    [self.bluetoothDataManage sendBluetoothFrame];
-    [_activityIndicatorView startAnimating];
-    _checkButton.enabled = NO;
     [self.progressViewNew showPopUpViewAnimated:YES];
-    __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        usleep(2000 * 1000);
-        if (weakSelf.activityIndicatorView.isAnimating == YES) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [weakSelf.activityIndicatorView stopAnimating];
-                weakSelf.checkButton.enabled = YES;
-                [NSObject showHudTipStr:LocalString(@"check firmware timeout")];
-            });
-        }
-    });
+    _curVerTV.hidden = NO;
+    _curVerTV.text = [NSString stringWithFormat:@"your mower's firmware version: V%d.%d.%d\nThis is the latest",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
+    if (version1 > [BluetoothDataManage shareInstance].version1) {
+        _okButton.hidden = NO;
+        _curVerTV.text = [NSString stringWithFormat:@"your mower's firmware version: V%d.%d.%d\nyou can update it.",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
+    }
+    if(version1 == [BluetoothDataManage shareInstance].version1 && version2 > [BluetoothDataManage shareInstance].version2){
+        _okButton.hidden = NO;
+        _curVerTV.text = [NSString stringWithFormat:@"your mower's firmware version: V%d.%d.%d\nyou can update it.",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
+    }
+    if (version1 == [BluetoothDataManage shareInstance].version1 && version2 == [BluetoothDataManage shareInstance].version2 && version3 > [BluetoothDataManage shareInstance].version3){
+        _okButton.hidden = NO;
+        _curVerTV.text = [NSString stringWithFormat:@"your mower's firmware version: V%d.%d.%d\nyou can update it.",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
+    }
+    
 }
 
-- (void)receiveFirmwareVersion{
-    
-    [_activityIndicatorView stopAnimating];
-    _curVerTV.hidden = NO;
-    _okButton.hidden = NO;
-}
 /*- (void)MowerSetting{
  dispatch_async(dispatch_get_global_queue(0, 0), ^{
  
@@ -406,9 +380,6 @@ static int version = 1.0;
  }*/
 - (void)updateFirmware{
     [[NSNotificationCenter defaultCenter] postNotificationName:@"shaogujian" object:nil userInfo:nil];
-    _tipLabel.hidden = NO;
-    _tipLabel.textColor = [UIColor redColor];
-    _tipLabel.text = LocalString(@"####Updating,No Hurry####");
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
 }
 
@@ -577,9 +548,9 @@ static int version = 1.0;
 }
 
 - (void)updateSuccese{
-    self.progressView.hidden = NO;
-    _tipLabel.text = LocalString(@"####Update Success####");
-    _tipLabel.textColor = [UIColor greenColor];
+    //self.progressView.hidden = NO;
+    //_tipLabel.text = LocalString(@"####Update Success####");
+    //_tipLabel.textColor = [UIColor greenColor];
     [NSObject showHudTipStr:@"update succese"];
     [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
     _progressViewNew.progress = 1.0;

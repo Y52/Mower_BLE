@@ -17,7 +17,8 @@ typedef enum {
     getWorkingTime1,
     getWorkingTime2,
     getMowerSetting,
-    updateFirmware
+    updateFirmware,
+    getPinCode
 }FrameType;
 static dispatch_queue_t queue;
 
@@ -35,6 +36,14 @@ static dispatch_queue_t queue;
 ///@brife 接收的数据帧
 @property (nonatomic,strong,readonly) NSMutableArray *receiveData;
 @property (nonatomic,assign)FrameType frameType;
+
+///@brife 接收到的pin码
+@property (nonatomic) int pincode;
+
+///@brife 收到的版本信息
+@property (nonatomic) int version1;
+@property (nonatomic) int version2;
+@property (nonatomic) int version3;
 
 + (instancetype)shareInstance;
 
