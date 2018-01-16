@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  MOWOX
+
+  Created by Mac on 2017/10/30.
+  Copyright © 2017年 yusz. All rights reserved.
+*/
+/*
+"早上好" = "早上好";
+"上午好" = "上午好";
+"中午好" = "中午好";
+"下午好" = "下午好";
+"晚上好" = "晚上好";
+"English" = "英语";
+"Polski" = "波兰语";
+"Dansk" = "丹麦语";
+"Finnish" = "芬兰语";
+"Czech" = "捷克语";
+"Hungarian" = "匈牙利语";
+"Slovenian" = "斯洛维尼亚语";
+"Polish" = "波兰语";
+"Russian" = "俄罗斯语";
+"France" = "法语";
+"Japanese" = "日语";
+"Chinese" = "中文";
+"Mon:" = "周一:";
+"Tue:" = "周二:";
+"Wed:" = "周三:";
+"Thu:" = "周四:";
+"Fri:" = "周五:";
+"Sat:" = "周六:";
+"Sun:" = "周日:";
+"About" = "关于";
+"Contact Us" = "联系我们";
+"Change\npassword" = "更改\n密码";
+"NO Bluetooth" = "未连接蓝牙";
+"Selected" = "已连接";
+"GoToWork" = "开始工作";
+"BackStation" = "回到基站";
+"confail" = "连接失败";
+"consucc" = "连接成功";
+"disconnect" = "蓝牙断开连接";
+*/

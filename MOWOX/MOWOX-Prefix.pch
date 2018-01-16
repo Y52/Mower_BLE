@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  MOWOX
+//
+//  Created by Mac on 2017/11/18.
+//  Copyright © 2017年 yusz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "NSObject+Common.h"
+#import "UILabel+Common.h"
+#import "UIButton+Common.h"
+#import "UITextField+Common.h"
+#import "Masonry.h"
+#import "RDVTabBarController.h"
+#import "BluetoothDataManage.h"
+
+
+#endif
+
+#define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight                        [[UIScreen mainScreen] bounds].size.height
+
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+#define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
+
+#define LocalString(x)      NSLocalizedString(x, nil)
+
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+#endif /* PrefixHeader_pch */

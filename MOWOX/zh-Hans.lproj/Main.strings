@@ -1,0 +1,222 @@
+
+/* Class = "UIButton"; normalTitle = "View Alerts"; ObjectID = "02m-pd-uAb"; */
+"02m-pd-uAb.normalTitle" = "报警页面";
+
+/* Class = "UILabel"; text = "Change password:"; ObjectID = "091-wj-WFw"; */
+"091-wj-WFw.text" = "更改密码:";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "0OI-D0-gBN"; */
+//"0OI-D0-gBN.title" = "返回";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "1Hy-Ps-dpB"; */
+"1Hy-Ps-dpB.normalTitle" = "停止";
+
+/* Class = "UILabel"; text = "password"; ObjectID = "1K8-zf-VkC"; */
+"1K8-zf-VkC.text" = "请输入密码";
+
+/* Class = "UIButton"; normalTitle = "Connect the mower"; ObjectID = "2zS-vM-T7d"; */
+"2zS-vM-T7d.normalTitle" = "连接割草机";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "3Tw-lM-lWX"; */
+"3Tw-lM-lWX.normalTitle" = "提交";
+
+/* Class = "UITableViewSection"; headerTitle = "Contact Us"; ObjectID = "3Zj-1A-0sa"; */
+"3Zj-1A-0sa.headerTitle" = "联系我们";
+
+/* Class = "UILabel"; text = "6-12 characters or numbers"; ObjectID = "3cY-xO-ApR"; */
+"3cY-xO-ApR.text" = "6-12位字母或数字";
+
+/* Class = "UILabel"; text = "Select DYM220601"; ObjectID = "3gt-tv-Fxd"; */
+"3gt-tv-Fxd.text" = "选择DYM220601";
+
+/* Class = "UILabel"; text = "Mower status:    Mower on station"; ObjectID = "4nq-tI-zOq"; */
+"4nq-tI-zOq.text" = "割草机状态：在基站";
+
+/* Class = "UILabel"; text = "     Manufactured by Daye Garden"; ObjectID = "8q0-gh-uaA"; */
+"8q0-gh-uaA.text" = "     Manufactured by Daye Garden";
+
+/* Class = "UILabel"; text = "Repeat new PINcode:"; ObjectID = "8tf-7c-gQy"; */
+"8tf-7c-gQy.text" = "请重复新的PIN码:";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "90v-NH-2fZ"; */
+"90v-NH-2fZ.text" = "时间";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "91c-31-Lzq"; */
+"91c-31-Lzq.normalTitle" = "提交";
+
+/* Class = "UILabel"; text = "Input old password:"; ObjectID = "B6O-tj-sDn"; */
+"B6O-tj-sDn.text" = "请输入旧的密码:";
+
+/* Class = "UIButton"; normalTitle = "STOP"; ObjectID = "Bi7-5O-HE5"; */
+"Bi7-5O-HE5.normalTitle" = "停止";
+
+/* Class = "UIButton"; normalTitle = "General setting"; ObjectID = "C6t-b3-Ft5"; */
+"C6t-b3-Ft5.normalTitle" = "通用设置";
+
+/* Class = "UILabel"; text = "Robotic mower"; ObjectID = "CSs-lc-DzZ"; */
+"CSs-lc-DzZ.text" = "Robotic mower";
+
+/* Class = "UIButton"; normalTitle = "Pin setting"; ObjectID = "DVl-tc-hw6"; */
+"DVl-tc-hw6.normalTitle" = "Pin码设置";
+
+/* Class = "UIBarButtonItem"; title = "Refresh"; ObjectID = "EoB-dw-DH7"; */
+//"EoB-dw-DH7.title" = "刷新";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "FXU-s7-Tk9"; */
+"FXU-s7-Tk9.normalTitle" = "提交";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "FbU-6u-AhD"; */
+"FbU-6u-AhD.placeholder" = "密码";
+
+/* Class = "UILabel"; text = "input old PIN code:"; ObjectID = "FqE-pU-YXB"; */
+"FqE-pU-YXB.text" = "请输入旧的PIN码:";
+
+/* Class = "UINavigationItem"; title = "设备列表"; ObjectID = "GGS-ad-s7D"; */
+//"GGS-ad-s7D.title" = "设备列表";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GyH-Jk-ePW"; */
+"GyH-Jk-ePW.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "General setting: Set language"; ObjectID = "Hvt-ns-Lez"; */
+"Hvt-ns-Lez.text" = "通用设置：设置语言";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "IlS-1s-WJE"; */
+"IlS-1s-WJE.normalTitle" = "取消";
+
+/* Class = "UILabel"; text = "6-12 characters or numbers"; ObjectID = "Isv-sn-X4r"; */
+"Isv-sn-X4r.text" = "6-12位字母或数字";
+
+/* Class = "UIButton"; normalTitle = "Active blue tooth"; ObjectID = "IzA-zy-upH"; */
+"IzA-zy-upH.normalTitle" = "Active blue tooth";
+
+/* Class = "UIButton"; normalTitle = "Set Language"; ObjectID = "Kyl-10-uL0"; */
+"Kyl-10-uL0.normalTitle" = "设置语言";
+
+/* Class = "UIButton"; normalTitle = "SETTING"; ObjectID = "Mp2-eU-8rg"; */
+"Mp2-eU-8rg.normalTitle" = "设置";
+
+/* Class = "UILabel"; text = "Robotic mower"; ObjectID = "NQb-b4-fbA"; */
+"NQb-b4-fbA.text" = "Robotic mower";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "P8H-Z5-qF7"; */
+"P8H-Z5-qF7.text" = "时间";
+
+/* Class = "UILabel"; text = "时间"; ObjectID = "Ph1-Dj-oPH"; */
+"Ph1-Dj-oPH.text" = "时间";
+
+/* Class = "UILabel"; text = "General setting: Set date and time"; ObjectID = "PtM-OG-qoL"; */
+"PtM-OG-qoL.text" = "通用设置：设置时间";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Qpb-Q5-56N"; */
+"Qpb-Q5-56N.text" = "Label";
+
+/* Class = "UILabel"; text = "4 numbers"; ObjectID = "SCp-rz-gIv"; */
+"SCp-rz-gIv.text" = "4位数字";
+
+/* Class = "UILabel"; text = "4 numbers"; ObjectID = "SyC-Rh-bSr"; */
+"SyC-Rh-bSr.text" = "4位数字";
+
+/* Class = "UILabel"; text = "Connection"; ObjectID = "Ukp-ED-JYt"; */
+"Ukp-ED-JYt.text" = "Connection";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "Uph-Th-Jjn"; */
+"Uph-Th-Jjn.normalTitle" = "提交";
+
+/* Class = "UIButton"; normalTitle = "Working time setting"; ObjectID = "Wew-YJ-Tmp"; */
+"Wew-YJ-Tmp.normalTitle" = "工作时间设置";
+
+/* Class = "UILabel"; text = "4 numbers"; ObjectID = "XUY-9c-4cv"; */
+"XUY-9c-4cv.text" = "4位数字";
+
+/* Class = "UILabel"; text = "     Tel: (+86)0574-62569372"; ObjectID = "aFG-eH-Ipx"; */
+//"aFG-eH-Ipx.text" = "     电话: (+86)0574-62569372";
+
+/* Class = "UIButton"; normalTitle = "Go to work"; ObjectID = "apf-Ee-I2Z"; */
+"apf-Ee-I2Z.normalTitle" = "开始工作";
+
+/* Class = "UILabel"; text = "am 8:00"; ObjectID = "cHP-Wu-V0O"; */
+"cHP-Wu-V0O.text" = "am 8:00";
+
+/* Class = "UILabel"; text = "Change"; ObjectID = "csh-QY-D9z"; */
+"csh-QY-D9z.text" = "更改";
+
+/* Class = "UIButton"; normalTitle = "Information"; ObjectID = "d7w-x7-0Fh"; */
+"d7w-x7-0Fh.normalTitle" = "信息";
+
+/* Class = "UILabel"; text = "Input new password:"; ObjectID = "dMe-Cv-eci"; */
+"dMe-Cv-eci.text" = "请输入新密码:";
+
+/* Class = "UILabel"; text = "     Robotic mower Connect(bluetooth)"; ObjectID = "eXf-2o-8wL"; */
+"eXf-2o-8wL.text" = "     Robotic mower Connect(bluetooth)";
+
+/* Class = "UILabel"; text = "Robotic mower"; ObjectID = "fjp-ac-pRw"; */
+"fjp-ac-pRw.text" = "Robotic mower";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "fqC-Sj-40j"; */
+"fqC-Sj-40j.normalTitle" = "取消";
+
+/* Class = "UILabel"; text = "Robotic mower"; ObjectID = "fyZ-gg-wH8"; */
+"fyZ-gg-wH8.text" = "Robotic mower";
+
+/* Class = "UILabel"; text = "Robotic mower"; ObjectID = "gv8-Le-4d7"; */
+"gv8-Le-4d7.text" = "Robotic mower";
+
+/* Class = "UILabel"; text = "     App software version: V1.0 for iOS"; ObjectID = "hES-M8-ovO"; */
+"hES-M8-ovO.text" = "     App software version: V1.0 for iOS";
+
+/* Class = "UIButton"; normalTitle = "Set date and time"; ObjectID = "hLG-nS-diT"; */
+"hLG-nS-diT.normalTitle" = "设置时间";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "i0O-AW-KDU"; */
+"i0O-AW-KDU.normalTitle" = "取消";
+
+/* Class = "UILabel"; text = "input new PIN code:"; ObjectID = "iBD-Pc-dN0"; */
+"iBD-Pc-dN0.text" = "请输入新的Pin码:";
+
+/* Class = "UILabel"; text = "Robotic mower"; ObjectID = "ijh-k4-JSg"; */
+"ijh-k4-JSg.text" = "Robotic mower";
+
+/* Class = "UILabel"; text = "Working time setting"; ObjectID = "iuj-XR-enT"; */
+"iuj-XR-enT.text" = "工作时间设置";
+
+/* Class = "UIButton"; normalTitle = "Control"; ObjectID = "jh9-d9-afP"; */
+"jh9-d9-afP.normalTitle" = "控制割草机";
+
+/* Class = "UILabel"; text = "Connection"; ObjectID = "kNk-Ej-tIH"; */
+"kNk-Ej-tIH.text" = "Connection";
+
+/* Class = "UIButton"; normalTitle = "Remoter Control"; ObjectID = "lcp-tu-4pH"; */
+"lcp-tu-4pH.normalTitle" = "远程控制";
+
+/* Class = "UILabel"; text = "PIN code setting"; ObjectID = "m1a-K3-akj"; */
+"m1a-K3-akj.text" = "PIN码设置";
+
+/* Class = "UILabel"; text = "6-12 characters or numbers"; ObjectID = "moq-Tg-Zi8"; */
+"moq-Tg-Zi8.text" = "6-12位字母或数字";
+
+/* Class = "UILabel"; text = "     E-mail: powersales@dayegarden.com"; ObjectID = "rs8-OS-Jqt"; */
+//"rs8-OS-Jqt.text" = "     邮箱: powersales@dayegarden.com";
+
+/* Class = "UILabel"; text = "6-12 characters or numbers"; ObjectID = "shQ-lv-C7b"; */
+"shQ-lv-C7b.text" = "6-12位字母或数字";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "tPh-ks-uRG"; */
+"tPh-ks-uRG.normalTitle" = "取消";
+
+/* Class = "UILabel"; text = "Mower status:    Mower on station"; ObjectID = "tUH-Qk-08h"; */
+"tUH-Qk-08h.text" = "割草机状态：在基站";
+
+/* Class = "UILabel"; text = "     Mower software version: V1.0"; ObjectID = "u87-ZO-ZQJ"; */
+"u87-ZO-ZQJ.text" = "     Mower software version: V1.0";
+
+/* Class = "UITableViewSection"; headerTitle = "About"; ObjectID = "wc0-gL-IGl"; */
+"wc0-gL-IGl.headerTitle" = "关于";
+
+/* Class = "UILabel"; text = "Robotic mower"; ObjectID = "xqH-Kg-6wr"; */
+"xqH-Kg-6wr.text" = "Robotic mower";
+
+/* Class = "UIButton"; normalTitle = "START"; ObjectID = "yqy-fg-BDw"; */
+"yqy-fg-BDw.normalTitle" = "继续";
+
+/* Class = "UILabel"; text = "Repeat new password:"; ObjectID = "zqr-a2-oSa"; */
+"zqr-a2-oSa.text" = "请重复新密码:";

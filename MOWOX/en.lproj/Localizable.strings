@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  MOWOX
+
+  Created by Mac on 2017/10/30.
+  Copyright © 2017年 yusz. All rights reserved.
+*/
+
+"早上好" = "Good morning";
+"上午好" = "Good morning";
+"中午好" = "good afternoon";
+"下午好" = "good afternoon";
+"晚上好" = "Good evening";
+"English" = "English";
+"Polski" = "Polski";
+"Dansk" = "Dansk";
+"Finnish" = "Finnish";
+"Czech" = "Czech";
+"Hungarian" = "Hungarian";
+"Slovenian" = "Slovenian";
+"Polish" = "Polish";
+"Russian" = "Russian";
+"France" = "France";
+"Japanese" = "Japanese";
+"Chinese" = "Chinese";
+"Mon:" = "Mon:";
+"Tue:" = "Tue:";
+"Wed:" = "Wed:";
+"Thu:" = "Thu:";
+"Fri:" = "Fri:";
+"Sat:" = "Sat:";
+"Sun:" = "Sun:";
+"About" = "About";
+"Contact Us" = "Contact Us";
+"Change\npassword" = "Change\npassword";
+"NO Bluetooth" = "NO Bluetooth";
+"Selected" = "Selected";
+"GoToWork" = "GoToWork";
+"BackStation" = "BackStation";
+"confail" = "connect failed";
+"consucc" = "Connected";
+"disconnect" = "bluetooth disconnected";
