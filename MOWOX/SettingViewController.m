@@ -32,6 +32,10 @@
 
 @implementation SettingViewController
 
+static int version1 = 1;
+static int version2 = 0;
+static int version3 = 0;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -42,6 +46,15 @@
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
     [self viewLayoutSet];
+    if (version1 > [BluetoothDataManage shareInstance].version1) {
+        _updateButton.hidden = NO;
+    }
+    if(version1 == [BluetoothDataManage shareInstance].version1 && version2 > [BluetoothDataManage shareInstance].version2){
+        _updateButton.hidden = NO;
+    }
+    if (version1 == [BluetoothDataManage shareInstance].version1 && version2 == [BluetoothDataManage shareInstance].version2 && version3 > [BluetoothDataManage shareInstance].version3){
+        _updateButton.hidden = NO;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -77,6 +90,7 @@
     _PinButton = [UIButton buttonWithTitle:@"Pin setting" titleColor:[UIColor blackColor]];
     _mowerButton = [UIButton buttonWithTitle:@"Mower setting" titleColor:[UIColor blackColor]];
     _updateButton = [UIButton buttonWithTitle:@"Update Mower's Firmware" titleColor:[UIColor blackColor]];
+    _updateButton.hidden = YES;
     [_LanguageButton setButtonStyle1];
     [_TimeButton setButtonStyle1];
     [_WorktimeButton setButtonStyle1];

@@ -10,17 +10,16 @@
 #import "ProgressView.h"
 #import "ASProgressPopUpView.h"
 
-#define dataName @"AutoMower"
+#define dataName @"AutoMower1"
 
 @interface FirmwareViewController () <ASProgressPopUpViewDelegate,ASProgressPopUpViewDataSource>
 ///@brife 帧数据控制单例
 @property (strong,nonatomic) BluetoothDataManage *bluetoothDataManage;
 
 @property (strong, nonatomic)  UIButton *okButton;
-@property (strong, nonatomic)  UIButton *checkButton;
 @property (strong, nonatomic)  ProgressView *progressView;
-@property (strong, nonatomic)  UILabel *latestVerLabel;
 @property (strong, nonatomic)  UITextView *curVerTV;
+@property (strong, nonatomic)  UILabel *tipLabel;
 
 @property (strong, nonatomic)  UIActivityIndicatorView *activityIndicatorView;
 @property (strong, nonatomic)  ASProgressPopUpView *progressViewNew;
@@ -29,9 +28,7 @@
 
 @implementation FirmwareViewController
 
-static int version1 = 1;
-static int version2 = 0;
-static int version3 = 0;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -73,6 +70,9 @@ static int version3 = 0;
     //_progressView.packageNum = packageNum;
     //设置从第1包开始
     [BluetoothDataManage shareInstance].progress_num = 0;
+    
+    [self.progressViewNew showPopUpViewAnimated:YES];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -119,31 +119,28 @@ static int version3 = 0;
     _progressViewNew.dataSource = self;
     [self.view addSubview:_progressViewNew];
     
-    _latestVerLabel = [[UILabel alloc] init];
-    _latestVerLabel.backgroundColor = [UIColor clearColor];
-    _latestVerLabel.textAlignment = NSTextAlignmentCenter;
-    _latestVerLabel.text = LocalString(@"Latest Mower's Firmware version: V1.1");
-    [self.view addSubview:_latestVerLabel];
-    
     _curVerTV = [[UITextView alloc] init];
-    _curVerTV.text = LocalString(@"your mower's firmware version: V1.0.\nyou can update it.");
-    _curVerTV.font = [UIFont fontWithName:@"Arial" size:13];
+    _curVerTV.text = [NSString stringWithFormat:@"Your mower's firmware version:\n V%d.%d.%d\nLatest mower's firmware version:\n V1.1\n",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
+    _curVerTV.font = [UIFont fontWithName:@"Arial" size:17];
     _curVerTV.backgroundColor = [UIColor clearColor];
     _curVerTV.autocapitalizationType = UITextAutocapitalizationTypeSentences;
     _curVerTV.textAlignment = NSTextAlignmentCenter;
-    _curVerTV.hidden = YES;
+    [_curVerTV setEditable:NO];
+    _curVerTV.scrollEnabled = NO;
     [self.view addSubview:_curVerTV];
+    
+    _tipLabel = [[UILabel alloc] init];
+    _tipLabel.font = [UIFont systemFontOfSize:17.0];
+    _tipLabel.text = LocalString(@"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating.");
+    _tipLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    _tipLabel.numberOfLines = 0;
+    _tipLabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:_tipLabel];
     
     _okButton = [UIButton buttonWithTitle:LocalString(@"Update") titleColor:[UIColor blackColor]];
     [_okButton setButtonStyle1];
     [_okButton addTarget:self action:@selector(showUpdateView) forControlEvents:UIControlEventTouchUpInside];
-    _okButton.hidden = YES;
-    [self.view addSubview:_okButton];
-    
-    _checkButton = [UIButton buttonWithTitle:LocalString(@"Check your mower's firmware version") titleColor:[UIColor blackColor]];
-    [_checkButton setButtonStyle1];
-    [_checkButton addTarget:self action:@selector(checkCurrentVersion) forControlEvents:UIControlEventAllTouchEvents];
-    [self.view addSubview:_checkButton];
+    //[self.view addSubview:_okButton];
     
     _activityIndicatorView = [[UIActivityIndicatorView alloc] init];
     _activityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
@@ -160,43 +157,28 @@ static int version3 = 0;
             make.centerX.equalTo(self.view.mas_centerX);
             make.top.equalTo(self.view.mas_top);
         }];*/
-        [_latestVerLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(ScreenWidth, ScreenHeight * 0.066));
+        [_curVerTV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.18));
             make.centerX.equalTo(self.view.mas_centerX);
             make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05);
         }];
     }else if([deviceType isEqualToString:@"iPad"]) {
         //iPad
-        [_latestVerLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(ScreenWidth, ScreenHeight * 0.066));
+        [_curVerTV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.18));
             make.centerX.equalTo(self.view.mas_centerX);
             make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01);
         }];
     }
-    [_checkButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.latestVerLabel.mas_bottom).offset(ScreenHeight * 0.05);
-    }];
-    [_curVerTV mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.15));
         make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.checkButton.mas_bottom).offset(ScreenHeight * 0.05);
-    }];
-    /*[_tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.progressView.mas_bottom);
-    }];*/
-    [_okButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.curVerTV.mas_bottom).offset(ScreenHeight * 0.1);
+        make.top.equalTo(self.curVerTV.mas_bottom);
     }];
     [_progressViewNew mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, 5.0));
         make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.okButton.mas_bottom).offset(ScreenHeight * 0.1);
+        make.centerY.equalTo(self.view.mas_centerY);
     }];
     [_activityIndicatorView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(60, 60));
@@ -227,24 +209,6 @@ static int version3 = 0;
 }
 
 #pragma mark - bluetooth control
-- (void)checkCurrentVersion{
-    [self.progressViewNew showPopUpViewAnimated:YES];
-    _curVerTV.hidden = NO;
-    _curVerTV.text = [NSString stringWithFormat:@"your mower's firmware version: V%d.%d.%d\nThis is the latest",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
-    if (version1 > [BluetoothDataManage shareInstance].version1) {
-        _okButton.hidden = NO;
-        _curVerTV.text = [NSString stringWithFormat:@"your mower's firmware version: V%d.%d.%d\nyou can update it.",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
-    }
-    if(version1 == [BluetoothDataManage shareInstance].version1 && version2 > [BluetoothDataManage shareInstance].version2){
-        _okButton.hidden = NO;
-        _curVerTV.text = [NSString stringWithFormat:@"your mower's firmware version: V%d.%d.%d\nyou can update it.",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
-    }
-    if (version1 == [BluetoothDataManage shareInstance].version1 && version2 == [BluetoothDataManage shareInstance].version2 && version3 > [BluetoothDataManage shareInstance].version3){
-        _okButton.hidden = NO;
-        _curVerTV.text = [NSString stringWithFormat:@"your mower's firmware version: V%d.%d.%d\nyou can update it.",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
-    }
-    
-}
 
 /*- (void)MowerSetting{
  dispatch_async(dispatch_get_global_queue(0, 0), ^{

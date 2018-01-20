@@ -107,7 +107,7 @@
     
     //设置设备连接成功的委托,同一个baby对象，使用不同的channel切换委托回调
     [self.baby setBlockOnConnectedAtChannel:channelOnPeropheralView block:^(CBCentralManager *central, CBPeripheral *peripheral) {
-        [SVProgressHUD showSuccessWithStatus:@"设备连接成功"];
+        [SVProgressHUD showSuccessWithStatus:@"Device Connection Successful"];
         /*MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:weakSelf.navigationController.view  animated:YES];
         
         // Set the text mode to show only text.
@@ -134,7 +134,7 @@
     //设置设备连接失败的委托
     [self.baby setBlockOnFailToConnectAtChannel:channelOnPeropheralView block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         NSLog(@"设备：%@--连接失败",peripheral.name);
-        [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"设备：%@连接失败",peripheral.name]];
+        [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"Device：%@ Connection failed",peripheral.name]];
         
         /*MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:weakSelf.navigationController.view  animated:YES];
         
@@ -423,10 +423,10 @@
         headerView.backgroundColor = [UIColor darkGrayColor];
         UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 2, ScreenWidth - 20, 23)];
         [firstLabel setFont:[UIFont systemFontOfSize:18.0]];
-        firstLabel.text = LocalString(@"available devices");
+        firstLabel.text = LocalString(@"Available devices");
         UILabel *secondLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 25, ScreenWidth - 20, 23)];
-        secondLable.text = LocalString(@"(please choose DYM2206)");
-        [secondLable setFont:[UIFont systemFontOfSize:18.0]];
+        secondLable.text = LocalString(@"(please choose RobotMower_DYM)");
+        [secondLable setFont:[UIFont systemFontOfSize:16.0]];
         [headerView addSubview:firstLabel];
         [headerView addSubview:secondLable];
         return headerView;
@@ -435,7 +435,7 @@
         headerView.backgroundColor = [UIColor darkGrayColor];
         UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 3.5, ScreenWidth - 20, 23)];
         [firstLabel setFont:[UIFont systemFontOfSize:18.0]];
-        firstLabel.text = LocalString(@"connected device");
+        firstLabel.text = LocalString(@"Connected device");
         [headerView addSubview:firstLabel];
         return headerView;
 

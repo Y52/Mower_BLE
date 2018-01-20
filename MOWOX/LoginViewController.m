@@ -39,6 +39,8 @@
     UIImage *backImage = [UIImage imageNamed:@"loginView"];
     self.view.layer.contents = (id)backImage.CGImage;
     
+    self.bluetoothDataManage = [BluetoothDataManage shareInstance];
+    
     [self viewLayoutSet];
     //self.passwordTextfield.delegate = self;
     
@@ -75,7 +77,7 @@
 }
 
 - (void)viewLayoutSet{
-    _bluetoothNameLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:20.0f] textColor:[UIColor whiteColor] text:LocalString(@"Connected bluetooth")];
+    _bluetoothNameLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:20.0f] textColor:[UIColor whiteColor] text:LocalString(@"Connect bluetooth")];
     _passwordTextfield = [UITextField textFieldWithPlaceholderText:LocalString(@"")];
     _passwordTextfield.textAlignment = NSTextAlignmentCenter;
     UIColor *color = [UIColor whiteColor];
@@ -187,13 +189,18 @@
         [self.bluetoothDataManage setDataType:0x0c];
         [self.bluetoothDataManage setDataContent: dataContent];
         [self.bluetoothDataManage sendBluetoothFrame];
-        
+
         _resultLabel = [[UILabel alloc] init];
         _popView = [[LMPopInputPasswordView alloc]init];
         _popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
         _popView.delegate = self;
         [_popView pop];
     }
+    /*
+    RDVViewController *rdvView = [[RDVViewController alloc] init];
+    rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:rdvView animated:YES completion:nil];
+     */
 }
 
 - (void)changeView{
@@ -218,10 +225,10 @@
     if(index == 1){
         if(text.length == 0){
             NSLog(@"密码长度不正确Incorrect password length");
-            [NSObject showHudTipStr:LocalString(@"Incorrect password length")];
+            [NSObject showHudTipStr:LocalString(@"Incorrect PIN code length")];
         }else if(text.length < 4){
             NSLog(@"密码长度不正确");
-            [NSObject showHudTipStr:LocalString(@"Incorrect password length")];
+            [NSObject showHudTipStr:LocalString(@"Incorrect PIN code length")];
         }else{
             _resultLabel.text = text;
             if ([text intValue] == [BluetoothDataManage shareInstance].pincode) {
@@ -229,7 +236,7 @@
                 rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
                 [self presentViewController:rdvView animated:YES completion:nil];
             }else{
-                [NSObject showHudTipStr:LocalString(@"Incorrect password")];
+                [NSObject showHudTipStr:LocalString(@"Incorrect PIN code")];
             }
             /*if ([_resultLabel.text isEqualToString:@"1234"]) {
                 RDVViewController *rdvView = [[RDVViewController alloc] init];

@@ -43,6 +43,10 @@ static BluetoothDataManage *sgetonInstanceData = nil;
         _bluetoothData = [[NSMutableArray alloc] init];
         _dataContent = [[NSMutableArray alloc] init];
         _receiveData = [[NSMutableArray alloc] init];
+        _version3 = 0;
+        _version2 = 0;
+        _version1 = 0;
+        _pincode = 0;
     }
     return self;
 }
