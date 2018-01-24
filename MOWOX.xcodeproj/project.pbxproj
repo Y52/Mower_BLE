@@ -131,12 +131,15 @@
 		3EFEF5061FADA83E00FA7850 /* 蓝牙@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEF5041FADA83E00FA7850 /* 蓝牙@1x.png */; };
 		3EFEF5071FADA83E00FA7850 /* 蓝牙断开@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEF5051FADA83E00FA7850 /* 蓝牙断开@1x.png */; };
 		7138A13FCD6C16E10F452F74 /* libPods-MOWOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FFC2AA47A8A70D5B1A5F1F /* libPods-MOWOX.a */; };
-		BB0DA43B2011884900ECD8CF /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB0DA4392011884900ECD8CF /* AutoMower.bin */; };
+		BB0A37AF2015944D00E5FD94 /* A2_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AC2015944C00E5FD94 /* A2_50@2x.png */; };
+		BB0A37B02015944D00E5FD94 /* A1_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AD2015944C00E5FD94 /* A1_50@2x.png */; };
+		BB0A37B12015944D00E5FD94 /* A3_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AE2015944D00E5FD94 /* A3_50@2x.png */; };
 		BB0DA43C2011884900ECD8CF /* AutoMower1.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB0DA43A2011884900ECD8CF /* AutoMower1.bin */; };
 		BB0DA4482012E99100ECD8CF /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0DA4472012E99100ECD8CF /* UIColor+ColorChange.m */; };
 		BB0F9144200C7E370060D287 /* LMPopInputPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F9143200C7E370060D287 /* LMPopInputPasswordView.m */; };
 		BB0F914E200C7EFB0060D287 /* WTReTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F914B200C7EFB0060D287 /* WTReTextField.m */; };
 		BB0F914F200C7EFB0060D287 /* WTReParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F914C200C7EFB0060D287 /* WTReParser.m */; };
+		BB8359A920186B0300462487 /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB8359A820186B0300462487 /* AutoMower.bin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -309,7 +312,9 @@
 		3EFEF5051FADA83E00FA7850 /* 蓝牙断开@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝牙断开@1x.png"; path = "image/蓝牙断开@1x.png"; sourceTree = SOURCE_ROOT; };
 		43B91B5C9E2C42700C5113F9 /* Pods-MOWOX.provisioning profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOWOX.provisioning profile.xcconfig"; path = "Pods/Target Support Files/Pods-MOWOX/Pods-MOWOX.provisioning profile.xcconfig"; sourceTree = "<group>"; };
 		B0FFC2AA47A8A70D5B1A5F1F /* libPods-MOWOX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MOWOX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB0DA4392011884900ECD8CF /* AutoMower.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower.bin; sourceTree = "<group>"; };
+		BB0A37AC2015944C00E5FD94 /* A2_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A2_50@2x.png"; path = "image/A2_50@2x.png"; sourceTree = SOURCE_ROOT; };
+		BB0A37AD2015944C00E5FD94 /* A1_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A1_50@2x.png"; path = "image/A1_50@2x.png"; sourceTree = SOURCE_ROOT; };
+		BB0A37AE2015944D00E5FD94 /* A3_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A3_50@2x.png"; path = "image/A3_50@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB0DA43A2011884900ECD8CF /* AutoMower1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower1.bin; sourceTree = "<group>"; };
 		BB0DA4462012E99100ECD8CF /* UIColor+ColorChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorChange.h"; sourceTree = "<group>"; };
 		BB0DA4472012E99100ECD8CF /* UIColor+ColorChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorChange.m"; sourceTree = "<group>"; };
@@ -319,6 +324,7 @@
 		BB0F914B200C7EFB0060D287 /* WTReTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReTextField.m; sourceTree = "<group>"; };
 		BB0F914C200C7EFB0060D287 /* WTReParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReParser.m; sourceTree = "<group>"; };
 		BB0F914D200C7EFB0060D287 /* WTReTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTReTextField.h; sourceTree = "<group>"; };
+		BB8359A820186B0300462487 /* AutoMower.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower.bin; sourceTree = "<group>"; };
 		D34A222D216418F4019E6198 /* Pods-MOWOX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOWOX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOWOX/Pods-MOWOX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,7 +343,7 @@
 		3E0F567E1FF23F9400A4D339 /* bin */ = {
 			isa = PBXGroup;
 			children = (
-				BB0DA4392011884900ECD8CF /* AutoMower.bin */,
+				BB8359A820186B0300462487 /* AutoMower.bin */,
 				BB0DA43A2011884900ECD8CF /* AutoMower1.bin */,
 				3E5FE0421FEDF5BC004B234D /* data.bin */,
 			);
@@ -368,6 +374,9 @@
 				3E14807C1FD00C0700FA8A2D /* A1@2x.png */,
 				3E14807D1FD00C0700FA8A2D /* A2@2x.png */,
 				3E14807E1FD00C0700FA8A2D /* A3@2x.png */,
+				BB0A37AD2015944C00E5FD94 /* A1_50@2x.png */,
+				BB0A37AC2015944C00E5FD94 /* A2_50@2x.png */,
+				BB0A37AE2015944D00E5FD94 /* A3_50@2x.png */,
 				3E1480731FD0042D00FA8A2D /* 蓝牙连接@1x.png */,
 				3E1480741FD0042D00FA8A2D /* A6@1x.png */,
 				3E1480751FD0042D00FA8A2D /* backgroundnew@2x.png */,
@@ -745,7 +754,6 @@
 				3E11A3861FD90AAD000CAA08 /* icon-150@3x.png in Resources */,
 				3E1480511FCFEF1400FA8A2D /* 机器人APP1+2(1)-3.png in Resources */,
 				3E2F25441FB98FFC00E79C23 /* Asset.xcassets in Resources */,
-				BB0DA43B2011884900ECD8CF /* AutoMower.bin in Resources */,
 				3E6325351FA6BC5F00F14462 /* LaunchScreen.storyboard in Resources */,
 				3EE3DC481FA8B2BE0049B8F7 /* 右转@2x.png in Resources */,
 				3E11A3881FD90AAD000CAA08 /* 40@2x.png in Resources */,
@@ -755,6 +763,7 @@
 				3E5815BF1FAFF72300E93520 /* Generalsetting@1x.png in Resources */,
 				3E1480601FCFEF1400FA8A2D /* A2@3x.png in Resources */,
 				3E2F25311FB946EF00E79C23 /* Imformation@2x.png in Resources */,
+				BB0A37B12015944D00E5FD94 /* A3_50@2x.png in Resources */,
 				3E1480531FCFEF1400FA8A2D /* loginView@2x.png in Resources */,
 				3E1480801FD00C0700FA8A2D /* A2@2x.png in Resources */,
 				3E11A38A1FD90AAD000CAA08 /* icon-60.png in Resources */,
@@ -778,6 +787,7 @@
 				3E63255A1FA6DB7900F14462 /* login@2x.png in Resources */,
 				3E3562001FB4560E00135503 /* bluetoothImage@1x.png in Resources */,
 				3E22E2A51FA9A7B8000BC792 /* wifi@2x.png in Resources */,
+				BB0A37B02015944D00E5FD94 /* A1_50@2x.png in Resources */,
 				3E14807F1FD00C0700FA8A2D /* A1@2x.png in Resources */,
 				3EFEF5061FADA83E00FA7850 /* 蓝牙@1x.png in Resources */,
 				3E6325571FA6D8F000F14462 /* 未选中@1x.png in Resources */,
@@ -812,6 +822,7 @@
 				3E63255D1FA6F8C500F14462 /* 未选中@2x.png in Resources */,
 				3EF771AB1FAAA38A00EC016A /* up@1x.png in Resources */,
 				3E11A38E1FD90B46000CAA08 /* icon-60@2x.png in Resources */,
+				BB0A37AF2015944D00E5FD94 /* A2_50@2x.png in Resources */,
 				3E2454251FBD1F1000095FBE /* 割草机@2x.png in Resources */,
 				3E43ACDD1FAAB39C00924616 /* backview@1x.png in Resources */,
 				3EC2009C1FE275710005F15A /* 返回@2x.png in Resources */,
@@ -822,6 +833,7 @@
 				3E11A3891FD90AAD000CAA08 /* 58@2x.png in Resources */,
 				3EE3DC491FA8B2BE0049B8F7 /* 左转@2x.png in Resources */,
 				3E43AD391FAAF5C600924616 /* 电量5@1x.png in Resources */,
+				BB8359A920186B0300462487 /* AutoMower.bin in Resources */,
 				3E1480791FD0042D00FA8A2D /* 蓝牙连接@1x.png in Resources */,
 				3E43AD311FAAF4E100924616 /* 电量1@1x.png in Resources */,
 				3E14806F1FCFFA8C00FA8A2D /* 电量5-2@1x.png in Resources */,

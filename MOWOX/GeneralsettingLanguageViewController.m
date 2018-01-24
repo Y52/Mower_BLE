@@ -66,9 +66,10 @@
 
 - (void)viewLayoutSet{
     _languagePicker = [[UIPickerView alloc] init];
+    /*self.languageArray = [NSMutableArray arrayWithArray:@[NSLocalizedString(@"English", nil),
+                                                          NSLocalizedString(@"Polski", nil),NSLocalizedString(@"Dansk", nil),NSLocalizedString(@"Finnish", nil),NSLocalizedString(@"Czech", nil),NSLocalizedString(@"Hungarian", nil),NSLocalizedString(@"Slovenian", nil),NSLocalizedString(@"Polish", nil),NSLocalizedString(@"Russian", nil),NSLocalizedString(@"France", nil),NSLocalizedString(@"Japanese", nil)]];*/
     self.languageArray = [NSMutableArray arrayWithArray:@[NSLocalizedString(@"English", nil),
-                                                          NSLocalizedString(@"Polski", nil),NSLocalizedString(@"Dansk", nil),NSLocalizedString(@"Finnish", nil),NSLocalizedString(@"Czech", nil),NSLocalizedString(@"Hungarian", nil),NSLocalizedString(@"Slovenian", nil),NSLocalizedString(@"Polish", nil),NSLocalizedString(@"Russian", nil),NSLocalizedString(@"France", nil),NSLocalizedString(@"Japanese", nil)]];
-    
+                                                          NSLocalizedString(@"Dansk", nil),]];
     self.languagePicker.dataSource = self;
     self.languagePicker.delegate = self;
     [self.languagePicker selectRow:5 inComponent:0 animated:YES];
@@ -135,6 +136,9 @@
 - (void)setLanguage
 {
     NSInteger row = [self.languagePicker selectedRowInComponent:0];
+    if (row == 1) {
+        row = 2;
+    }
     
     NSMutableArray *dataContent = [[NSMutableArray alloc] init];
     [dataContent addObject:[NSNumber numberWithUnsignedInteger:row]];

@@ -200,6 +200,8 @@
 {
     if (self.inputOldPinCodeTextField.text.length != 4 || self.inputNewPinCodeTextField.text.length != 4 || self.repeatNewPinCodeTextField.text.length != 4) {
         [NSObject showHudTipStr:@"PinCode restrictions 4 digits"];
+    }else if ([self.inputOldPinCodeTextField.text intValue] != [BluetoothDataManage shareInstance].pincode){
+        [NSObject showHudTipStr:@"OldPinCode ERROR"];
     }else if (![self.inputNewPinCodeTextField.text isEqualToString:self.repeatNewPinCodeTextField.text])
     {
         [NSObject showHudTipStr:@"Two input is inconsistent"];

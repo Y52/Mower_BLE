@@ -10,7 +10,7 @@
 #import "ProgressView.h"
 #import "ASProgressPopUpView.h"
 
-#define dataName @"AutoMower1"
+#define dataName @"AutoMower"
 
 @interface FirmwareViewController () <ASProgressPopUpViewDelegate,ASProgressPopUpViewDataSource>
 ///@brife 帧数据控制单例

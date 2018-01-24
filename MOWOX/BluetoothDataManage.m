@@ -87,7 +87,7 @@ static BluetoothDataManage *sgetonInstanceData = nil;
         [endByte addObject:[NSNumber numberWithUnsignedInteger:0x16]];
         [endByte addObject:[NSNumber numberWithUnsignedInteger:0x06]];
         [endByte addObject:[NSNumber numberWithUnsignedInteger:0x01]];
-        [endByte addObject:[NSNumber numberWithUnsignedInteger:0x0d]];
+        [endByte addObject:[NSNumber numberWithUnsignedInteger:0xFF]];
         [endByte addObject:[NSNumber numberWithUnsignedInteger:0x0a]];
         
         [_bluetoothData addObjectsFromArray:startByte];

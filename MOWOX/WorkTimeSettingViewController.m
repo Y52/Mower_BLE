@@ -265,6 +265,7 @@ static CGFloat cellHeight = 45.0;
     }
 }
 
+
 #pragma mark - textFiled delegate
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     
@@ -273,6 +274,8 @@ static CGFloat cellHeight = 45.0;
     selectHoursTextField = [_myTableView cellForRowAtIndexPath:selectIndexPath].contentView.subviews[2];
     selectTimeTextField.textColor = [UIColor blueColor];
     selectHoursTextField.textColor = [UIColor blueColor];
+    [_workDatePickview selectRow:[_selectrowArray[selectIndexPath.row * 2] intValue] inComponent:0 animated:YES];
+    [_workDatePickview selectRow:[_selectrowArray[selectIndexPath.row * 2 + 1] intValue] inComponent:1 animated:YES];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField

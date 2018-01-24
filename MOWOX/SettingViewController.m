@@ -33,7 +33,7 @@
 @implementation SettingViewController
 
 static int version1 = 1;
-static int version2 = 0;
+static int version2 = 2;
 static int version3 = 0;
 
 - (void)viewDidLoad {

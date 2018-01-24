@@ -50,7 +50,7 @@
 }
 
 - (void)customizeTabBarForController{
-    NSArray *tabBarItemImages = @[@"A1", @"A2", @"A3"];
+    NSArray *tabBarItemImages = @[@"A1_50", @"A2_50", @"A3_50"];
     NSArray *tabBarItemTitles = @[LocalString(@"Information"),LocalString(@"Mower status"),LocalString(@"Setting")];
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[self tabBar] items]) {
@@ -61,9 +61,23 @@
         [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:selectedimage];
         index++;
     }
+    if (ScreenHeight < 700) {
+        [self.tabBar setHeight:49.0 + kSafeArea_Bottom];
+    }else{
+        [self.tabBar setHeight:60.0 + kSafeArea_Bottom];
+    }
+    [self.tabBar setContentEdgeInsets:UIEdgeInsetsMake(kSafeArea_Bottom / 2, 0, 0, 0)];
+    self.tabBar.backgroundView.backgroundColor = kColorNavBG;
 }
 
 - (BOOL)tabBarController:(RDVTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    if (viewController.rdv_tabBarItem.tag == 1002) {
+        AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+        if (appDelegate.currentPeripheral == nil) {
+            [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
+            return NO;
+        }
+    }
     /*if (selectedTabBarItemTag == viewController.rdv_tabBarItem.tag) {
         return NO;
     }else{

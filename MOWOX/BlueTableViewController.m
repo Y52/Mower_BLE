@@ -47,7 +47,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"disconnectBluetooth1" object:nil];
     
     NSLog(@"%@", self.baby.findConnectedPeripherals);
     [self startScanBlue];
@@ -525,7 +524,10 @@
 
 - (void)disconnectBluetooth{
     if (_appDelegate.currentPeripheral) {
+        
         [_baby cancelPeripheralConnection:_appDelegate.currentPeripheral];
+        [self.connectedPeripherals removeAllObjects];
+        [self.tableView reloadData];
     }
 }
 
