@@ -199,12 +199,12 @@
 - (void)setPinCode
 {
     if (self.inputOldPinCodeTextField.text.length != 4 || self.inputNewPinCodeTextField.text.length != 4 || self.repeatNewPinCodeTextField.text.length != 4) {
-        [NSObject showHudTipStr:@"PinCode restrictions 4 digits"];
+        [NSObject showHudTipStr:LocalString(@"PinCode restrictions 4 digits")];
     }else if ([self.inputOldPinCodeTextField.text intValue] != [BluetoothDataManage shareInstance].pincode){
-        [NSObject showHudTipStr:@"OldPinCode ERROR"];
+        [NSObject showHudTipStr:LocalString(@"OldPinCode ERROR")];
     }else if (![self.inputNewPinCodeTextField.text isEqualToString:self.repeatNewPinCodeTextField.text])
     {
-        [NSObject showHudTipStr:@"Two input is inconsistent"];
+        [NSObject showHudTipStr:LocalString(@"Two input is inconsistent")];
     }else{
         NSMutableArray *dataContent = [[NSMutableArray alloc] init];
         [dataContent addObject:[NSNumber numberWithUnsignedInteger:[self.inputOldPinCodeTextField.text characterAtIndex:0] - 48]];

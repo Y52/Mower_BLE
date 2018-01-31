@@ -1,0 +1,78 @@
+/* 
+  Localizable.strings
+  MOWOX
+
+  Created by 杭州轨物科技有限公司 on 2018/1/31.
+  Copyright © 2018年 yusz. All rights reserved.
+*/
+"Connect bluetooth" = "Tilslut bluetooth";
+"Control the mower" = "Styr klipperen";
+"Connected device" = "Tilsluttet enhed";
+"No device" = "Ingen enhed";
+"Available devices" = "Tilgængelige enheder";
+"(please choose RobotMower_DYM)" = "Vælg venligst RobotMower_DYM";
+"Please input PIN code" = "Indtast venligst PIN-kode";
+"Done" = "Færdig";
+"Cancel" = "Afbestille";
+"Mower status" = "Plæneklipper status";
+"Bluetooth connected" = "Bluetooth tilsluttet";
+"Bluetooth disconnected" = "Bluetooth frakoblet";
+"Mower on lawn" = "Plæneklipperen på græsplænen";
+"Back to station" = "Tilbage til station";
+"Mower on station" = "Klipper på station";
+"Go to work" = "Gå til græsplæne";
+"Battery capacity" = "batterikapacitet";
+"Mower control" = "Plæneklipper styring";
+"Information" = "Oplysninger";
+"Mower status" = "Plæneklipper status";
+"setting" = "Indstillinger";
+"Mower control" = "Plæneklipper styring";
+"Start" = "Start";
+"Stop" = "Stop";
+"Alerts" = "advarsler";
+"setting" = "Indstilling";
+"Setting" = "Indstilling";
+"Language setting" = "Valgaf sprog";
+"English" = "engelsk";
+"Dansk" = "Dansk";
+"Time setting" = "Indstilling af klokkeslæt";
+"Working time setting" = "Indstilling af arbejdstid";
+"Mower setting" = "Indstilling af plæneklipper";
+"MOWER SETTING" = "Indstilling af plæneklipper";
+"Pin setting" = "Indstilling af PIN-kode";
+"PIN code setting" = "Indstilling af PIN-kode";
+"Update Mower's Firmware" = "Opdater Firmwaren på klipperen";
+"OK" = "OK";
+"Date" = "Dato";
+"Time" = "klokkeslæt";
+"MOW in the rain" = "Klippe i regnen";
+"Yes" = "Ja";
+"NO" = "Ingen";
+"Boundary cut" = "Klippe grænsen";
+"Input Old PIN code" = "Indtast gammel PIN-kode";
+"Input New PIN code" = "Indtast ny PIN-kode";
+"Repeat New PIN code" = "Gentag ny PIN-kode";
+"4 numbers" = "4 numre";
+"Your mower's firmware version:" = "Din plæneklipperen firmware version:";
+"Latest mower's firmware version:" = "Seneste plæneklipperen firmware version:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Tryk venligst på tast \"2\" (Boot-tilstand, 2-opdater firmware) på plæneklipperen tastatur for at starte klipperen";
+
+//MBprogressHUD
+"Bluetooth not connected" = "Bluetooth ikke tilsluttet";
+"Incorrect PIN code length" = "Forkert PIN-kode længde";
+"Incorrect PIN code" = "Forkert PIN-kode";
+
+"Monday's time set wrong" = "Mandagens tid er forkert";
+"Tuesday's time set wrong" = "Tirsdagens tid er forkert";
+"Wednesday's time set wrong" = "Onsdagens tid er forkert";
+"Thursday's time set wrong" = "Torsdagens tid er forkert";
+"Friday's time set wrong" = "Fredagens tid er forkert";
+"Saturday's time set wrong" = "Lørdagens tid er forkert";
+"Sunday's time set wrong" = "Søndags tid er forkert";
+"PinCode restrictions 4 digits" = "PinCode begrænser 4 cifre";
+"OldPinCode ERROR" = "OldPinCode ERROR";
+"Two input is inconsistent" = "To input er inkonsekvent";
+"consucc" = "forbinde lykkes";
+"confail" = "forbindelsen mislykkedes";
+"disconnect" = "koble fra";
+

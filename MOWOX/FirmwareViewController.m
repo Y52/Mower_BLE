@@ -120,7 +120,7 @@
     [self.view addSubview:_progressViewNew];
     
     _curVerTV = [[UITextView alloc] init];
-    _curVerTV.text = [NSString stringWithFormat:@"Your mower's firmware version:\n V%d.%d.%d\nLatest mower's firmware version:\n V1.1\n",[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3];
+    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d\n%@\n V1.0.1\n",LocalString(@"Your mower's firmware version:"),[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest mower's firmware version:")];
     _curVerTV.font = [UIFont fontWithName:@"Arial" size:17];
     _curVerTV.backgroundColor = [UIColor clearColor];
     _curVerTV.autocapitalizationType = UITextAutocapitalizationTypeSentences;

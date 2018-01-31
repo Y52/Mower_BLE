@@ -59,8 +59,6 @@
 		3E2F25441FB98FFC00E79C23 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F25431FB98FFC00E79C23 /* Asset.xcassets */; };
 		3E3561FF1FB4560E00135503 /* 返回绿色@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3561FD1FB4560D00135503 /* 返回绿色@1x.png */; };
 		3E3562001FB4560E00135503 /* bluetoothImage@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3561FE1FB4560D00135503 /* bluetoothImage@1x.png */; };
-		3E3562081FB4868200135503 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E3562061FB4868200135503 /* Localizable.strings */; };
-		3E3562101FB4872100135503 /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E35620E1FB4872100135503 /* infoPlist.strings */; };
 		3E3613FB1FF490D6003BA11B /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3613FA1FF490D6003BA11B /* ProgressView.m */; };
 		3E3AD4771FDBC36A00667EDA /* MowerSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD4761FDBC36A00667EDA /* MowerSettingViewController.m */; };
 		3E43ACDD1FAAB39C00924616 /* backview@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACD21FAAB39C00924616 /* backview@1x.png */; };
@@ -134,12 +132,12 @@
 		BB0A37AF2015944D00E5FD94 /* A2_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AC2015944C00E5FD94 /* A2_50@2x.png */; };
 		BB0A37B02015944D00E5FD94 /* A1_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AD2015944C00E5FD94 /* A1_50@2x.png */; };
 		BB0A37B12015944D00E5FD94 /* A3_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AE2015944D00E5FD94 /* A3_50@2x.png */; };
-		BB0DA43C2011884900ECD8CF /* AutoMower1.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB0DA43A2011884900ECD8CF /* AutoMower1.bin */; };
 		BB0DA4482012E99100ECD8CF /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0DA4472012E99100ECD8CF /* UIColor+ColorChange.m */; };
 		BB0F9144200C7E370060D287 /* LMPopInputPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F9143200C7E370060D287 /* LMPopInputPasswordView.m */; };
 		BB0F914E200C7EFB0060D287 /* WTReTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F914B200C7EFB0060D287 /* WTReTextField.m */; };
 		BB0F914F200C7EFB0060D287 /* WTReParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F914C200C7EFB0060D287 /* WTReParser.m */; };
-		BB8359AB20187E6E00462487 /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB8359AA20187E6D00462487 /* AutoMower.bin */; };
+		BB12992E2021A79500285201 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB1299302021A79500285201 /* Localizable.strings */; };
+		BB1299332021B7BE00285201 /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB1299322021B7BE00285201 /* AutoMower.bin */; };
 		BBB611212019B111007FA3D4 /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611192019B111007FA3D4 /* 87x87@3x.png */; };
 		BBB611222019B111007FA3D4 /* 180x180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111A2019B111007FA3D4 /* 180x180@3x.png */; };
 		BBB611232019B111007FA3D4 /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111B2019B111007FA3D4 /* 40x40@2x.png */; };
@@ -230,14 +228,6 @@
 		3E2F25431FB98FFC00E79C23 /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Asset.xcassets; path = ../Asset.xcassets; sourceTree = "<group>"; };
 		3E3561FD1FB4560D00135503 /* 返回绿色@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "返回绿色@1x.png"; path = "image/返回绿色@1x.png"; sourceTree = SOURCE_ROOT; };
 		3E3561FE1FB4560D00135503 /* bluetoothImage@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bluetoothImage@1x.png"; path = "image/bluetoothImage@1x.png"; sourceTree = SOURCE_ROOT; };
-		3E3562021FB4861800135503 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		3E3562031FB4861800135503 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		3E3562041FB4861E00135503 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		3E3562051FB4861E00135503 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		3E3562071FB4868200135503 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3E3562091FB4868E00135503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3E35620A1FB4869300135503 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		3E35620F1FB4872100135503 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MOWOX/en.lproj/infoPlist.strings; sourceTree = "<group>"; };
 		3E3613F91FF490D6003BA11B /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
 		3E3613FA1FF490D6003BA11B /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 		3E3AD4751FDBC36A00667EDA /* MowerSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MowerSettingViewController.h; sourceTree = "<group>"; };
@@ -338,7 +328,6 @@
 		BB0A37AC2015944C00E5FD94 /* A2_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A2_50@2x.png"; path = "image/A2_50@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB0A37AD2015944C00E5FD94 /* A1_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A1_50@2x.png"; path = "image/A1_50@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB0A37AE2015944D00E5FD94 /* A3_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A3_50@2x.png"; path = "image/A3_50@2x.png"; sourceTree = SOURCE_ROOT; };
-		BB0DA43A2011884900ECD8CF /* AutoMower1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower1.bin; sourceTree = "<group>"; };
 		BB0DA4462012E99100ECD8CF /* UIColor+ColorChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorChange.h"; sourceTree = "<group>"; };
 		BB0DA4472012E99100ECD8CF /* UIColor+ColorChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorChange.m"; sourceTree = "<group>"; };
 		BB0F9142200C7E370060D287 /* LMPopInputPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMPopInputPasswordView.h; sourceTree = "<group>"; };
@@ -347,7 +336,13 @@
 		BB0F914B200C7EFB0060D287 /* WTReTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReTextField.m; sourceTree = "<group>"; };
 		BB0F914C200C7EFB0060D287 /* WTReParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReParser.m; sourceTree = "<group>"; };
 		BB0F914D200C7EFB0060D287 /* WTReTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTReTextField.h; sourceTree = "<group>"; };
-		BB8359AA20187E6D00462487 /* AutoMower.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower.bin; sourceTree = "<group>"; };
+		BB12992A2021A71B00285201 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		BB12992B2021A71B00285201 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BB12992C2021A76A00285201 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
+		BB12992D2021A76A00285201 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BB12992F2021A79500285201 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB1299312021A79700285201 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB1299322021B7BE00285201 /* AutoMower.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower.bin; sourceTree = "<group>"; };
 		BBB611192019B111007FA3D4 /* 87x87@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "87x87@3x.png"; sourceTree = "<group>"; };
 		BBB6111A2019B111007FA3D4 /* 180x180@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180x180@3x.png"; sourceTree = "<group>"; };
 		BBB6111B2019B111007FA3D4 /* 40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@2x.png"; sourceTree = "<group>"; };
@@ -389,8 +384,7 @@
 		3E0F567E1FF23F9400A4D339 /* bin */ = {
 			isa = PBXGroup;
 			children = (
-				BB8359AA20187E6D00462487 /* AutoMower.bin */,
-				BB0DA43A2011884900ECD8CF /* AutoMower1.bin */,
+				BB1299322021B7BE00285201 /* AutoMower.bin */,
 				3E5FE0421FEDF5BC004B234D /* data.bin */,
 			);
 			path = bin;
@@ -588,8 +582,7 @@
 				3E63252E1FA6BC5F00F14462 /* Main.storyboard */,
 				3E2F25431FB98FFC00E79C23 /* Asset.xcassets */,
 				3E6325331FA6BC5F00F14462 /* LaunchScreen.storyboard */,
-				3E3562061FB4868200135503 /* Localizable.strings */,
-				3E35620E1FB4872100135503 /* infoPlist.strings */,
+				BB1299302021A79500285201 /* Localizable.strings */,
 				3E6325361FA6BC5F00F14462 /* Info.plist */,
 				3E6325251FA6BC5F00F14462 /* Supporting Files */,
 			);
@@ -816,8 +809,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
-				en,
-				"zh-Hans",
+				da,
 			);
 			mainGroup = 3E6325191FA6BC5F00F14462;
 			productRefGroup = 3E6325231FA6BC5F00F14462 /* Products */;
@@ -859,6 +851,7 @@
 				BBB611272019B111007FA3D4 /* 60x60@3x.png in Resources */,
 				3E11A38A1FD90AAD000CAA08 /* icon-60.png in Resources */,
 				3E11A3871FD90AAD000CAA08 /* icon-60@3x.png in Resources */,
+				BB12992E2021A79500285201 /* Localizable.strings in Resources */,
 				3EC200A21FE2839F0005F15A /* 蓝牙图标@2x.png in Resources */,
 				3E1480611FCFEF1400FA8A2D /* A3@3x.png in Resources */,
 				3E43ACE21FAAB39C00924616 /* parkimage@2x.png in Resources */,
@@ -870,7 +863,6 @@
 				3E11A38B1FD90AAD000CAA08 /* 80@3x.png in Resources */,
 				BBCCA46F2019CB6F00423650 /* 40*40@2x.png in Resources */,
 				BBCCA46E2019CB6F00423650 /* 58*58@2x.png in Resources */,
-				BB0DA43C2011884900ECD8CF /* AutoMower1.bin in Resources */,
 				BBCCA4732019CB6F00423650 /* 120*120@2x.png in Resources */,
 				3E5815C01FAFF72300E93520 /* WorkingtimeSetting@1x.png in Resources */,
 				BBCCA45B2019B84C00423650 /* 80x80@2x.png in Resources */,
@@ -900,7 +892,6 @@
 				3E11A3851FD90AAD000CAA08 /* 120@3x.png in Resources */,
 				3E1480811FD00C0700FA8A2D /* A3@2x.png in Resources */,
 				3EF771A71FAAA38A00EC016A /* down@1x.png in Resources */,
-				3E3562081FB4868200135503 /* Localizable.strings in Resources */,
 				3E43ACEB1FAACA5200924616 /* background2@2x.png in Resources */,
 				BBCCA4712019CB6F00423650 /* 120*120@3x.png in Resources */,
 				3E43ACE51FAAB39C00924616 /* signal@1x.png in Resources */,
@@ -908,6 +899,7 @@
 				BBCCA4702019CB6F00423650 /* 60*60@3x.png in Resources */,
 				3E2F25331FB946EF00E79C23 /* WorkingtimeSetting@2x.png in Resources */,
 				3EF771A81FAAA38A00EC016A /* home@1x.png in Resources */,
+				BB1299332021B7BE00285201 /* AutoMower.bin in Resources */,
 				3E43AD331FAAF4E100924616 /* 电量3@1x.png in Resources */,
 				BBB611232019B111007FA3D4 /* 40x40@2x.png in Resources */,
 				3E14806E1FCFFA8C00FA8A2D /* 电量4-2@1x.png in Resources */,
@@ -915,7 +907,6 @@
 				3E14807A1FD0042D00FA8A2D /* A6@1x.png in Resources */,
 				3E2F25301FB946EF00E79C23 /* Generalsetting@2x.png in Resources */,
 				3E14806C1FCFFA8C00FA8A2D /* 电量2-2@1x.png in Resources */,
-				3E3562101FB4872100135503 /* infoPlist.strings in Resources */,
 				3E22E2A61FA9A7B8000BC792 /* zx_code_line@2x.png in Resources */,
 				BBCCA46D2019CB6F00423650 /* 60*60@2x.png in Resources */,
 				3E6325581FA6D8F000F14462 /* 选中@1x.png in Resources */,
@@ -941,7 +932,6 @@
 				3E11A3891FD90AAD000CAA08 /* 58@2x.png in Resources */,
 				3EE3DC491FA8B2BE0049B8F7 /* 左转@2x.png in Resources */,
 				3E43AD391FAAF5C600924616 /* 电量5@1x.png in Resources */,
-				BB8359AB20187E6E00462487 /* AutoMower.bin in Resources */,
 				3E1480791FD0042D00FA8A2D /* 蓝牙连接@1x.png in Resources */,
 				3E43AD311FAAF4E100924616 /* 电量1@1x.png in Resources */,
 				3E14806F1FCFFA8C00FA8A2D /* 电量5-2@1x.png in Resources */,
@@ -1059,31 +1049,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3E3562061FB4868200135503 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E3562071FB4868200135503 /* en */,
-				3E3562091FB4868E00135503 /* Base */,
-				3E35620A1FB4869300135503 /* zh-Hans */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		3E35620E1FB4872100135503 /* infoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E35620F1FB4872100135503 /* en */,
-			);
-			name = infoPlist.strings;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		3E63252E1FA6BC5F00F14462 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3E63252F1FA6BC5F00F14462 /* Base */,
-				3E3562021FB4861800135503 /* en */,
-				3E3562041FB4861E00135503 /* zh-Hans */,
+				BB12992A2021A71B00285201 /* en */,
+				BB12992C2021A76A00285201 /* da */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1092,10 +1063,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				3E6325341FA6BC5F00F14462 /* Base */,
-				3E3562031FB4861800135503 /* en */,
-				3E3562051FB4861E00135503 /* zh-Hans */,
+				BB12992B2021A71B00285201 /* en */,
+				BB12992D2021A76A00285201 /* da */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BB1299302021A79500285201 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB12992F2021A79500285201 /* en */,
+				BB1299312021A79700285201 /* da */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1145,7 +1125,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1190,7 +1170,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1316,7 +1296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

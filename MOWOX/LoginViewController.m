@@ -174,7 +174,7 @@
 {
     self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     if (_appDelegate.currentPeripheral == nil) {
-        [NSObject showHudTipStr:@"Bluetooth is not connected"];
+        [NSObject showHudTipStr:LocalString(@"Bluetooth not connected")];
     }else{
         NSMutableArray *dataContent = [[NSMutableArray alloc] init];
         [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];

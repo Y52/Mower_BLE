@@ -34,7 +34,7 @@
 
 static int version1 = 1;
 static int version2 = 0;
-static int version3 = 0;
+static int version3 = 1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -84,12 +84,12 @@ static int version3 = 0;
         self.navigationItem.leftBarButtonItem = leftBtn;
     }
     
-    _LanguageButton = [UIButton buttonWithTitle:@"Language setting" titleColor:[UIColor blackColor]];
-    _TimeButton = [UIButton buttonWithTitle:@"Time setting" titleColor:[UIColor blackColor]];
-    _WorktimeButton = [UIButton buttonWithTitle:@"Working time setting" titleColor:[UIColor blackColor]];
-    _PinButton = [UIButton buttonWithTitle:@"Pin setting" titleColor:[UIColor blackColor]];
-    _mowerButton = [UIButton buttonWithTitle:@"Mower setting" titleColor:[UIColor blackColor]];
-    _updateButton = [UIButton buttonWithTitle:@"Update Mower's Firmware" titleColor:[UIColor blackColor]];
+    _LanguageButton = [UIButton buttonWithTitle:LocalString(@"Language setting") titleColor:[UIColor blackColor]];
+    _TimeButton = [UIButton buttonWithTitle:LocalString(@"Time setting") titleColor:[UIColor blackColor]];
+    _WorktimeButton = [UIButton buttonWithTitle:LocalString(@"Working time setting") titleColor:[UIColor blackColor]];
+    _PinButton = [UIButton buttonWithTitle:LocalString(@"Pin setting") titleColor:[UIColor blackColor]];
+    _mowerButton = [UIButton buttonWithTitle:LocalString(@"Mower setting") titleColor:[UIColor blackColor]];
+    _updateButton = [UIButton buttonWithTitle:LocalString(@"Update Mower's Firmware") titleColor:[UIColor blackColor]];
     _updateButton.hidden = YES;
     [_LanguageButton setButtonStyle1];
     [_TimeButton setButtonStyle1];

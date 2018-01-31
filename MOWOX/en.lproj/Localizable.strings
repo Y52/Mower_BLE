@@ -2,41 +2,58 @@
   Localizable.strings
   MOWOX
 
-  Created by Mac on 2017/10/30.
-  Copyright © 2017年 yusz. All rights reserved.
+  Created by 杭州轨物科技有限公司 on 2018/1/31.
+  Copyright © 2018年 yusz. All rights reserved.
 */
-
-"早上好" = "Good morning";
-"上午好" = "Good morning";
-"中午好" = "good afternoon";
-"下午好" = "good afternoon";
-"晚上好" = "Good evening";
-"English" = "English";
-"Polski" = "Polski";
-"Dansk" = "Dansk";
-"Finnish" = "Finnish";
-"Czech" = "Czech";
-"Hungarian" = "Hungarian";
-"Slovenian" = "Slovenian";
-"Polish" = "Polish";
-"Russian" = "Russian";
-"France" = "France";
-"Japanese" = "Japanese";
-"Chinese" = "Chinese";
-"Mon:" = "Mon:";
-"Tue:" = "Tue:";
-"Wed:" = "Wed:";
-"Thu:" = "Thu:";
-"Fri:" = "Fri:";
-"Sat:" = "Sat:";
-"Sun:" = "Sun:";
-"About" = "About";
-"Contact Us" = "Contact Us";
-"Change\npassword" = "Change\npassword";
-"NO Bluetooth" = "NO Bluetooth";
-"Selected" = "Selected";
-"GoToWork" = "GoToWork";
-"BackStation" = "BackStation";
 "confail" = "connect failed";
 "consucc" = "Connected";
 "disconnect" = "bluetooth disconnected";
+
+"Connect bluetooth" = "Connect bluetooth";
+"Control the mower" = "Control the mower";
+"Connected device" = "Connected device";
+"No device" = "No device";
+"Available devices" = "Available devices";
+"(please choose RobotMower_DYM)" = "(please choose RobotMower_DYM)";
+"Please input PIN code" = "Please input PIN code";
+"Done" = "Done";
+"Cancel" = "Cancel";
+"Mower status" = "Mower status";
+"English" = "English";
+"Dansk" = "Dansk";
+
+"Bluetooth connected" = "Bluetooth connected";
+"Mower on lawn" = "Mower on lawn";
+"Back to station" = "Back to station";
+"Mower on station" = "Mower on station";
+"Go to work" = "Go to work";
+"Battery capacity" = "Battery capacity";
+"Mower control" = "Mower control";
+"Information" = "Information";
+"Mower status" = "Mower status";
+"setting" = "setting";
+"Mower control" = "Mower control";
+"Start" = "Start";
+"Stop" = "Stop";
+"Alerts" = "Alerts";
+"setting" = "setting";
+"Setting" = "Setting";
+"Language setting" = "Language setting";
+"Time setting" = "Time setting";
+"Working time setting" = "Working time setting";
+"Mower setting" = "Mower setting";
+"PIN setting" = "PIN setting";
+"Update mower’s Firmware" = "Update mower’s Firmware";
+"OK" = "OK";
+"Date" = "Date";
+"Time" = "Time";
+"Mow in the rain" = "Mow in the rain";
+"Yes" = "Yes";
+"NO" = "NO";
+"Boundary cut" = "Boundary cut";
+"Input old PIN code" = "Input old PIN code";
+"Input new PIN code" = "Input new PIN code";
+"Repeat new PIN code" = "Repeat new PIN code";
+"Your mower's firmware version:" = "Your mower's firmware version:";
+"Latest mower's firmware version:" = "Latest mower's firmware version:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating.";

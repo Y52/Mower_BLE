@@ -93,9 +93,9 @@
     _datePickerView.datePickerMode = UIDatePickerModeDate;
     _timePickerView.datePickerMode = UIDatePickerModeTime;
     
-    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];//设置为英文显示
-    _datePickerView.locale = locale;
-    _timePickerView.locale = locale;
+    //NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];//设置为英文显示
+    //_datePickerView.locale = locale;
+    //_timePickerView.locale = locale;
     
     _dateLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:17] textColor:[UIColor blackColor] text:LocalString(@"Date")];
     _timeLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:17] textColor:[UIColor blackColor] text:LocalString(@"Time")];
@@ -120,7 +120,7 @@
     }else if([deviceType isEqualToString:@"iPad"]) {
         //iPad
         [_dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(60, ScreenHeight * 0.066));
+            make.size.mas_equalTo(CGSizeMake(120, ScreenHeight * 0.066));
             make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44);
             make.centerX.equalTo(self.view.mas_centerX);
         }];
@@ -131,7 +131,7 @@
         make.centerX.equalTo(self.view.mas_centerX);
     }];
     [_timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(60, ScreenHeight * 0.066));
+        make.size.mas_equalTo(CGSizeMake(120, ScreenHeight * 0.066));
         make.top.equalTo(self.datePickerView.mas_bottom);
         make.centerX.equalTo(self.view.mas_centerX);
     }];

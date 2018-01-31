@@ -409,21 +409,21 @@ static CGFloat cellHeight = 45.0;
         }
     }
     if (([_selectrowArray[0] intValue] + [_selectrowArray[1] intValue]) > 24){
-        [NSObject showHudTipStr:@"Monday's time set wrong"];
+        [NSObject showHudTipStr:LocalString(@"Monday's time set wrong")];
     }else if (([_selectrowArray[2] intValue] + [_selectrowArray[3] intValue]) > 24){
-        [NSObject showHudTipStr:@"Tuesday's time set wrong"];
+        [NSObject showHudTipStr:LocalString(@"Tuesday's time set wrong")];
     }else if (([_selectrowArray[4] intValue] + [_selectrowArray[5] intValue]) > 24){
-        [NSObject showHudTipStr:@"Wednesday's time set wrong"];
+        [NSObject showHudTipStr:LocalString(@"Wednesday's time set wrong")];
     }else if (([_selectrowArray[6] intValue] + [_selectrowArray[7] intValue]) > 24){
-        [NSObject showHudTipStr:@"Thursday's time set wrong"];
+        [NSObject showHudTipStr:LocalString(@"Thursday's time set wrong")];
         NSLog(@"%d",[_selectrowArray[8] intValue]);
         NSLog(@"%d",[_selectrowArray[9] intValue]);
     }else if (([_selectrowArray[8] intValue] + [_selectrowArray[9] intValue]) > 24){
-        [NSObject showHudTipStr:@"Friday's time set wrong"];
+        [NSObject showHudTipStr:LocalString(@"Friday's time set wrong")];
     }else if (([_selectrowArray[10] intValue] + [_selectrowArray[11] intValue]) > 24){
-        [NSObject showHudTipStr:@"Saturday's time set wrong"];
+        [NSObject showHudTipStr:LocalString(@"Saturday's time set wrong")];
     }else if (([_selectrowArray[12] intValue] + [_selectrowArray[13] intValue]) > 24){
-        [NSObject showHudTipStr:@"Sunday's time set wrong"];
+        [NSObject showHudTipStr:LocalString(@"Sunday's time set wrong")];
     }else{
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             [self.bluetoothDataManage setDataType:0x04];
