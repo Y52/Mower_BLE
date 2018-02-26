@@ -311,6 +311,9 @@ static BluetoothDataManage *sgetonInstanceData = nil;
             NSNumber *ten = _receiveData[6];
             NSNumber *one = _receiveData[7];
             _pincode = [thousand intValue] * 1000 +[hungred intValue] * 100 + [ten intValue] * 10 + [one intValue];
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            [defaults setInteger:_pincode forKey:@"pincode"];
+            [defaults synchronize];
         }
     }
 }

@@ -37,7 +37,6 @@
 		3E1480791FD0042D00FA8A2D /* 蓝牙连接@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480731FD0042D00FA8A2D /* 蓝牙连接@1x.png */; };
 		3E14807A1FD0042D00FA8A2D /* A6@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480741FD0042D00FA8A2D /* A6@1x.png */; };
 		3E14807B1FD0042D00FA8A2D /* backgroundnew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480751FD0042D00FA8A2D /* backgroundnew@2x.png */; };
-		3E14807F1FD00C0700FA8A2D /* A1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E14807C1FD00C0700FA8A2D /* A1@2x.png */; };
 		3E1480801FD00C0700FA8A2D /* A2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E14807D1FD00C0700FA8A2D /* A2@2x.png */; };
 		3E1480811FD00C0700FA8A2D /* A3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E14807E1FD00C0700FA8A2D /* A3@2x.png */; };
 		3E19513E1FC2B1B800B38EAB /* ViewAlertsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19513D1FC2B1B800B38EAB /* ViewAlertsCell.m */; };
@@ -138,6 +137,9 @@
 		BB0F914F200C7EFB0060D287 /* WTReParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F914C200C7EFB0060D287 /* WTReParser.m */; };
 		BB12992E2021A79500285201 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB1299302021A79500285201 /* Localizable.strings */; };
 		BB1299332021B7BE00285201 /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB1299322021B7BE00285201 /* AutoMower.bin */; };
+		BB37DA402043B7FC0078504A /* B3_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3D2043B7FB0078504A /* B3_50@2x.png */; };
+		BB37DA412043B7FC0078504A /* B1_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3E2043B7FC0078504A /* B1_50@2x.png */; };
+		BB37DA422043B7FC0078504A /* B2_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3F2043B7FC0078504A /* B2_50@2x.png */; };
 		BBB611212019B111007FA3D4 /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611192019B111007FA3D4 /* 87x87@3x.png */; };
 		BBB611222019B111007FA3D4 /* 180x180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111A2019B111007FA3D4 /* 180x180@3x.png */; };
 		BBB611232019B111007FA3D4 /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111B2019B111007FA3D4 /* 40x40@2x.png */; };
@@ -198,7 +200,6 @@
 		3E1480731FD0042D00FA8A2D /* 蓝牙连接@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝牙连接@1x.png"; path = "image/蓝牙连接@1x.png"; sourceTree = SOURCE_ROOT; };
 		3E1480741FD0042D00FA8A2D /* A6@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A6@1x.png"; path = "image/A6@1x.png"; sourceTree = SOURCE_ROOT; };
 		3E1480751FD0042D00FA8A2D /* backgroundnew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backgroundnew@2x.png"; path = "image/backgroundnew@2x.png"; sourceTree = SOURCE_ROOT; };
-		3E14807C1FD00C0700FA8A2D /* A1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A1@2x.png"; path = "image/A1@2x.png"; sourceTree = SOURCE_ROOT; };
 		3E14807D1FD00C0700FA8A2D /* A2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A2@2x.png"; path = "image/A2@2x.png"; sourceTree = SOURCE_ROOT; };
 		3E14807E1FD00C0700FA8A2D /* A3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A3@2x.png"; path = "image/A3@2x.png"; sourceTree = SOURCE_ROOT; };
 		3E19513C1FC2B1B800B38EAB /* ViewAlertsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAlertsCell.h; sourceTree = "<group>"; };
@@ -343,6 +344,9 @@
 		BB12992F2021A79500285201 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB1299312021A79700285201 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB1299322021B7BE00285201 /* AutoMower.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower.bin; sourceTree = "<group>"; };
+		BB37DA3D2043B7FB0078504A /* B3_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B3_50@2x.png"; path = "image/B3_50@2x.png"; sourceTree = SOURCE_ROOT; };
+		BB37DA3E2043B7FC0078504A /* B1_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B1_50@2x.png"; path = "image/B1_50@2x.png"; sourceTree = SOURCE_ROOT; };
+		BB37DA3F2043B7FC0078504A /* B2_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B2_50@2x.png"; path = "image/B2_50@2x.png"; sourceTree = SOURCE_ROOT; };
 		BBB611192019B111007FA3D4 /* 87x87@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "87x87@3x.png"; sourceTree = "<group>"; };
 		BBB6111A2019B111007FA3D4 /* 180x180@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180x180@3x.png"; sourceTree = "<group>"; };
 		BBB6111B2019B111007FA3D4 /* 40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@2x.png"; sourceTree = "<group>"; };
@@ -413,12 +417,14 @@
 			children = (
 				BBB611182019B111007FA3D4 /* icon1 */,
 				3E11A37C1FD90AAD000CAA08 /* icon */,
-				3E14807C1FD00C0700FA8A2D /* A1@2x.png */,
 				3E14807D1FD00C0700FA8A2D /* A2@2x.png */,
 				3E14807E1FD00C0700FA8A2D /* A3@2x.png */,
 				BB0A37AD2015944C00E5FD94 /* A1_50@2x.png */,
 				BB0A37AC2015944C00E5FD94 /* A2_50@2x.png */,
 				BB0A37AE2015944D00E5FD94 /* A3_50@2x.png */,
+				BB37DA3E2043B7FC0078504A /* B1_50@2x.png */,
+				BB37DA3F2043B7FC0078504A /* B2_50@2x.png */,
+				BB37DA3D2043B7FB0078504A /* B3_50@2x.png */,
 				3E1480731FD0042D00FA8A2D /* 蓝牙连接@1x.png */,
 				3E1480741FD0042D00FA8A2D /* A6@1x.png */,
 				3E1480751FD0042D00FA8A2D /* backgroundnew@2x.png */,
@@ -846,12 +852,14 @@
 				3E1480601FCFEF1400FA8A2D /* A2@3x.png in Resources */,
 				3E2F25311FB946EF00E79C23 /* Imformation@2x.png in Resources */,
 				BB0A37B12015944D00E5FD94 /* A3_50@2x.png in Resources */,
+				BB37DA402043B7FC0078504A /* B3_50@2x.png in Resources */,
 				3E1480531FCFEF1400FA8A2D /* loginView@2x.png in Resources */,
 				3E1480801FD00C0700FA8A2D /* A2@2x.png in Resources */,
 				BBB611272019B111007FA3D4 /* 60x60@3x.png in Resources */,
 				3E11A38A1FD90AAD000CAA08 /* icon-60.png in Resources */,
 				3E11A3871FD90AAD000CAA08 /* icon-60@3x.png in Resources */,
 				BB12992E2021A79500285201 /* Localizable.strings in Resources */,
+				BB37DA422043B7FC0078504A /* B2_50@2x.png in Resources */,
 				3EC200A21FE2839F0005F15A /* 蓝牙图标@2x.png in Resources */,
 				3E1480611FCFEF1400FA8A2D /* A3@3x.png in Resources */,
 				3E43ACE21FAAB39C00924616 /* parkimage@2x.png in Resources */,
@@ -877,7 +885,6 @@
 				3E3562001FB4560E00135503 /* bluetoothImage@1x.png in Resources */,
 				3E22E2A51FA9A7B8000BC792 /* wifi@2x.png in Resources */,
 				BB0A37B02015944D00E5FD94 /* A1_50@2x.png in Resources */,
-				3E14807F1FD00C0700FA8A2D /* A1@2x.png in Resources */,
 				3EFEF5061FADA83E00FA7850 /* 蓝牙@1x.png in Resources */,
 				BBCCA45D2019C55100423650 /* launchImage1@2x.png in Resources */,
 				3E6325571FA6D8F000F14462 /* 未选中@1x.png in Resources */,
@@ -933,6 +940,7 @@
 				3EE3DC491FA8B2BE0049B8F7 /* 左转@2x.png in Resources */,
 				3E43AD391FAAF5C600924616 /* 电量5@1x.png in Resources */,
 				3E1480791FD0042D00FA8A2D /* 蓝牙连接@1x.png in Resources */,
+				BB37DA412043B7FC0078504A /* B1_50@2x.png in Resources */,
 				3E43AD311FAAF4E100924616 /* 电量1@1x.png in Resources */,
 				3E14806F1FCFFA8C00FA8A2D /* 电量5-2@1x.png in Resources */,
 				3E43ACEA1FAACA5200924616 /* background1@2x.png in Resources */,

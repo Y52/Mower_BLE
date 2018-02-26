@@ -176,19 +176,24 @@
     if (_appDelegate.currentPeripheral == nil) {
         [NSObject showHudTipStr:LocalString(@"Bluetooth not connected")];
     }else{
-        NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        
-        [self.bluetoothDataManage setDataType:0x0c];
-        [self.bluetoothDataManage setDataContent: dataContent];
-        [self.bluetoothDataManage sendBluetoothFrame];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        if ([defaults integerForKey:@"pincode"]) {
+            [BluetoothDataManage shareInstance].pincode = (int)[defaults integerForKey:@"pincode"];
+        }else{
+            NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+            
+            [self.bluetoothDataManage setDataType:0x0c];
+            [self.bluetoothDataManage setDataContent: dataContent];
+            [self.bluetoothDataManage sendBluetoothFrame];
+        }
 
         _resultLabel = [[UILabel alloc] init];
         _popView = [[LMPopInputPasswordView alloc]init];
@@ -236,6 +241,20 @@
                 rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
                 [self presentViewController:rdvView animated:YES completion:nil];
             }else{
+                NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+                
+                [self.bluetoothDataManage setDataType:0x0c];
+                [self.bluetoothDataManage setDataContent: dataContent];
+                [self.bluetoothDataManage sendBluetoothFrame];
+                
                 [NSObject showHudTipStr:LocalString(@"Incorrect PIN code")];
             }
             /*if ([_resultLabel.text isEqualToString:@"1234"]) {

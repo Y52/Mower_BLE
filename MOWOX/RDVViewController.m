@@ -51,14 +51,16 @@
 
 - (void)customizeTabBarForController{
     NSArray *tabBarItemImages = @[@"A1_50", @"A2_50", @"A3_50"];
+    NSArray *tabBarItemSelectImages = @[@"B1_50", @"B2_50", @"B3_50"];
     NSArray *tabBarItemTitles = @[LocalString(@"Information"),LocalString(@"Mower status"),LocalString(@"Setting")];
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[self tabBar] items]) {
         item.tag = 1000 + index;
         item.titlePositionAdjustment = UIOffsetMake(0, 2);
         [item setTitle:[tabBarItemTitles objectAtIndex:index]];
-        UIImage *selectedimage = [UIImage imageNamed:[tabBarItemImages objectAtIndex:index]];
-        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:selectedimage];
+        UIImage *selectedimage = [UIImage imageNamed:[tabBarItemSelectImages objectAtIndex:index]];
+        UIImage *unselectedimage = [UIImage imageNamed:[tabBarItemImages objectAtIndex:index]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
         index++;
     }
     if (ScreenHeight < 700) {
@@ -67,7 +69,12 @@
         [self.tabBar setHeight:60.0 + kSafeArea_Bottom];
     }
     [self.tabBar setContentEdgeInsets:UIEdgeInsetsMake(kSafeArea_Bottom / 2, 0, 0, 0)];
-    self.tabBar.backgroundView.backgroundColor = kColorNavBG;
+    self.tabBar.translucent = YES;
+    //self.tabBar.backgroundView.backgroundColor = kColorNavBG;
+    self.tabBar.backgroundView.backgroundColor = [UIColor colorWithRed:245/255.0
+                                                            green:245/255.0
+                                                             blue:245/255.0
+                                                            alpha:0.9];
 }
 
 - (BOOL)tabBarController:(RDVTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
