@@ -505,45 +505,17 @@
 			name = ProgressView;
 			sourceTree = "<group>";
 		};
-		3E5815DC1FB03C7D00E93520 /* AllViewController */ = {
+		3E5815DC1FB03C7D00E93520 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3E2F25291FB93DE100E79C23 /* LaunchScreenViewController.h */,
-				3E2F252A1FB93DE100E79C23 /* LaunchScreenViewController.m */,
-				3E63253D1FA6C17C00F14462 /* LoginViewController.h */,
-				3E63253E1FA6C17C00F14462 /* LoginViewController.m */,
-				3E5815DD1FB0612500E93520 /* ChangePasswordViewController.h */,
-				3E5815DE1FB0612500E93520 /* ChangePasswordViewController.m */,
-				3E43ACEC1FAACFC200924616 /* MainViewController.h */,
-				3E43ACED1FAACFC200924616 /* MainViewController.m */,
-				3ECE14261FCE9199008DBB7C /* MowerControlViewController.h */,
-				3ECE14271FCE9199008DBB7C /* MowerControlViewController.m */,
-				3E19513F1FC2B5C100B38EAB /* AlertsViewController.h */,
-				3E1951401FC2B5C100B38EAB /* AlertsViewController.m */,
-				3E6325711FA702F700F14462 /* SettingViewController.h */,
-				3E6325721FA702F700F14462 /* SettingViewController.m */,
-				3ED73F511FE2531B007A2AD4 /* anotherSettingViewController.h */,
-				3ED73F521FE2531B007A2AD4 /* anotherSettingViewController.m */,
-				3E5815C11FAFFF2300E93520 /* GeneralsettingTimeViewController.h */,
-				3E5815C21FAFFF2300E93520 /* GeneralsettingTimeViewController.m */,
-				3E5815C41FAFFF3E00E93520 /* GeneralsettingLanguageViewController.h */,
-				3E5815C51FAFFF3E00E93520 /* GeneralsettingLanguageViewController.m */,
-				3E5815C71FAFFF5D00E93520 /* WorkTimeSettingViewController.h */,
-				3E5815C81FAFFF5D00E93520 /* WorkTimeSettingViewController.m */,
-				3E3AD4751FDBC36A00667EDA /* MowerSettingViewController.h */,
-				3E3AD4761FDBC36A00667EDA /* MowerSettingViewController.m */,
-				3E1284C21FF32E510087CBED /* FirmwareViewController.h */,
-				3E1284C31FF32E510087CBED /* FirmwareViewController.m */,
-				3E5815CA1FAFFF6D00E93520 /* PincodeSettingViewController.h */,
-				3E5815CB1FAFFF6D00E93520 /* PincodeSettingViewController.m */,
-				3E5815CD1FAFFF8400E93520 /* InformationViewController.h */,
-				3E5815CE1FAFFF8400E93520 /* InformationViewController.m */,
-				3E5815D61FB0375E00E93520 /* InformationTableViewController.h */,
-				3E5815D71FB0375E00E93520 /* InformationTableViewController.m */,
-				3EE3DC3F1FA8B0750049B8F7 /* RemoterControlViewController.h */,
-				3EE3DC401FA8B0750049B8F7 /* RemoterControlViewController.m */,
+				BB30B10A2044F29E0061B319 /* Login */,
+				BB30B10B2044F2BE0061B319 /* Main */,
+				BB30B10C2044F2F00061B319 /* MowerControl */,
+				BB30B10E2044F3090061B319 /* Setting */,
+				3E29D18F1FA7225000F2B9F4 /* bluetoothControl */,
+				BB30B10D2044F2FF0061B319 /* Abandon */,
 			);
-			name = AllViewController;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		3E5D74F31FCD5817007F8E71 /* Button */ = {
@@ -611,8 +583,7 @@
 				3EA4D62B1FC913F9004D503D /* TabViewController */,
 				3E19513B1FC2B17900B38EAB /* Cell */,
 				3E1E29EE1FC00FD400696EE6 /* OC_Category */,
-				3E5815DC1FB03C7D00E93520 /* AllViewController */,
-				3E29D18F1FA7225000F2B9F4 /* bluetoothControl */,
+				3E5815DC1FB03C7D00E93520 /* ViewControllers */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -721,6 +692,75 @@
 				BB0F914D200C7EFB0060D287 /* WTReTextField.h */,
 			);
 			path = WTReTextField;
+			sourceTree = "<group>";
+		};
+		BB30B10A2044F29E0061B319 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3E2F25291FB93DE100E79C23 /* LaunchScreenViewController.h */,
+				3E2F252A1FB93DE100E79C23 /* LaunchScreenViewController.m */,
+				3E63253D1FA6C17C00F14462 /* LoginViewController.h */,
+				3E63253E1FA6C17C00F14462 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		BB30B10B2044F2BE0061B319 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3E5815CD1FAFFF8400E93520 /* InformationViewController.h */,
+				3E5815CE1FAFFF8400E93520 /* InformationViewController.m */,
+				3E5815D61FB0375E00E93520 /* InformationTableViewController.h */,
+				3E5815D71FB0375E00E93520 /* InformationTableViewController.m */,
+				3E43ACEC1FAACFC200924616 /* MainViewController.h */,
+				3E43ACED1FAACFC200924616 /* MainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		BB30B10C2044F2F00061B319 /* MowerControl */ = {
+			isa = PBXGroup;
+			children = (
+				3ECE14261FCE9199008DBB7C /* MowerControlViewController.h */,
+				3ECE14271FCE9199008DBB7C /* MowerControlViewController.m */,
+				3E19513F1FC2B5C100B38EAB /* AlertsViewController.h */,
+				3E1951401FC2B5C100B38EAB /* AlertsViewController.m */,
+			);
+			name = MowerControl;
+			sourceTree = "<group>";
+		};
+		BB30B10D2044F2FF0061B319 /* Abandon */ = {
+			isa = PBXGroup;
+			children = (
+				3EE3DC3F1FA8B0750049B8F7 /* RemoterControlViewController.h */,
+				3EE3DC401FA8B0750049B8F7 /* RemoterControlViewController.m */,
+				3E5815DD1FB0612500E93520 /* ChangePasswordViewController.h */,
+				3E5815DE1FB0612500E93520 /* ChangePasswordViewController.m */,
+			);
+			name = Abandon;
+			sourceTree = "<group>";
+		};
+		BB30B10E2044F3090061B319 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3E6325711FA702F700F14462 /* SettingViewController.h */,
+				3E6325721FA702F700F14462 /* SettingViewController.m */,
+				3ED73F511FE2531B007A2AD4 /* anotherSettingViewController.h */,
+				3ED73F521FE2531B007A2AD4 /* anotherSettingViewController.m */,
+				3E5815C11FAFFF2300E93520 /* GeneralsettingTimeViewController.h */,
+				3E5815C21FAFFF2300E93520 /* GeneralsettingTimeViewController.m */,
+				3E5815C41FAFFF3E00E93520 /* GeneralsettingLanguageViewController.h */,
+				3E5815C51FAFFF3E00E93520 /* GeneralsettingLanguageViewController.m */,
+				3E5815C71FAFFF5D00E93520 /* WorkTimeSettingViewController.h */,
+				3E5815C81FAFFF5D00E93520 /* WorkTimeSettingViewController.m */,
+				3E3AD4751FDBC36A00667EDA /* MowerSettingViewController.h */,
+				3E3AD4761FDBC36A00667EDA /* MowerSettingViewController.m */,
+				3E1284C21FF32E510087CBED /* FirmwareViewController.h */,
+				3E1284C31FF32E510087CBED /* FirmwareViewController.m */,
+				3E5815CA1FAFFF6D00E93520 /* PincodeSettingViewController.h */,
+				3E5815CB1FAFFF6D00E93520 /* PincodeSettingViewController.m */,
+			);
+			name = Setting;
 			sourceTree = "<group>";
 		};
 		BBB611182019B111007FA3D4 /* icon1 */ = {
