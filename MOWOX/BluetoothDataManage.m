@@ -145,6 +145,9 @@ static BluetoothDataManage *sgetonInstanceData = nil;
 #pragma mark - 处理接收数据
 - (void)handleData:(NSArray *)data
 {
+    /**
+     **用于固件更新
+     **/
     if (![self frameIsRight:data]) {
         //烧固件时判断校验成功or失败
         UInt8 front1 = 0;
@@ -194,6 +197,10 @@ static BluetoothDataManage *sgetonInstanceData = nil;
         }
         return;
     }
+    
+    /**
+     **对割草机的所有功能响应
+     **/
     if (_receiveData) {
         [_receiveData removeAllObjects];
         [_receiveData addObjectsFromArray:data];

@@ -53,7 +53,7 @@
     self.navigationItem.title = LocalString(@"Update Mower's Firmware");
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
-    //获取总包数来判断什么时候结束
+    //获取bin文件的总包数并记录
     NSString *path = [[NSBundle mainBundle] pathForResource:dataName ofType:@"bin"];
     NSData *data = [NSData dataWithContentsOfFile:path];
     long size = [data length];
@@ -62,12 +62,10 @@
     if (![BluetoothDataManage shareInstance].updateFirmware_packageNum) {
         [BluetoothDataManage shareInstance].updateFirmware_packageNum = packageNum;
     }
-    
-    
+
+    //ui设置
     [self viewLayoutSet];
     
-    //设置进度条总数
-    //_progressView.packageNum = packageNum;
     //设置从第1包开始
     [BluetoothDataManage shareInstance].progress_num = 0;
     
@@ -81,7 +79,7 @@
     [BluetoothDataManage shareInstance].updateFirmware_j = 0;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFirmware:) name:@"shaogujian" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateSuccese) name:@"updateSuccese" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFirmware) name:@"recieveUpdateFirmware" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFirmwareWeak) name:@"recieveUpdateFirmware" object:nil];
     
 }
 
@@ -106,11 +104,9 @@
 }
 
 - (void)viewLayoutSet{
-    _progressView = [[ProgressView alloc] init];
-    _progressView.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:_progressView];
-    //_progressView.hidden = YES;
-    
+    /**
+     **进度条设置
+     **/
     _progressViewNew = [[ASProgressPopUpView alloc] init];
     _progressViewNew.backgroundColor = [UIColor lightGrayColor];
     _progressViewNew.font = [UIFont fontWithName:@"Futura-CondensedExtraBold" size:16];
@@ -152,11 +148,6 @@
     
     if([deviceType isEqualToString:@"iPhone"]) {
         //iPhone
-        /*[_progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(ScreenWidth, ScreenWidth));
-            make.centerX.equalTo(self.view.mas_centerX);
-            make.top.equalTo(self.view.mas_top);
-        }];*/
         [_curVerTV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.18));
             make.centerX.equalTo(self.view.mas_centerX);
@@ -188,6 +179,9 @@
 }
 
 #pragma mark - progress view
+/**
+ **进度条的文字设置函数
+ **/
 - (NSString *)progressView:(ASProgressPopUpView *)progressView stringForProgress:(float)progress
 {
     NSString *s;
@@ -209,149 +203,19 @@
 }
 
 #pragma mark - bluetooth control
-
-/*- (void)MowerSetting{
- dispatch_async(dispatch_get_global_queue(0, 0), ^{
- 
- NSString *path = [[NSBundle mainBundle] pathForResource:@"AutoMower1" ofType:@"bin"];
- 
- AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
- 
- NSData *data = [NSData dataWithContentsOfFile:path];
- 
- long size = [data length];
- int packageNum = (int)size / 2048 + 1;
- UInt8 sendBuffer[5];
- sendBuffer[0] = [[NSNumber numberWithUnsignedInteger:0x23] unsignedCharValue];
- sendBuffer[1] = [[NSNumber numberWithUnsignedInteger:packageNum] unsignedCharValue];
- sendBuffer[2] = [[NSNumber numberWithUnsignedInteger:0x23] unsignedCharValue];
- sendBuffer[3] = [[NSNumber numberWithUnsignedInteger:0x00] unsignedCharValue];
- sendBuffer[4] = [[NSNumber numberWithUnsignedInteger:0x08] unsignedCharValue];
- 
- 
- 
- 
- for (int j = 0; j < [data length]; j += 2048) {
- if ((j + 2048) < [data length]) {
- NSString *rangePac = [NSString stringWithFormat:@"%i,%i", j, 2048];
- NSData *subPac = [data subdataWithRange:NSRangeFromString(rangePac)];
- packageNum--;
- sendBuffer[1] = [[NSNumber numberWithUnsignedInteger:packageNum] unsignedCharValue];
- 
- NSData *sendPacHead = [NSData dataWithBytes:sendBuffer length:5];
- NSLog(@"发送一条蓝牙帧： %@",sendPacHead);
- if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
- {
- [appDelegate.currentPeripheral writeValue:sendPacHead forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
- }
- usleep(50 * 1000);
- 
- for (int i = 0; i < [subPac length]; i += 20) {
- 
- // 预加 最大包长度，如果依然小于总数据长度，可以取最大包数据大小
- if ((i + 20) < [subPac length]) {
- NSString *rangeStr = [NSString stringWithFormat:@"%i,%i", i, 20];
- NSData *subData = [subPac subdataWithRange:NSRangeFromString(rangeStr)];
- NSLog(@"发送一条蓝牙帧： %@",subData);
- if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
- {
- [appDelegate.currentPeripheral writeValue:subData forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
- }
- //根据接收模块的处理能力做相应延时
- usleep(50 * 1000);
- }
- else {
- NSString *rangeStr = [NSString stringWithFormat:@"%i,%i", i, (int)([subPac length] - i)];
- NSData *subData = [subPac subdataWithRange:NSRangeFromString(rangeStr)];
- NSLog(@"发送一条蓝牙帧： %@",subData);
- if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
- {
- [appDelegate.currentPeripheral writeValue:subData forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
- }
- usleep(50 * 1000);
- }
- }
- 
- uint8_t crc8 = [self crc8:subPac];
- NSLog(@"%d",crc8);
- UInt8 sendCRCbuff[1];
- sendCRCbuff[0] = [[NSNumber numberWithUnsignedInteger:crc8] unsignedCharValue];
- NSData *sendCRC8 = [NSData dataWithBytes:sendCRCbuff length:1];
- NSLog(@"发送一条蓝牙帧： %@",sendCRC8);
- if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
- {
- [appDelegate.currentPeripheral writeValue:sendCRC8 forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
- }
- usleep(5000 * 1000);
- }else {
- NSString *rangePac = [NSString stringWithFormat:@"%i,%i", j, (int)([data length] - j)];
- NSData *subPac = [data subdataWithRange:NSRangeFromString(rangePac)];
- packageNum--;
- sendBuffer[1] = [[NSNumber numberWithUnsignedInteger:packageNum] unsignedCharValue];
- 
- sendBuffer[3] = [[NSNumber numberWithUnsignedInteger:(int)([data length] - j) % 256] unsignedCharValue];
- sendBuffer[4] = [[NSNumber numberWithUnsignedInteger:(int)([data length] - j) / 256] unsignedCharValue];
- NSData *sendPacHead = [NSData dataWithBytes:sendBuffer length:5];
- NSLog(@"发送一条蓝牙帧： %@",sendPacHead);
- if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
- {
- [appDelegate.currentPeripheral writeValue:sendPacHead forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
- }
- usleep(50 * 1000);
- 
- for (int i = 0; i < [subPac length]; i += 20) {
- 
- // 预加 最大包长度，如果依然小于总数据长度，可以取最大包数据大小
- if ((i + 20) < [subPac length]) {
- NSString *rangeStr = [NSString stringWithFormat:@"%i,%i", i, 20];
- NSData *subData = [subPac subdataWithRange:NSRangeFromString(rangeStr)];
- NSLog(@"发送一条蓝牙帧： %@",subData);
- if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
- {
- [appDelegate.currentPeripheral writeValue:subData forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
- }
- //根据接收模块的处理能力做相应延时
- usleep(50 * 1000);
- }
- else {
- NSString *rangeStr = [NSString stringWithFormat:@"%i,%i", i, (int)([subPac length] - i)];
- NSData *subData = [subPac subdataWithRange:NSRangeFromString(rangeStr)];
- NSLog(@"发送一条蓝牙帧： %@",subData);
- if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
- {
- [appDelegate.currentPeripheral writeValue:subData forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
- }
- usleep(50 * 1000);
- }
- }
- 
- uint8_t crc8 = [self crc8:subPac];
- NSLog(@"%d",crc8);
- UInt8 sendCRCbuff[1];
- sendCRCbuff[0] = [[NSNumber numberWithUnsignedInteger:crc8] unsignedCharValue];
- NSData *sendCRC8 = [NSData dataWithBytes:sendCRCbuff length:1];
- NSLog(@"发送一条蓝牙帧： %@",sendCRC8);
- if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
- {
- [appDelegate.currentPeripheral writeValue:sendCRC8 forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
- }
- 
- }
- 
- }
- });
- 
- }*/
-- (void)updateFirmware{
+/**
+ **接收到割草机启动信号，唤醒发送固件数据主函数并使屏幕常亮
+ **/
+- (void)updateFirmwareWeak{
     [[NSNotificationCenter defaultCenter] postNotificationName:@"shaogujian" object:nil userInfo:nil];
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
 }
 
+/**
+ **发送固件数据的主函数
+ **/
 - (void)updateFirmware:(NSNotification *)notification{
     
-    /*if (self.progressView.hidden == YES) {
-        self.progressView.hidden = NO;
-    }*/
     NSDictionary *dict = [notification userInfo];
     NSString *result = dict[@"result"];
     if ([result isEqualToString:@"success"]) {
@@ -489,6 +353,9 @@
     
 }
 
+/**
+ **crc8检验
+ **/
 - (uint8_t)crc8:(NSData *)data
 {
     uint8_t crc=0;
@@ -511,6 +378,9 @@
     return crc;
 }
 
+/**
+ **更新固件成功
+ **/
 - (void)updateSuccese{
     //self.progressView.hidden = NO;
     //_tipLabel.text = LocalString(@"####Update Success####");
