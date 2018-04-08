@@ -33,8 +33,8 @@
 @implementation SettingViewController
 
 static int version1 = 1;
-static int version2 = 0;
-static int version3 = 0;
+static int version2 = 2;
+static int version3 = 5;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -77,11 +77,11 @@ static int version3 = 0;
 - (void)viewLayoutSet
 {
     if (self.rdv_tabBarController.selectedIndex == 2) {
-        UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-        [backBtn setImage:[UIImage imageNamed:@"返回1"] forState:UIControlStateNormal];
-        [backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-        self.navigationItem.leftBarButtonItem = leftBtn;
+        UIImage *image = [UIImage imageNamed:@"返回1"];
+        [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    }else if (self.rdv_tabBarController.selectedIndex == 1){
+        UIImage *image = [UIImage imageNamed:@"返回1"];
+        [self addLeftBarButtonWithImage:image action:@selector(backAction1)];
     }
     
     _LanguageButton = [UIButton buttonWithTitle:LocalString(@"Language setting") titleColor:[UIColor blackColor]];
@@ -186,6 +186,10 @@ static int version3 = 0;
 - (void)backAction{
     self.rdv_tabBarController.selectedIndex = 1;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"settingVCBack" object:nil userInfo:nil];
+}
+
+- (void)backAction1{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)updateWare{

@@ -76,6 +76,9 @@
 }
 
 - (void)viewLayoutSet{
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    
     _numberLabel1 = [UILabel labelWithFont:[UIFont systemFontOfSize:10] textColor:[UIColor blackColor] text:LocalString(@"4 numbers")];
     _numberLabel2 = [UILabel labelWithFont:[UIFont systemFontOfSize:10] textColor:[UIColor blackColor] text:LocalString(@"4 numbers")];
     _numberLabel3 = [UILabel labelWithFont:[UIFont systemFontOfSize:10] textColor:[UIColor blackColor] text:LocalString(@"4 numbers")];
@@ -220,6 +223,10 @@
         [self.bluetoothDataManage setDataContent: dataContent];
         [self.bluetoothDataManage sendBluetoothFrame];
     }
+}
+
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

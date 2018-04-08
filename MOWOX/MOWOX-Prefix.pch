@@ -18,6 +18,7 @@
 #import "UIButton+Common.h"
 #import "UITextField+Common.h"
 #import "UIColor+ColorChange.h"
+#import "UIViewController+BarButton.h"
 #import "Masonry.h"
 #import "RDVTabBarController.h"
 #import "BluetoothDataManage.h"

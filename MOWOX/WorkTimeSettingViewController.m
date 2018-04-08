@@ -86,6 +86,9 @@ static CGFloat cellHeight = 45.0;
 }
 
 - (void)viewLayoutSet{
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    
     if (!_workDatePickview) {
         _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight * 0.76, ScreenWidth, ScreenHeight * 0.24)];
         //设置工作时间的PickerView
@@ -435,6 +438,10 @@ static CGFloat cellHeight = 45.0;
             [self.bluetoothDataManage sendBluetoothFrame];
         });
     }
+}
+
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

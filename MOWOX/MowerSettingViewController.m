@@ -65,6 +65,9 @@ static int isBoundary = 0;
 }
 
 - (void)viewLayoutSet{
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    
     _rainLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"MOW in the rain")];
     _boundaryLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"Boundary cut")];
     [_rainLabel setLabelStyle1];
@@ -227,5 +230,8 @@ static int isBoundary = 0;
     [self.bluetoothDataManage sendBluetoothFrame];
 }
 
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

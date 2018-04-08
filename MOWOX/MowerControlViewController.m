@@ -31,17 +31,17 @@
     self.view.layer.contents = (id)backImage.CGImage;
     
     //解决navigationitem标题右偏移
-    NSArray *viewControllerArray = [self.navigationController viewControllers];
-    long previousViewControllerIndex = [viewControllerArray indexOfObject:self] - 1;
-    UIViewController *previous;
-    if (previousViewControllerIndex >= 0) {
-        previous = [viewControllerArray objectAtIndex:previousViewControllerIndex];
-        previous.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]
-                                                     initWithTitle:@""
-                                                     style:UIBarButtonItemStylePlain
-                                                     target:self
-                                                     action:nil];
-    }
+//    NSArray *viewControllerArray = [self.navigationController viewControllers];
+//    long previousViewControllerIndex = [viewControllerArray indexOfObject:self] - 1;
+//    UIViewController *previous;
+//    if (previousViewControllerIndex >= 0) {
+//        previous = [viewControllerArray objectAtIndex:previousViewControllerIndex];
+//        previous.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]
+//                                                     initWithTitle:@""
+//                                                     style:UIBarButtonItemStylePlain
+//                                                     target:self
+//                                                     action:nil];
+//    }
     self.navigationItem.title = LocalString(@"Mower Control");
     
     
@@ -73,6 +73,10 @@
 }
 
 - (void)viewLayoutSet{
+    
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    
     _startButton = [UIButton buttonWithTitle:LocalString(@"Start") titleColor:[UIColor blackColor]];
     _stopButton = [UIButton buttonWithTitle:LocalString(@"Stop") titleColor:[UIColor blackColor]];
     _alertsButton = [UIButton buttonWithTitle:LocalString(@"Alerts") titleColor:[UIColor blackColor]];
@@ -187,4 +191,9 @@
     SettingViewController *setVC = [[SettingViewController alloc] init];
     [self.navigationController pushViewController:setVC animated:YES];
 }
+
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

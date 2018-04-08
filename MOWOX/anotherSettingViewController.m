@@ -61,6 +61,9 @@
 
 - (void)viewLayoutSet
 {
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    
     _LanguageButton = [UIButton buttonWithTitle:@"Language setting" titleColor:[UIColor blackColor]];
     _TimeButton = [UIButton buttonWithTitle:@"Time setting" titleColor:[UIColor blackColor]];
     _WorktimeButton = [UIButton buttonWithTitle:@"Working time setting" titleColor:[UIColor blackColor]];
@@ -148,6 +151,10 @@
 - (void)mowerSet{
     MowerSettingViewController *VC = [[MowerSettingViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
+}
+
+- (void)backAction{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

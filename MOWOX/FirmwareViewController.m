@@ -33,6 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
     UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
@@ -104,6 +106,9 @@
 }
 
 - (void)viewLayoutSet{
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    
     /**
      **进度条设置
      **/
@@ -116,7 +121,7 @@
     [self.view addSubview:_progressViewNew];
     
     _curVerTV = [[UITextView alloc] init];
-    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d\n%@\n V1.0.1\n",LocalString(@"Your mower's firmware version:"),[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest mower's firmware version:")];
+    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d\n%@\n V1.2.5\n",LocalString(@"Your mower's firmware version:"),[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest mower's firmware version:")];
     _curVerTV.font = [UIFont fontWithName:@"Arial" size:17];
     _curVerTV.backgroundColor = [UIColor clearColor];
     _curVerTV.autocapitalizationType = UITextAutocapitalizationTypeSentences;
@@ -389,6 +394,10 @@
     [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
     _progressViewNew.progress = 1.0;
     [BluetoothDataManage shareInstance].progress_num = 0;
+}
+
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

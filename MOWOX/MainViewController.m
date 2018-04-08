@@ -104,11 +104,9 @@
     //self.navigationController.navigationBar.translucent = YES;
     
     self.navigationItem.title = LocalString(@"Mower status");
-    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [backBtn setImage:[UIImage imageNamed:@"返回1"] forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationItem.leftBarButtonItem = leftBtn;
+    
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
 
     //判断蓝牙是否连接
     self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];

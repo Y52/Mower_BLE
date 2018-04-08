@@ -88,6 +88,9 @@
 }
 
 - (void)viewLayoutSet{
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    
     _datePickerView = [[UIDatePicker alloc] init];
     _timePickerView = [[UIDatePicker alloc] init];
     _datePickerView.datePickerMode = UIDatePickerModeDate;
@@ -220,6 +223,10 @@
     [self.bluetoothDataManage setDataType:0x02];
     [self.bluetoothDataManage setDataContent: dataContent];
     [self.bluetoothDataManage sendBluetoothFrame];
+}
+
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

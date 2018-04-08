@@ -65,6 +65,9 @@
 }
 
 - (void)viewLayoutSet{
+    UIImage *image = [UIImage imageNamed:@"返回1"];
+    [self addLeftBarButtonWithImage:image action:@selector(backAction)];
+    
     _languagePicker = [[UIPickerView alloc] init];
     /*self.languageArray = [NSMutableArray arrayWithArray:@[NSLocalizedString(@"English", nil),
                                                           NSLocalizedString(@"Polski", nil),NSLocalizedString(@"Dansk", nil),NSLocalizedString(@"Finnish", nil),NSLocalizedString(@"Czech", nil),NSLocalizedString(@"Hungarian", nil),NSLocalizedString(@"Slovenian", nil),NSLocalizedString(@"Polish", nil),NSLocalizedString(@"Russian", nil),NSLocalizedString(@"France", nil),NSLocalizedString(@"Japanese", nil)]];*/
@@ -205,5 +208,8 @@
     
 }
 
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end
