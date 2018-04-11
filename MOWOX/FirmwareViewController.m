@@ -120,6 +120,7 @@
     _progressViewNew.dataSource = self;
     [self.view addSubview:_progressViewNew];
     
+    //curVerTextView
     _curVerTV = [[UITextView alloc] init];
     _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d\n%@\n V1.2.5\n",LocalString(@"Your mower's firmware version:"),[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest mower's firmware version:")];
     _curVerTV.font = [UIFont fontWithName:@"Arial" size:17];
@@ -132,7 +133,7 @@
     
     _tipLabel = [[UILabel alloc] init];
     _tipLabel.font = [UIFont systemFontOfSize:17.0];
-    _tipLabel.text = LocalString(@"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating.");
+    _tipLabel.text = LocalString(@"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start.");
     _tipLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _tipLabel.numberOfLines = 0;
     _tipLabel.textAlignment = NSTextAlignmentCenter;
@@ -148,6 +149,9 @@
     _activityIndicatorView.backgroundColor = [UIColor grayColor];
     _activityIndicatorView.hidesWhenStopped = YES;
     [self.view addSubview:_activityIndicatorView];
+    
+    UIImageView *tipImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"updateFirmwareTip"]];
+    [self.view addSubview:tipImage];
     
     NSString *deviceType = [UIDevice currentDevice].model;
     
@@ -166,15 +170,20 @@
             make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01);
         }];
     }
+    [tipImage mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(ScreenWidth, ScreenHeight * 0.3));
+        make.top.equalTo(self.curVerTV.mas_bottom);
+        make.centerX.equalTo(self.view.mas_centerX);
+    }];
     [_tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.15));
         make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.curVerTV.mas_bottom);
+        make.top.equalTo(tipImage.mas_bottom);
     }];
     [_progressViewNew mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, 5.0));
         make.centerX.equalTo(self.view.mas_centerX);
-        make.centerY.equalTo(self.view.mas_centerY);
+        make.top.equalTo(self.tipLabel.mas_bottom).offset(ScreenHeight * 0.1);
     }];
     [_activityIndicatorView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(60, 60));

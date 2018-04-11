@@ -139,6 +139,7 @@
 		BB37DA402043B7FC0078504A /* B3_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3D2043B7FB0078504A /* B3_50@2x.png */; };
 		BB37DA412043B7FC0078504A /* B1_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3E2043B7FC0078504A /* B1_50@2x.png */; };
 		BB37DA422043B7FC0078504A /* B2_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3F2043B7FC0078504A /* B2_50@2x.png */; };
+		BB5C49CB207D9B28007B2508 /* updateFirmwareTip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */; };
 		BB64B9DB204FD5A5006531E5 /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB64B9DA204FD5A5006531E5 /* AutoMower.bin */; };
 		BBB611212019B111007FA3D4 /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611192019B111007FA3D4 /* 87x87@3x.png */; };
 		BBB611222019B111007FA3D4 /* 180x180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111A2019B111007FA3D4 /* 180x180@3x.png */; };
@@ -347,6 +348,7 @@
 		BB37DA3D2043B7FB0078504A /* B3_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B3_50@2x.png"; path = "image/B3_50@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB37DA3E2043B7FC0078504A /* B1_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B1_50@2x.png"; path = "image/B1_50@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB37DA3F2043B7FC0078504A /* B2_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B2_50@2x.png"; path = "image/B2_50@2x.png"; sourceTree = SOURCE_ROOT; };
+		BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "updateFirmwareTip@2x.png"; path = "image/updateFirmwareTip@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB64B9DA204FD5A5006531E5 /* AutoMower.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower.bin; sourceTree = "<group>"; };
 		BBB611192019B111007FA3D4 /* 87x87@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "87x87@3x.png"; sourceTree = "<group>"; };
 		BBB6111A2019B111007FA3D4 /* 180x180@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180x180@3x.png"; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 		3E14802B1FCFE50900FA8A2D /* image */ = {
 			isa = PBXGroup;
 			children = (
+				BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */,
 				BBB611182019B111007FA3D4 /* icon1 */,
 				3E11A37C1FD90AAD000CAA08 /* icon */,
 				3E14807D1FD00C0700FA8A2D /* A2@2x.png */,
@@ -953,6 +956,7 @@
 				3EF771A81FAAA38A00EC016A /* home@1x.png in Resources */,
 				3E43AD331FAAF4E100924616 /* 电量3@1x.png in Resources */,
 				BBB611232019B111007FA3D4 /* 40x40@2x.png in Resources */,
+				BB5C49CB207D9B28007B2508 /* updateFirmwareTip@2x.png in Resources */,
 				3E14806E1FCFFA8C00FA8A2D /* 电量4-2@1x.png in Resources */,
 				BBB6112B2019B1F3007FA3D4 /* 60x60@2x.png in Resources */,
 				3E14807A1FD0042D00FA8A2D /* A6@1x.png in Resources */,
