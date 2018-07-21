@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GeneralsettingTimeViewController : UIViewController
+@interface GeneralsettingTimeViewController : BaseViewController
 
 @end

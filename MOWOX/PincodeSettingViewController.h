@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PincodeSettingViewController : UIViewController
+@interface PincodeSettingViewController : BaseViewController
 
 @end

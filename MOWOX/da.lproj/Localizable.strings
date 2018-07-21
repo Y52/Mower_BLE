@@ -76,3 +76,6 @@
 "confail" = "forbindelsen mislykkedes";
 "disconnect" = "koble fra";
 
+"Please check if Bluetooth is turned on in the control center" = "Kontrollér, om Bluetooth er tændt i kontrolcentret";
+"Confirm" = "bekræfte";
+"Set pincode wrong" = "Indstil PIN-kode forkert";

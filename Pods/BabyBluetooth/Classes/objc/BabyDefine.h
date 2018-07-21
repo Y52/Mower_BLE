@@ -20,7 +20,7 @@
 #define KBABY_IS_SHOW_LOG 1
 
 //CBcentralManager等待设备打开次数
-# define KBABY_CENTRAL_MANAGER_INIT_WAIT_TIMES 5
+# define KBABY_CENTRAL_MANAGER_INIT_WAIT_TIMES 3
 
 //CBcentralManager等待设备打开间隔时间
 # define KBABY_CENTRAL_MANAGER_INIT_WAIT_SECOND 2.0

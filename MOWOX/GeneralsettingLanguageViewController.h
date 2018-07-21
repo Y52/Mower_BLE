@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GeneralsettingLanguageViewController : UIViewController
+@interface GeneralsettingLanguageViewController : BaseViewController
 
 @end

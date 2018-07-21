@@ -9,7 +9,7 @@
 
 
 #import "BabyBluetooth.h"
-
+#import <MBProgressHUD/MBProgressHUD.h>
 
 
 @implementation BabyBluetooth{
@@ -400,6 +400,12 @@
     CENTRAL_MANAGER_INIT_WAIT_TIMES ++;
     if (CENTRAL_MANAGER_INIT_WAIT_TIMES >= KBABY_CENTRAL_MANAGER_INIT_WAIT_TIMES ) {
         BabyLog(@">>> 第%d次等待CBCentralManager 打开任然失败，请检查你蓝牙使用权限或检查设备问题。",CENTRAL_MANAGER_INIT_WAIT_TIMES);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:NSLocalizedString(@"Please check if Bluetooth is turned on in the control center",nil) delegate:self cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"Confirm",nil), nil];
+            [alert show];
+        });
+        
         return;
         //[NSException raise:@"CBCentralManager打开异常" format:@"尝试等待打开CBCentralManager5次，但任未能打开"];
     }

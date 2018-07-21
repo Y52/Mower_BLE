@@ -17,6 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+#if RobotMower
+    NSLog(@"RobotMower");
+#elif MOWOXROBOT
+    NSLog(@"MOWOXROBOT");
+#endif
+    
     [NSThread sleepForTimeInterval:2.0];//设置启动页面时间
     
     [self customizeInterface];
@@ -63,7 +70,18 @@
 
 - (void)customizeInterface {
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+#if RobotMower
     [navigationBarAppearance setBackgroundImage:[UIImage imageNamed:@"loginView"] forBarMetrics:UIBarMetricsDefault];
+    navigationBarAppearance.translucent = YES;
+#elif MOWOXROBOT
+    //navigationBarAppearance.barTintColor = [UIColor clearColor];
+    navigationBarAppearance.translucent = YES;
+    
+    //设置导航栏背景图片为一个空的image，这样就透明了
+    [navigationBarAppearance setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    //去掉透明后导航栏下边的黑边
+    [navigationBarAppearance setShadowImage:[[UIImage alloc] init]];
+#endif
     [navigationBarAppearance setTintColor:[UIColor whiteColor]];//返回按钮的箭头颜色
     //[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
     NSDictionary *textAttributes = @{

@@ -18,7 +18,8 @@ typedef enum {
     getWorkingTime2,
     getMowerSetting,
     updateFirmware,
-    getPinCode
+    getPinCode,
+    setPincodeResponse
 }FrameType;
 static dispatch_queue_t queue;
 

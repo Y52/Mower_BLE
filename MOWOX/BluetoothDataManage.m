@@ -321,6 +321,19 @@ static BluetoothDataManage *sgetonInstanceData = nil;
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
             [defaults setInteger:_pincode forKey:@"pincode"];
             [defaults synchronize];
+        }else if (self.frameType == setPincodeResponse){
+            if ([_receiveData[0] intValue] == 1) {
+                [NSObject showHudTipStr:LocalString(@"Set pincode wrong")];
+            }else{
+                NSNumber *thousand = _receiveData[4];
+                NSNumber *hungred = _receiveData[5];
+                NSNumber *ten = _receiveData[6];
+                NSNumber *one = _receiveData[7];
+                _pincode = [thousand intValue] * 1000 +[hungred intValue] * 100 + [ten intValue] * 10 + [one intValue];
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                [defaults setInteger:_pincode forKey:@"pincode"];
+                [defaults synchronize];
+            }
         }
     }
 }
@@ -347,7 +360,7 @@ static BluetoothDataManage *sgetonInstanceData = nil;
     unsigned char dataType;
     
     unsigned char type[LEN]= {
-        0x80,0x82,0x83,0x84,0x85,0x87,0x89,0x8a,0x8c
+        0x80,0x82,0x83,0x84,0x85,0x87,0x89,0x8a,0x8c,0x86
     };
     
     dataType = [data[3] unsignedIntegerValue];
@@ -391,6 +404,10 @@ static BluetoothDataManage *sgetonInstanceData = nil;
                     break;
                 case 8:
                     returnVal = getPinCode;
+                    break;
+                
+                case 9:
+                    returnVal = setPincodeResponse;
                     break;
                     
                 default:

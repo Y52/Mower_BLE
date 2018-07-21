@@ -22,10 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
-    self.view.layer.contents = (id)backImage.CGImage;
-    self.navigationItem.title = LocalString(@"Information");
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
 
@@ -54,7 +50,7 @@
         //iPhone
         [_infoView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth, 380));
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44 + 64);
             make.left.equalTo(self.view.mas_left);
         }];
     }else if([deviceType isEqualToString:@"iPad"]) {

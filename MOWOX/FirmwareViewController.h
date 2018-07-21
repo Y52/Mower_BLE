@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirmwareViewController : UIViewController
+@interface FirmwareViewController : BaseViewController
 
 @end

@@ -71,10 +71,15 @@
     [self.tabBar setContentEdgeInsets:UIEdgeInsetsMake(kSafeArea_Bottom / 2, 0, 0, 0)];
     self.tabBar.translucent = YES;
     //self.tabBar.backgroundView.backgroundColor = kColorNavBG;
+#if RobotMower
     self.tabBar.backgroundView.backgroundColor = [UIColor colorWithRed:245/255.0
                                                             green:245/255.0
                                                              blue:245/255.0
                                                             alpha:0.9];
+#elif MOWOXROBOT
+    self.tabBar.backgroundView.backgroundColor = [UIColor whiteColor];
+    self.tabBar.backgroundView.alpha = 0.3;
+#endif
 }
 
 - (BOOL)tabBarController:(RDVTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{

@@ -38,10 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
-    self.view.layer.contents = (id)backImage.CGImage;
-    
+        
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
     [self viewLayoutSet];
@@ -168,14 +165,14 @@
         [_signalButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
             make.centerX.equalTo(self.view.mas_centerX);
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.025 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.025 + 44 + 64);
         }];
     }else if([deviceType isEqualToString:@"iPad"]) {
         //iPad
         [_signalButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
             make.centerX.equalTo(self.view.mas_centerX);
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44 + 64);
         }];
     }
     

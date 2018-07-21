@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #define kCellIdentifier_WorkTime @"WorkTimeCell"
 
-@interface WorkTimeSettingViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface WorkTimeSettingViewController : BaseViewController <UITableViewDataSource,UITableViewDelegate>
 
 @end

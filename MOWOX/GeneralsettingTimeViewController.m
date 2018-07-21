@@ -38,8 +38,6 @@
     [super viewDidLoad];
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
-    UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
-    self.view.layer.contents = (id)backImage.CGImage;
     self.navigationItem.title = LocalString(@"Time setting");
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
@@ -117,14 +115,14 @@
         //iPhone
         [_dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(60, ScreenHeight * 0.066));
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05 + 44 + 64);
             make.centerX.equalTo(self.view.mas_centerX);
         }];
     }else if([deviceType isEqualToString:@"iPad"]) {
         //iPad
         [_dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(120, ScreenHeight * 0.066));
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44 + 64);
             make.centerX.equalTo(self.view.mas_centerX);
         }];
     }

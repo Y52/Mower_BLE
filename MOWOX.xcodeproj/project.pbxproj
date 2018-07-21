@@ -96,7 +96,6 @@
 		3E63252A1FA6BC5F00F14462 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6325291FA6BC5F00F14462 /* AppDelegate.m */; };
 		3E63252D1FA6BC5F00F14462 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E63252C1FA6BC5F00F14462 /* ViewController.m */; };
 		3E6325301FA6BC5F00F14462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E63252E1FA6BC5F00F14462 /* Main.storyboard */; };
-		3E6325351FA6BC5F00F14462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325331FA6BC5F00F14462 /* LaunchScreen.storyboard */; };
 		3E63253F1FA6C17C00F14462 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E63253E1FA6C17C00F14462 /* LoginViewController.m */; };
 		3E6325541FA6D09400F14462 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325531FA6D09400F14462 /* background@2x.png */; };
 		3E6325571FA6D8F000F14462 /* 未选中@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325551FA6D8F000F14462 /* 未选中@1x.png */; };
@@ -139,8 +138,184 @@
 		BB37DA402043B7FC0078504A /* B3_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3D2043B7FB0078504A /* B3_50@2x.png */; };
 		BB37DA412043B7FC0078504A /* B1_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3E2043B7FC0078504A /* B1_50@2x.png */; };
 		BB37DA422043B7FC0078504A /* B2_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3F2043B7FC0078504A /* B2_50@2x.png */; };
+		BB479EF4208D6F9200B19D6A /* 60*60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EE9208D6F9200B19D6A /* 60*60@2x.png */; };
+		BB479EF5208D6F9200B19D6A /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEA208D6F9200B19D6A /* 1024.png */; };
+		BB479EF6208D6F9200B19D6A /* 58*58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEB208D6F9200B19D6A /* 58*58@2x.png */; };
+		BB479EF7208D6F9200B19D6A /* 40*40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEC208D6F9200B19D6A /* 40*40@2x.png */; };
+		BB479EF8208D6F9200B19D6A /* 60*60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EED208D6F9200B19D6A /* 60*60@3x.png */; };
+		BB479EF9208D6F9200B19D6A /* 120*120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEE208D6F9200B19D6A /* 120*120@3x.png */; };
+		BB479EFA208D6F9200B19D6A /* 180*180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEF208D6F9200B19D6A /* 180*180@3x.png */; };
+		BB479EFB208D6F9200B19D6A /* 120*120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EF0208D6F9200B19D6A /* 120*120@2x.png */; };
+		BB479EFC208D6F9200B19D6A /* 80*80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EF1208D6F9200B19D6A /* 80*80@2x.png */; };
+		BB479EFD208D6F9200B19D6A /* 1024*1024@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EF2208D6F9200B19D6A /* 1024*1024@1x.png */; };
+		BB479EFE208D6F9200B19D6A /* 87*87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EF3208D6F9200B19D6A /* 87*87@3x.png */; };
+		BB579112210198EA005E3DFD /* App_BG_1@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB57910E210198EA005E3DFD /* App_BG_1@1x.png */; };
+		BB579113210198EA005E3DFD /* App_BG_4@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB57910F210198EA005E3DFD /* App_BG_4@1x.png */; };
+		BB579114210198EA005E3DFD /* App_BG_3@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB579110210198EA005E3DFD /* App_BG_3@1x.png */; };
+		BB579115210198EA005E3DFD /* App_BG_2-2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB579111210198EA005E3DFD /* App_BG_2-2@1x.png */; };
+		BB5791192101B9DE005E3DFD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5791182101B9DE005E3DFD /* BaseViewController.m */; };
+		BB57911A2101B9DE005E3DFD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5791182101B9DE005E3DFD /* BaseViewController.m */; };
 		BB5C49CB207D9B28007B2508 /* updateFirmwareTip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */; };
 		BB64B9DB204FD5A5006531E5 /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB64B9DA204FD5A5006531E5 /* AutoMower.bin */; };
+		BBA445AA2101713000D3B30E /* WTReTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F914B200C7EFB0060D287 /* WTReTextField.m */; };
+		BBA445AB2101713000D3B30E /* InformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5815D71FB0375E00E93520 /* InformationTableViewController.m */; };
+		BBA445AC2101713000D3B30E /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F252A1FB93DE100E79C23 /* LaunchScreenViewController.m */; };
+		BBA445AD2101713000D3B30E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E43ACED1FAACFC200924616 /* MainViewController.m */; };
+		BBA445AE2101713000D3B30E /* anotherSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED73F521FE2531B007A2AD4 /* anotherSettingViewController.m */; };
+		BBA445AF2101713000D3B30E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E63253E1FA6C17C00F14462 /* LoginViewController.m */; };
+		BBA445B02101713000D3B30E /* LMPopInputPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F9143200C7E370060D287 /* LMPopInputPasswordView.m */; };
+		BBA445B12101713000D3B30E /* MowerSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD4761FDBC36A00667EDA /* MowerSettingViewController.m */; };
+		BBA445B22101713000D3B30E /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E29F01FC0101900696EE6 /* NSObject+Common.m */; };
+		BBA445B32101713000D3B30E /* UIButton+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D74F81FCD5E25007F8E71 /* UIButton+Common.m */; };
+		BBA445B42101713000D3B30E /* BluetoothDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3DC3D1FA8A0BF0049B8F7 /* BluetoothDataManage.m */; };
+		BBA445B52101713000D3B30E /* FirmwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1284C31FF32E510087CBED /* FirmwareViewController.m */; };
+		BBA445B62101713000D3B30E /* WorkTimeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5815C81FAFFF5D00E93520 /* WorkTimeSettingViewController.m */; };
+		BBA445B72101713000D3B30E /* GeneralsettingTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5815C21FAFFF2300E93520 /* GeneralsettingTimeViewController.m */; };
+		BBA445B82101713000D3B30E /* MowerControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE14271FCE9199008DBB7C /* MowerControlViewController.m */; };
+		BBA445B92101713000D3B30E /* batteryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D74F11FCD580C007F8E71 /* batteryButton.m */; };
+		BBA445BA2101713000D3B30E /* WTReParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F914C200C7EFB0060D287 /* WTReParser.m */; };
+		BBA445BB2101713000D3B30E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E63252C1FA6BC5F00F14462 /* ViewController.m */; };
+		BBA445BC2101713000D3B30E /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5815DE1FB0612500E93520 /* ChangePasswordViewController.m */; };
+		BBA445BD2101713000D3B30E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6325291FA6BC5F00F14462 /* AppDelegate.m */; };
+		BBA445BE2101713000D3B30E /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29D1941FA75D3E00F2B9F4 /* BaseNavigationViewController.m */; };
+		BBA445BF2101713000D3B30E /* UITextField+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1480291FCFA7F600FA8A2D /* UITextField+Common.m */; };
+		BBA445C02101713000D3B30E /* inputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC5FC9E1FD52C9600F1CB7F /* inputTextField.m */; };
+		BBA445C12101713000D3B30E /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29D1911FA7226B00F2B9F4 /* BaseTableViewController.m */; };
+		BBA445C22101713000D3B30E /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFD388F2079ACB500D02ACD /* UIViewController+BarButton.m */; };
+		BBA445C32101713000D3B30E /* GeneralsettingLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5815C51FAFFF3E00E93520 /* GeneralsettingLanguageViewController.m */; };
+		BBA445C42101713000D3B30E /* ViewAlertsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19513D1FC2B1B800B38EAB /* ViewAlertsCell.m */; };
+		BBA445C52101713000D3B30E /* BlueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29D18D1FA721DE00F2B9F4 /* BlueTableViewController.m */; };
+		BBA445C62101713000D3B30E /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5815CE1FAFFF8400E93520 /* InformationViewController.m */; };
+		BBA445C72101713000D3B30E /* PincodeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5815CB1FAFFF6D00E93520 /* PincodeSettingViewController.m */; };
+		BBA445C82101713000D3B30E /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3613FA1FF490D6003BA11B /* ProgressView.m */; };
+		BBA445C92101713000D3B30E /* RemoterControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3DC401FA8B0750049B8F7 /* RemoterControlViewController.m */; };
+		BBA445CA2101713000D3B30E /* connectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D74F51FCD583A007F8E71 /* connectButton.m */; };
+		BBA445CB2101713000D3B30E /* AlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1951401FC2B5C100B38EAB /* AlertsViewController.m */; };
+		BBA445CC2101713000D3B30E /* WorktimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0D5ED71FDE1D1A0035857F /* WorktimeCell.m */; };
+		BBA445CD2101713000D3B30E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6325721FA702F700F14462 /* SettingViewController.m */; };
+		BBA445CE2101713000D3B30E /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D74EE1FCD4E19007F8E71 /* UILabel+Common.m */; };
+		BBA445CF2101713000D3B30E /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0DA4472012E99100ECD8CF /* UIColor+ColorChange.m */; };
+		BBA445D02101713000D3B30E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6325261FA6BC5F00F14462 /* main.m */; };
+		BBA445D12101713000D3B30E /* RDVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4D62D1FC91435004D503D /* RDVViewController.m */; };
+		BBA445D32101713000D3B30E /* libPods-MOWOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FFC2AA47A8A70D5B1A5F1F /* libPods-MOWOX.a */; };
+		BBA445D52101713000D3B30E /* A6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E14804B1FCFEF1400FA8A2D /* A6@2x.png */; };
+		BBA445D62101713000D3B30E /* 返回绿色@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3561FD1FB4560D00135503 /* 返回绿色@1x.png */; };
+		BBA445D72101713000D3B30E /* 电量2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43AD2D1FAAF4E100924616 /* 电量2@1x.png */; };
+		BBA445D82101713000D3B30E /* icon-150@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A37E1FD90AAD000CAA08 /* icon-150@3x.png */; };
+		BBA445D92101713000D3B30E /* 120x120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111D2019B111007FA3D4 /* 120x120@2x.png */; };
+		BBA445DA2101713000D3B30E /* 机器人APP1+2(1)-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480331FCFEF1400FA8A2D /* 机器人APP1+2(1)-3.png */; };
+		BBA445DB2101713000D3B30E /* launchImage1_5.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45E2019C71F00423650 /* launchImage1_5.5@2x.png */; };
+		BBA445DE2101713000D3B30E /* 右转@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE3DC441FA8B2BE0049B8F7 /* 右转@2x.png */; };
+		BBA445DF2101713000D3B30E /* 180*180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEF208D6F9200B19D6A /* 180*180@3x.png */; };
+		BBA445E02101713000D3B30E /* 40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A3801FD90AAD000CAA08 /* 40@2x.png */; };
+		BBA445E12101713000D3B30E /* data.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3E5FE0421FEDF5BC004B234D /* data.bin */; };
+		BBA445E22101713000D3B30E /* findBluetooth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F25341FB949C200E79C23 /* findBluetooth@2x.png */; };
+		BBA445E32101713000D3B30E /* 1024x1024@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111C2019B111007FA3D4 /* 1024x1024@1x.png */; };
+		BBA445E42101713000D3B30E /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325531FA6D09400F14462 /* background@2x.png */; };
+		BBA445E52101713000D3B30E /* Generalsetting@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5815BD1FAFF72300E93520 /* Generalsetting@1x.png */; };
+		BBA445E62101713000D3B30E /* A2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480461FCFEF1400FA8A2D /* A2@3x.png */; };
+		BBA445E72101713000D3B30E /* Imformation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F252D1FB946EE00E79C23 /* Imformation@2x.png */; };
+		BBA445E82101713000D3B30E /* A3_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AE2015944D00E5FD94 /* A3_50@2x.png */; };
+		BBA445E92101713000D3B30E /* 60*60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EE9208D6F9200B19D6A /* 60*60@2x.png */; };
+		BBA445EA2101713000D3B30E /* B3_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3D2043B7FB0078504A /* B3_50@2x.png */; };
+		BBA445EB2101713000D3B30E /* loginView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480351FCFEF1400FA8A2D /* loginView@2x.png */; };
+		BBA445EC2101713000D3B30E /* A2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E14807D1FD00C0700FA8A2D /* A2@2x.png */; };
+		BBA445ED2101713000D3B30E /* 60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111F2019B111007FA3D4 /* 60x60@3x.png */; };
+		BBA445EE2101713000D3B30E /* icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A3821FD90AAD000CAA08 /* icon-60.png */; };
+		BBA445EF2101713000D3B30E /* 87*87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EF3208D6F9200B19D6A /* 87*87@3x.png */; };
+		BBA445F02101713000D3B30E /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A37F1FD90AAD000CAA08 /* icon-60@3x.png */; };
+		BBA445F12101713000D3B30E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB1299302021A79500285201 /* Localizable.strings */; };
+		BBA445F22101713000D3B30E /* B2_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3F2043B7FC0078504A /* B2_50@2x.png */; };
+		BBA445F32101713000D3B30E /* 蓝牙图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC200A11FE2839F0005F15A /* 蓝牙图标@2x.png */; };
+		BBA445F42101713000D3B30E /* A3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480471FCFEF1400FA8A2D /* A3@3x.png */; };
+		BBA445F52101713000D3B30E /* parkimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACD71FAAB39C00924616 /* parkimage@2x.png */; };
+		BBA445F62101713000D3B30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E63252E1FA6BC5F00F14462 /* Main.storyboard */; };
+		BBA445F72101713000D3B30E /* bluetooth@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACD31FAAB39C00924616 /* bluetooth@1x.png */; };
+		BBA445F82101713000D3B30E /* xianbuyong.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E14802D1FCFEF1400FA8A2D /* xianbuyong.png */; };
+		BBA445F92101713000D3B30E /* Pinsetting@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACD81FAAB39C00924616 /* Pinsetting@1x.png */; };
+		BBA445FA2101713000D3B30E /* right@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF771A51FAAA38A00EC016A /* right@1x.png */; };
+		BBA445FB2101713000D3B30E /* 120*120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEE208D6F9200B19D6A /* 120*120@3x.png */; };
+		BBA445FC2101713000D3B30E /* 80@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A3831FD90AAD000CAA08 /* 80@3x.png */; };
+		BBA445FD2101713000D3B30E /* WorkingtimeSetting@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5815BE1FAFF72300E93520 /* WorkingtimeSetting@1x.png */; };
+		BBA445FE2101713000D3B30E /* 80x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4592019B84C00423650 /* 80x80@2x.png */; };
+		BBA445FF2101713000D3B30E /* backgroundro@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA7AE041FB14B87001FB406 /* backgroundro@1x.png */; };
+		BBA446002101713000D3B30E /* launchImage1_4.7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45F2019C71F00423650 /* launchImage1_4.7@2x.png */; };
+		BBA446012101713000D3B30E /* backgroundco@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA7AE031FB14B87001FB406 /* backgroundco@2x.png */; };
+		BBA446022101713000D3B30E /* left@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF771A41FAAA38A00EC016A /* left@1x.png */; };
+		BBA446032101713000D3B30E /* 蓝牙连接@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480491FCFEF1400FA8A2D /* 蓝牙连接@2x.png */; };
+		BBA446042101713000D3B30E /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEA208D6F9200B19D6A /* 1024.png */; };
+		BBA446052101713000D3B30E /* 电量3-2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480681FCFFA8C00FA8A2D /* 电量3-2@1x.png */; };
+		BBA446062101713000D3B30E /* 180x180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111A2019B111007FA3D4 /* 180x180@3x.png */; };
+		BBA446072101713000D3B30E /* login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325591FA6DB7900F14462 /* login@2x.png */; };
+		BBA446082101713000D3B30E /* 60*60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EED208D6F9200B19D6A /* 60*60@3x.png */; };
+		BBA446092101713000D3B30E /* bluetoothImage@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3561FE1FB4560D00135503 /* bluetoothImage@1x.png */; };
+		BBA4460A2101713000D3B30E /* wifi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E22E2A31FA9A7B8000BC792 /* wifi@2x.png */; };
+		BBA4460B2101713000D3B30E /* A1_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AD2015944C00E5FD94 /* A1_50@2x.png */; };
+		BBA4460C2101713000D3B30E /* 蓝牙@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEF5041FADA83E00FA7850 /* 蓝牙@1x.png */; };
+		BBA4460D2101713000D3B30E /* launchImage1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45C2019C55100423650 /* launchImage1@2x.png */; };
+		BBA4460E2101713000D3B30E /* 未选中@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325551FA6D8F000F14462 /* 未选中@1x.png */; };
+		BBA4460F2101713000D3B30E /* 倒三角@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43AD2A1FAAED0500924616 /* 倒三角@1x.png */; };
+		BBA446102101713000D3B30E /* 选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E63255C1FA6F8C500F14462 /* 选中@2x.png */; };
+		BBA446112101713000D3B30E /* 80*80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EF1208D6F9200B19D6A /* 80*80@2x.png */; };
+		BBA446122101713000D3B30E /* 返回1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC2009D1FE277620005F15A /* 返回1@2x.png */; };
+		BBA446132101713000D3B30E /* 后退@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE3DC421FA8B2BE0049B8F7 /* 后退@2x.png */; };
+		BBA446142101713000D3B30E /* 割草机@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2454261FBD224E00095FBE /* 割草机@3x.png */; };
+		BBA446152101713000D3B30E /* 87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A3841FD90AAD000CAA08 /* 87@3x.png */; };
+		BBA446162101713000D3B30E /* 120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A37D1FD90AAD000CAA08 /* 120@3x.png */; };
+		BBA446172101713000D3B30E /* A3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E14807E1FD00C0700FA8A2D /* A3@2x.png */; };
+		BBA446182101713000D3B30E /* down@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF771A21FAAA38A00EC016A /* down@1x.png */; };
+		BBA446192101713000D3B30E /* 40*40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEC208D6F9200B19D6A /* 40*40@2x.png */; };
+		BBA4461A2101713000D3B30E /* background2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACE91FAACA5200924616 /* background2@2x.png */; };
+		BBA4461B2101713000D3B30E /* signal@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACDA1FAAB39C00924616 /* signal@1x.png */; };
+		BBA4461C2101713000D3B30E /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480321FCFEF1400FA8A2D /* launchImage@2x.png */; };
+		BBA4461D2101713000D3B30E /* WorkingtimeSetting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F252F1FB946EE00E79C23 /* WorkingtimeSetting@2x.png */; };
+		BBA4461E2101713000D3B30E /* home@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF771A31FAAA38A00EC016A /* home@1x.png */; };
+		BBA4461F2101713000D3B30E /* 电量3@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43AD2E1FAAF4E100924616 /* 电量3@1x.png */; };
+		BBA446202101713000D3B30E /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111B2019B111007FA3D4 /* 40x40@2x.png */; };
+		BBA446212101713000D3B30E /* 120*120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EF0208D6F9200B19D6A /* 120*120@2x.png */; };
+		BBA446222101713000D3B30E /* updateFirmwareTip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */; };
+		BBA446232101713000D3B30E /* 电量4-2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480691FCFFA8C00FA8A2D /* 电量4-2@1x.png */; };
+		BBA446242101713000D3B30E /* 60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611292019B1F3007FA3D4 /* 60x60@2x.png */; };
+		BBA446252101713000D3B30E /* A6@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480741FD0042D00FA8A2D /* A6@1x.png */; };
+		BBA446262101713000D3B30E /* Generalsetting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F252C1FB946EE00E79C23 /* Generalsetting@2x.png */; };
+		BBA446272101713000D3B30E /* 电量2-2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480671FCFFA8C00FA8A2D /* 电量2-2@1x.png */; };
+		BBA446282101713000D3B30E /* zx_code_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E22E2A41FA9A7B8000BC792 /* zx_code_line@2x.png */; };
+		BBA446292101713000D3B30E /* 选中@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325561FA6D8F000F14462 /* 选中@1x.png */; };
+		BBA4462A2101713000D3B30E /* Back@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5815D21FB0059500E93520 /* Back@1x.png */; };
+		BBA4462B2101713000D3B30E /* 机器人APP1+2(1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480431FCFEF1400FA8A2D /* 机器人APP1+2(1-1.png */; };
+		BBA4462C2101713000D3B30E /* backgroundnew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480751FD0042D00FA8A2D /* backgroundnew@2x.png */; };
+		BBA4462D2101713000D3B30E /* 电量4@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43AD2F1FAAF4E100924616 /* 电量4@1x.png */; };
+		BBA4462E2101713000D3B30E /* whether@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACDB1FAAB39C00924616 /* whether@1x.png */; };
+		BBA4462F2101713000D3B30E /* 未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E63255B1FA6F8C500F14462 /* 未选中@2x.png */; };
+		BBA446302101713000D3B30E /* up@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF771A61FAAA38A00EC016A /* up@1x.png */; };
+		BBA446312101713000D3B30E /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A38D1FD90B46000CAA08 /* icon-60@2x.png */; };
+		BBA446322101713000D3B30E /* A2_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AC2015944C00E5FD94 /* A2_50@2x.png */; };
+		BBA446332101713000D3B30E /* 1024*1024@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EF2208D6F9200B19D6A /* 1024*1024@1x.png */; };
+		BBA446342101713000D3B30E /* 58x58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611202019B111007FA3D4 /* 58x58@2x.png */; };
+		BBA446352101713000D3B30E /* 割草机@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2454241FBD1F1000095FBE /* 割草机@2x.png */; };
+		BBA446362101713000D3B30E /* backview@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACD21FAAB39C00924616 /* backview@1x.png */; };
+		BBA446372101713000D3B30E /* 返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC2009B1FE275710005F15A /* 返回@2x.png */; };
+		BBA446382101713000D3B30E /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611192019B111007FA3D4 /* 87x87@3x.png */; };
+		BBA446392101713000D3B30E /* Pinsetting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F252E1FB946EE00E79C23 /* Pinsetting@2x.png */; };
+		BBA4463A2101713000D3B30E /* 58*58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB479EEB208D6F9200B19D6A /* 58*58@2x.png */; };
+		BBA4463B2101713000D3B30E /* A1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480451FCFEF1400FA8A2D /* A1@3x.png */; };
+		BBA4463C2101713000D3B30E /* 电量1-2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480661FCFFA8C00FA8A2D /* 电量1-2@1x.png */; };
+		BBA4463D2101713000D3B30E /* 前进@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE3DC431FA8B2BE0049B8F7 /* 前进@2x.png */; };
+		BBA4463E2101713000D3B30E /* 58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A3811FD90AAD000CAA08 /* 58@2x.png */; };
+		BBA4463F2101713000D3B30E /* 左转@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE3DC451FA8B2BE0049B8F7 /* 左转@2x.png */; };
+		BBA446402101713000D3B30E /* 电量5@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43AD381FAAF5C600924616 /* 电量5@1x.png */; };
+		BBA446412101713000D3B30E /* 蓝牙连接@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1480731FD0042D00FA8A2D /* 蓝牙连接@1x.png */; };
+		BBA446422101713000D3B30E /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB64B9DA204FD5A5006531E5 /* AutoMower.bin */; };
+		BBA446432101713000D3B30E /* B1_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB37DA3E2043B7FC0078504A /* B1_50@2x.png */; };
+		BBA446442101713000D3B30E /* 电量1@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43AD2C1FAAF4E100924616 /* 电量1@1x.png */; };
+		BBA446452101713000D3B30E /* 电量5-2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E14806A1FCFFA8C00FA8A2D /* 电量5-2@1x.png */; };
+		BBA446462101713000D3B30E /* background1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACE81FAACA5200924616 /* background1@2x.png */; };
+		BBA446472101713000D3B30E /* 120x120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6112A2019B1F3007FA3D4 /* 120x120@3x.png */; };
+		BBA446482101713000D3B30E /* 蓝牙断开@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEF5051FADA83E00FA7850 /* 蓝牙断开@1x.png */; };
+		BBA446492101713000D3B30E /* Back1@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5815D41FB0061D00E93520 /* Back1@1x.png */; };
+		BBA4464A2101713000D3B30E /* imformation@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E43ACD61FAAB39C00924616 /* imformation@1x.png */; };
+		BBA446542101739000D3B30E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBA446522101713100D3B30E /* Info.plist */; };
+		BBA446552101739700D3B30E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325361FA6BC5F00F14462 /* Info.plist */; };
 		BBB611212019B111007FA3D4 /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611192019B111007FA3D4 /* 87x87@3x.png */; };
 		BBB611222019B111007FA3D4 /* 180x180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111A2019B111007FA3D4 /* 180x180@3x.png */; };
 		BBB611232019B111007FA3D4 /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111B2019B111007FA3D4 /* 40x40@2x.png */; };
@@ -150,20 +325,23 @@
 		BBB611282019B111007FA3D4 /* 58x58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611202019B111007FA3D4 /* 58x58@2x.png */; };
 		BBB6112B2019B1F3007FA3D4 /* 60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611292019B1F3007FA3D4 /* 60x60@2x.png */; };
 		BBB6112C2019B1F3007FA3D4 /* 120x120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6112A2019B1F3007FA3D4 /* 120x120@3x.png */; };
+		BBC4AB742102D42400F49BDC /* 58X58.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB692102D42200F49BDC /* 58X58.png */; };
+		BBC4AB752102D42400F49BDC /* App_BG_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB6A2102D42200F49BDC /* App_BG_1@2x.png */; };
+		BBC4AB762102D42400F49BDC /* 87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB6B2102D42300F49BDC /* 87x87.png */; };
+		BBC4AB772102D42400F49BDC /* 180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB6C2102D42300F49BDC /* 180x180.png */; };
+		BBC4AB782102D42400F49BDC /* 1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB6D2102D42300F49BDC /* 1024x1024.png */; };
+		BBC4AB792102D42400F49BDC /* App_BG_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB6E2102D42300F49BDC /* App_BG_4@2x.png */; };
+		BBC4AB7A2102D42400F49BDC /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB6F2102D42300F49BDC /* 80x80.png */; };
+		BBC4AB7B2102D42400F49BDC /* 150x150.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB702102D42300F49BDC /* 150x150.png */; };
+		BBC4AB7C2102D42400F49BDC /* 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB712102D42300F49BDC /* 120x120.png */; };
+		BBC4AB7D2102D42400F49BDC /* 60X60.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB722102D42300F49BDC /* 60X60.png */; };
+		BBC4AB7E2102D42400F49BDC /* 40X40.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB732102D42400F49BDC /* 40X40.png */; };
+		BBC4AB802102D8C100F49BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325331FA6BC5F00F14462 /* LaunchScreen.storyboard */; };
+		BBC4AB822102D9FC00F49BDC /* AssetRobot.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC4AB812102D9FC00F49BDC /* AssetRobot.xcassets */; };
 		BBCCA45B2019B84C00423650 /* 80x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4592019B84C00423650 /* 80x80@2x.png */; };
 		BBCCA45D2019C55100423650 /* launchImage1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45C2019C55100423650 /* launchImage1@2x.png */; };
 		BBCCA4602019C71F00423650 /* launchImage1_5.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45E2019C71F00423650 /* launchImage1_5.5@2x.png */; };
 		BBCCA4612019C71F00423650 /* launchImage1_4.7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45F2019C71F00423650 /* launchImage1_4.7@2x.png */; };
-		BBCCA46D2019CB6F00423650 /* 60*60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4632019CB6E00423650 /* 60*60@2x.png */; };
-		BBCCA46E2019CB6F00423650 /* 58*58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4642019CB6E00423650 /* 58*58@2x.png */; };
-		BBCCA46F2019CB6F00423650 /* 40*40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4652019CB6E00423650 /* 40*40@2x.png */; };
-		BBCCA4702019CB6F00423650 /* 60*60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4662019CB6E00423650 /* 60*60@3x.png */; };
-		BBCCA4712019CB6F00423650 /* 120*120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4672019CB6E00423650 /* 120*120@3x.png */; };
-		BBCCA4722019CB6F00423650 /* 180*180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4682019CB6E00423650 /* 180*180@3x.png */; };
-		BBCCA4732019CB6F00423650 /* 120*120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4692019CB6E00423650 /* 120*120@2x.png */; };
-		BBCCA4742019CB6F00423650 /* 80*80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA46A2019CB6E00423650 /* 80*80@2x.png */; };
-		BBCCA4752019CB6F00423650 /* 1024*1024@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA46B2019CB6E00423650 /* 1024*1024@1x.png */; };
-		BBCCA4762019CB6F00423650 /* 87*87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA46C2019CB6E00423650 /* 87*87@3x.png */; };
 		BBFD38902079ACB500D02ACD /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFD388F2079ACB500D02ACD /* UIViewController+BarButton.m */; };
 /* End PBXBuildFile section */
 
@@ -348,8 +526,27 @@
 		BB37DA3D2043B7FB0078504A /* B3_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B3_50@2x.png"; path = "image/B3_50@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB37DA3E2043B7FC0078504A /* B1_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B1_50@2x.png"; path = "image/B1_50@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB37DA3F2043B7FC0078504A /* B2_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "B2_50@2x.png"; path = "image/B2_50@2x.png"; sourceTree = SOURCE_ROOT; };
+		BB479EE9208D6F9200B19D6A /* 60*60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60*60@2x.png"; sourceTree = "<group>"; };
+		BB479EEA208D6F9200B19D6A /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
+		BB479EEB208D6F9200B19D6A /* 58*58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "58*58@2x.png"; sourceTree = "<group>"; };
+		BB479EEC208D6F9200B19D6A /* 40*40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40*40@2x.png"; sourceTree = "<group>"; };
+		BB479EED208D6F9200B19D6A /* 60*60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60*60@3x.png"; sourceTree = "<group>"; };
+		BB479EEE208D6F9200B19D6A /* 120*120@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120*120@3x.png"; sourceTree = "<group>"; };
+		BB479EEF208D6F9200B19D6A /* 180*180@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180*180@3x.png"; sourceTree = "<group>"; };
+		BB479EF0208D6F9200B19D6A /* 120*120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120*120@2x.png"; sourceTree = "<group>"; };
+		BB479EF1208D6F9200B19D6A /* 80*80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "80*80@2x.png"; sourceTree = "<group>"; };
+		BB479EF2208D6F9200B19D6A /* 1024*1024@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1024*1024@1x.png"; sourceTree = "<group>"; };
+		BB479EF3208D6F9200B19D6A /* 87*87@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "87*87@3x.png"; sourceTree = "<group>"; };
+		BB57910E210198EA005E3DFD /* App_BG_1@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App_BG_1@1x.png"; sourceTree = "<group>"; };
+		BB57910F210198EA005E3DFD /* App_BG_4@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App_BG_4@1x.png"; sourceTree = "<group>"; };
+		BB579110210198EA005E3DFD /* App_BG_3@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App_BG_3@1x.png"; sourceTree = "<group>"; };
+		BB579111210198EA005E3DFD /* App_BG_2-2@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App_BG_2-2@1x.png"; sourceTree = "<group>"; };
+		BB5791172101B9DE005E3DFD /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BB5791182101B9DE005E3DFD /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "updateFirmwareTip@2x.png"; path = "image/updateFirmwareTip@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB64B9DA204FD5A5006531E5 /* AutoMower.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower.bin; sourceTree = "<group>"; };
+		BBA446512101713000D3B30E /* MOWOXROBOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOWOXROBOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA446522101713100D3B30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/guiwukeji/Desktop/iOS开发/Mower-mowox_ware/Info.plist"; sourceTree = "<absolute>"; };
 		BBB611192019B111007FA3D4 /* 87x87@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "87x87@3x.png"; sourceTree = "<group>"; };
 		BBB6111A2019B111007FA3D4 /* 180x180@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180x180@3x.png"; sourceTree = "<group>"; };
 		BBB6111B2019B111007FA3D4 /* 40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@2x.png"; sourceTree = "<group>"; };
@@ -359,20 +556,22 @@
 		BBB611202019B111007FA3D4 /* 58x58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "58x58@2x.png"; sourceTree = "<group>"; };
 		BBB611292019B1F3007FA3D4 /* 60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60x60@2x.png"; sourceTree = "<group>"; };
 		BBB6112A2019B1F3007FA3D4 /* 120x120@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120x120@3x.png"; sourceTree = "<group>"; };
+		BBC4AB692102D42200F49BDC /* 58X58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58X58.png; sourceTree = "<group>"; };
+		BBC4AB6A2102D42200F49BDC /* App_BG_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App_BG_1@2x.png"; sourceTree = "<group>"; };
+		BBC4AB6B2102D42300F49BDC /* 87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87x87.png; sourceTree = "<group>"; };
+		BBC4AB6C2102D42300F49BDC /* 180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180x180.png; sourceTree = "<group>"; };
+		BBC4AB6D2102D42300F49BDC /* 1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024x1024.png; sourceTree = "<group>"; };
+		BBC4AB6E2102D42300F49BDC /* App_BG_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App_BG_4@2x.png"; sourceTree = "<group>"; };
+		BBC4AB6F2102D42300F49BDC /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80x80.png; sourceTree = "<group>"; };
+		BBC4AB702102D42300F49BDC /* 150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 150x150.png; sourceTree = "<group>"; };
+		BBC4AB712102D42300F49BDC /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x120.png; sourceTree = "<group>"; };
+		BBC4AB722102D42300F49BDC /* 60X60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60X60.png; sourceTree = "<group>"; };
+		BBC4AB732102D42400F49BDC /* 40X40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40X40.png; sourceTree = "<group>"; };
+		BBC4AB812102D9FC00F49BDC /* AssetRobot.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetRobot.xcassets; sourceTree = "<group>"; };
 		BBCCA4592019B84C00423650 /* 80x80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "80x80@2x.png"; sourceTree = "<group>"; };
 		BBCCA45C2019C55100423650 /* launchImage1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1@2x.png"; sourceTree = "<group>"; };
 		BBCCA45E2019C71F00423650 /* launchImage1_5.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1_5.5@2x.png"; sourceTree = "<group>"; };
 		BBCCA45F2019C71F00423650 /* launchImage1_4.7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1_4.7@2x.png"; sourceTree = "<group>"; };
-		BBCCA4632019CB6E00423650 /* 60*60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60*60@2x.png"; sourceTree = "<group>"; };
-		BBCCA4642019CB6E00423650 /* 58*58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "58*58@2x.png"; sourceTree = "<group>"; };
-		BBCCA4652019CB6E00423650 /* 40*40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40*40@2x.png"; sourceTree = "<group>"; };
-		BBCCA4662019CB6E00423650 /* 60*60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60*60@3x.png"; sourceTree = "<group>"; };
-		BBCCA4672019CB6E00423650 /* 120*120@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120*120@3x.png"; sourceTree = "<group>"; };
-		BBCCA4682019CB6E00423650 /* 180*180@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180*180@3x.png"; sourceTree = "<group>"; };
-		BBCCA4692019CB6E00423650 /* 120*120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120*120@2x.png"; sourceTree = "<group>"; };
-		BBCCA46A2019CB6E00423650 /* 80*80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "80*80@2x.png"; sourceTree = "<group>"; };
-		BBCCA46B2019CB6E00423650 /* 1024*1024@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1024*1024@1x.png"; sourceTree = "<group>"; };
-		BBCCA46C2019CB6E00423650 /* 87*87@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "87*87@3x.png"; sourceTree = "<group>"; };
 		BBFD388E2079ACB500D02ACD /* UIViewController+BarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
 		BBFD388F2079ACB500D02ACD /* UIViewController+BarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarButton.m"; sourceTree = "<group>"; };
 		D34A222D216418F4019E6198 /* Pods-MOWOX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOWOX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOWOX/Pods-MOWOX.release.xcconfig"; sourceTree = "<group>"; };
@@ -384,6 +583,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7138A13FCD6C16E10F452F74 /* libPods-MOWOX.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA445D22101713000D3B30E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA445D32101713000D3B30E /* libPods-MOWOX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +723,7 @@
 		3E5815DC1FB03C7D00E93520 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BB5791162101B9C7005E3DFD /* Base */,
 				3EA4D62B1FC913F9004D503D /* TabViewController */,
 				BB30B10A2044F29E0061B319 /* Login */,
 				BB30B10B2044F2BE0061B319 /* Main */,
@@ -552,6 +760,7 @@
 			isa = PBXGroup;
 			children = (
 				3E6325221FA6BC5F00F14462 /* MOWOX.app */,
+				BBA446512101713000D3B30E /* MOWOXROBOT.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -572,6 +781,7 @@
 				BB1299302021A79500285201 /* Localizable.strings */,
 				3E6325361FA6BC5F00F14462 /* Info.plist */,
 				3E6325251FA6BC5F00F14462 /* Supporting Files */,
+				BBA446562101742A00D3B30E /* MOWOXROBOT */,
 			);
 			path = MOWOX;
 			sourceTree = "<group>";
@@ -771,10 +981,69 @@
 			name = Setting;
 			sourceTree = "<group>";
 		};
+		BB479EE8208D6F9200B19D6A /* new */ = {
+			isa = PBXGroup;
+			children = (
+				BB479EE9208D6F9200B19D6A /* 60*60@2x.png */,
+				BB479EEA208D6F9200B19D6A /* 1024.png */,
+				BB479EEB208D6F9200B19D6A /* 58*58@2x.png */,
+				BB479EEC208D6F9200B19D6A /* 40*40@2x.png */,
+				BB479EED208D6F9200B19D6A /* 60*60@3x.png */,
+				BB479EEE208D6F9200B19D6A /* 120*120@3x.png */,
+				BB479EEF208D6F9200B19D6A /* 180*180@3x.png */,
+				BB479EF0208D6F9200B19D6A /* 120*120@2x.png */,
+				BB479EF1208D6F9200B19D6A /* 80*80@2x.png */,
+				BB479EF2208D6F9200B19D6A /* 1024*1024@1x.png */,
+				BB479EF3208D6F9200B19D6A /* 87*87@3x.png */,
+			);
+			path = new;
+			sourceTree = "<group>";
+		};
+		BB5791042101972E005E3DFD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				BBC4AB732102D42400F49BDC /* 40X40.png */,
+				BBC4AB692102D42200F49BDC /* 58X58.png */,
+				BBC4AB722102D42300F49BDC /* 60X60.png */,
+				BBC4AB6F2102D42300F49BDC /* 80x80.png */,
+				BBC4AB6B2102D42300F49BDC /* 87x87.png */,
+				BBC4AB712102D42300F49BDC /* 120x120.png */,
+				BBC4AB702102D42300F49BDC /* 150x150.png */,
+				BBC4AB6C2102D42300F49BDC /* 180x180.png */,
+				BBC4AB6D2102D42300F49BDC /* 1024x1024.png */,
+				BBC4AB6A2102D42200F49BDC /* App_BG_1@2x.png */,
+				BBC4AB6E2102D42300F49BDC /* App_BG_4@2x.png */,
+				BB57910E210198EA005E3DFD /* App_BG_1@1x.png */,
+				BB579111210198EA005E3DFD /* App_BG_2-2@1x.png */,
+				BB579110210198EA005E3DFD /* App_BG_3@1x.png */,
+				BB57910F210198EA005E3DFD /* App_BG_4@1x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		BB5791162101B9C7005E3DFD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BB5791172101B9DE005E3DFD /* BaseViewController.h */,
+				BB5791182101B9DE005E3DFD /* BaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BBA446562101742A00D3B30E /* MOWOXROBOT */ = {
+			isa = PBXGroup;
+			children = (
+				BBC4AB812102D9FC00F49BDC /* AssetRobot.xcassets */,
+				BB5791042101972E005E3DFD /* Image */,
+				BBA446522101713100D3B30E /* Info.plist */,
+			);
+			path = MOWOXROBOT;
+			sourceTree = "<group>";
+		};
 		BBB611182019B111007FA3D4 /* icon1 */ = {
 			isa = PBXGroup;
 			children = (
-				BBCCA4622019CB6E00423650 /* new */,
+				BB479EE8208D6F9200B19D6A /* new */,
 				BBCCA45F2019C71F00423650 /* launchImage1_4.7@2x.png */,
 				BBCCA45E2019C71F00423650 /* launchImage1_5.5@2x.png */,
 				BBCCA45C2019C55100423650 /* launchImage1@2x.png */,
@@ -792,23 +1061,6 @@
 			name = icon1;
 			path = image/icon1;
 			sourceTree = SOURCE_ROOT;
-		};
-		BBCCA4622019CB6E00423650 /* new */ = {
-			isa = PBXGroup;
-			children = (
-				BBCCA4632019CB6E00423650 /* 60*60@2x.png */,
-				BBCCA4642019CB6E00423650 /* 58*58@2x.png */,
-				BBCCA4652019CB6E00423650 /* 40*40@2x.png */,
-				BBCCA4662019CB6E00423650 /* 60*60@3x.png */,
-				BBCCA4672019CB6E00423650 /* 120*120@3x.png */,
-				BBCCA4682019CB6E00423650 /* 180*180@3x.png */,
-				BBCCA4692019CB6E00423650 /* 120*120@2x.png */,
-				BBCCA46A2019CB6E00423650 /* 80*80@2x.png */,
-				BBCCA46B2019CB6E00423650 /* 1024*1024@1x.png */,
-				BBCCA46C2019CB6E00423650 /* 87*87@3x.png */,
-			);
-			path = new;
-			sourceTree = "<group>";
 		};
 		C849B8FBA538DCC66B2BDF33 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -841,6 +1093,26 @@
 			productReference = 3E6325221FA6BC5F00F14462 /* MOWOX.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BBA445A72101713000D3B30E /* MOWOXROBOT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA4464D2101713000D3B30E /* Build configuration list for PBXNativeTarget "MOWOXROBOT" */;
+			buildPhases = (
+				BBA445A82101713000D3B30E /* [CP] Check Pods Manifest.lock */,
+				BBA445A92101713000D3B30E /* Sources */,
+				BBA445D22101713000D3B30E /* Frameworks */,
+				BBA445D42101713000D3B30E /* Resources */,
+				BBA4464B2101713000D3B30E /* [CP] Embed Pods Frameworks */,
+				BBA4464C2101713000D3B30E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOWOXROBOT;
+			productName = MOWOX;
+			productReference = BBA446512101713000D3B30E /* MOWOXROBOT.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -852,6 +1124,10 @@
 				TargetAttributes = {
 					3E6325211FA6BC5F00F14462 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 5FAMV3D32N;
+						ProvisioningStyle = Automatic;
+					};
+					BBA445A72101713000D3B30E = {
 						DevelopmentTeam = 5FAMV3D32N;
 						ProvisioningStyle = Automatic;
 					};
@@ -871,6 +1147,7 @@
 			projectRoot = "";
 			targets = (
 				3E6325211FA6BC5F00F14462 /* MOWOX */,
+				BBA445A72101713000D3B30E /* MOWOXROBOT */,
 			);
 		};
 /* End PBXProject section */
@@ -883,14 +1160,13 @@
 				3E1480651FCFEF1400FA8A2D /* A6@2x.png in Resources */,
 				3E3561FF1FB4560E00135503 /* 返回绿色@1x.png in Resources */,
 				3E43AD321FAAF4E100924616 /* 电量2@1x.png in Resources */,
-				BBCCA4742019CB6F00423650 /* 80*80@2x.png in Resources */,
 				3E11A3861FD90AAD000CAA08 /* icon-150@3x.png in Resources */,
 				BBB611252019B111007FA3D4 /* 120x120@2x.png in Resources */,
 				3E1480511FCFEF1400FA8A2D /* 机器人APP1+2(1)-3.png in Resources */,
 				BBCCA4602019C71F00423650 /* launchImage1_5.5@2x.png in Resources */,
 				3E2F25441FB98FFC00E79C23 /* Asset.xcassets in Resources */,
-				3E6325351FA6BC5F00F14462 /* LaunchScreen.storyboard in Resources */,
 				3EE3DC481FA8B2BE0049B8F7 /* 右转@2x.png in Resources */,
+				BB479EFA208D6F9200B19D6A /* 180*180@3x.png in Resources */,
 				3E11A3881FD90AAD000CAA08 /* 40@2x.png in Resources */,
 				3E5FE0431FEDF5BC004B234D /* data.bin in Resources */,
 				3E2F25351FB949C200E79C23 /* findBluetooth@2x.png in Resources */,
@@ -900,11 +1176,14 @@
 				3E1480601FCFEF1400FA8A2D /* A2@3x.png in Resources */,
 				3E2F25311FB946EF00E79C23 /* Imformation@2x.png in Resources */,
 				BB0A37B12015944D00E5FD94 /* A3_50@2x.png in Resources */,
+				BB479EF4208D6F9200B19D6A /* 60*60@2x.png in Resources */,
 				BB37DA402043B7FC0078504A /* B3_50@2x.png in Resources */,
 				3E1480531FCFEF1400FA8A2D /* loginView@2x.png in Resources */,
 				3E1480801FD00C0700FA8A2D /* A2@2x.png in Resources */,
 				BBB611272019B111007FA3D4 /* 60x60@3x.png in Resources */,
 				3E11A38A1FD90AAD000CAA08 /* icon-60.png in Resources */,
+				BB479EFE208D6F9200B19D6A /* 87*87@3x.png in Resources */,
+				BBA446552101739700D3B30E /* Info.plist in Resources */,
 				3E11A3871FD90AAD000CAA08 /* icon-60@3x.png in Resources */,
 				BB12992E2021A79500285201 /* Localizable.strings in Resources */,
 				BB37DA422043B7FC0078504A /* B2_50@2x.png in Resources */,
@@ -916,10 +1195,8 @@
 				3E14804C1FCFEF1400FA8A2D /* xianbuyong.png in Resources */,
 				3E43ACE31FAAB39C00924616 /* Pinsetting@1x.png in Resources */,
 				3EF771AA1FAAA38A00EC016A /* right@1x.png in Resources */,
+				BB479EF9208D6F9200B19D6A /* 120*120@3x.png in Resources */,
 				3E11A38B1FD90AAD000CAA08 /* 80@3x.png in Resources */,
-				BBCCA46F2019CB6F00423650 /* 40*40@2x.png in Resources */,
-				BBCCA46E2019CB6F00423650 /* 58*58@2x.png in Resources */,
-				BBCCA4732019CB6F00423650 /* 120*120@2x.png in Resources */,
 				3E5815C01FAFF72300E93520 /* WorkingtimeSetting@1x.png in Resources */,
 				BBCCA45B2019B84C00423650 /* 80x80@2x.png in Resources */,
 				3EA7AE061FB14B87001FB406 /* backgroundro@1x.png in Resources */,
@@ -927,9 +1204,11 @@
 				3EA7AE051FB14B87001FB406 /* backgroundco@2x.png in Resources */,
 				3EF771A91FAAA38A00EC016A /* left@1x.png in Resources */,
 				3E1480631FCFEF1400FA8A2D /* 蓝牙连接@2x.png in Resources */,
+				BB479EF5208D6F9200B19D6A /* 1024.png in Resources */,
 				3E14806D1FCFFA8C00FA8A2D /* 电量3-2@1x.png in Resources */,
 				BBB611222019B111007FA3D4 /* 180x180@3x.png in Resources */,
 				3E63255A1FA6DB7900F14462 /* login@2x.png in Resources */,
+				BB479EF8208D6F9200B19D6A /* 60*60@3x.png in Resources */,
 				3E3562001FB4560E00135503 /* bluetoothImage@1x.png in Resources */,
 				3E22E2A51FA9A7B8000BC792 /* wifi@2x.png in Resources */,
 				BB0A37B02015944D00E5FD94 /* A1_50@2x.png in Resources */,
@@ -938,24 +1217,23 @@
 				3E6325571FA6D8F000F14462 /* 未选中@1x.png in Resources */,
 				3E43AD2B1FAAED0500924616 /* 倒三角@1x.png in Resources */,
 				3E63255E1FA6F8C500F14462 /* 选中@2x.png in Resources */,
-				BBCCA4752019CB6F00423650 /* 1024*1024@1x.png in Resources */,
+				BB479EFC208D6F9200B19D6A /* 80*80@2x.png in Resources */,
 				3EC2009E1FE277620005F15A /* 返回1@2x.png in Resources */,
-				BBCCA4722019CB6F00423650 /* 180*180@3x.png in Resources */,
 				3EE3DC461FA8B2BE0049B8F7 /* 后退@2x.png in Resources */,
 				3E2454271FBD224E00095FBE /* 割草机@3x.png in Resources */,
 				3E11A38C1FD90AAD000CAA08 /* 87@3x.png in Resources */,
 				3E11A3851FD90AAD000CAA08 /* 120@3x.png in Resources */,
 				3E1480811FD00C0700FA8A2D /* A3@2x.png in Resources */,
 				3EF771A71FAAA38A00EC016A /* down@1x.png in Resources */,
+				BB479EF7208D6F9200B19D6A /* 40*40@2x.png in Resources */,
 				3E43ACEB1FAACA5200924616 /* background2@2x.png in Resources */,
-				BBCCA4712019CB6F00423650 /* 120*120@3x.png in Resources */,
 				3E43ACE51FAAB39C00924616 /* signal@1x.png in Resources */,
 				3E1480501FCFEF1400FA8A2D /* launchImage@2x.png in Resources */,
-				BBCCA4702019CB6F00423650 /* 60*60@3x.png in Resources */,
 				3E2F25331FB946EF00E79C23 /* WorkingtimeSetting@2x.png in Resources */,
 				3EF771A81FAAA38A00EC016A /* home@1x.png in Resources */,
 				3E43AD331FAAF4E100924616 /* 电量3@1x.png in Resources */,
 				BBB611232019B111007FA3D4 /* 40x40@2x.png in Resources */,
+				BB479EFB208D6F9200B19D6A /* 120*120@2x.png in Resources */,
 				BB5C49CB207D9B28007B2508 /* updateFirmwareTip@2x.png in Resources */,
 				3E14806E1FCFFA8C00FA8A2D /* 电量4-2@1x.png in Resources */,
 				BBB6112B2019B1F3007FA3D4 /* 60x60@2x.png in Resources */,
@@ -963,7 +1241,6 @@
 				3E2F25301FB946EF00E79C23 /* Generalsetting@2x.png in Resources */,
 				3E14806C1FCFFA8C00FA8A2D /* 电量2-2@1x.png in Resources */,
 				3E22E2A61FA9A7B8000BC792 /* zx_code_line@2x.png in Resources */,
-				BBCCA46D2019CB6F00423650 /* 60*60@2x.png in Resources */,
 				3E6325581FA6D8F000F14462 /* 选中@1x.png in Resources */,
 				3E5815D31FB0059500E93520 /* Back@1x.png in Resources */,
 				3E14805E1FCFEF1400FA8A2D /* 机器人APP1+2(1-1.png in Resources */,
@@ -974,20 +1251,22 @@
 				3EF771AB1FAAA38A00EC016A /* up@1x.png in Resources */,
 				3E11A38E1FD90B46000CAA08 /* icon-60@2x.png in Resources */,
 				BB0A37AF2015944D00E5FD94 /* A2_50@2x.png in Resources */,
+				BB479EFD208D6F9200B19D6A /* 1024*1024@1x.png in Resources */,
 				BBB611282019B111007FA3D4 /* 58x58@2x.png in Resources */,
 				3E2454251FBD1F1000095FBE /* 割草机@2x.png in Resources */,
 				3E43ACDD1FAAB39C00924616 /* backview@1x.png in Resources */,
 				3EC2009C1FE275710005F15A /* 返回@2x.png in Resources */,
 				BBB611212019B111007FA3D4 /* 87x87@3x.png in Resources */,
 				3E2F25321FB946EF00E79C23 /* Pinsetting@2x.png in Resources */,
+				BB479EF6208D6F9200B19D6A /* 58*58@2x.png in Resources */,
 				3E14805F1FCFEF1400FA8A2D /* A1@3x.png in Resources */,
 				3E14806B1FCFFA8C00FA8A2D /* 电量1-2@1x.png in Resources */,
-				BBCCA4762019CB6F00423650 /* 87*87@3x.png in Resources */,
 				3EE3DC471FA8B2BE0049B8F7 /* 前进@2x.png in Resources */,
 				3E11A3891FD90AAD000CAA08 /* 58@2x.png in Resources */,
 				3EE3DC491FA8B2BE0049B8F7 /* 左转@2x.png in Resources */,
 				3E43AD391FAAF5C600924616 /* 电量5@1x.png in Resources */,
 				3E1480791FD0042D00FA8A2D /* 蓝牙连接@1x.png in Resources */,
+				BBC4AB802102D8C100F49BDC /* LaunchScreen.storyboard in Resources */,
 				BB64B9DB204FD5A5006531E5 /* AutoMower.bin in Resources */,
 				BB37DA412043B7FC0078504A /* B1_50@2x.png in Resources */,
 				3E43AD311FAAF4E100924616 /* 电量1@1x.png in Resources */,
@@ -997,6 +1276,146 @@
 				3EFEF5071FADA83E00FA7850 /* 蓝牙断开@1x.png in Resources */,
 				3E5815D51FB0061D00E93520 /* Back1@1x.png in Resources */,
 				3E43ACE11FAAB39C00924616 /* imformation@1x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA445D42101713000D3B30E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA445D52101713000D3B30E /* A6@2x.png in Resources */,
+				BBA445D62101713000D3B30E /* 返回绿色@1x.png in Resources */,
+				BBA445D72101713000D3B30E /* 电量2@1x.png in Resources */,
+				BBA445D82101713000D3B30E /* icon-150@3x.png in Resources */,
+				BBA445D92101713000D3B30E /* 120x120@2x.png in Resources */,
+				BBA445DA2101713000D3B30E /* 机器人APP1+2(1)-3.png in Resources */,
+				BBC4AB7A2102D42400F49BDC /* 80x80.png in Resources */,
+				BBC4AB782102D42400F49BDC /* 1024x1024.png in Resources */,
+				BBA445DB2101713000D3B30E /* launchImage1_5.5@2x.png in Resources */,
+				BBA445DE2101713000D3B30E /* 右转@2x.png in Resources */,
+				BB579113210198EA005E3DFD /* App_BG_4@1x.png in Resources */,
+				BBC4AB762102D42400F49BDC /* 87x87.png in Resources */,
+				BBA445DF2101713000D3B30E /* 180*180@3x.png in Resources */,
+				BBA445E02101713000D3B30E /* 40@2x.png in Resources */,
+				BBA445E12101713000D3B30E /* data.bin in Resources */,
+				BBC4AB822102D9FC00F49BDC /* AssetRobot.xcassets in Resources */,
+				BBC4AB7D2102D42400F49BDC /* 60X60.png in Resources */,
+				BBC4AB752102D42400F49BDC /* App_BG_1@2x.png in Resources */,
+				BBA445E22101713000D3B30E /* findBluetooth@2x.png in Resources */,
+				BBA445E32101713000D3B30E /* 1024x1024@1x.png in Resources */,
+				BBC4AB792102D42400F49BDC /* App_BG_4@2x.png in Resources */,
+				BBA445E42101713000D3B30E /* background@2x.png in Resources */,
+				BBA445E52101713000D3B30E /* Generalsetting@1x.png in Resources */,
+				BBA445E62101713000D3B30E /* A2@3x.png in Resources */,
+				BBA445E72101713000D3B30E /* Imformation@2x.png in Resources */,
+				BBA445E82101713000D3B30E /* A3_50@2x.png in Resources */,
+				BBA445E92101713000D3B30E /* 60*60@2x.png in Resources */,
+				BBA445EA2101713000D3B30E /* B3_50@2x.png in Resources */,
+				BBA445EB2101713000D3B30E /* loginView@2x.png in Resources */,
+				BBA445EC2101713000D3B30E /* A2@2x.png in Resources */,
+				BBA445ED2101713000D3B30E /* 60x60@3x.png in Resources */,
+				BBA445EE2101713000D3B30E /* icon-60.png in Resources */,
+				BBA445EF2101713000D3B30E /* 87*87@3x.png in Resources */,
+				BBA446542101739000D3B30E /* Info.plist in Resources */,
+				BBA445F02101713000D3B30E /* icon-60@3x.png in Resources */,
+				BBC4AB7E2102D42400F49BDC /* 40X40.png in Resources */,
+				BBA445F12101713000D3B30E /* Localizable.strings in Resources */,
+				BBA445F22101713000D3B30E /* B2_50@2x.png in Resources */,
+				BBA445F32101713000D3B30E /* 蓝牙图标@2x.png in Resources */,
+				BBA445F42101713000D3B30E /* A3@3x.png in Resources */,
+				BBA445F52101713000D3B30E /* parkimage@2x.png in Resources */,
+				BBA445F62101713000D3B30E /* Main.storyboard in Resources */,
+				BBA445F72101713000D3B30E /* bluetooth@1x.png in Resources */,
+				BBA445F82101713000D3B30E /* xianbuyong.png in Resources */,
+				BBC4AB772102D42400F49BDC /* 180x180.png in Resources */,
+				BBA445F92101713000D3B30E /* Pinsetting@1x.png in Resources */,
+				BBA445FA2101713000D3B30E /* right@1x.png in Resources */,
+				BBA445FB2101713000D3B30E /* 120*120@3x.png in Resources */,
+				BBA445FC2101713000D3B30E /* 80@3x.png in Resources */,
+				BBA445FD2101713000D3B30E /* WorkingtimeSetting@1x.png in Resources */,
+				BBA445FE2101713000D3B30E /* 80x80@2x.png in Resources */,
+				BBA445FF2101713000D3B30E /* backgroundro@1x.png in Resources */,
+				BBA446002101713000D3B30E /* launchImage1_4.7@2x.png in Resources */,
+				BBA446012101713000D3B30E /* backgroundco@2x.png in Resources */,
+				BBA446022101713000D3B30E /* left@1x.png in Resources */,
+				BBA446032101713000D3B30E /* 蓝牙连接@2x.png in Resources */,
+				BBA446042101713000D3B30E /* 1024.png in Resources */,
+				BBA446052101713000D3B30E /* 电量3-2@1x.png in Resources */,
+				BBA446062101713000D3B30E /* 180x180@3x.png in Resources */,
+				BBA446072101713000D3B30E /* login@2x.png in Resources */,
+				BBA446082101713000D3B30E /* 60*60@3x.png in Resources */,
+				BBA446092101713000D3B30E /* bluetoothImage@1x.png in Resources */,
+				BBA4460A2101713000D3B30E /* wifi@2x.png in Resources */,
+				BBA4460B2101713000D3B30E /* A1_50@2x.png in Resources */,
+				BBA4460C2101713000D3B30E /* 蓝牙@1x.png in Resources */,
+				BBA4460D2101713000D3B30E /* launchImage1@2x.png in Resources */,
+				BBA4460E2101713000D3B30E /* 未选中@1x.png in Resources */,
+				BBA4460F2101713000D3B30E /* 倒三角@1x.png in Resources */,
+				BBA446102101713000D3B30E /* 选中@2x.png in Resources */,
+				BBA446112101713000D3B30E /* 80*80@2x.png in Resources */,
+				BBA446122101713000D3B30E /* 返回1@2x.png in Resources */,
+				BB579112210198EA005E3DFD /* App_BG_1@1x.png in Resources */,
+				BBA446132101713000D3B30E /* 后退@2x.png in Resources */,
+				BBA446142101713000D3B30E /* 割草机@3x.png in Resources */,
+				BBC4AB7B2102D42400F49BDC /* 150x150.png in Resources */,
+				BBA446152101713000D3B30E /* 87@3x.png in Resources */,
+				BBA446162101713000D3B30E /* 120@3x.png in Resources */,
+				BBA446172101713000D3B30E /* A3@2x.png in Resources */,
+				BBA446182101713000D3B30E /* down@1x.png in Resources */,
+				BBC4AB742102D42400F49BDC /* 58X58.png in Resources */,
+				BBA446192101713000D3B30E /* 40*40@2x.png in Resources */,
+				BBA4461A2101713000D3B30E /* background2@2x.png in Resources */,
+				BBA4461B2101713000D3B30E /* signal@1x.png in Resources */,
+				BBA4461C2101713000D3B30E /* launchImage@2x.png in Resources */,
+				BBA4461D2101713000D3B30E /* WorkingtimeSetting@2x.png in Resources */,
+				BBA4461E2101713000D3B30E /* home@1x.png in Resources */,
+				BBA4461F2101713000D3B30E /* 电量3@1x.png in Resources */,
+				BBA446202101713000D3B30E /* 40x40@2x.png in Resources */,
+				BBA446212101713000D3B30E /* 120*120@2x.png in Resources */,
+				BBA446222101713000D3B30E /* updateFirmwareTip@2x.png in Resources */,
+				BBA446232101713000D3B30E /* 电量4-2@1x.png in Resources */,
+				BBA446242101713000D3B30E /* 60x60@2x.png in Resources */,
+				BBA446252101713000D3B30E /* A6@1x.png in Resources */,
+				BBA446262101713000D3B30E /* Generalsetting@2x.png in Resources */,
+				BBA446272101713000D3B30E /* 电量2-2@1x.png in Resources */,
+				BBA446282101713000D3B30E /* zx_code_line@2x.png in Resources */,
+				BBA446292101713000D3B30E /* 选中@1x.png in Resources */,
+				BBA4462A2101713000D3B30E /* Back@1x.png in Resources */,
+				BBA4462B2101713000D3B30E /* 机器人APP1+2(1-1.png in Resources */,
+				BBA4462C2101713000D3B30E /* backgroundnew@2x.png in Resources */,
+				BBA4462D2101713000D3B30E /* 电量4@1x.png in Resources */,
+				BBA4462E2101713000D3B30E /* whether@1x.png in Resources */,
+				BBC4AB7C2102D42400F49BDC /* 120x120.png in Resources */,
+				BBA4462F2101713000D3B30E /* 未选中@2x.png in Resources */,
+				BBA446302101713000D3B30E /* up@1x.png in Resources */,
+				BBA446312101713000D3B30E /* icon-60@2x.png in Resources */,
+				BBA446322101713000D3B30E /* A2_50@2x.png in Resources */,
+				BB579115210198EA005E3DFD /* App_BG_2-2@1x.png in Resources */,
+				BBA446332101713000D3B30E /* 1024*1024@1x.png in Resources */,
+				BBA446342101713000D3B30E /* 58x58@2x.png in Resources */,
+				BBA446352101713000D3B30E /* 割草机@2x.png in Resources */,
+				BBA446362101713000D3B30E /* backview@1x.png in Resources */,
+				BBA446372101713000D3B30E /* 返回@2x.png in Resources */,
+				BBA446382101713000D3B30E /* 87x87@3x.png in Resources */,
+				BBA446392101713000D3B30E /* Pinsetting@2x.png in Resources */,
+				BBA4463A2101713000D3B30E /* 58*58@2x.png in Resources */,
+				BBA4463B2101713000D3B30E /* A1@3x.png in Resources */,
+				BB579114210198EA005E3DFD /* App_BG_3@1x.png in Resources */,
+				BBA4463C2101713000D3B30E /* 电量1-2@1x.png in Resources */,
+				BBA4463D2101713000D3B30E /* 前进@2x.png in Resources */,
+				BBA4463E2101713000D3B30E /* 58@2x.png in Resources */,
+				BBA4463F2101713000D3B30E /* 左转@2x.png in Resources */,
+				BBA446402101713000D3B30E /* 电量5@1x.png in Resources */,
+				BBA446412101713000D3B30E /* 蓝牙连接@1x.png in Resources */,
+				BBA446422101713000D3B30E /* AutoMower.bin in Resources */,
+				BBA446432101713000D3B30E /* B1_50@2x.png in Resources */,
+				BBA446442101713000D3B30E /* 电量1@1x.png in Resources */,
+				BBA446452101713000D3B30E /* 电量5-2@1x.png in Resources */,
+				BBA446462101713000D3B30E /* background1@2x.png in Resources */,
+				BBA446472101713000D3B30E /* 120x120@3x.png in Resources */,
+				BBA446482101713000D3B30E /* 蓝牙断开@1x.png in Resources */,
+				BBA446492101713000D3B30E /* Back1@1x.png in Resources */,
+				BBA4464A2101713000D3B30E /* imformation@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1037,6 +1456,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA445A82101713000D3B30E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOWOX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA4464B2101713000D3B30E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOWOX/Pods-MOWOX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA4464C2101713000D3B30E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MOWOX/Pods-MOWOX-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOWOX/Pods-MOWOX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E70874A1A32116D3A90FFF06 /* [CP] Embed Pods Frameworks */ = {
@@ -1101,6 +1571,55 @@
 				BB0DA4482012E99100ECD8CF /* UIColor+ColorChange.m in Sources */,
 				3E6325271FA6BC5F00F14462 /* main.m in Sources */,
 				3EA4D62E1FC91435004D503D /* RDVViewController.m in Sources */,
+				BB5791192101B9DE005E3DFD /* BaseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA445A92101713000D3B30E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA445AA2101713000D3B30E /* WTReTextField.m in Sources */,
+				BBA445AB2101713000D3B30E /* InformationTableViewController.m in Sources */,
+				BBA445AC2101713000D3B30E /* LaunchScreenViewController.m in Sources */,
+				BBA445AD2101713000D3B30E /* MainViewController.m in Sources */,
+				BBA445AE2101713000D3B30E /* anotherSettingViewController.m in Sources */,
+				BBA445AF2101713000D3B30E /* LoginViewController.m in Sources */,
+				BBA445B02101713000D3B30E /* LMPopInputPasswordView.m in Sources */,
+				BBA445B12101713000D3B30E /* MowerSettingViewController.m in Sources */,
+				BBA445B22101713000D3B30E /* NSObject+Common.m in Sources */,
+				BBA445B32101713000D3B30E /* UIButton+Common.m in Sources */,
+				BBA445B42101713000D3B30E /* BluetoothDataManage.m in Sources */,
+				BBA445B52101713000D3B30E /* FirmwareViewController.m in Sources */,
+				BBA445B62101713000D3B30E /* WorkTimeSettingViewController.m in Sources */,
+				BBA445B72101713000D3B30E /* GeneralsettingTimeViewController.m in Sources */,
+				BBA445B82101713000D3B30E /* MowerControlViewController.m in Sources */,
+				BBA445B92101713000D3B30E /* batteryButton.m in Sources */,
+				BBA445BA2101713000D3B30E /* WTReParser.m in Sources */,
+				BBA445BB2101713000D3B30E /* ViewController.m in Sources */,
+				BBA445BC2101713000D3B30E /* ChangePasswordViewController.m in Sources */,
+				BBA445BD2101713000D3B30E /* AppDelegate.m in Sources */,
+				BBA445BE2101713000D3B30E /* BaseNavigationViewController.m in Sources */,
+				BBA445BF2101713000D3B30E /* UITextField+Common.m in Sources */,
+				BBA445C02101713000D3B30E /* inputTextField.m in Sources */,
+				BBA445C12101713000D3B30E /* BaseTableViewController.m in Sources */,
+				BBA445C22101713000D3B30E /* UIViewController+BarButton.m in Sources */,
+				BBA445C32101713000D3B30E /* GeneralsettingLanguageViewController.m in Sources */,
+				BBA445C42101713000D3B30E /* ViewAlertsCell.m in Sources */,
+				BBA445C52101713000D3B30E /* BlueTableViewController.m in Sources */,
+				BBA445C62101713000D3B30E /* InformationViewController.m in Sources */,
+				BBA445C72101713000D3B30E /* PincodeSettingViewController.m in Sources */,
+				BBA445C82101713000D3B30E /* ProgressView.m in Sources */,
+				BBA445C92101713000D3B30E /* RemoterControlViewController.m in Sources */,
+				BBA445CA2101713000D3B30E /* connectButton.m in Sources */,
+				BBA445CB2101713000D3B30E /* AlertsViewController.m in Sources */,
+				BBA445CC2101713000D3B30E /* WorktimeCell.m in Sources */,
+				BBA445CD2101713000D3B30E /* SettingViewController.m in Sources */,
+				BBA445CE2101713000D3B30E /* UILabel+Common.m in Sources */,
+				BBA445CF2101713000D3B30E /* UIColor+ColorChange.m in Sources */,
+				BBA445D02101713000D3B30E /* main.m in Sources */,
+				BBA445D12101713000D3B30E /* RDVViewController.m in Sources */,
+				BB57911A2101B9DE005E3DFD /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1241,7 +1760,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					RobotMower,
+				);
 				INFOPLIST_FILE = MOWOX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1281,7 +1805,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					RobotMower,
+				);
 				INFOPLIST_FILE = MOWOX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1367,6 +1896,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;
 				INFOPLIST_FILE = MOWOX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1401,6 +1931,144 @@
 			};
 			name = "Provisioning Profile";
 		};
+		BBA4464E2101713000D3B30E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075E7EB86F1E17083674C72A /* Pods-MOWOX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageRobot;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FAMV3D32N;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					MOWOXROBOT,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/BabyBluetooth\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-l\"BabyBluetooth\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOXROBOT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BBA4464F2101713000D3B30E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D34A222D216418F4019E6198 /* Pods-MOWOX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageRobot;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FAMV3D32N;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					MOWOXROBOT,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/BabyBluetooth\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-l\"BabyBluetooth\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOXROBOT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BBA446502101713000D3B30E /* Provisioning Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B91B5C9E2C42700C5113F9 /* Pods-MOWOX.provisioning profile.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageRobot;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FAMV3D32N;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/BabyBluetooth\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-l\"BabyBluetooth\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOXROBOT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Provisioning Profile";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1420,6 +2088,16 @@
 				3E63253A1FA6BC5F00F14462 /* Debug */,
 				3E63253B1FA6BC5F00F14462 /* Release */,
 				3EB84CF91FC449250024AE03 /* Provisioning Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBA4464D2101713000D3B30E /* Build configuration list for PBXNativeTarget "MOWOXROBOT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA4464E2101713000D3B30E /* Debug */,
+				BBA4464F2101713000D3B30E /* Release */,
+				BBA446502101713000D3B30E /* Provisioning Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

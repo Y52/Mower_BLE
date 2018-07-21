@@ -35,8 +35,13 @@
 @implementation LoginViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+#if RobotMower
     UIImage *backImage = [UIImage imageNamed:@"loginView"];
+#elif MOWOXROBOT
+    UIImage *backImage = [UIImage imageNamed:@"App_BG_2-2"];
+    //self.view.alpha = 0.8;
+#endif
+    
     self.view.layer.contents = (id)backImage.CGImage;
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
@@ -172,6 +177,12 @@
 #pragma mark - ViewController push and back
 - (void)connectMower
 {
+    //测试用直接进入APP
+//    RDVViewController *rdvView = [[RDVViewController alloc] init];
+//    rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+//    [self presentViewController:rdvView animated:YES completion:nil];
+//    return;
+    
     self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     if (_appDelegate.currentPeripheral == nil) {
         [NSObject showHudTipStr:LocalString(@"Bluetooth not connected")];

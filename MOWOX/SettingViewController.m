@@ -34,13 +34,11 @@
 
 static int version1 = 1;
 static int version2 = 2;
-static int version3 = 5;
+static int version3 = 7;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
-    self.view.layer.contents = (id)backImage.CGImage;
     self.navigationItem.title = LocalString(@"Setting");
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
@@ -116,14 +114,14 @@ static int version3 = 5;
         //iPhone
         [_LanguageButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05 + 44 + 64);
             make.centerX.equalTo(self.view.mas_centerX);
         }];
     }else if([deviceType isEqualToString:@"iPad"]) {
         //iPad
         [_LanguageButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44 + 64);
             make.centerX.equalTo(self.view.mas_centerX);
         }];
     }

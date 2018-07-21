@@ -44,8 +44,6 @@ static CGFloat cellHeight = 45.0;
     [super viewDidLoad];
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
-    UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
-    self.view.layer.contents = (id)backImage.CGImage;
     self.navigationItem.title = LocalString(@"Working time setting");
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
@@ -133,14 +131,14 @@ static CGFloat cellHeight = 45.0;
         //iPhone
         [self.myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth, cellHeight * 7));
-            make.top.equalTo(self.view.mas_top).offset(44 + ScreenHeight * 0.05);
+            make.top.equalTo(self.view.mas_top).offset(44 + ScreenHeight * 0.05 + 64);
             make.centerX.equalTo(self.view.mas_centerX);
         }];
     }else if([deviceType isEqualToString:@"iPad"]) {
         //iPad
         [self.myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth, cellHeight * 7));
-            make.top.equalTo(self.view.mas_top).offset(44 + ScreenHeight * 0.01);
+            make.top.equalTo(self.view.mas_top).offset(44 + ScreenHeight * 0.01 + 64);
             make.centerX.equalTo(self.view.mas_centerX);
         }];
     }

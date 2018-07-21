@@ -30,8 +30,6 @@
     [super viewDidLoad];
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
-    UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
-    self.view.layer.contents = (id)backImage.CGImage;
     self.navigationItem.title = LocalString(@"Language setting");
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
@@ -90,7 +88,7 @@
             make.height.mas_equalTo(ScreenHeight * 0.6);
             make.width.mas_equalTo(ScreenWidth);
             make.centerX.equalTo(self.view.mas_centerX);
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05 + 44 + 64);
         }];
     }else if([deviceType isEqualToString:@"iPad"]) {
         //iPad
@@ -98,7 +96,7 @@
             make.height.mas_equalTo(ScreenHeight * 0.6);
             make.width.mas_equalTo(ScreenWidth);
             make.centerX.equalTo(self.view.mas_centerX);
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44 + 64);
         }];
     }
 

@@ -32,8 +32,6 @@ static int isBoundary = 0;
     
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
-    UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
-    self.view.layer.contents = (id)backImage.CGImage;
     self.navigationItem.title = LocalString(@"MOWER SETTING");
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
@@ -107,14 +105,14 @@ static int isBoundary = 0;
         [_rainLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
             make.centerX.equalTo(self.view.mas_centerX);
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.05 + 44 + 64);
         }];
     }else if([deviceType isEqualToString:@"iPad"]) {
         //iPad
         [_rainLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
             make.centerX.equalTo(self.view.mas_centerX);
-            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44);
+            make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 44 + 64);
         }];
     }
     

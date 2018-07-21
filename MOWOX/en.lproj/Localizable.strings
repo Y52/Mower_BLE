@@ -57,3 +57,6 @@
 "Your mower's firmware version:" = "Your mower's firmware version:";
 "Latest mower's firmware version:" = "Latest mower's firmware version:";
 "Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating.";
+"Please check if Bluetooth is turned on in the control center" = "Please check if Bluetooth is turned on in the control center";
+"Confirm" = "Confirm";
+"Set pincode wrong" = "Set pincode wrong";

@@ -333,6 +333,9 @@
     {
         
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+#if MOWOXROBOT
+        cell.backgroundColor = [UIColor darkGrayColor];
+#endif
         if (self.connectedPeripherals.count > 0)
         {
             CBPeripheral *peripheral = [self.connectedPeripherals objectAtIndex:indexPath.row];
@@ -378,6 +381,9 @@
         
         CBPeripheral *peripheral = [self.peripherals objectAtIndex:indexPath.row];
         //cell.backgroundColor=[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+#if MOWOXROBOT
+        cell.backgroundColor = [UIColor darkGrayColor];
+#endif
         UILabel *localName = (UILabel *)[cell viewWithTag:1000];
         UIButton * connectBtn = (UIButton *)[cell viewWithTag:1001];
         connectBtn.tag = indexPath.row;
@@ -419,7 +425,13 @@
 {
     if (section == 1) {
         UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
+#if RobotMower
         headerView.backgroundColor = [UIColor darkGrayColor];
+#elif MOWOXROBOT
+        headerView.backgroundColor = [UIColor lightGrayColor];
+        headerView.alpha = 0.6;
+#endif
+        
         UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 2, ScreenWidth - 20, 23)];
         [firstLabel setFont:[UIFont systemFontOfSize:18.0]];
         firstLabel.text = LocalString(@"Available devices");
@@ -431,7 +443,12 @@
         return headerView;
     }else{
         UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 30)];
+#if RobotMower
         headerView.backgroundColor = [UIColor darkGrayColor];
+#elif MOWOXROBOT
+        headerView.backgroundColor = [UIColor lightGrayColor];
+        headerView.alpha = 0.6;
+#endif
         UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 3.5, ScreenWidth - 20, 23)];
         [firstLabel setFont:[UIFont systemFontOfSize:18.0]];
         firstLabel.text = LocalString(@"Connected device");

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MowerSettingViewController : UIViewController
+@interface MowerSettingViewController : BaseViewController
 
 @end
