@@ -48,14 +48,14 @@
 {
     [super viewWillAppear:animated];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide:)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(keyboardWillShow:)
+//                                                 name:UIKeyboardWillShowNotification
+//                                               object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(keyboardWillHide:)
+//                                                 name:UIKeyboardWillHideNotification
+//                                               object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -169,31 +169,31 @@
     return YES;
 }
 
--(void)keyboardWillShow:(NSNotification *)notification{
-    //键盘最后的frame
-    CGRect keyboardFrame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-    CGFloat height = keyboardFrame.size.height;
-    //需要移动的距离
-    CGFloat rects = (ScreenHeight - _okButton.frame.origin.y - _okButton.frame.size.height) - height;
-    
-    if (rects <= 0) {
-        [UIView animateWithDuration:0.3 animations:^{
-            CGRect frame = self.view.frame;
-            if (_backupY == 0) {
-                _backupY = self.view.frame.origin.y;
-            }
-            frame.origin.y = rects;
-            self.view.frame = frame;
-        }];
-    }
-}
--(void)keyboardWillHide:(NSNotification *)notification{
-    [UIView animateWithDuration:0.3 animations:^{
-        CGRect frame = self.view.frame;
-        frame.origin.y = _backupY;
-        self.view.frame = frame;
-    }];
-}
+//-(void)keyboardWillShow:(NSNotification *)notification{
+//    //键盘最后的frame
+//    CGRect keyboardFrame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+//    CGFloat height = keyboardFrame.size.height;
+//    //需要移动的距离
+//    CGFloat rects = (ScreenHeight - _okButton.frame.origin.y - _okButton.frame.size.height) - height;
+//
+//    if (rects <= 0) {
+//        [UIView animateWithDuration:0.3 animations:^{
+//            CGRect frame = self.view.frame;
+//            if (_backupY == 0) {
+//                _backupY = self.view.frame.origin.y;
+//            }
+//            frame.origin.y = rects;
+//            self.view.frame = frame;
+//        }];
+//    }
+//}
+//-(void)keyboardWillHide:(NSNotification *)notification{
+//    [UIView animateWithDuration:0.3 animations:^{
+//        CGRect frame = self.view.frame;
+//        frame.origin.y = _backupY;
+//        self.view.frame = frame;
+//    }];
+//}
 
 #pragma mark - bluetooth manager
 

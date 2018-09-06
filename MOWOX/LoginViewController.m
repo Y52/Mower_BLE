@@ -13,15 +13,16 @@
 #import "ChangePasswordViewController.h"
 #import "BlueTableViewController.h"
 #import "LMPopInputPasswordView.h"
+#import "QueryDeviceController.h"
 
 
 @interface LoginViewController () <UITextFieldDelegate,LMPopInputPassViewDelegate>
 
 @property (strong, nonatomic)  UITextField *passwordTextfield;
-@property (strong, nonatomic)  UIButton *bluetoothButton;
-@property (strong, nonatomic)  UIButton *changePasswordButton;
+@property (strong, nonatomic)  UIButton *connButton;
 @property (strong, nonatomic)  UILabel *passwordLimitLabel;
 @property (strong, nonatomic)  UIButton *LoginButton;
+@property (strong, nonatomic)  UIButton *changeButton;
 
 @property (strong, nonatomic)  UILabel *resultLabel;
 @property (strong, nonatomic)  LMPopInputPasswordView *popView;
@@ -48,7 +49,8 @@
     
     [self viewLayoutSet];
     //self.passwordTextfield.delegate = self;
-    
+    self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(deviceOrientationDidChange:)
@@ -62,8 +64,8 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
     
     [self.LoginButton addTarget:self action:@selector(connectMower) forControlEvents:UIControlEventTouchUpInside];
-    [self.changePasswordButton addTarget:self action:@selector(changeView) forControlEvents:UIControlEventTouchUpInside];
-    [self.bluetoothButton addTarget:self action:@selector(bluetoothConnect) forControlEvents:UIControlEventTouchUpInside];
+    [self.connButton addTarget:self action:@selector(showConnView) forControlEvents:UIControlEventTouchUpInside];
+    [self.changeButton addTarget:self action:@selector(changeConnWay) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 
     
@@ -90,28 +92,35 @@
     _passwordTextfield.textColor = [UIColor whiteColor];
     _passwordLimitLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:10.f] textColor:[UIColor whiteColor] text:@"6-12 characters or numbers"];
     [_passwordLimitLabel setFont:[UIFont systemFontOfSize:10.0]];
-    _changePasswordButton = [UIButton buttonWithTitle:LocalString(@"Change Password") titleColor:[UIColor whiteColor]];
-    _bluetoothButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_bluetoothButton setBackgroundImage:[UIImage imageNamed:@"蓝牙图标"] forState:UIControlStateNormal];
+    _connButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    if (_appDelegate.status == 1) {
+        [_connButton setBackgroundImage:[UIImage imageNamed:@"蓝牙图标"] forState:UIControlStateNormal];
+        _changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Wi-Fi") titleColor:[UIColor whiteColor]];
+        _bluetoothNameLabel.text = LocalString(@"Connect bluetooth");
+    }else{
+        [_connButton setBackgroundImage:[UIImage imageNamed:@"img_wifi"] forState:UIControlStateNormal];
+        _changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Bluetooth") titleColor:[UIColor whiteColor]];
+        _bluetoothNameLabel.text = LocalString(@"Connect Wi-Fi");
+    }
     _LoginButton = [UIButton buttonWithTitle:LocalString(@"Control the mower") titleColor:[UIColor whiteColor]];
     
     [_passwordTextfield setTextFieldStyle1];
-    [_changePasswordButton setButtonStyle1];
     [_LoginButton setButtonStyle1];
+    [_changeButton setButtonStyle1];
     
     [self.view addSubview:_bluetoothNameLabel];
     [self.view addSubview:_passwordTextfield];
     [self.view addSubview:_passwordLimitLabel];
-    [self.view addSubview:_changePasswordButton];
     [self.view addSubview:_LoginButton];
-    [self.view addSubview:_bluetoothButton];
+    [self.view addSubview:_connButton];
+    [self.view addSubview:_changeButton];
     
     [_bluetoothNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.6, ScreenHeight * 0.04));
         make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.15);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-    [_bluetoothButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_connButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(84, 84));
         make.top.equalTo(self.bluetoothNameLabel.mas_bottom).offset(ScreenHeight * 0.08);
         make.centerX.equalTo(self.view.mas_centerX);
@@ -133,7 +142,12 @@
     }];*/
     [self.LoginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.bluetoothButton.mas_bottom).offset(ScreenHeight * 0.4);
+        make.top.equalTo(self.connButton.mas_bottom).offset(ScreenHeight * 0.4);
+        make.centerX.equalTo(self.view.mas_centerX);
+    }];
+    [self.changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
+        make.bottom.equalTo(self.LoginButton.mas_top).offset(- ScreenHeight * 0.05);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
 }
@@ -166,6 +180,7 @@
         }];
     }
 }
+ 
 -(void)keyboardWillHide:(NSNotification *)notification{
     [UIView animateWithDuration:0.3 animations:^{
         CGRect frame = self.view.frame;
@@ -182,10 +197,12 @@
 //    rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 //    [self presentViewController:rdvView animated:YES completion:nil];
 //    return;
-    
-    self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    if (_appDelegate.currentPeripheral == nil) {
-        [NSObject showHudTipStr:LocalString(@"Bluetooth not connected")];
+    if (_appDelegate.currentPeripheral == nil && [[NetWork shareNetWork].mySocket isDisconnected]) {
+        if (_appDelegate.status == 0) {
+            [NSObject showHudTipStr:LocalString(@"Wi-Fi not connected")];
+        }else{
+            [NSObject showHudTipStr:LocalString(@"Bluetooth not connected")];
+        }
     }else{
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         if ([defaults integerForKey:@"pincode"]) {
@@ -224,10 +241,15 @@
     [self.navigationController pushViewController:changeVC animated:YES];
 }
 
-- (void)bluetoothConnect{
-    BlueTableViewController *detailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"BlueTableViewController"];
-    NSLog(@"%@", self.storyboard);
-    [self.navigationController pushViewController:detailVC animated:YES];
+- (void)showConnView{
+    if (_appDelegate.status == 1) {
+        BlueTableViewController *detailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"BlueTableViewController"];
+        NSLog(@"%@", self.storyboard);
+        [self.navigationController pushViewController:detailVC animated:YES];
+    }else{
+        QueryDeviceController *wifiVC = [[QueryDeviceController alloc] init];
+        [self.navigationController pushViewController:wifiVC animated:YES];
+    }
 }
 
 - (IBAction)LoginViewControllerUnwindSegue:(UIStoryboardSegue *)unwindSegue {
@@ -286,6 +308,22 @@
     else if(device.orientation==UIInterfaceOrientationPortrait||device.orientation==UIInterfaceOrientationPortraitUpsideDown)
     {
         _popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
+    }
+}
+
+#pragma mark - change rootvc
+- (void)changeConnWay{
+    if (_appDelegate.status == 0) {
+        _appDelegate.status = 1;
+        [_connButton setBackgroundImage:[UIImage imageNamed:@"蓝牙图标"] forState:UIControlStateNormal];
+        [_changeButton setTitle:LocalString(@"Change to Wi-Fi") forState:UIControlStateNormal];
+        _bluetoothNameLabel.text = LocalString(@"Connect bluetooth");
+    }else{
+        _appDelegate.status = 0;
+        [_connButton setBackgroundImage:[UIImage imageNamed:@"img_wifi"] forState:UIControlStateNormal];
+        [_changeButton setTitle:LocalString(@"Change to Bluetooth") forState:UIControlStateNormal];
+
+        _bluetoothNameLabel.text = LocalString(@"Connect Wi-Fi");
     }
 }
 

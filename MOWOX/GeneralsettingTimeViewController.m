@@ -184,8 +184,10 @@
     comp.minute = [minute intValue];
     //通过NSDateComponents所包含的时间字段的数值来恢复NSDateduixiang
     NSDate* date = [gregorian dateFromComponents:comp];
-    self.datePickerView.date = date;
-    self.timePickerView.date = date;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.datePickerView.date = date;
+        self.timePickerView.date = date;
+    });
 }
 
 #pragma mark - set mower time

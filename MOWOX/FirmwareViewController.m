@@ -237,7 +237,7 @@
     }
     _progressViewNew.progress = [BluetoothDataManage shareInstance].progress_num / (float)_packgeNum;
     
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         
         NSString *path = [[NSBundle mainBundle] pathForResource:dataName ofType:@"bin"];
         NSData *data = [NSData dataWithContentsOfFile:path];

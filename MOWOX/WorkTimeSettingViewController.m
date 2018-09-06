@@ -88,7 +88,14 @@ static CGFloat cellHeight = 45.0;
     [self addLeftBarButtonWithImage:image action:@selector(backAction)];
     
     if (!_workDatePickview) {
-        _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight * 0.76, ScreenWidth, ScreenHeight * 0.24)];
+        if (UI_IS_IPHONE5) {
+            _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 216, ScreenWidth, 216)];
+        }else if (UI_IS_IPHONE6){
+            _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 216, ScreenWidth, 216)];
+        }else if (UI_IS_IPHONE6PLUS){
+            _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 216, ScreenWidth, 216)];
+        }
+        //_workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight * 0.76, ScreenWidth, ScreenHeight * 0.24)];
         //设置工作时间的PickerView
         self.startTimeArray = [NSMutableArray arrayWithArray:@[@"AM 0:00;",@"AM 1:00;",@"AM 2:00;",@"AM 3:00;",@"AM 4:00;",@"AM 5:00;",@"AM 6:00;",@"AM 7:00;",@"AM 8:00;",@"AM 9:00;",@"AM 10:00;",@"AM 11:00;",@"PM 0:00;",@"PM 1:00;",@"PM 2:00;",@"PM 3:00;",@"PM 4:00;",@"PM 5:00;",@"PM 6:00;",@"PM 7:00;",@"PM 8:00;",@"PM 9:00;",@"PM 10:00;",@"PM 11:00;"]];
         self.workingHoursArray = [NSMutableArray arrayWithArray:@[@"0 Hours",@"1 Hours",@"2 Hours",@"3 Hours",@"4 Hours",@"5 Hours",@"6 Hours",@"7 Hours",@"8 Hours",@"9 Hours",@"10 Hours",@"11 Hours",@"12Hours",@"13 Hours",@"14 Hours",@"15 Hours",@"16 Hours",@"17 Hours",@"18 Hours",@"19 Hours",@"20 Hours",@"21 Hours",@"22 Hours",@"23 Hours",@"24 Hours",]];
@@ -394,7 +401,10 @@ static CGFloat cellHeight = 45.0;
         [_selectrowArray insertObject:sunStart atIndex:12];
         [_selectrowArray insertObject:sunWork atIndex:13];
     }
-    [_myTableView reloadData];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [_myTableView reloadData];
+    });
+    
 }
 
 #pragma mark - set mower work time

@@ -85,7 +85,11 @@
 - (BOOL)tabBarController:(RDVTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
     if (viewController.rdv_tabBarItem.tag == 1002) {
         AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-        if (appDelegate.currentPeripheral == nil) {
+        if (appDelegate.status == 0 && [[NetWork shareNetWork].mySocket isDisconnected]) {
+            [NSObject showHudTipStr:NSLocalizedString(@"Wi-Fi not connected", nil)];
+            return NO;
+        }
+        if (appDelegate.currentPeripheral == nil && appDelegate.status == 1) {
             [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
             return NO;
         }

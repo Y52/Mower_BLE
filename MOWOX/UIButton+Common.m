@@ -82,4 +82,11 @@
     self.layer.cornerRadius = ScreenHeight * 0.033;
 }
 
+- (void)setButtonStyleWithColor:(UIColor *)color Width:(float)width cornerRadius:(float)radius{
+    self.layer.borderColor = color.CGColor;
+    self.layer.borderWidth = width;
+    self.layer.cornerRadius = radius;
+}
+
+
 @end

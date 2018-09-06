@@ -34,7 +34,7 @@
 
 static int version1 = 1;
 static int version2 = 2;
-static int version3 = 7;
+static int version3 = 13;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,6 +52,10 @@ static int version3 = 7;
     }
     if (version1 == [BluetoothDataManage shareInstance].version1 && version2 == [BluetoothDataManage shareInstance].version2 && version3 > [BluetoothDataManage shareInstance].version3){
         _updateButton.hidden = NO;
+    }
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    if (appDelegate.status == 0) {
+        _updateButton.hidden = YES;
     }
 }
 

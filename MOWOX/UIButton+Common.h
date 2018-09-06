@@ -14,5 +14,6 @@
 + (UIButton *)batteryButton:(NSString *)title batteryImage:(UIImage *)image;
 + (UIButton *)signalButton:(NSString *)title signalImage:(UIImage *)image;
 - (void)setButtonStyle1;
+- (void)setButtonStyleWithColor:(UIColor *)color Width:(float)width cornerRadius:(float)radius;
 
 @end

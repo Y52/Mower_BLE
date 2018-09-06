@@ -173,16 +173,18 @@ static int isBoundary = 0;
     NSDictionary *dict = [notification userInfo];
     NSNumber *rain = dict[@"rain"];
     NSNumber *boundary = dict[@"boundary"];
-    if ([rain intValue] == 0) {
-        [self rainSetNo];
-    }else{
-        [self rainSetYes];
-    }
-    if ([boundary intValue] == 0) {
-        [self boundarySetNo];
-    }else{
-        [self boundarySetYes];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if ([rain intValue] == 0) {
+            [self rainSetNo];
+        }else{
+            [self rainSetYes];
+        }
+        if ([boundary intValue] == 0) {
+            [self boundarySetNo];
+        }else{
+            [self boundarySetYes];
+        }
+    });
     
 }
 

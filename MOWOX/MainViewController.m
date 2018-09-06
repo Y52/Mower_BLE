@@ -107,19 +107,34 @@
 
     //判断蓝牙是否连接
     self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    if (_appDelegate.currentPeripheral == nil) {
-        //[self.signalButton setTitle:LocalString(@"Bluetooth disconnected") forState:UIControlStateNormal];
-        self.signalButton = [UIButton signalButton:LocalString(@"Bluetooth disconnected") signalImage:[UIImage imageNamed:@"蓝牙连接"]];
-        [_signalButton.layer setBackgroundColor:[UIColor redColor].CGColor];
-        //[self.batteryButton setTitle:LocalString(@"---") forState:UIControlStateNormal];
-        self.batteryButton = [UIButton buttonWithTitle:LocalString(@"---") titleColor:[UIColor blackColor]];
-        [self.batteryButton.titleLabel setFont:[UIFont systemFontOfSize:17]];
+    if (_appDelegate.status == 0) {
+        if ([[NetWork shareNetWork].mySocket isDisconnected]) {
+            self.signalButton = [UIButton signalButton:LocalString(@"Wi-Fi disconnected") signalImage:[UIImage imageNamed:@"img_wifi"]];
+            [_signalButton.layer setBackgroundColor:[UIColor redColor].CGColor];
+            //[self.batteryButton setTitle:LocalString(@"---") forState:UIControlStateNormal];
+            self.batteryButton = [UIButton buttonWithTitle:LocalString(@"---") titleColor:[UIColor blackColor]];
+            [self.batteryButton.titleLabel setFont:[UIFont systemFontOfSize:17]];
+        }else{
+            self.signalButton = [UIButton signalButton:LocalString(@"Wi-Fi connected") signalImage:[UIImage imageNamed:@"img_wifi"]];
+            [_signalButton.layer setBackgroundColor:[UIColor colorWithHexString:@"7DA86D"].CGColor];
+            self.batteryButton = [UIButton batteryButton:LocalString(@"100%") batteryImage:[UIImage imageNamed:@"电量5-2"]];
+        }
     }else{
-        //[self.signalButton setTitle:LocalString(@"Bluetooth connected") forState:UIControlStateNormal];
-        self.signalButton = [UIButton signalButton:LocalString(@"Bluetooth connected") signalImage:[UIImage imageNamed:@"蓝牙连接"]];
-        [_signalButton.layer setBackgroundColor:[UIColor colorWithHexString:@"7DA86D"].CGColor];
-        self.batteryButton = [UIButton batteryButton:LocalString(@"100%") batteryImage:[UIImage imageNamed:@"电量5-2"]];
+        if (_appDelegate.currentPeripheral == nil) {
+            //[self.signalButton setTitle:LocalString(@"Bluetooth disconnected") forState:UIControlStateNormal];
+            self.signalButton = [UIButton signalButton:LocalString(@"Bluetooth disconnected") signalImage:[UIImage imageNamed:@"蓝牙连接"]];
+            [_signalButton.layer setBackgroundColor:[UIColor redColor].CGColor];
+            //[self.batteryButton setTitle:LocalString(@"---") forState:UIControlStateNormal];
+            self.batteryButton = [UIButton buttonWithTitle:LocalString(@"---") titleColor:[UIColor blackColor]];
+            [self.batteryButton.titleLabel setFont:[UIFont systemFontOfSize:17]];
+        }else{
+            //[self.signalButton setTitle:LocalString(@"Bluetooth connected") forState:UIControlStateNormal];
+            self.signalButton = [UIButton signalButton:LocalString(@"Bluetooth connected") signalImage:[UIImage imageNamed:@"蓝牙连接"]];
+            [_signalButton.layer setBackgroundColor:[UIColor colorWithHexString:@"7DA86D"].CGColor];
+            self.batteryButton = [UIButton batteryButton:LocalString(@"100%") batteryImage:[UIImage imageNamed:@"电量5-2"]];
+        }
     }
+    
     
     _onLawn = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"Mower on lawn")];
     _onStation = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"Mower on station")];
@@ -240,53 +255,58 @@
     
     //电量设置
     NSNumber *batterData = dict[@"batterData"];
-    [_batteryButton setTitle:[NSString stringWithFormat:@"%ld%%",(long)batterData.integerValue] forState:UIControlStateNormal];
-    if (batterData.integerValue <= 20) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [_batteryButton setTitle:[NSString stringWithFormat:@"%ld%%",(long)batterData.integerValue] forState:UIControlStateNormal];
+        if (batterData.integerValue <= 20) {
+            
+            [_batteryButton setImage:[UIImage imageNamed:@"电量1-2"] forState:UIControlStateNormal];
+            
+        }else if (batterData.integerValue <= 40){
+            
+            [_batteryButton setImage:[UIImage imageNamed:@"电量2-2"] forState:UIControlStateNormal];
+            
+        }else if (batterData.integerValue <= 60){
+            
+            [_batteryButton setImage:[UIImage imageNamed:@"电量3-2"] forState:UIControlStateNormal];
+            
+        }else if (batterData.integerValue <=80){
+            
+            [_batteryButton setImage:[UIImage imageNamed:@"电量4-2"] forState:UIControlStateNormal];
+            
+        }else{
+            
+            [_batteryButton setImage:[UIImage imageNamed:@"电量5-2"] forState:UIControlStateNormal];
+            
+        }
         
-        [_batteryButton setImage:[UIImage imageNamed:@"电量1-2"] forState:UIControlStateNormal];
-        
-    }else if (batterData.integerValue <= 40){
-        
-        [_batteryButton setImage:[UIImage imageNamed:@"电量2-2"] forState:UIControlStateNormal];
-        
-    }else if (batterData.integerValue <= 60){
-        
-        [_batteryButton setImage:[UIImage imageNamed:@"电量3-2"] forState:UIControlStateNormal];
-        
-    }else if (batterData.integerValue <=80){
-        
-        [_batteryButton setImage:[UIImage imageNamed:@"电量4-2"] forState:UIControlStateNormal];
-        
-    }else{
-        
-        [_batteryButton setImage:[UIImage imageNamed:@"电量5-2"] forState:UIControlStateNormal];
-        
-    }
+        //按钮设置
+        NSNumber *mowerState = dict[@"mowerState"];
+        if (mowerState.integerValue == 1) {
+            [self.onStation.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+            [self.onLawn.layer setBackgroundColor:[UIColor clearColor].CGColor];
+            /*[self.GoToWorkButton.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+             [self.BacktostationButton.layer setBackgroundColor:[UIColor clearColor].CGColor];
+             self.BacktostationButton.enabled = NO;
+             self.GoToWorkButton.enabled = YES;*/
+        }else{
+            [self.onLawn.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+            [self.onStation.layer setBackgroundColor:[UIColor clearColor].CGColor];
+            /*[self.BacktostationButton.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+             [self.GoToWorkButton.layer setBackgroundColor:[UIColor clearColor].CGColor];
+             self.BacktostationButton.enabled = YES;
+             self.GoToWorkButton.enabled = NO;*/
+        }
+    });
     
-    //按钮设置
-    NSNumber *mowerState = dict[@"mowerState"];
-    if (mowerState.integerValue == 1) {
-        [self.onStation.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-        [self.onLawn.layer setBackgroundColor:[UIColor clearColor].CGColor];
-        /*[self.GoToWorkButton.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-        [self.BacktostationButton.layer setBackgroundColor:[UIColor clearColor].CGColor];
-        self.BacktostationButton.enabled = NO;
-        self.GoToWorkButton.enabled = YES;*/
-    }else{
-        [self.onLawn.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-        [self.onStation.layer setBackgroundColor:[UIColor clearColor].CGColor];
-        /*[self.BacktostationButton.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-        [self.GoToWorkButton.layer setBackgroundColor:[UIColor clearColor].CGColor];
-        self.BacktostationButton.enabled = YES;
-        self.GoToWorkButton.enabled = NO;*/
-    }
 }
 
 - (void)disconnectBluetooth:(NSNotification *)nsnotification
 {
     //[self.signalButton setBackgroundImage:[UIImage imageNamed:@"蓝牙断开"] forState:UIControlStateNormal];
-    [self.signalButton setTitle:LocalString(@"Bluetooth disconnected") forState:UIControlStateNormal];
-    [_signalButton.layer setBackgroundColor:[UIColor redColor].CGColor];
+    if (_appDelegate.status == 1) {
+        [self.signalButton setTitle:LocalString(@"Bluetooth disconnected") forState:UIControlStateNormal];
+        [_signalButton.layer setBackgroundColor:[UIColor redColor].CGColor];
+    }
 }
 
 #pragma mark - 当前时间处理
@@ -353,77 +373,93 @@
 }
 
 - (void)bluetoothControl{
-    if ([_signalButton.titleLabel.text isEqualToString:@"Bluetooth disconnected"]) {
-        [self dismissViewControllerAnimated:YES completion:nil];
-        
+    if (_appDelegate.status == 1) {
+        if ([_signalButton.titleLabel.text isEqualToString:@"Bluetooth disconnected"]) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+            
+        }else{
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"disconnectBluetooth1" object:nil userInfo:nil];
+            [self.signalButton setTitle:LocalString(@"Bluetooth disconnected") forState:UIControlStateNormal];
+            [_signalButton.layer setBackgroundColor:[UIColor redColor].CGColor];
+        }
     }else{
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"disconnectBluetooth1" object:nil userInfo:nil];
-        [self.signalButton setTitle:LocalString(@"Bluetooth disconnected") forState:UIControlStateNormal];
-        [_signalButton.layer setBackgroundColor:[UIColor redColor].CGColor];
+        if ([_signalButton.titleLabel.text isEqualToString:@"Wi-Fi disconnected"]) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+            
+        }else{
+            if ([[NetWork shareNetWork].mySocket isConnected]) {
+                [[NetWork shareNetWork].mySocket disconnect];
+            }
+            [self.signalButton setTitle:LocalString(@"Wi-Fi disconnected") forState:UIControlStateNormal];
+            [_signalButton.layer setBackgroundColor:[UIColor redColor].CGColor];
+        }
     }
+    
 }
 
 #pragma mark - Control Mower
 - (void)goToWork
 {
-    if (_appDelegate.currentPeripheral == nil) {
-        [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
-    }else{
-        
-        NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x02]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        
-        [self.bluetoothDataManage setDataType:0x01];
-        [self.bluetoothDataManage setDataContent: dataContent];
-        [self.bluetoothDataManage sendBluetoothFrame];
-        
-        /*[self.onLawn.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-         [self.BacktostationButton.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-         [self.onStation.layer setBackgroundColor:[UIColor clearColor].CGColor];
-         [self.GoToWorkButton.layer setBackgroundColor:[UIColor clearColor].CGColor];
-         self.BacktostationButton.enabled = YES;
-         self.GoToWorkButton.enabled = NO;*/
-        
+    if (_appDelegate.status == 0 && [[NetWork shareNetWork].mySocket isDisconnected]) {
+        [NSObject showHudTipStr:NSLocalizedString(@"Wi-Fi not connected", nil)];
+        return;
     }
+    if (_appDelegate.currentPeripheral == nil && _appDelegate.status == 1) {
+        [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
+        return;
+    }
+    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x02]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    
+    [self.bluetoothDataManage setDataType:0x01];
+    [self.bluetoothDataManage setDataContent: dataContent];
+    [self.bluetoothDataManage sendBluetoothFrame];
+    
+    /*[self.onLawn.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+     [self.BacktostationButton.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+     [self.onStation.layer setBackgroundColor:[UIColor clearColor].CGColor];
+     [self.GoToWorkButton.layer setBackgroundColor:[UIColor clearColor].CGColor];
+     self.BacktostationButton.enabled = YES;
+     self.GoToWorkButton.enabled = NO;*/
 }
 
 - (void)backToStation
 {
-    if (_appDelegate.currentPeripheral == nil) {
-        
-        [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
-        
-    }else{
-        
-        NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x03]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-        
-        [self.bluetoothDataManage setDataType:0x01];
-        [self.bluetoothDataManage setDataContent: dataContent];
-        [self.bluetoothDataManage sendBluetoothFrame];
-        
-        /*[self.onStation.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-         [self.GoToWorkButton.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-         [self.onLawn.layer setBackgroundColor:[UIColor clearColor].CGColor];
-         [self.BacktostationButton.layer setBackgroundColor:[UIColor clearColor].CGColor];
-         self.BacktostationButton.enabled = NO;
-         self.GoToWorkButton.enabled = YES;*/
-        
+    if (_appDelegate.status == 0 && [[NetWork shareNetWork].mySocket isDisconnected]) {
+        [NSObject showHudTipStr:NSLocalizedString(@"Wi-Fi not connected", nil)];
+        return;
     }
+    if (_appDelegate.currentPeripheral == nil && _appDelegate.status == 1) {
+        [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
+        return;
+    }
+    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x03]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    
+    [self.bluetoothDataManage setDataType:0x01];
+    [self.bluetoothDataManage setDataContent: dataContent];
+    [self.bluetoothDataManage sendBluetoothFrame];
+    
+    /*[self.onStation.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+     [self.GoToWorkButton.layer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+     [self.onLawn.layer setBackgroundColor:[UIColor clearColor].CGColor];
+     [self.BacktostationButton.layer setBackgroundColor:[UIColor clearColor].CGColor];
+     self.BacktostationButton.enabled = NO;
+     self.GoToWorkButton.enabled = YES;*/
 }
 
 #pragma mark - ViewController
@@ -434,12 +470,16 @@
 }
 
 - (void)mowerControlView{
-    if (_appDelegate.currentPeripheral == nil) {
-        [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
-    }else{
-        MowerControlViewController *VC = [[MowerControlViewController alloc] init];
-        [self.navigationController pushViewController:VC animated:YES];
+    if (_appDelegate.status == 0 && [[NetWork shareNetWork].mySocket isDisconnected]) {
+        [NSObject showHudTipStr:NSLocalizedString(@"Wi-Fi not connected", nil)];
+        return;
     }
+    if (_appDelegate.currentPeripheral == nil && _appDelegate.status == 1) {
+        [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
+        return;
+    }
+    MowerControlViewController *VC = [[MowerControlViewController alloc] init];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 - (void)backAction{

@@ -13,7 +13,7 @@
 #define QD_BLE_SEND_MAX_LEN 20
 
 ///@brife 可判断的数据帧类型数量
-#define LEN 9
+#define LEN 10
 
 static BluetoothDataManage *sgetonInstanceData = nil;
 
@@ -104,40 +104,45 @@ static BluetoothDataManage *sgetonInstanceData = nil;
 - (void)sendBluetoothFrame
 {
     [self formData];
-    if (_bluetoothData) {
-        NSUInteger len = _bluetoothData.count;
-        UInt8 sendBuffer[len];
-        for (int i = 0; i < len; i++) {
-            sendBuffer[i] = [[_bluetoothData objectAtIndex:i] unsignedCharValue];
-        }
-        NSData *sendData = [NSData dataWithBytes:sendBuffer length:len];
-        NSLog(@"发送一条蓝牙帧： %@",sendData);
-        AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-        
-        for (int i = 0; i < [sendData length]; i += QD_BLE_SEND_MAX_LEN) {
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    if (appDelegate.status == 0) {
+        [[NetWork shareNetWork] mowerSendWithData:_bluetoothData];
+    }else{
+        if (_bluetoothData) {
+            NSUInteger len = _bluetoothData.count;
+            UInt8 sendBuffer[len];
+            for (int i = 0; i < len; i++) {
+                sendBuffer[i] = [[_bluetoothData objectAtIndex:i] unsignedCharValue];
+            }
+            NSData *sendData = [NSData dataWithBytes:sendBuffer length:len];
+            NSLog(@"发送一条蓝牙帧： %@",sendData);
+            AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
             
-            // 预加 最大包长度，如果依然小于总数据长度，可以取最大包数据大小
-            if ((i + QD_BLE_SEND_MAX_LEN) < [sendData length]) {
-                NSString *rangeStr = [NSString stringWithFormat:@"%i,%i", i, QD_BLE_SEND_MAX_LEN];
-                NSData *subData = [sendData subdataWithRange:NSRangeFromString(rangeStr)];
-                if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
-                {
-                    [appDelegate.currentPeripheral writeValue:subData forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
+            for (int i = 0; i < [sendData length]; i += QD_BLE_SEND_MAX_LEN) {
+                
+                // 预加 最大包长度，如果依然小于总数据长度，可以取最大包数据大小
+                if ((i + QD_BLE_SEND_MAX_LEN) < [sendData length]) {
+                    NSString *rangeStr = [NSString stringWithFormat:@"%i,%i", i, QD_BLE_SEND_MAX_LEN];
+                    NSData *subData = [sendData subdataWithRange:NSRangeFromString(rangeStr)];
+                    if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
+                    {
+                        [appDelegate.currentPeripheral writeValue:subData forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
+                    }
+                    //根据接收模块的处理能力做相应延时
+                    usleep(50 * 1000);
                 }
-                //根据接收模块的处理能力做相应延时
-                usleep(50 * 1000);
-            }
-            else {
-                NSString *rangeStr = [NSString stringWithFormat:@"%i,%i", i, (int)([sendData length] - i)];
-                NSData *subData = [sendData subdataWithRange:NSRangeFromString(rangeStr)];
-                if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
-                {
-                    [appDelegate.currentPeripheral writeValue:subData forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
+                else {
+                    NSString *rangeStr = [NSString stringWithFormat:@"%i,%i", i, (int)([sendData length] - i)];
+                    NSData *subData = [sendData subdataWithRange:NSRangeFromString(rangeStr)];
+                    if (appDelegate.currentCharacteristic && appDelegate.currentPeripheral)
+                    {
+                        [appDelegate.currentPeripheral writeValue:subData forCharacteristic:appDelegate.currentCharacteristic type:CBCharacteristicWriteWithResponse];
+                    }
+                    usleep(50 * 1000);
                 }
-                usleep(50 * 1000);
             }
+            
         }
-
     }
 }
 

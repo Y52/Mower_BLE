@@ -23,6 +23,7 @@
 #import "RDVTabBarController.h"
 #import "BluetoothDataManage.h"
 #import "BaseViewController.h"
+#import "NetWork.h"
 
 
 #endif
@@ -31,6 +32,10 @@
 #define ScreenHeight                        [[UIScreen mainScreen] bounds].size.height
 
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define UI_IS_IPHONE5           (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0)
+#define UI_IS_IPHONE6           (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0)
+#define UI_IS_IPHONE6PLUS       (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0 || [[UIScreen mainScreen] bounds].size.width == 736.0)
+
 
 #define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
 
@@ -43,5 +48,10 @@
 #define kSafeArea_Bottom (kDevice_Is_iPhoneX? 34: 0)
 #define kColorNavBG [UIColor colorWithHexString:@"0xFAFBED"]
 #define kColorCCC kColorD8DDE4
+
+#define HScale (667.f / ScreenHeight)
+#define WScale (375.f / ScreenWidth)
+#define yCellHeight 44
+#define buttonHeight (50.f / HScale)
 
 #endif /* PrefixHeader_pch */

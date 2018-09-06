@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E1A2EA00C6F5A69633F9A1E2D03551AF'
+               BlueprintIdentifier = '931C9DE2A0ED71DAF6143036DC75438E'
                BlueprintName = 'Pods-MOWOX'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-MOWOX.a'>

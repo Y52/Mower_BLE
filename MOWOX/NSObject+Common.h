@@ -15,4 +15,5 @@
 + (void)showHudTipStr2:(NSString *)tipStr;
 + (void)showHudTipStr3:(NSString *)tipStr;
 //+ (MBProgressHUD *)showHUDQueryStr:(NSString *)titleStr;
++ (UInt8)getCS:(NSArray *)data;
 @end

@@ -130,8 +130,9 @@
 - (void)recieveMowerLanguage:(NSNotification *)notification{
     NSDictionary *dict = [notification userInfo];
     NSNumber *Language = dict[@"Language"];
-    [self.languagePicker selectRow:[Language intValue] inComponent:0 animated:YES];
-}
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.languagePicker selectRow:[Language intValue] inComponent:0 animated:YES];
+    });}
 
 #pragma mark - buttonAction
 - (void)setLanguage
