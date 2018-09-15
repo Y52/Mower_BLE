@@ -173,8 +173,6 @@
 		BB64B9DB204FD5A5006531E5 /* AutoMower.bin in Resources */ = {isa = PBXBuildFile; fileRef = BB64B9DA204FD5A5006531E5 /* AutoMower.bin */; };
 		BB8D944E213FE0050079EE63 /* QueryDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D944B213FE0050079EE63 /* QueryDeviceController.m */; };
 		BB8D944F213FE0050079EE63 /* QueryDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D944B213FE0050079EE63 /* QueryDeviceController.m */; };
-		BB8D9450213FE0050079EE63 /* QueryMowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D944D213FE0050079EE63 /* QueryMowerController.m */; };
-		BB8D9451213FE0050079EE63 /* QueryMowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D944D213FE0050079EE63 /* QueryMowerController.m */; };
 		BB8D9471213FE0710079EE63 /* ESPGuideCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D9453213FE0710079EE63 /* ESPGuideCode.m */; };
 		BB8D9472213FE0710079EE63 /* ESPGuideCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D9453213FE0710079EE63 /* ESPGuideCode.m */; };
 		BB8D9473213FE0710079EE63 /* ESPTouchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D9454213FE0710079EE63 /* ESPTouchResult.m */; };
@@ -213,10 +211,6 @@
 		BB8D949B213FE3CB0079EE63 /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D9497213FE3CB0079EE63 /* DeviceModel.m */; };
 		BB8D949E213FE40C0079EE63 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D949C213FE40C0079EE63 /* NetWork.m */; };
 		BB8D949F213FE40C0079EE63 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D949C213FE40C0079EE63 /* NetWork.m */; };
-		BB8D94A2213FE4C10079EE63 /* MowerListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D94A1213FE4C10079EE63 /* MowerListCell.m */; };
-		BB8D94A3213FE4C10079EE63 /* MowerListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D94A1213FE4C10079EE63 /* MowerListCell.m */; };
-		BB8D94A6213FE51B0079EE63 /* MowerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D94A4213FE51B0079EE63 /* MowerModel.m */; };
-		BB8D94A7213FE51B0079EE63 /* MowerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D94A4213FE51B0079EE63 /* MowerModel.m */; };
 		BB8D94AA213FE8100079EE63 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D94A8213FE8100079EE63 /* NSString+Common.m */; };
 		BB8D94AB213FE8100079EE63 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D94A8213FE8100079EE63 /* NSString+Common.m */; };
 		BB8D94B2213FE8970079EE63 /* SSIDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D94AD213FE8960079EE63 /* SSIDTableViewCell.m */; };
@@ -624,10 +618,8 @@
 		BB5791182101B9DE005E3DFD /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "updateFirmwareTip@2x.png"; path = "image/updateFirmwareTip@2x.png"; sourceTree = SOURCE_ROOT; };
 		BB64B9DA204FD5A5006531E5 /* AutoMower.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = AutoMower.bin; sourceTree = "<group>"; };
-		BB8D944A213FE0050079EE63 /* QueryMowerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryMowerController.h; sourceTree = "<group>"; };
 		BB8D944B213FE0050079EE63 /* QueryDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryDeviceController.m; sourceTree = "<group>"; };
 		BB8D944C213FE0050079EE63 /* QueryDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryDeviceController.h; sourceTree = "<group>"; };
-		BB8D944D213FE0050079EE63 /* QueryMowerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryMowerController.m; sourceTree = "<group>"; };
 		BB8D9453213FE0710079EE63 /* ESPGuideCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPGuideCode.m; sourceTree = "<group>"; };
 		BB8D9454213FE0710079EE63 /* ESPTouchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchResult.m; sourceTree = "<group>"; };
 		BB8D9455213FE0710079EE63 /* ESPTouchTaskParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTaskParameter.h; sourceTree = "<group>"; };
@@ -667,10 +659,6 @@
 		BB8D9497213FE3CB0079EE63 /* DeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceModel.m; sourceTree = "<group>"; };
 		BB8D949C213FE40C0079EE63 /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
 		BB8D949D213FE40C0079EE63 /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
-		BB8D94A0213FE4C10079EE63 /* MowerListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MowerListCell.h; path = WiFi/MowerListCell.h; sourceTree = "<group>"; };
-		BB8D94A1213FE4C10079EE63 /* MowerListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MowerListCell.m; path = WiFi/MowerListCell.m; sourceTree = "<group>"; };
-		BB8D94A4213FE51B0079EE63 /* MowerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MowerModel.m; sourceTree = "<group>"; };
-		BB8D94A5213FE51B0079EE63 /* MowerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MowerModel.h; sourceTree = "<group>"; };
 		BB8D94A8213FE8100079EE63 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Common.m"; path = "WiFi/NSString+Common.m"; sourceTree = "<group>"; };
 		BB8D94A9213FE8100079EE63 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Common.h"; path = "WiFi/NSString+Common.h"; sourceTree = "<group>"; };
 		BB8D94AC213FE8960079EE63 /* SSIDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSIDTableViewCell.h; path = WiFi/SSIDTableViewCell.h; sourceTree = "<group>"; };
@@ -809,8 +797,6 @@
 				BB8D94AC213FE8960079EE63 /* SSIDTableViewCell.h */,
 				BB8D94AD213FE8960079EE63 /* SSIDTableViewCell.m */,
 				BB8D94B0213FE8970079EE63 /* SSIDTableViewCell.xib */,
-				BB8D94A0213FE4C10079EE63 /* MowerListCell.h */,
-				BB8D94A1213FE4C10079EE63 /* MowerListCell.m */,
 				BB8D948E213FE33C0079EE63 /* DeviceTableViewCell.h */,
 				BB8D948F213FE33C0079EE63 /* DeviceTableViewCell.m */,
 				BB8D948D213FE33C0079EE63 /* DeviceTableViewCell.xib */,
@@ -1208,10 +1194,6 @@
 				BB8D9452213FE0710079EE63 /* EspTouch */,
 				BB8D944C213FE0050079EE63 /* QueryDeviceController.h */,
 				BB8D944B213FE0050079EE63 /* QueryDeviceController.m */,
-				BB8D944A213FE0050079EE63 /* QueryMowerController.h */,
-				BB8D944D213FE0050079EE63 /* QueryMowerController.m */,
-				BB8D94A5213FE51B0079EE63 /* MowerModel.h */,
-				BB8D94A4213FE51B0079EE63 /* MowerModel.m */,
 				BB8D9494213FE3CB0079EE63 /* DeviceModel.h */,
 				BB8D9497213FE3CB0079EE63 /* DeviceModel.m */,
 				BB8D9495213FE3CB0079EE63 /* EspViewController.h */,
@@ -1801,16 +1783,13 @@
 				3EE3DC3E1FA8A0BF0049B8F7 /* BluetoothDataManage.m in Sources */,
 				BB8D947F213FE0710079EE63 /* ESPUDPSocketServer.m in Sources */,
 				BB8D9498213FE3CB0079EE63 /* EspViewController.m in Sources */,
-				BB8D9450213FE0050079EE63 /* QueryMowerController.m in Sources */,
 				3E1284C41FF32E510087CBED /* FirmwareViewController.m in Sources */,
 				3E5815C91FAFFF5D00E93520 /* WorkTimeSettingViewController.m in Sources */,
-				BB8D94A2213FE4C10079EE63 /* MowerListCell.m in Sources */,
 				3E5815C31FAFFF2300E93520 /* GeneralsettingTimeViewController.m in Sources */,
 				BB8D94AA213FE8100079EE63 /* NSString+Common.m in Sources */,
 				3ECE14281FCE919A008DBB7C /* MowerControlViewController.m in Sources */,
 				3E5D74F21FCD580C007F8E71 /* batteryButton.m in Sources */,
 				BB0F914F200C7EFB0060D287 /* WTReParser.m in Sources */,
-				BB8D94A6213FE51B0079EE63 /* MowerModel.m in Sources */,
 				3E63252D1FA6BC5F00F14462 /* ViewController.m in Sources */,
 				BB8D947D213FE0710079EE63 /* ESP_CRC8.m in Sources */,
 				3E5815DF1FB0612500E93520 /* ChangePasswordViewController.m in Sources */,
@@ -1874,16 +1853,13 @@
 				BBA445B42101713000D3B30E /* BluetoothDataManage.m in Sources */,
 				BB8D9480213FE0710079EE63 /* ESPUDPSocketServer.m in Sources */,
 				BB8D9499213FE3CB0079EE63 /* EspViewController.m in Sources */,
-				BB8D9451213FE0050079EE63 /* QueryMowerController.m in Sources */,
 				BBA445B52101713000D3B30E /* FirmwareViewController.m in Sources */,
 				BBA445B62101713000D3B30E /* WorkTimeSettingViewController.m in Sources */,
-				BB8D94A3213FE4C10079EE63 /* MowerListCell.m in Sources */,
 				BBA445B72101713000D3B30E /* GeneralsettingTimeViewController.m in Sources */,
 				BB8D94AB213FE8100079EE63 /* NSString+Common.m in Sources */,
 				BBA445B82101713000D3B30E /* MowerControlViewController.m in Sources */,
 				BBA445B92101713000D3B30E /* batteryButton.m in Sources */,
 				BBA445BA2101713000D3B30E /* WTReParser.m in Sources */,
-				BB8D94A7213FE51B0079EE63 /* MowerModel.m in Sources */,
 				BBA445BB2101713000D3B30E /* ViewController.m in Sources */,
 				BB8D947E213FE0710079EE63 /* ESP_CRC8.m in Sources */,
 				BBA445BC2101713000D3B30E /* ChangePasswordViewController.m in Sources */,
@@ -2103,7 +2079,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yusz.MOWOX-Wi-Fi-BLE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2159,7 +2135,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yusz.MOWOX-Wi-Fi-BLE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2257,7 +2233,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yusz.MOWOX-Wi-Fi-BLE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;

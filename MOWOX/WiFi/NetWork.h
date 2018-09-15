@@ -35,7 +35,7 @@ static NSInteger tempCountVer = 1000;
 
 @property (nonatomic, strong) GCDAsyncSocket *mySocket;
 ///@brief 接收数据
-@property (nonatomic, strong) NSMutableArray *recivedData68;
+//@property (nonatomic, strong) NSMutableArray *recivedData68;
 ///@brief 帧类型
 @property (nonatomic, assign) FrameType68 frame68Type;
 
@@ -59,20 +59,7 @@ static NSInteger tempCountVer = 1000;
 ///@brief 连接
 - (BOOL)connectToHost:(NSString*)host onPort:(uint16_t)port error:(NSError **)errPtr;
 
-- (void)inquireNode;
-- (void)inquireMoistureBatteryAndHumidity:(int)NodeAddrH low:(int)NodeAddrL;
-- (void)inquireValveBatteryAndStatus:(int)NodeAddrH low:(int)NodeAddrL;
-- (void)setValveStatus:(int)NodeAddrH low:(int)NodeAddrL status:(int)status;
-- (void)setValveStartWorktime:(int)NodeAddrH low:(int)NodeAddrL worktime:(int)worktime;
-- (void)inquireValveWorktime:(int)NodeAddrH low:(int)NodeAddrL;
-- (void)setValveWorktime:(int)NodeAddrH low:(int)NodeAddrL data:(NSArray *)dataArr;
-- (void)setMoistureHumidityLimit:(int)NodeAddrH low:(int)NodeAddrL limit:(int)limit;
 - (void)mowerFirmwareWithData:(NSData *)sendData;
-- (void)inquireMoistureReleValveWorktimelow:(int)NodeAddrL;
-- (void)setMoistureReleValveWorktimelow:(int)NodeAddrL withTime:(int)time;
-- (void)addNodeWithMac:(NSString *)Mac;
-- (void)setSystemClock;
-- (void)deleteNodeWithMac:(int)NodeAddrH low:(int)NodeAddrL;
 
 - (void)mowerSendWithData:(NSMutableArray *)mowerData;
 @end
