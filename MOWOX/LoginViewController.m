@@ -46,10 +46,10 @@
     self.view.layer.contents = (id)backImage.CGImage;
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
-    
+    self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+
     [self viewLayoutSet];
     //self.passwordTextfield.delegate = self;
-    self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
 
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -270,6 +270,8 @@
         }else{
             _resultLabel.text = text;
             if ([text intValue] == [BluetoothDataManage shareInstance].pincode) {
+                [self setMowerTime];
+                
                 RDVViewController *rdvView = [[RDVViewController alloc] init];
                 rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
                 [self presentViewController:rdvView animated:YES completion:nil];
@@ -325,6 +327,27 @@
 
         _bluetoothNameLabel.text = LocalString(@"Connect Wi-Fi");
     }
+}
+
+- (void)setMowerTime{
+    NSDate *date = [NSDate date];
+    NSCalendar *currentCalendar = [NSCalendar currentCalendar];    //IOS 8 之后
+    NSUInteger integer = NSCalendarUnitYear | NSCalendarUnitMonth |NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute;
+    NSDateComponents *dataCom = [currentCalendar components:integer fromDate:date];
+    
+    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom year] / 100]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom year] % 100]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom month]]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom day]]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom hour]]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom minute]]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    
+    [self.bluetoothDataManage setDataType:0x02];
+    [self.bluetoothDataManage setDataContent: dataContent];
+    [self.bluetoothDataManage sendBluetoothFrame];
 }
 
 @end

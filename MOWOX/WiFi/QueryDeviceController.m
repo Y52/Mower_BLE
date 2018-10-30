@@ -52,8 +52,9 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    self.navigationItem.title = LocalString(@"GateWay");
+    self.navigationController.navigationBar.translucent = NO;
+
+    self.navigationItem.title = LocalString(@"Device");
     
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     rightButton.frame = CGRectMake(0, 0, 20, 20);
@@ -117,7 +118,10 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
     if (!_devieceTable) {
         _devieceTable = ({
             UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
-            tableView.backgroundColor = [UIColor clearColor];
+            
+            tableView.backgroundColor = [UIColor colorWithRed:0.15 green:0.16 blue:0.16 alpha:1.0];
+            tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+            
             tableView.dataSource = self;
             tableView.delegate = self;
             tableView.hidden = YES;
@@ -138,9 +142,9 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
             
             MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(sendSearchBroadcast)];
             // Set title
-            [header setTitle:LocalString(@"下拉刷新") forState:MJRefreshStateIdle];
-            [header setTitle:LocalString(@"松开刷新") forState:MJRefreshStatePulling];
-            [header setTitle:LocalString(@"加载中") forState:MJRefreshStateRefreshing];
+            [header setTitle:LocalString(@"Pull-down refresh") forState:MJRefreshStateIdle];
+            [header setTitle:LocalString(@"Release refresh") forState:MJRefreshStatePulling];
+            [header setTitle:LocalString(@"Loading") forState:MJRefreshStateRefreshing];
             
             // Set font
             header.stateLabel.font = [UIFont systemFontOfSize:15];
@@ -166,9 +170,9 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
         
         MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(sendSearchBroadcast)];
         // Set title
-        [header setTitle:LocalString(@"下拉刷新") forState:MJRefreshStateIdle];
-        [header setTitle:LocalString(@"松开刷新") forState:MJRefreshStatePulling];
-        [header setTitle:LocalString(@"加载中") forState:MJRefreshStateRefreshing];
+        [header setTitle:LocalString(@"Pull-down refresh") forState:MJRefreshStateIdle];
+        [header setTitle:LocalString(@"Release refresh") forState:MJRefreshStatePulling];
+        [header setTitle:LocalString(@"Loading") forState:MJRefreshStateRefreshing];
         
         // Set font
         header.stateLabel.font = [UIFont systemFontOfSize:15];
@@ -180,7 +184,7 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
         _noDeviceView.mj_header = header;
         
         UILabel *label = [[UILabel alloc] init];
-        label.text = LocalString(@"快添加您的网关吧～");
+        label.text = LocalString(@"Add your gateway soon!");
         label.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
@@ -410,11 +414,7 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
 {
     switch (section) {
         case 0:{
-            if ([NetWork shareNetWork].mySocket.isDisconnected) {
-                return 0;
-            }else{
-                return 1;
-            }
+            return 1;
         }
             
         case 1:
@@ -447,7 +447,14 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
             cell = [[[NSBundle mainBundle] loadNibNamed:CellNibName_device owner:self options:nil] lastObject];
         }
         NetWork *net = [NetWork shareNetWork];
-        cell.deviceLabel.text = net.connectedGateway.deviceMac;
+        if (net.connectedGateway.deviceMac) {
+            cell.deviceLabel.text = net.connectedGateway.deviceMac;
+            cell.userInteractionEnabled = YES;
+        }else{
+            cell.deviceLabel.text = LocalString(@"nodevice");
+            cell.userInteractionEnabled = NO;
+        }
+        
         
         return cell;
     }
@@ -499,11 +506,13 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, HEIGHT_HEADER)];
     UILabel *headerTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 200, HEIGHT_HEADER)];
-    headerTitle.font = [UIFont systemFontOfSize:14.f];
+    headerView.backgroundColor = [UIColor darkGrayColor];
+    headerTitle.font = [UIFont systemFontOfSize:18.f];
+    headerTitle.adjustsFontSizeToFitWidth = YES;
     if (section == 0) {
-        headerTitle.text = LocalString(@"已连接设备");
+        headerTitle.text = LocalString(@"Connected Device");
     }else{
-        headerTitle.text = LocalString(@"在线设备");
+        headerTitle.text = LocalString(@"Available Device");
     }
     [headerView addSubview:headerTitle];
     
@@ -521,7 +530,7 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
     NSDictionary *netInfo = [self fetchNetInfo];
     EspVC.ssid = [netInfo objectForKey:@"SSID"];
     EspVC.bssid = [netInfo objectForKey:@"BSSID"];
-
+    NSLog(@"%@",[netInfo objectForKey:@"SSID"]);
     EspVC.block = ^(ESPTouchResult *result) {
 
     };

@@ -18,7 +18,7 @@
 @property (nonatomic,strong) CBCharacteristic *currentCharacteristic;
 @property (nonatomic, strong) CBPeripheral * currentPeripheral;
 
-@property (nonatomic, assign) int status;//0:Wi-Fi,1:BLE
+@property (nonatomic) int status;//0:Wi-Fi,1:BLE
 
 @end
 

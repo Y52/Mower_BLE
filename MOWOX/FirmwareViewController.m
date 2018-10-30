@@ -10,9 +10,7 @@
 #import "ProgressView.h"
 #import "ASProgressPopUpView.h"
 
-#define dataName @"AutoMower"
-
-@interface FirmwareViewController () <ASProgressPopUpViewDelegate,ASProgressPopUpViewDataSource>
+@interface FirmwareViewController ()
 ///@brife 帧数据控制单例
 @property (strong,nonatomic) BluetoothDataManage *bluetoothDataManage;
 
@@ -27,13 +25,23 @@
 @end
 
 @implementation FirmwareViewController
-
+{
+    NSString *dataName;
+}
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    if ([BluetoothDataManage shareInstance].deviceType == 0) {
+        dataName = @"DYM2206_42Motor_Vx.x.x_20xxXxXx.bin";
+    }else if ([BluetoothDataManage shareInstance].deviceType == 0){
+        dataName = @"DYM2206_35Motor_Vx.x.x_20xxXxXx.bin";
+    }else if ([BluetoothDataManage shareInstance].deviceType == 0){
+        dataName = @"DYM2205_35Motor_Vx.x.x_20xxXxXx.bin";
+    }else{
+        dataName = @"AutoMower";
+    }
     
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     

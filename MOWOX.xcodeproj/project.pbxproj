@@ -112,7 +112,6 @@
 		3EC200A21FE2839F0005F15A /* 蓝牙图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC200A11FE2839F0005F15A /* 蓝牙图标@2x.png */; };
 		3EC5FC9F1FD52C9600F1CB7F /* inputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC5FC9E1FD52C9600F1CB7F /* inputTextField.m */; };
 		3ECE14281FCE919A008DBB7C /* MowerControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE14271FCE9199008DBB7C /* MowerControlViewController.m */; };
-		3ED73F531FE2531B007A2AD4 /* anotherSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED73F521FE2531B007A2AD4 /* anotherSettingViewController.m */; };
 		3EE3DC3E1FA8A0BF0049B8F7 /* BluetoothDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3DC3D1FA8A0BF0049B8F7 /* BluetoothDataManage.m */; };
 		3EE3DC411FA8B0750049B8F7 /* RemoterControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3DC401FA8B0750049B8F7 /* RemoterControlViewController.m */; };
 		3EE3DC461FA8B2BE0049B8F7 /* 后退@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE3DC421FA8B2BE0049B8F7 /* 后退@2x.png */; };
@@ -225,7 +224,6 @@
 		BBA445AB2101713000D3B30E /* InformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5815D71FB0375E00E93520 /* InformationTableViewController.m */; };
 		BBA445AC2101713000D3B30E /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F252A1FB93DE100E79C23 /* LaunchScreenViewController.m */; };
 		BBA445AD2101713000D3B30E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E43ACED1FAACFC200924616 /* MainViewController.m */; };
-		BBA445AE2101713000D3B30E /* anotherSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED73F521FE2531B007A2AD4 /* anotherSettingViewController.m */; };
 		BBA445AF2101713000D3B30E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E63253E1FA6C17C00F14462 /* LoginViewController.m */; };
 		BBA445B02101713000D3B30E /* LMPopInputPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F9143200C7E370060D287 /* LMPopInputPasswordView.m */; };
 		BBA445B12101713000D3B30E /* MowerSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD4761FDBC36A00667EDA /* MowerSettingViewController.m */; };
@@ -552,8 +550,6 @@
 		3EC5FC9E1FD52C9600F1CB7F /* inputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inputTextField.m; sourceTree = "<group>"; };
 		3ECE14261FCE9199008DBB7C /* MowerControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MowerControlViewController.h; sourceTree = "<group>"; };
 		3ECE14271FCE9199008DBB7C /* MowerControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MowerControlViewController.m; sourceTree = "<group>"; };
-		3ED73F511FE2531B007A2AD4 /* anotherSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anotherSettingViewController.h; sourceTree = "<group>"; };
-		3ED73F521FE2531B007A2AD4 /* anotherSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = anotherSettingViewController.m; sourceTree = "<group>"; };
 		3EE3DC3C1FA8A0BF0049B8F7 /* BluetoothDataManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothDataManage.h; sourceTree = "<group>"; };
 		3EE3DC3D1FA8A0BF0049B8F7 /* BluetoothDataManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothDataManage.m; sourceTree = "<group>"; };
 		3EE3DC3F1FA8B0750049B8F7 /* RemoterControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoterControlViewController.h; sourceTree = "<group>"; };
@@ -695,6 +691,8 @@
 		BBCCA45C2019C55100423650 /* launchImage1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1@2x.png"; sourceTree = "<group>"; };
 		BBCCA45E2019C71F00423650 /* launchImage1_5.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1_5.5@2x.png"; sourceTree = "<group>"; };
 		BBCCA45F2019C71F00423650 /* launchImage1_4.7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1_4.7@2x.png"; sourceTree = "<group>"; };
+		BBCD5967215F548300D87D31 /* MOWOXROBOT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MOWOXROBOT.entitlements; sourceTree = "<group>"; };
+		BBCD5968215F55C600D87D31 /* MOWOX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MOWOX.entitlements; sourceTree = "<group>"; };
 		BBFD388E2079ACB500D02ACD /* UIViewController+BarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
 		BBFD388F2079ACB500D02ACD /* UIViewController+BarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarButton.m"; sourceTree = "<group>"; };
 		C7E8E52C6210C1E8D03A21B2 /* libPods-MOWOXROBOT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MOWOXROBOT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -887,6 +885,7 @@
 		3E6325191FA6BC5F00F14462 = {
 			isa = PBXGroup;
 			children = (
+				BBCD5967215F548300D87D31 /* MOWOXROBOT.entitlements */,
 				3E6325241FA6BC5F00F14462 /* MOWOX */,
 				3E6325231FA6BC5F00F14462 /* Products */,
 				ABFF92C4CAECF0C1C642BC34 /* Pods */,
@@ -906,6 +905,7 @@
 		3E6325241FA6BC5F00F14462 /* MOWOX */ = {
 			isa = PBXGroup;
 			children = (
+				BBCD5968215F55C600D87D31 /* MOWOX.entitlements */,
 				3E14802B1FCFE50900FA8A2D /* image */,
 				3E6325401FA6CDD000F14462 /* imageAbandon */,
 				3E63253C1FA6C14B00F14462 /* classes */,
@@ -1105,8 +1105,6 @@
 			children = (
 				3E6325711FA702F700F14462 /* SettingViewController.h */,
 				3E6325721FA702F700F14462 /* SettingViewController.m */,
-				3ED73F511FE2531B007A2AD4 /* anotherSettingViewController.h */,
-				3ED73F521FE2531B007A2AD4 /* anotherSettingViewController.m */,
 				3E5815C11FAFFF2300E93520 /* GeneralsettingTimeViewController.h */,
 				3E5815C21FAFFF2300E93520 /* GeneralsettingTimeViewController.m */,
 				3E5815C41FAFFF3E00E93520 /* GeneralsettingLanguageViewController.h */,
@@ -1336,10 +1334,20 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 5FAMV3D32N;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 					BBA445A72101713000D3B30E = {
 						DevelopmentTeam = 5FAMV3D32N;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1772,7 +1780,6 @@
 				BB8D949E213FE40C0079EE63 /* NetWork.m in Sources */,
 				3E2F252B1FB93DE100E79C23 /* LaunchScreenViewController.m in Sources */,
 				3E43ACEE1FAACFC200924616 /* MainViewController.m in Sources */,
-				3ED73F531FE2531B007A2AD4 /* anotherSettingViewController.m in Sources */,
 				BB8D9489213FE0710079EE63 /* ESPTouchTask.m in Sources */,
 				3E63253F1FA6C17C00F14462 /* LoginViewController.m in Sources */,
 				BB8D9471213FE0710079EE63 /* ESPGuideCode.m in Sources */,
@@ -1842,7 +1849,6 @@
 				BB8D949F213FE40C0079EE63 /* NetWork.m in Sources */,
 				BBA445AC2101713000D3B30E /* LaunchScreenViewController.m in Sources */,
 				BBA445AD2101713000D3B30E /* MainViewController.m in Sources */,
-				BBA445AE2101713000D3B30E /* anotherSettingViewController.m in Sources */,
 				BB8D948A213FE0710079EE63 /* ESPTouchTask.m in Sources */,
 				BBA445AF2101713000D3B30E /* LoginViewController.m in Sources */,
 				BB8D9472213FE0710079EE63 /* ESPGuideCode.m in Sources */,
@@ -2036,6 +2042,7 @@
 			baseConfigurationReference = 81D0F6572EC09A565F67D3F8 /* Pods-MOWOX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;
@@ -2079,7 +2086,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOXTEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2092,6 +2099,7 @@
 			baseConfigurationReference = 1F864A63560DCE59776D4952 /* Pods-MOWOX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;
@@ -2135,7 +2143,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOXTEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2194,6 +2202,7 @@
 			baseConfigurationReference = 41AF602D45B7AE4EE6CB78D8 /* Pods-MOWOX.provisioning profile.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;
@@ -2233,7 +2242,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusz.MOWOXTEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2246,6 +2255,7 @@
 			baseConfigurationReference = 7B70FDA6604CB820688AC28F /* Pods-MOWOXROBOT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MOWOXROBOT.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -2294,6 +2304,7 @@
 			baseConfigurationReference = 0291E74477A8630ADD2815B9 /* Pods-MOWOXROBOT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MOWOXROBOT.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -2341,6 +2352,7 @@
 			baseConfigurationReference = DB55EC4F3614E1C88254D96A /* Pods-MOWOXROBOT.provisioning profile.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MOWOXROBOT.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;

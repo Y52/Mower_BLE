@@ -88,16 +88,10 @@ static CGFloat cellHeight = 45.0;
     [self addLeftBarButtonWithImage:image action:@selector(backAction)];
     
     if (!_workDatePickview) {
-        if (UI_IS_IPHONE5) {
-            _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 216, ScreenWidth, 216)];
-        }else if (UI_IS_IPHONE6){
-            _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 216, ScreenWidth, 216)];
-        }else if (UI_IS_IPHONE6PLUS){
-            _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 216, ScreenWidth, 216)];
-        }
+        _workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 216, ScreenWidth, 216)];
         //_workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight * 0.76, ScreenWidth, ScreenHeight * 0.24)];
         //设置工作时间的PickerView
-        self.startTimeArray = [NSMutableArray arrayWithArray:@[@"AM 0:00;",@"AM 1:00;",@"AM 2:00;",@"AM 3:00;",@"AM 4:00;",@"AM 5:00;",@"AM 6:00;",@"AM 7:00;",@"AM 8:00;",@"AM 9:00;",@"AM 10:00;",@"AM 11:00;",@"PM 0:00;",@"PM 1:00;",@"PM 2:00;",@"PM 3:00;",@"PM 4:00;",@"PM 5:00;",@"PM 6:00;",@"PM 7:00;",@"PM 8:00;",@"PM 9:00;",@"PM 10:00;",@"PM 11:00;"]];
+        self.startTimeArray = [NSMutableArray arrayWithArray:@[LocalString(@"AM 0:00;"),LocalString(@"AM 1:00;"),LocalString(@"AM 2:00;"),LocalString(@"AM 3:00;"),LocalString(@"AM 4:00;"),LocalString(@"AM 5:00;"),LocalString(@"AM 6:00;"),LocalString(@"AM 7:00;"),LocalString(@"AM 8:00;"),LocalString(@"AM 9:00;"),LocalString(@"AM 10:00;"),LocalString(@"AM 11:00;"),LocalString(@"PM 0:00;"),LocalString(@"PM 1:00;"),LocalString(@"PM 2:00;"),LocalString(@"PM 3:00;"),LocalString(@"PM 4:00;"),LocalString(@"PM 5:00;"),LocalString(@"PM 6:00;"),LocalString(@"PM 7:00;"),LocalString(@"PM 8:00;"),LocalString(@"PM 9:00;"),LocalString(@"PM 10:00;"),LocalString(@"PM 11:00;")]];
         self.workingHoursArray = [NSMutableArray arrayWithArray:@[@"0 Hours",@"1 Hours",@"2 Hours",@"3 Hours",@"4 Hours",@"5 Hours",@"6 Hours",@"7 Hours",@"8 Hours",@"9 Hours",@"10 Hours",@"11 Hours",@"12Hours",@"13 Hours",@"14 Hours",@"15 Hours",@"16 Hours",@"17 Hours",@"18 Hours",@"19 Hours",@"20 Hours",@"21 Hours",@"22 Hours",@"23 Hours",@"24 Hours",]];
         self.selectrowArray = [NSMutableArray array];
         for (int i = 0; i < 20; i++) {
@@ -107,6 +101,7 @@ static CGFloat cellHeight = 45.0;
         self.workDatePickview.delegate = self;
         //[self.workDatePickview selectRow:3 inComponent:0 animated:YES];
         //[self.workDatePickview selectRow:7 inComponent:1 animated:YES];
+        //_workDatePickview.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     }
     
     _myTableView = ({

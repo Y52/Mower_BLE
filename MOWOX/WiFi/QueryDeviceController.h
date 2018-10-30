@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QueryDeviceController : BaseViewController
+@interface QueryDeviceController : UIViewController
 
 @end

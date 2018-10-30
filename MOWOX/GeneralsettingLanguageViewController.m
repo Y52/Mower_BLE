@@ -70,10 +70,10 @@
     /*self.languageArray = [NSMutableArray arrayWithArray:@[NSLocalizedString(@"English", nil),
                                                           NSLocalizedString(@"Polski", nil),NSLocalizedString(@"Dansk", nil),NSLocalizedString(@"Finnish", nil),NSLocalizedString(@"Czech", nil),NSLocalizedString(@"Hungarian", nil),NSLocalizedString(@"Slovenian", nil),NSLocalizedString(@"Polish", nil),NSLocalizedString(@"Russian", nil),NSLocalizedString(@"France", nil),NSLocalizedString(@"Japanese", nil)]];*/
     self.languageArray = [NSMutableArray arrayWithArray:@[NSLocalizedString(@"English", nil),
-                                                          NSLocalizedString(@"Dansk", nil),]];
+                                                          NSLocalizedString(@"Dansk", nil),NSLocalizedString(@"Derman", nil),NSLocalizedString(@"Czech", nil),NSLocalizedString(@"Slovak", nil),NSLocalizedString(@"Polish", nil),NSLocalizedString(@"Hungarian", nil),NSLocalizedString(@"Russian", nil),NSLocalizedString(@"French", nil),]];
     self.languagePicker.dataSource = self;
     self.languagePicker.delegate = self;
-    [self.languagePicker selectRow:5 inComponent:0 animated:YES];
+    [self.languagePicker selectRow:0 inComponent:0 animated:YES];
     
     _OKButton = [UIButton buttonWithTitle:LocalString(@"OK") titleColor:[UIColor blackColor]];
     [_OKButton setButtonStyle1];

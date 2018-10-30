@@ -32,8 +32,9 @@
     SettingViewController *setView = [[SettingViewController alloc] init];
     UINavigationController *NAV3 = [[UINavigationController alloc] initWithRootViewController:setView];
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *infoView = [storyboard instantiateViewControllerWithIdentifier:@"InformationViewController"];
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *infoView = [storyboard instantiateViewControllerWithIdentifier:@"InformationViewController"];
+    InformationViewController *infoView = [[InformationViewController alloc] init];
     UINavigationController *NAV1 = [[UINavigationController alloc] initWithRootViewController:infoView];
     
     [self setViewControllers:@[NAV1,NAV2,NAV3]];

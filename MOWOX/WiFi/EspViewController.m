@@ -88,7 +88,7 @@ static BOOL isSucc = NO;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = LocalString(@"添加设备");
+    self.navigationItem.title = LocalString(@"Add Router");
     
     [self setSsidPasswordTable];
     _nextBtn = [self nextBtn];
@@ -114,7 +114,7 @@ static BOOL isSucc = NO;
     if (!_nextBtn) {
         self.nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_nextBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_nextBtn setTitle:LocalString(@"下一步") forState:UIControlStateNormal];
+        [_nextBtn setTitle:LocalString(@"Next") forState:UIControlStateNormal];
         [_nextBtn.titleLabel setFont:[UIFont fontWithName:@"PingFangSC-Medium" size:16]];
         [_nextBtn setBackgroundColor:[UIColor colorWithRed:71/255.0 green:120/255.0 blue:204/255.0 alpha:0.4]];
         _nextBtn.enabled = NO;
@@ -128,7 +128,7 @@ static BOOL isSucc = NO;
 #pragma mark - masonry
 - (void)uiMasonry{
     [_ssidPasswordTable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth, HEIGHT_TEXT_FIELD * 2));
+        make.size.mas_equalTo(CGSizeMake(ScreenWidth, HEIGHT_TEXT_FIELD * 3));
         make.centerY.equalTo(self.view.mas_centerY);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
@@ -146,7 +146,7 @@ static BOOL isSucc = NO;
 #pragma mark - tableview
 - (void)setSsidPasswordTable{
     _ssidPasswordTable = ({
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 300, ScreenWidth, HEIGHT_TEXT_FIELD * 2) style:UITableViewStylePlain];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 300, ScreenWidth, HEIGHT_TEXT_FIELD * 3) style:UITableViewStylePlain];
         tableView.backgroundColor = [UIColor clearColor];
         tableView.dataSource = self;
         tableView.delegate = self;
@@ -280,7 +280,7 @@ static BOOL isSucc = NO;
                      }
                      **/
                     //[[[UIAlertView alloc]initWithTitle:@"Execute Result" message:mutableStr delegate:nil cancelButtonTitle:@"I know" otherButtonTitles:nil]show];
-                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:LocalString(@"Execute Result") message:LocalString(@"Esptouch success") preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:LocalString(@"Configue Result") message:LocalString(@"SUCCESSFUL!") preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:LocalString(@"I know") style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                         [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:1] animated:YES];
                         NSLog(@"action = %@",action);
@@ -292,7 +292,7 @@ static BOOL isSucc = NO;
                 else
                 {
                     //[[[UIAlertView alloc]initWithTitle:@"Execute Result" message:@"Esptouch fail" delegate:nil cancelButtonTitle:@"I know" otherButtonTitles:nil]show];
-                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:LocalString(@"Execute Result") message:LocalString(@"Esptouch fail") preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:LocalString(@"Configue Result") message:LocalString(@"FAILED!") preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:LocalString(@"I know") style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                         NSLog(@"action = %@",action);
                     }];
@@ -360,7 +360,7 @@ static BOOL isSucc = NO;
             [self cancel];
             progressValue = 0.f;
         }else{
-            [SVProgressHUD showProgress:progressValue status:@"正在配网中"];
+            [SVProgressHUD showProgress:progressValue status:LocalString(@"Distribution network")];
             dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.f * NSEC_PER_SEC));
             dispatch_after(time, dispatch_get_main_queue(), ^{
                 [self increaseProgress];

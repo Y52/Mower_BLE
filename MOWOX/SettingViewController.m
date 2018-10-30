@@ -57,6 +57,9 @@ static int version3 = 13;
     if (appDelegate.status == 0) {
         _updateButton.hidden = YES;
     }
+    if (version1 == 0) {
+        _updateButton.hidden = YES;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -87,7 +90,7 @@ static int version3 = 13;
     }
     
     _LanguageButton = [UIButton buttonWithTitle:LocalString(@"Language setting") titleColor:[UIColor blackColor]];
-    _TimeButton = [UIButton buttonWithTitle:LocalString(@"Time setting") titleColor:[UIColor blackColor]];
+    //_TimeButton = [UIButton buttonWithTitle:LocalString(@"Time setting") titleColor:[UIColor blackColor]];
     _WorktimeButton = [UIButton buttonWithTitle:LocalString(@"Working time setting") titleColor:[UIColor blackColor]];
     _PinButton = [UIButton buttonWithTitle:LocalString(@"Pin setting") titleColor:[UIColor blackColor]];
     _mowerButton = [UIButton buttonWithTitle:LocalString(@"Mower setting") titleColor:[UIColor blackColor]];
@@ -100,13 +103,13 @@ static int version3 = 13;
     [_mowerButton setButtonStyle1];
     [_updateButton setButtonStyle1];
     [_LanguageButton addTarget:self action:@selector(languageSet) forControlEvents:UIControlEventTouchUpInside];
-    [_TimeButton addTarget:self action:@selector(timeSet) forControlEvents:UIControlEventTouchUpInside];
+    //[_TimeButton addTarget:self action:@selector(timeSet) forControlEvents:UIControlEventTouchUpInside];
     [_WorktimeButton addTarget:self action:@selector(worktimeSet) forControlEvents:UIControlEventTouchUpInside];
     [_PinButton addTarget:self action:@selector(pinSet) forControlEvents:UIControlEventTouchUpInside];
     [_mowerButton addTarget:self action:@selector(mowerSet) forControlEvents:UIControlEventTouchUpInside];
     [_updateButton addTarget:self action:@selector(updateWare) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_LanguageButton];
-    [self.view addSubview:_TimeButton];
+    //[self.view addSubview:_TimeButton];
     [self.view addSubview:_WorktimeButton];
     [self.view addSubview:_PinButton];
     [self.view addSubview:_mowerButton];
@@ -130,14 +133,14 @@ static int version3 = 13;
         }];
     }
 
-    [_TimeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.LanguageButton.mas_bottom).offset(ScreenHeight * 0.05);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
+//    [_TimeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
+//        make.top.equalTo(self.LanguageButton.mas_bottom).offset(ScreenHeight * 0.05);
+//        make.centerX.equalTo(self.view.mas_centerX);
+//    }];
     [_WorktimeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.TimeButton.mas_bottom).offset(ScreenHeight * 0.05);
+        make.top.equalTo(self.LanguageButton.mas_bottom).offset(ScreenHeight * 0.05);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
     [_mowerButton mas_makeConstraints:^(MASConstraintMaker *make) {

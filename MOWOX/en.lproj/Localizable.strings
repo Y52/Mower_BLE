@@ -60,3 +60,15 @@
 "Please check if Bluetooth is turned on in the control center" = "Please check if Bluetooth is turned on in the control center";
 "Confirm" = "Confirm";
 "Set pincode wrong" = "Set pincode wrong";
+
+
+"Distribution network" = "Distribution network";
+"Device" = "Device";
+"Available Device" = "Available Device";
+"Connected Device" = "Connected Device";
+"Pull-down refresh" = "Pull-down refresh";
+"Release refresh" = "Release refresh";
+"Loading" = "Loading";
+"Add your gateway soon!" = "Add your gateway soon!";
+"Add GateWay" = "Add GateWay";
+"Next" = "Next";

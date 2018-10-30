@@ -64,6 +64,7 @@
     if (_timer == nil) {
         _timer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(inquireBatter) userInfo:nil repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
+        //[_timer setFireDate:[NSDate distantFuture]];
     }
 }
 

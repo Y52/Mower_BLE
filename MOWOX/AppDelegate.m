@@ -27,11 +27,13 @@
     [NSThread sleepForTimeInterval:1.0];//设置启动页面时间
     
     [self customizeInterface];
-        
+    
+    _status = 1;
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    _status = 0;
+    
     
     LoginViewController *vc = [[LoginViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
