@@ -8,11 +8,11 @@
 /* Class = "UILabel"; text = "Label"; ObjectID = "Qpb-Q5-56N"; */
 "Qpb-Q5-56N.text" = "Label";
 
-/* Class = "UILabel"; text = "     Robotic mower Connect"; ObjectID = "eXf-2o-8wL"; */
+/* Class = "UILabel"; text = "Robotic mower Connect"; ObjectID = "eXf-2o-8wL"; */
 "eXf-2o-8wL.text" = "yhteys leikkuriin luotu ";
 
-/* Class = "UILabel"; text = "     App software version: V1.0 for iOS"; ObjectID = "hES-M8-ovO"; */
+/* Class = "UILabel"; text = "App software version: V1.0 for iOS"; ObjectID = "hES-M8-ovO"; */
 "hES-M8-ovO.text" = "sovellus versio:V1.0 for iOS";
 
-/* Class = "UILabel"; text = "     Mower software version: V1.0"; ObjectID = "u87-ZO-ZQJ"; */
+/* Class = "UILabel"; text = "Mower software version: V1.0"; ObjectID = "u87-ZO-ZQJ"; */
 "u87-ZO-ZQJ.text" = "laiteversio:V{1.0}";
