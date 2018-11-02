@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  MOWOX
+//
+//  Created by Mac on 2017/11/18.
+//  Copyright © 2017年 yusz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "NSObject+Common.h"
+#import "UILabel+Common.h"
+#import "UIButton+Common.h"
+#import "UITextField+Common.h"
+#import "UIColor+ColorChange.h"
+#import "UIViewController+BarButton.h"
+#import "Masonry.h"
+#import "RDVTabBarController.h"
+#import "BluetoothDataManage.h"
+#import "BaseViewController.h"
+#import "NetWork.h"
+
+
+#endif
+
+#define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight                        [[UIScreen mainScreen] bounds].size.height
+
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define UI_IS_IPHONE5           (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0)
+#define UI_IS_IPHONE6           (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0)
+#define UI_IS_IPHONE6PLUS       (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0 || [[UIScreen mainScreen] bounds].size.width == 736.0)
+
+
+#define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
+
+#define LocalString(x)      NSLocalizedString(x, nil)
+
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define kSafeArea_Bottom (kDevice_Is_iPhoneX? 34: 0)
+#define kColorNavBG [UIColor colorWithHexString:@"0xFAFBED"]
+#define kColorCCC kColorD8DDE4
+
+#define HScale (667.f / ScreenHeight)
+#define WScale (375.f / ScreenWidth)
+#define yCellHeight 44
+#define buttonHeight (50.f / HScale)
+
+#endif /* PrefixHeader_pch */
