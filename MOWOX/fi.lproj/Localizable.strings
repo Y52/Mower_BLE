@@ -9,48 +9,48 @@
 "consucc" = "Connected";
 "disconnect" = "bluetooth disconnected";
 
-"Input old PIN code" = "laita  vanha PIN-koodi ";
-"Input new PIN code" = "laita  uusi PIN-koodi ";
-"4 numbers" = " 4 numeroa ";
-"Repeat new PIN code" = "vahvista  uusi PIN-koodi ";
+"Input old PIN code" = "laita vanha PIN-koodi ";
+"Input new PIN code" = "laita uusi PIN-koodi ";
+"4 numbers" = "4 numeroa";
+"Repeat new PIN code" = "vahvista uusi PIN-koodi ";
 "OK" = "OK";
-"Mow in the rain" = "leikkaa  sateessa ";
+"Mow in the rain" = "leikkaa sateessa ";
 "Yes" = "kyllä";
 "NO" = "ei";
-"Boundary cut" = "kytke  terät pois päältä ";
+"Boundary cut" = "kytke terät pois päältä";
 
-"Date" = "päivä ";
-"Time" = "aika ";
-"Language setting" = "    kieliasetukset ";
-"Time setting" = "    aika  asetukset ";
-"Working time setting" = "    aikataulu ";
-"Mower setting" = "    leikkurin  asetukset ";
-"PIN setting" = "    muuta  PIN-koodi ";
-"Start" = "    käynnistä ";
-"Stop" = "    pysäytä ";
-"Alerts" = "    hälytykset ";
-"setting" = "    asetukset ";
-"Setting" = "    asetukset ";
+"Date" = "päivä";
+"Time" = "aika";
+"Language setting" = "kieliasetukset";
+"Time setting" = "aika asetukset";
+"Working time setting" = "aikataulu";
+"Mower setting" = "leikkurin asetukset";
+"PIN setting" = "muuta PIN-koodi";
+"Start" = "käynnistä";
+"Stop" = "pysäytä ";
+"Alerts" = "hälytykset";
+"setting" = "asetukset";
+"Setting" = "asetukset";
 
-"Connect bluetooth" = "    kytke  Bluetooth ";
-"Control the mower" = "    hallitse  leikkuria ";
-"Connected device" = "    laite  yhdistetty ";
-"No device" = "    ei  laitetta ";
-"Available devices" = "    käytettävissä  olevat laitteet";
-"(please choose RobotMower_DYM)" = "( valitse RobotMower_DYM) ";
+"Connect bluetooth" = "kytke Bluetooth";
+"Control the mower" = "hallitse leikkuria ";
+"Connected device" = "laite yhdistetty";
+"No device" = "ei laitetta ";
+"Available devices" = "käytettävissä olevat laitteet";
+"(please choose RobotMower_DYM)" = "(valitse RobotMower_DYM) ";
 
-"Information" = "    tiedot ";
-"Mower status" = "    leikkurin  tila ";
-"Update mower’s Firmware" = "    leikkurin  sovelluspäivitys ";
-"Please input PIN code" = "    laita  PIN-koodi ";
-"Cancel" = "    PERUUTA ";
-"Confirm" = "    VAHVISTA ";
+"Information" = "tiedot ";
+"Mower status" = "leikkurin tila ";
+"Update mower’s Firmware" = "leikkurin sovelluspäivitys";
+"Please input PIN code" = "laita PIN-koodi";
+"Cancel" = "PERUUTA";
+"Confirm" = "VAHVISTA";
 
 "Done" = "Done";
 "English" = "English";
 "Dansk" = "Dansk";
 
-"Bluetooth connected" = "Bluetooth connected";
+"Bluetooth connected" ="Bluetooth connected";
 "Mower on lawn" = "Mower on lawn";
 "Back to station" = "Back to station";
 "Mower on station" = "Mower on station";
@@ -58,9 +58,9 @@
 "Battery capacity" = "Battery capacity";
 "Mower control" = "Mower control";
 
-"Your mower's firmware version:" = "    leikkurisi  sovellusversio:";
-"Latest mower's firmware version:" = "    viimeisin  sovellusversio:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "    paina  näppäintä "2" ( käynnistystila, 2 - päivitä sovellus) aloittaaksesi";
+"Your mower's firmware version:" = "leikkurisi sovellusversio:";
+"Latest mower's firmware version:" ="viimeisin sovellusversio:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "paina  näppäintä "2" ( käynnistystila, 2 - päivitä sovellus) aloittaaksesi";
 //
 "Bluetooth not connected" = "Bluetooth not connected";
 "Incorrect PIN code length" = "Incorrect PIN code length";

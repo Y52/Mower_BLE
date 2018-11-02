@@ -14,8 +14,8 @@
 "Connected device" = "verbundenes Gerät";
 "No device" = "keine Verbindung";
 "Available devices" = "verfügbare Geräte";
-"(please choose RobotMower_DYM)" = "bitte RobotMower_DYM auswählen)";
-"Please input PIN code" = " Bitte PIN-Code eingeben";
+"(please choose RobotMower_DYM)" ="bitte RobotMower_DYM auswählen)";
+"Please input PIN code" = "Bitte PIN-Code eingeben";
 //
 "Done" = "Done";
 "Cancel" = "Abbruch";
@@ -40,9 +40,9 @@
 "Alerts" = "Alarme";
 "setting" = "Einstellungen";
 "Setting" = "Einstellungen";
-"Language setting" = "Sprache";
+"Language setting" ="Sprache";
 "Time setting" = "Zeit einstellen";
-"Working time setting" = "Arbeitszeit einst";
+"Working time setting" ="Arbeitszeit einst";
 "Mower setting" = "Geräteeinstellungen ";
 "PIN setting" = "PIN Wechseln";
 "Update mower’s Firmware" = "Firmware-Update";
@@ -50,14 +50,14 @@
 "Date" = "Datum";
 "Time" = "Uhrzeit";
 "Mow in the rain" = "Mähen bei Regen";
-"Yes" = "Ja ";
+"Yes" = "Ja";
 "NO" = "Nein";
 "Boundary cut" = "Randschnitt";
 "Input old PIN code" = "alte PIN:";
 "Input new PIN code" = "neue PIN:";
 "Repeat new PIN code" = "Wiederholung neuer PIN:";
 "4 numbers" = "4 Ziffern";
-"Your mower's firmware version:" = "Installierte Firmware-Version: ";
+"Your mower's firmware version:" = "Installierte Firmware-Version:";
 "Latest mower's firmware version:" = "Aktuelle Firmware-Version:";
 "Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Gerät aus- und einschalten und mit "OK" und On/Off-Taste Bootmodus aufrufen; dann mit "2" das Update starten.";
 //未改的

@@ -12,7 +12,7 @@
 "eXf-2o-8wL.text" = "Forbindelse opprettet til Robot";
 
 /* Class = "UILabel"; text = "     App software version: V1.0 for iOS"; ObjectID = "hES-M8-ovO"; */
-"hES-M8-ovO.text" = "App Software funktion: V. (1.0) for (OS)";
+"hES-M8-ovO.text" = "App Software funktion: V.(1.0) for (OS)";
 
 /* Class = "UILabel"; text = "     Mower software version: V1.0"; ObjectID = "u87-ZO-ZQJ"; */
 "u87-ZO-ZQJ.text" = "Software versjon: V{1.0}";
