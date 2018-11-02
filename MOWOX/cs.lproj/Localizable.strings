@@ -9,46 +9,46 @@
 "consucc" = "Connected";
 "disconnect" = "bluetooth disconnected";
 
-"Input old PIN code" = "Skriv inn nåværende PIN kode";
-"Input new PIN code" = "Skriv inn ny PIN kode";
-"4 numbers" = "4 siffer";
-"Repeat new PIN code" = "Bekreft ny PIN kode";
+"Input old PIN code" = "stará PIN";
+"Input new PIN code" = "nová PIN";
+"4 numbers" = "4 numre";
+"Repeat new PIN code" = "obnovit PIN";
 "OK" = "OK";
-"Mow in the rain" = "Klipping i regnvær";
-"Yes" = "Ja";
-"NO" = "Nei";
-"Boundary cut" = "Kantklipping";
+"Mow in the rain" = "sekat v dešti";
+"Yes" = "ano";
+"NO" = "ne";
+"Boundary cut" = "sečeni okraje";
 
-"Date" = "Dato";
-"Time" = "Tid";
-"Language setting" = "Språk";
-"Time setting" = "Tids innstilling";
-"Working time setting" = "Arbeidstidsinnstillinger";
-"Mower setting" = "Robot innstillinger";
-"PIN setting" = "Endre PIN kode";
+"Date" = "Datum";
+"Time" = "čas";
+"Language setting" = "Jazyk";
+"Time setting" = "čas";
+"Working time setting" = "Planovat";
+"Mower setting" = "Obecné nastavení";
+"PIN setting" = "obnovit PIN kód";
 "Start" = "Start";
-"Stop" = "Stopp";
+"Stop" = "Stop";
 "Alerts" = "Alarm";
-"setting" = "Innstillinger";
-"Setting" = "Innstillinger";
+"setting" = "seřtzení";
+"Setting" = "seřtzení";
 
-"Connect bluetooth" = "Bluetooth forbindelse";
-"Control the mower" = "Kontroller Robot";
-"Connected device" = "Tilkoblet til Robot";
-"No device" = "Ingen enhet tilgjengelig";
-"Available devices" = "Tilgjengelige enheter";
-"(please choose RobotMower_DYM)" = "(Velg RobotMower_DYM)";
+"Connect bluetooth" = "Connect bluetooth";
+"Control the mower" = "Control the mower";
+"Connected device" = "Connected device";
+"No device" = "No device";
+"Available devices" = "Přistoje k dispozic";
+"(please choose RobotMower_DYM)" = "(prosim Robot Mower_DYM zvolit)";
 
-"Information" = "Informasjon";
-"Mower status" = "Robot status";
-"Update mower’s Firmware" = "Software oppdatering";
-"Please input PIN code" = "Skriv inn PIN kode";
-"Cancel" = "Avbryt";
-"Confirm" = "Bekreft";
+"Information" = "Informace";
+"Mower status" = "stav sekačky";
+"Update mower’s Firmware" = "Update mower’s Firmware";
+"Please input PIN code" = "Mdat PIN";
+"Cancel" = "preruseni";
+"Confirm" = "poturzeni";
 
-"Your mower's firmware version:" = "Robotens software versjon:: (x.y.z)";
-"Latest mower's firmware version:" = "Nyeste software versjon:: (x.y.z)";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Trykk "2" på display(Boot Mode, 2 - oppdater software for å starte)";
+"Your mower's firmware version:" = "Instalovana Firmware-Verze: {x.y.z}";
+"Latest mower's firmware version:" = "Aktuální verze Firmware: {x.y.z}";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Přlstroj vypnant a zapnout a vyvolat s ók a On/Off vypínač Bootmodus, potom nastartovat s "2" Update";
 //
 "Done" = "Done";
 "English" = "English";
@@ -77,8 +77,8 @@
 "OldPinCode ERROR" = "OldPinCode ERROR";
 "Two input is inconsistent" = "Two input is inconsistent";
 "Please check if Bluetooth is turned on in the control center" = "Please check if Bluetooth is turned on in the control center";
-"Set pincode wrong" = "Set pincode wrong";
 
+"Set pincode wrong" = "Set pincode wrong";
 "Distribution network" = "Distribution network";
 "Device" = "Device";
 "Available Device" = "Available Device";

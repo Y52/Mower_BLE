@@ -9,18 +9,17 @@
 "consucc" = "Connected";
 "disconnect" = "bluetooth disconnected";
 
-"Connect bluetooth" = "über Bluetooth verbinden";
-"Control the mower" = "Mäher steuern";
-"Connected device" = "verbundenes Gerät";
-"No device" = "keine Verbindung";
-"Available devices" = "verfügbare Geräte";
-"(please choose RobotMower_DYM)" ="bitte RobotMower_DYM auswählen)";
-"Please input PIN code" = "Bitte PIN-Code eingeben";
-
+"Connect bluetooth" = "établir connexion Bluetooth";
+"Control the mower" = "piloter tondeuse";
+"Connected device" = "appareil connecté";
+"No device" = "pas de connexion";
+"Available devices" = "périphériques Bluetooth disponibles";
+"(please choose RobotMower_DYM)" = "(choisissez RobotMower_DYM)";
+"Please input PIN code" = "entrer PIN";
 "Done" = "Done";
-"Cancel" = "Abbruch";
-"Confirm" = "Bestätigen";
-"Mower status" = "Mäher-Status";
+"Cancel" = "annuler";
+"Confirm" = "confirmer";
+"Mower status" = "Mower status";
 "English" = "English";
 "Dansk" = "Dansk";
 
@@ -33,39 +32,38 @@
 "Mower control" = "Mower control";
 
 "Information" = "Information";
-"Mower status" = "Mäher-Status";
-"setting" = "Einstellungen";
+"Mower status" = "état de tondeuse";
 "Mower control" = "Mower control";
 "Start" = "Start";
 "Stop" = "Stop";
-"Alerts" = "Alarme";
-"setting" = "Einstellungen";
-"Setting" = "Einstellungen";
-"Language setting" ="Sprache";
-"Time setting" = "Zeit einstellen";
-"Working time setting" ="Arbeitszeit einst";
-"Mower setting" = "Geräteeinstellungen";
-"PIN setting" = "PIN Wechseln";
-"Update mower’s Firmware" = "Firmware-Update";
+"Alerts" = "alarmes";
+"setting" = "réglages";
+"Setting" = "réglages";
+
+"Language setting" = "modifier langue";
+"Time setting" = "mettre date & heure";
+"Working time setting" = "modifier les horaires-tonte";
+"Mower setting" = "réglages de l‘appareil";
+"PIN setting" = "modifier PIN";
+
+"Update mower’s Firmware" = "mise à jour de version logicielle";
 "OK" = "OK";
-"Date" = "Datum";
-"Time" = "Uhrzeit";
-"Mow in the rain" = "Mähen bei Regen";
-"Yes" = "Ja";
-"NO" = "Nein";
-"Boundary cut" = "Randschnitt";
-"Input old PIN code" = "alte PIN:";
-"Input new PIN code" = "neue PIN:";
-"Repeat new PIN code" = "Wiederholung neuer PIN:";
-"4 numbers" = "4 Ziffern";
-"Your mower's firmware version:" = "Installierte Firmware-Version:";
-"Latest mower's firmware version:" = "Aktuelle Firmware-Version:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Gerät aus- und einschalten und mit "OK" und On/Off-Taste Bootmodus aufrufen; dann mit "2" das Update starten.";
+"Date" = "Date";
+"Time" = "heure";
+"Mow in the rain" = "tonte en pluie";
+"Yes" = "oui";
+"NO" = "non";
+"Boundary cut" = "coupe sur bord ";
+"Input old PIN code" = "vieil code PIN:";
+"Input new PIN code" = "nouveau Code PIN:";
+"Repeat new PIN code" = "repétition du nouveau code PIN:";
+"Your mower's firmware version:" = "Your mower's firmware version:";
+"Latest mower's firmware version:" = "Latest mower's firmware version:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating.";
 //MBprogressHUD
 "Bluetooth not connected" = "Bluetooth ikke tilsluttet";
 "Incorrect PIN code length" = "Forkert PIN-kode længde";
 "Incorrect PIN code" = "Forkert PIN-kode";
-
 "Monday's time set wrong" = "Mandagens tid er forkert";
 "Tuesday's time set wrong" = "Tirsdagens tid er forkert";
 "Wednesday's time set wrong" = "Onsdagens tid er forkert";
@@ -76,12 +74,9 @@
 "PinCode restrictions 4 digits" = "PinCode begrænser 4 cifre";
 "OldPinCode ERROR" = "OldPinCode ERROR";
 "Two input is inconsistent" = "To input er inkonsekvent";
-"consucc" = "forbinde lykkes";
-"confail" = "forbindelsen mislykkedes";
-"disconnect" = "koble fra";
-"Please check if Bluetooth is turned on in the control center";
-
+"Please check if Bluetooth is turned on in the control center" = "Please check if Bluetooth is turned on in the control center";
 "Set pincode wrong" = "Set pincode wrong";
+
 "Distribution network" = "Distribution network";
 "Device" = "Device";
 "Available Device" = "Available Device";
