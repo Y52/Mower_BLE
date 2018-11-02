@@ -539,6 +539,39 @@
 		3E63255C1FA6F8C500F14462 /* 选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "选中@2x.png"; path = "image/选中@2x.png"; sourceTree = SOURCE_ROOT; };
 		3E6325711FA702F700F14462 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		3E6325721FA702F700F14462 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		3E6FB9BF218C41D100108DB6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9C0218C41D200108DB6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9C1218C41D200108DB6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9C2218C436700108DB6 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9C3218C436700108DB6 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9C4218C436800108DB6 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9C5218C448000108DB6 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9C6218C448000108DB6 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9C7218C448000108DB6 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9C8218C44FC00108DB6 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9C9218C44FC00108DB6 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9CA218C44FC00108DB6 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9CB218C451500108DB6 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9CC218C451500108DB6 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9CD218C451500108DB6 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9CE218C454300108DB6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9CF218C454400108DB6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9D0218C454400108DB6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9D1218C455200108DB6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9D2218C455200108DB6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9D3218C455200108DB6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9D4218C465400108DB6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9D5218C465500108DB6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9D6218C465500108DB6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9D7218C470800108DB6 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9D8218C470900108DB6 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9D9218C470900108DB6 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9DA218C47AE00108DB6 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9DB218C47AE00108DB6 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9DC218C47AE00108DB6 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E6FB9DD218C498200108DB6 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Main.strings; sourceTree = "<group>"; };
+		3E6FB9DE218C498200108DB6 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3E6FB9DF218C498200108DB6 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3EA4D62C1FC91435004D503D /* RDVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVViewController.h; sourceTree = "<group>"; };
 		3EA4D62D1FC91435004D503D /* RDVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVViewController.m; sourceTree = "<group>"; };
 		3EA7AE031FB14B87001FB406 /* backgroundco@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backgroundco@2x.png"; path = "image/backgroundco@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -1358,6 +1391,17 @@
 			knownRegions = (
 				Base,
 				da,
+				de,
+				cs,
+				sk,
+				pl,
+				hu,
+				ru,
+				fr,
+				sv,
+				fi,
+				nl,
+				nb,
 			);
 			mainGroup = 3E6325191FA6BC5F00F14462;
 			productRefGroup = 3E6325231FA6BC5F00F14462 /* Products */;
@@ -1915,6 +1959,17 @@
 				3E63252F1FA6BC5F00F14462 /* Base */,
 				BB12992A2021A71B00285201 /* en */,
 				BB12992C2021A76A00285201 /* da */,
+				3E6FB9BF218C41D100108DB6 /* de */,
+				3E6FB9C2218C436700108DB6 /* cs */,
+				3E6FB9C5218C448000108DB6 /* sk */,
+				3E6FB9C8218C44FC00108DB6 /* pl */,
+				3E6FB9CB218C451500108DB6 /* hu */,
+				3E6FB9CE218C454300108DB6 /* ru */,
+				3E6FB9D1218C455200108DB6 /* fr */,
+				3E6FB9D4218C465400108DB6 /* sv */,
+				3E6FB9D7218C470800108DB6 /* fi */,
+				3E6FB9DA218C47AE00108DB6 /* nl */,
+				3E6FB9DD218C498200108DB6 /* nb */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1925,6 +1980,17 @@
 				3E6325341FA6BC5F00F14462 /* Base */,
 				BB12992B2021A71B00285201 /* en */,
 				BB12992D2021A76A00285201 /* da */,
+				3E6FB9C0218C41D200108DB6 /* de */,
+				3E6FB9C3218C436700108DB6 /* cs */,
+				3E6FB9C6218C448000108DB6 /* sk */,
+				3E6FB9C9218C44FC00108DB6 /* pl */,
+				3E6FB9CC218C451500108DB6 /* hu */,
+				3E6FB9CF218C454400108DB6 /* ru */,
+				3E6FB9D2218C455200108DB6 /* fr */,
+				3E6FB9D5218C465500108DB6 /* sv */,
+				3E6FB9D8218C470900108DB6 /* fi */,
+				3E6FB9DB218C47AE00108DB6 /* nl */,
+				3E6FB9DE218C498200108DB6 /* nb */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1934,6 +2000,17 @@
 			children = (
 				BB12992F2021A79500285201 /* en */,
 				BB1299312021A79700285201 /* da */,
+				3E6FB9C1218C41D200108DB6 /* de */,
+				3E6FB9C4218C436800108DB6 /* cs */,
+				3E6FB9C7218C448000108DB6 /* sk */,
+				3E6FB9CA218C44FC00108DB6 /* pl */,
+				3E6FB9CD218C451500108DB6 /* hu */,
+				3E6FB9D0218C454400108DB6 /* ru */,
+				3E6FB9D3218C455200108DB6 /* fr */,
+				3E6FB9D6218C465500108DB6 /* sv */,
+				3E6FB9D9218C470900108DB6 /* fi */,
+				3E6FB9DC218C47AE00108DB6 /* nl */,
+				3E6FB9DF218C498200108DB6 /* nb */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2043,6 +2120,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;
@@ -2100,6 +2178,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;
@@ -2203,6 +2282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FAMV3D32N;

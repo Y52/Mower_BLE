@@ -1,0 +1,91 @@
+/*
+ Localizable.strings
+ MOWOX
+ 
+ Created by 杭州轨物科技有限公司 on 2018/1/31.
+ Copyright © 2018年 yusz. All rights reserved.
+ */
+"confail" = "connect failed";
+"consucc" = "Connected";
+"disconnect" = "bluetooth disconnected";
+
+"Input old PIN code" = "Tryck in nuvarande PIN kod";
+"Input new PIN code" = "Mata in ny PIN kod";
+"4 numbers" = "4 siffror";
+"Repeat new PIN code" = "Bekräfta ny PIN kod";
+"OK" = "OK";
+"Mow in the rain" = "Mow in the rain";
+"Yes" = "Ja";
+"NO" = "Nej";
+"Boundary cut" = "Kant klippning";
+
+"Date" = "Datum";
+"Time" = "Tid";
+"Language setting" = "Språk";
+"Time setting" = "Tids inställning";
+"Working time setting" = "Inställning av klipptid";
+"Mower setting" = "Robot inställningar";
+"PIN setting" = "Ändra PIN kod";
+"Start" = "Start";
+"Stop" = "Stop";
+"Alerts" = "Alarm";
+"setting" = "Inställningar";
+"Setting" = "Inställningar";
+
+"Connect bluetooth" = "Anslut Bluetooth";
+"Control the mower" = "Kontrollera Roboten";
+"Connected device" = "Ansluten enhet";
+"No device" = "Ingen enhet tillgänglig";
+"Available devices" = "Tillgängliga enheter";
+"(please choose RobotMower_DYM)" = "(välj RobotMower_DYM)";
+
+"Information" = "Information";
+"Mower status" = "Robot status";
+"Update mower’s Firmware" = "Mjukvaru uppdatering";
+"Please input PIN code" = "Knappa in PIN kod";
+"Cancel" = "Avbryt";
+"Confirm" = "Bekräfta";
+
+"Your mower's firmware version:" = "Robotens mjukvaruversion(x,y,z)";
+"Latest mower's firmware version:" = "Senaste mjukvaruversion(x,y,z)";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Tryck knapp "2" på displayen(uppstartsläge,2-uppdatera mjukvara) för att starta";
+//
+"Done" = "Done";
+"English" ="English";
+"Dansk" = "Dansk";
+
+"Bluetooth connected" = "Bluetooth connected";
+"Mower on lawn" = "Mower on lawn";
+"Back to station" = "Back to station";
+"Mower on station" = "Mower on station";
+"Go to work" = "Go to work";
+"Battery capacity" = "Battery capacity";
+"Mower control" = "Mower control";
+
+"Bluetooth not connected" = "Bluetooth not connected";
+"Incorrect PIN code length" = "Incorrect PIN code length";
+"Incorrect PIN code" = "Incorrect PIN code";
+
+"Monday's time set wrong" = "Monday's time set wrong";
+"Tuesday's time set wrong" = "Tuesday's time set wrong";
+"Wednesday's time set wrong" = "Wednesday's time set wrong";
+"Thursday's time set wrong" = "Thursday's time set wrong";
+"Friday's time set wrong" = "Friday's time set wrong";
+"Saturday's time set wrong" = "Saturday's time set wrong";
+"Sunday's time set wrong" = "Sunday's time set wrong";
+"PinCode restrictions 4 digits" = "PinCode restrictions 4 digits";
+"OldPinCode ERROR" = "OldPinCode ERROR";
+"Two input is inconsistent" = "Two input is inconsistent";
+"Please check if Bluetooth is turned on in the control center" = "Please check if Bluetooth is turned on in the control center";
+
+"Set pincode wrong" = "Set pincode wrong";
+"Distribution network" = "Distribution network";
+"Device" = "Device";
+"Available Device" = "Available Device";
+"Connected Device" = "Connected Device";
+"Pull-down refresh" = "Pull-down refresh";
+"Release refresh" = "Release refresh";
+"Loading" = "Loading";
+"Add your gateway soon!" = "Add your gateway soon!";
+"Add GateWay" = "Add GateWay";
+"Next" = "Next";

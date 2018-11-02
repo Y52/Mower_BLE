@@ -1,0 +1,18 @@
+
+/* Class = "UIBarButtonItem"; title = "Refresh"; ObjectID = "EoB-dw-DH7"; */
+"EoB-dw-DH7.title" = "Refresh";
+
+/* Class = "UINavigationItem"; title = "Device List"; ObjectID = "GGS-ad-s7D"; */
+"GGS-ad-s7D.title" = "Listina přístojů";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Qpb-Q5-56N"; */
+"Qpb-Q5-56N.text" = "Label";
+
+/* Class = "UILabel"; text = "Robotic mower Connect"; ObjectID = "eXf-2o-8wL"; */
+"eXf-2o-8wL.text" = "Robotic mower Connect";
+
+/* Class = "UILabel"; text = "App software version: V1.0 for iOS"; ObjectID = "hES-M8-ovO"; */
+"hES-M8-ovO.text" = "App software version: V1.0 for iOS";
+
+/* Class = "UILabel"; text = "Mower software version: V1.0"; ObjectID = "u87-ZO-ZQJ"; */
+"u87-ZO-ZQJ.text" = "Mower software version: V1.0";

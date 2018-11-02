@@ -1,0 +1,91 @@
+/*
+ Localizable.strings
+ MOWOX
+ 
+ Created by 杭州轨物科技有限公司 on 2018/1/31.
+ Copyright © 2018年 yusz. All rights reserved.
+ */
+"confail" = "connect failed";
+"consucc" = "Connected";
+"disconnect" = "bluetooth disconnected";
+
+"Input old PIN code" = "Input old PIN code";
+"Input new PIN code" = "Input new PIN code";
+"4 numbers" = "4 numre";
+"Repeat new PIN code" = "Repeat new PIN code";
+"OK" = "OK";
+"Mow in the rain" = "Kosenie počas dažďa";
+"Yes" = "Yes";
+"NO" = "NO";
+"Boundary cut" = "Boundary cut";
+
+"Date" = "Date";
+"Time" = "Time";
+"Language setting" = "Language setting";
+"Time setting" = "Time setting";
+"Working time setting" = "Working time setting";
+"Mower setting" = "Mower setting";
+"PIN setting" = "PIN setting";
+"Start" = "Start";
+"Stop" = "Stop";
+"Alerts" = "Alerts";
+"setting" = "setting";
+"Setting" = "Setting";
+
+"Connect bluetooth" = "Connect bluetooth";
+"Control the mower" = "Control the mower";
+"Connected device" = "Connected device";
+"No device" = "No device";
+"Available devices" = "Available devices";
+"(please choose RobotMower_DYM)" = "(please choose RobotMower_DYM)";
+
+"Information" = "Information";
+"Mower status" = "Mower status";
+"Update mower’s Firmware" = "Update mower’s Firmware";
+"Please input PIN code" = "Please input PIN code";
+"Cancel" = "Cancel";
+"Confirm" = "Confirm";
+
+"Your mower's firmware version:" = "Your mower's firmware version:";
+"Latest mower's firmware version:" = "Latest mower's firmware version:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating.";
+//
+"Done" = "Done";
+"English" = "English";
+"Dansk" = "Dansk";
+
+"Bluetooth connected" = "Bluetooth connected";
+"Mower on lawn" = "Mower on lawn";
+"Back to station" = "Back to station";
+"Mower on station" = "Mower on station";
+"Go to work" = "Go to work";
+"Battery capacity" = "Battery capacity";
+"Mower control" = "Mower control";
+
+"Bluetooth not connected" = "Bluetooth not connected";
+"Incorrect PIN code length" = "Incorrect PIN code length";
+"Incorrect PIN code" = "Incorrect PIN code";
+
+"Monday's time set wrong" = "Monday's time set wrong";
+"Tuesday's time set wrong" = "Tuesday's time set wrong";
+"Wednesday's time set wrong" = "Wednesday's time set wrong";
+"Thursday's time set wrong" = "Thursday's time set wrong";
+"Friday's time set wrong" = "Friday's time set wrong";
+"Saturday's time set wrong" = "Saturday's time set wrong";
+"Sunday's time set wrong" = "Sunday's time set wrong";
+"PinCode restrictions 4 digits" = "PinCode restrictions 4 digits";
+"OldPinCode ERROR" = "OldPinCode ERROR";
+"Two input is inconsistent" = "Two input is inconsistent";
+"Please check if Bluetooth is turned on in the control center" = "Please check if Bluetooth is turned on in the control center";
+
+"Set pincode wrong" = "Set pincode wrong";
+"Distribution network" = "Distribution network";
+"Device" = "Device";
+"Available Device" = "Available Device";
+"Connected Device" = "Connected Device";
+"Pull-down refresh" = "Pull-down refresh";
+"Release refresh" = "Release refresh";
+"Loading" = "Loading";
+"Add your gateway soon!" = "Add your gateway soon!";
+"Add GateWay" = "Add GateWay";
+"Next" = "Next";
