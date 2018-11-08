@@ -35,9 +35,9 @@
     
     if ([BluetoothDataManage shareInstance].deviceType == 0) {
         dataName = @"DYM2206_42Motor_Vx.x.x_20xxXxXx.bin";
-    }else if ([BluetoothDataManage shareInstance].deviceType == 0){
+    }else if ([BluetoothDataManage shareInstance].deviceType == 1){
         dataName = @"DYM2206_35Motor_Vx.x.x_20xxXxXx.bin";
-    }else if ([BluetoothDataManage shareInstance].deviceType == 0){
+    }else if ([BluetoothDataManage shareInstance].deviceType == 2){
         dataName = @"DYM2205_35Motor_Vx.x.x_20xxXxXx.bin";
     }else{
         dataName = @"AutoMower";
@@ -239,9 +239,9 @@
     NSDictionary *dict = [notification userInfo];
     NSString *result = dict[@"result"];
     if ([result isEqualToString:@"success"]) {
-        [NSObject showHudTipStr:[NSString stringWithFormat:@"%d success",[BluetoothDataManage shareInstance].progress_num]];
+        [NSObject showHudTipStr:[NSString stringWithFormat:@"%d %@",[BluetoothDataManage shareInstance].progress_num,LocalString(@"success")]];
     }else if ([result isEqualToString:@"error"]){
-        [NSObject showHudTipStr:[NSString stringWithFormat:@"%d error,again",[BluetoothDataManage shareInstance].progress_num]];
+        [NSObject showHudTipStr:[NSString stringWithFormat:@"%d %@",[BluetoothDataManage shareInstance].progress_num,LocalString(@"error,again")]];
     }
     _progressViewNew.progress = [BluetoothDataManage shareInstance].progress_num / (float)_packgeNum;
     
@@ -405,7 +405,7 @@
     //self.progressView.hidden = NO;
     //_tipLabel.text = LocalString(@"####Update Success####");
     //_tipLabel.textColor = [UIColor greenColor];
-    [NSObject showHudTipStr:@"update succese"];
+    [NSObject showHudTipStr:LocalString(@"update succese")];
     [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
     _progressViewNew.progress = 1.0;
     [BluetoothDataManage shareInstance].progress_num = 0;

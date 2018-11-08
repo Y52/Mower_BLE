@@ -483,10 +483,6 @@ NSString *const CellNibName_device = @"DeviceTableViewCell";
             [tableView reloadData];
             [net.NodeFrame removeAllObjects];
             
-            dispatch_async(dispatch_get_global_queue(0, 0), ^{
-                //usleep(1.5 * 1000 * 1000);
-                
-            });
             [self.navigationController popViewControllerAnimated:YES];
         }
         

@@ -76,7 +76,7 @@ static UInt8 frameCount;
     NSLog(@"连接成功");
     if (!_isReconnect) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [NSObject showHudTipStr:LocalString(@"连接成功")];
+            [NSObject showHudTipStr:LocalString(@"Connection succeeded!")];
         });
     }
     frameCount = 0;
@@ -90,12 +90,12 @@ static UInt8 frameCount;
     NSLog(@"连接失败");
     if (_isReconnect) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [NSObject showHudTipStr:LocalString(@"连接新网关")];
+            [NSObject showHudTipStr:LocalString(@"Connect new devices.")];
         });
         _isReconnect = NO;
     }else{
         dispatch_async(dispatch_get_main_queue(), ^{
-            [NSObject showHudTipStr:LocalString(@"连接已断开")];
+            [NSObject showHudTipStr:LocalString(@"Disconnect")];
             _connectedGateway = nil;
         });
     }

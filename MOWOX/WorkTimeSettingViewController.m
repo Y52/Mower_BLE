@@ -92,7 +92,7 @@ static CGFloat cellHeight = 45.0;
         //_workDatePickview = [[UIPickerView alloc] initWithFrame:CGRectMake(0, ScreenHeight * 0.76, ScreenWidth, ScreenHeight * 0.24)];
         //设置工作时间的PickerView
         self.startTimeArray = [NSMutableArray arrayWithArray:@[LocalString(@"AM 0:00;"),LocalString(@"AM 1:00;"),LocalString(@"AM 2:00;"),LocalString(@"AM 3:00;"),LocalString(@"AM 4:00;"),LocalString(@"AM 5:00;"),LocalString(@"AM 6:00;"),LocalString(@"AM 7:00;"),LocalString(@"AM 8:00;"),LocalString(@"AM 9:00;"),LocalString(@"AM 10:00;"),LocalString(@"AM 11:00;"),LocalString(@"PM 0:00;"),LocalString(@"PM 1:00;"),LocalString(@"PM 2:00;"),LocalString(@"PM 3:00;"),LocalString(@"PM 4:00;"),LocalString(@"PM 5:00;"),LocalString(@"PM 6:00;"),LocalString(@"PM 7:00;"),LocalString(@"PM 8:00;"),LocalString(@"PM 9:00;"),LocalString(@"PM 10:00;"),LocalString(@"PM 11:00;")]];
-        self.workingHoursArray = [NSMutableArray arrayWithArray:@[@"0 Hours",@"1 Hours",@"2 Hours",@"3 Hours",@"4 Hours",@"5 Hours",@"6 Hours",@"7 Hours",@"8 Hours",@"9 Hours",@"10 Hours",@"11 Hours",@"12Hours",@"13 Hours",@"14 Hours",@"15 Hours",@"16 Hours",@"17 Hours",@"18 Hours",@"19 Hours",@"20 Hours",@"21 Hours",@"22 Hours",@"23 Hours",@"24 Hours",]];
+        self.workingHoursArray = [NSMutableArray arrayWithArray:@[@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",]];
         self.selectrowArray = [NSMutableArray array];
         for (int i = 0; i < 20; i++) {
             [_selectrowArray addObject:[NSNumber numberWithInt:0]];
@@ -171,7 +171,7 @@ static CGFloat cellHeight = 45.0;
         cell.timeTF.text = [_startTimeArray objectAtIndex:[_selectrowArray[indexPath.row * 2] intValue]];
     }
     if ([_selectrowArray[indexPath.row * 2 + 1] intValue] <= 25) {
-        cell.hoursTF.text = [_workingHoursArray objectAtIndex:[_selectrowArray[indexPath.row * 2 + 1] intValue]];
+        cell.hoursTF.text = [NSString stringWithFormat:@"%@ %@",[_workingHoursArray objectAtIndex:[_selectrowArray[indexPath.row * 2 + 1] intValue]],LocalString(@"Hours")];
     }
     cell.backgroundColor = [UIColor clearColor];
     return cell;
@@ -225,7 +225,7 @@ static CGFloat cellHeight = 45.0;
         [_selectrowArray replaceObjectAtIndex:selectIndexPath.row * 2 withObject:[NSNumber numberWithLong:row]];
     }else if (component == 1)
     {
-        selectHoursTextField.text = _workingHoursArray[row];
+        selectHoursTextField.text = [NSString stringWithFormat:@"%@ %@",_workingHoursArray[row],LocalString(@"Hours")];
         [_selectrowArray replaceObjectAtIndex:selectIndexPath.row * 2 + 1 withObject:[NSNumber numberWithLong:row]];
     }
 }
@@ -264,7 +264,7 @@ static CGFloat cellHeight = 45.0;
     if (component == 0) {
         return self.startTimeArray[row];
     }else{
-        return self.workingHoursArray[row];
+        return [NSString stringWithFormat:@"%@ %@",self.workingHoursArray[row],LocalString(@"Hours")];
     }
 }
 

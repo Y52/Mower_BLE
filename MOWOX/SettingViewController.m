@@ -44,6 +44,19 @@ static int version3 = 13;
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
     [self viewLayoutSet];
+    
+    if ([BluetoothDataManage shareInstance].deviceType == 0) {
+        version1 = 1;
+        version2 = 2;
+        version3 = 13;
+    }else if ([BluetoothDataManage shareInstance].deviceType == 1){
+
+    }else if ([BluetoothDataManage shareInstance].deviceType == 2){
+
+    }else{
+        
+    }
+    
     if (version1 > [BluetoothDataManage shareInstance].version1) {
         _updateButton.hidden = NO;
     }
