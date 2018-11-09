@@ -53,7 +53,7 @@
 - (void)customizeTabBarForController{
     NSArray *tabBarItemImages = @[@"A1_50", @"A2_50", @"A3_50"];
     NSArray *tabBarItemSelectImages = @[@"B1_50", @"B2_50", @"B3_50"];
-    NSArray *tabBarItemTitles = @[LocalString(@"Information"),LocalString(@"Mower status"),LocalString(@"Setting")];
+    NSArray *tabBarItemTitles = @[LocalString(@"Information"),LocalString(@"Robot status"),LocalString(@"Setting")];
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[self tabBar] items]) {
         item.tag = 1000 + index;

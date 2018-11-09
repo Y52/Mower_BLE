@@ -28,9 +28,9 @@
 @property (strong, nonatomic)  LMPopInputPasswordView *popView;
 
 @property (strong, nonatomic)  UILabel *bluetoothNameLabel;
-@property (strong,nonatomic) BluetoothDataManage *bluetoothDataManage;
+@property (strong, nonatomic)  BluetoothDataManage *bluetoothDataManage;
 
-@property (strong, nonatomic) AppDelegate *appDelegate;
+@property (strong, nonatomic)  AppDelegate *appDelegate;
 @end
 
 @implementation LoginViewController
@@ -102,7 +102,7 @@
         _changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Bluetooth") titleColor:[UIColor whiteColor]];
         _bluetoothNameLabel.text = LocalString(@"Connect Wi-Fi");
     }
-    _LoginButton = [UIButton buttonWithTitle:LocalString(@"Control the mower") titleColor:[UIColor whiteColor]];
+    _LoginButton = [UIButton buttonWithTitle:LocalString(@"Control the robot") titleColor:[UIColor whiteColor]];
     
     [_passwordTextfield setTextFieldStyle1];
     [_LoginButton setButtonStyle1];
@@ -125,31 +125,16 @@
         make.top.equalTo(self.bluetoothNameLabel.mas_bottom).offset(ScreenHeight * 0.08);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-    /*[self.passwordTextfield mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.bluetoothButton.mas_bottom).offset(ScreenHeight * 0.08);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
-    [_passwordLimitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.4, ScreenHeight * 0.022));
-        make.top.equalTo(self.passwordTextfield.mas_bottom).offset(ScreenHeight * 0.01);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
-    [self.changePasswordButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.passwordLimitLabel.mas_bottom).offset(ScreenHeight * 0.05);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];*/
     [self.LoginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
         make.top.equalTo(self.connButton.mas_bottom).offset(ScreenHeight * 0.4);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-    [self.changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.bottom.equalTo(self.LoginButton.mas_top).offset(- ScreenHeight * 0.05);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
+//    [self.changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
+//        make.bottom.equalTo(self.LoginButton.mas_top).offset(- ScreenHeight * 0.05);
+//        make.centerX.equalTo(self.view.mas_centerX);
+//    }];
 }
 
 #pragma mark - resign keyboard control

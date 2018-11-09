@@ -80,7 +80,7 @@
         _label1.backgroundColor = [UIColor clearColor];
         _label1.textColor = [UIColor blackColor];
         _label1.textAlignment = NSTextAlignmentLeft;
-        _label1.text = LocalString(@"Robotic mower Connect");
+        _label1.text = LocalString(@"Robot Connect");
         [self.view addSubview:_label1];
         
         [_label1 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -119,7 +119,7 @@
         _label3.textColor = [UIColor blackColor];
         _label3.textAlignment = NSTextAlignmentLeft;
         [self.view addSubview:_label3];
-        _label3.text = [NSString stringWithFormat:@"Mower software version: V%d.%d.%d",_bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
+        _label3.text = [NSString stringWithFormat:@"Robot software version: V%d.%d.%d",_bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
         
         [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(300/WScale, 21/HScale));
@@ -131,6 +131,6 @@
 }
 
 - (void)getVersion{
-    _label3.text = [NSString stringWithFormat:@"Mower software version: V%d.%d.%d",_bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
+    _label3.text = [NSString stringWithFormat:@"Robot software version: V%d.%d.%d",_bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
 }
 @end

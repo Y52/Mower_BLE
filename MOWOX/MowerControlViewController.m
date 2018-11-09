@@ -39,7 +39,7 @@
 //                                                     target:self
 //                                                     action:nil];
 //    }
-    self.navigationItem.title = LocalString(@"Mower Control");
+    self.navigationItem.title = LocalString(@"Robot Control");
     
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];

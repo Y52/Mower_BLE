@@ -84,9 +84,9 @@
     [_numberLabel2 setFont:[UIFont systemFontOfSize:10.0]];
     [_numberLabel3 setFont:[UIFont systemFontOfSize:10.0]];
     
-    _inputOldPinCodeTextField = [UITextField textFieldWithPlaceholderText:LocalString(@"Input Old PIN code")];
-    _inputNewPinCodeTextField = [UITextField textFieldWithPlaceholderText:LocalString(@"Input New PIN code")];
-    _repeatNewPinCodeTextField = [UITextField textFieldWithPlaceholderText:LocalString(@"Repeat New PIN code")];
+    _inputOldPinCodeTextField = [UITextField textFieldWithPlaceholderText:LocalString(@"Input old PIN code")];
+    _inputNewPinCodeTextField = [UITextField textFieldWithPlaceholderText:LocalString(@"Input new PIN code")];
+    _repeatNewPinCodeTextField = [UITextField textFieldWithPlaceholderText:LocalString(@"Repeat new PIN code")];
     _inputNewPinCodeTextField.keyboardType = UIKeyboardTypeNumberPad;
     _inputOldPinCodeTextField.keyboardType = UIKeyboardTypeNumberPad;
     _repeatNewPinCodeTextField.keyboardType = UIKeyboardTypeNumberPad;

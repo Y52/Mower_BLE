@@ -101,7 +101,7 @@
 - (void)viewLayoutSet{
     //self.navigationController.navigationBar.translucent = YES;
     
-    self.navigationItem.title = LocalString(@"Mower status");
+    self.navigationItem.title = LocalString(@"Robot status");
     
     UIImage *image = [UIImage imageNamed:@"返回1"];
     [self addLeftBarButtonWithImage:image action:@selector(backAction)];
@@ -137,8 +137,8 @@
     }
     
     
-    _onLawn = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"Mower on lawn")];
-    _onStation = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"Mower on station")];
+    _onLawn = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"Robot on lawn")];
+    _onStation = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"Robot on station")];
     _batteryCapacity = [UILabel labelWithFont:[UIFont systemFontOfSize:13] textColor:[UIColor blackColor] text:LocalString(@"Battery capacity")];
     
     [_onLawn setLabelStyle1];
@@ -151,7 +151,7 @@
     [_BacktostationButton.layer setBackgroundColor:[UIColor colorWithHexString:@"7DA86D"].CGColor];
     [_GoToWorkButton.layer setBackgroundColor:[UIColor colorWithHexString:@"7DA86D"].CGColor];
     
-    _mowerControlButton = [UIButton buttonWithTitle:LocalString(@"Mower control") titleColor:[UIColor blackColor]];
+    _mowerControlButton = [UIButton buttonWithTitle:LocalString(@"Robot control") titleColor:[UIColor blackColor]];
     [_BacktostationButton setButtonStyle1];
     [_GoToWorkButton setButtonStyle1];
     [_batteryButton setButtonStyle1];

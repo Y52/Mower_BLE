@@ -58,7 +58,7 @@
                                                      target:self
                                                      action:nil];
     }
-    self.navigationItem.title = LocalString(@"Update Mower's Firmware");
+    self.navigationItem.title = LocalString(@"Update Robot's Firmware");
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
     //获取bin文件的总包数并记录
@@ -128,7 +128,7 @@
     
     //curVerTextView
     _curVerTV = [[UITextView alloc] init];
-    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d\n%@\n V1.2.7\n",LocalString(@"Your mower's firmware version:"),[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest mower's firmware version:")];
+    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d\n%@\n V1.2.7\n",LocalString(@"Your robot's firmware version:"),[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest robot's firmware version:")];
     _curVerTV.font = [UIFont fontWithName:@"Arial" size:17];
     _curVerTV.backgroundColor = [UIColor clearColor];
     _curVerTV.autocapitalizationType = UITextAutocapitalizationTypeSentences;
@@ -139,7 +139,7 @@
     
     _tipLabel = [[UILabel alloc] init];
     _tipLabel.font = [UIFont systemFontOfSize:17.0];
-    _tipLabel.text = LocalString(@"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start.");
+    _tipLabel.text = LocalString(@"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start.");
     _tipLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _tipLabel.numberOfLines = 0;
     _tipLabel.textAlignment = NSTextAlignmentCenter;

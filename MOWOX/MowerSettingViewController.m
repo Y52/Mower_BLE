@@ -32,7 +32,7 @@ static int isBoundary = 0;
     
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
-    self.navigationItem.title = LocalString(@"MOWER SETTING");
+    self.navigationItem.title = LocalString(@"Robot setting");
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
@@ -71,9 +71,9 @@ static int isBoundary = 0;
     [_rainLabel setLabelStyle1];
     [_boundaryLabel setLabelStyle1];
     
-    _rainyesButton = [UIButton buttonWithTitle:LocalString(@"YES") titleColor:[UIColor blackColor]];
+    _rainyesButton = [UIButton buttonWithTitle:LocalString(@"Yes") titleColor:[UIColor blackColor]];
     _rainnoButton = [UIButton buttonWithTitle:LocalString(@"NO") titleColor:[UIColor blackColor]];
-    _boundaryyesButton = [UIButton buttonWithTitle:LocalString(@"YES") titleColor:[UIColor blackColor]];
+    _boundaryyesButton = [UIButton buttonWithTitle:LocalString(@"Yes") titleColor:[UIColor blackColor]];
     _boundarynoButton = [UIButton buttonWithTitle:LocalString(@"NO") titleColor:[UIColor blackColor]];
     _okButton = [UIButton buttonWithTitle:LocalString(@"OK") titleColor:[UIColor blackColor]];
     

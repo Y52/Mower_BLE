@@ -3,7 +3,7 @@
 "disconnect" = "bluetooth disconnected";
 
 "Connect bluetooth" = "über Bluetooth verbinden";
-"Control the mower" = "Mäher steuern";
+"Control the Robot" = "Mäher steuern";
 "Connected device" = "verbundenes Gerät";
 "No device" = "keine Verbindung";
 "Available devices" = "verfügbare Geräte";
@@ -13,22 +13,22 @@
 "Done" = "Done";
 "Cancel" = "Abbruch";
 "Confirm" = "Bestätigen";
-"Mower status" = "Mäher-Status";
+"Robot status" = "Mäher-Status";
 "English" = "English";
 "Dansk" = "Dansk";
 
 "Bluetooth connected" = "Bluetooth connected";
-"Mower on lawn" = "Mower on lawn";
+"Robot on lawn" = "Robot on lawn";
 "Back to station" = "Back to station";
-"Mower on station" = "Mower on station";
+"Robot on station" = "Robot on station";
 "Go to work" = "Go to work";
 "Battery capacity" = "Battery capacity";
-"Mower control" = "Mower control";
+"Robot control" = "Robot control";
 
 "Information" = "Information";
-"Mower status" = "Mäher-Status";
+"Robot status" = "Mäher-Status";
 "setting" = "Einstellungen";
-"Mower control" = "Mower control";
+"Robot control" = "Robot control";
 "Start" = "Start";
 "Stop" = "Stop";
 "Alerts" = "Alarme";
@@ -37,9 +37,9 @@
 "Language setting" ="Sprache";
 "Time setting" = "Zeit einstellen";
 "Working time setting" ="Arbeitszeit einst";
-"Mower setting" = "Geräteeinstellungen";
+"Robot setting" = "Geräteeinstellungen";
 "PIN setting" = "PIN Wechseln";
-"Update mower’s Firmware" = "Firmware-Update";
+"Update Robot’s Firmware" = "Firmware-Update";
 "OK" = "OK";
 "Date" = "Datum";
 "Time" = "Uhrzeit";
@@ -51,9 +51,9 @@
 "Input new PIN code" = "neue PIN:";
 "Repeat new PIN code" = "Wiederholung neuer PIN:";
 "4 numbers" = "4 Ziffern";
-"Your mower's firmware version:" = "Installierte Firmware-Version:";
-"Latest mower's firmware version:" = "Aktuelle Firmware-Version:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Gerät aus- und einschalten und mit \"OK\" und On/Off-Taste Bootmodus aufrufen; dann mit \"2\" das Update starten.";
+"Your robot's firmware version:" = "Installierte Firmware-Version:";
+"Latest robot's firmware version:" = "Aktuelle Firmware-Version:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Gerät aus- und einschalten und mit \"OK\" und On/Off-Taste Bootmodus aufrufen; dann mit \"2\" das Update starten.";
 //MBprogressHUD
 "Bluetooth not connected" = "Bluetooth ikke tilsluttet";
 "Incorrect PIN code length" = "Forkert PIN-kode længde";
@@ -112,3 +112,33 @@
 "PM 11:00;"= "23:00";
 
 "Hours" = "Stunden";
+
+
+"Update" = "Update";
+"success" = "success";
+"error,again" = "error,again";
+"update succese" = "update succese";
+
+"Change password" = "Change password";
+"6-12 characters or numbers" = "6-12 characters or numbers";
+"Input Old Password" = "Input Old Password";
+"Input New Password" = "Input New Password";
+"Repeat New Password" = "Repeat New Password";
+"nodevice" = "nodevice";
+"Connection succeeded!"="Connection succeeded!";
+"Connect new devices." ="Connect new devices.";
+
+"Wi-Fi not connected" ="Wi-Fi not connected";
+"Bluetooth not connected" = "Bluetooth not connected";
+"Change to Wi-Fi" = "Change to Wi-Fi";
+"Change to Bluetooth" = "Change to Bluetooth";
+"Connect Wi-Fi" = "Connect Wi-Fi";
+
+"Robot Connect" = "Robot Connect";
+"Wi-Fi disconnected" = "Wi-Fi disconnected";
+"Wi-Fi connected" = "Wi-Fi connected";
+"Add Router" = "Add Router";
+"Configue Result" = "Configue Result";
+"SUCCESSFUL!" = "SUCCESSFUL!";
+"I know" = "I know";
+"FAILED!" = "FAILED!";

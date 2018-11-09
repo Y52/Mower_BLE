@@ -6,7 +6,7 @@
   Copyright © 2018年 yusz. All rights reserved.
 */
 "Connect bluetooth" = "Tilslut bluetooth";
-"Control the mower" = "Styr klipperen";
+"Control the robot" = "Styr klipperen";
 "Connected device" = "Tilsluttet enhed";
 "No device" = "Ingen enhed";
 "Available devices" = "Tilgængelige enheder";
@@ -14,19 +14,19 @@
 "Please input PIN code" = "Indtast venligst PIN-kode";
 "Done" = "Færdig";
 "Cancel" = "Afbestille";
-"Mower status" = "Plæneklipper status";
+"Robot status" = "Plæneklipper status";
 "Bluetooth connected" = "Bluetooth tilsluttet";
 "Bluetooth disconnected" = "Bluetooth frakoblet";
-"Mower on lawn" = "Plæneklipperen på græsplænen";
+"Robot on lawn" = "Plæneklipperen på græsplænen";
 "Back to station" = "Tilbage til station";
-"Mower on station" = "Klipper på station";
+"Robot on station" = "Klipper på station";
 "Go to work" = "Gå til græsplæne";
 "Battery capacity" = "batterikapacitet";
-"Mower control" = "Plæneklipper styring";
+"Robot control" = "Plæneklipper styring";
 "Information" = "Oplysninger";
-"Mower status" = "Plæneklipper status";
+"Robot status" = "Plæneklipper status";
 "setting" = "Indstillinger";
-"Mower control" = "Plæneklipper styring";
+"Robot control" = "Plæneklipper styring";
 "Start" = "Start";
 "Stop" = "Stop";
 "Alerts" = "advarsler";
@@ -37,11 +37,10 @@
 "Dansk" = "Dansk";
 "Time setting" = "Indstilling af klokkeslæt";
 "Working time setting" = "Indstilling af arbejdstid";
-"Mower setting" = "Indstilling af plæneklipper";
-"MOWER SETTING" = "Indstilling af plæneklipper";
-"Pin setting" = "Indstilling af PIN-kode";
+"Robot setting" = "Indstilling af plæneklipper";
+"PIN setting" = "Indstilling af PIN-kode";
 "PIN code setting" = "Indstilling af PIN-kode";
-"Update Mower's Firmware" = "Opdater Firmwaren på klipperen";
+"Update Robot's Firmware" = "Opdater Firmwaren på klipperen";
 "OK" = "OK";
 "Date" = "Dato";
 "Time" = "klokkeslæt";
@@ -49,13 +48,13 @@
 "Yes" = "Ja";
 "NO" = "Ingen";
 "Boundary cut" = "Klippe grænsen";
-"Input Old PIN code" = "Indtast gammel PIN-kode";
-"Input New PIN code" = "Indtast ny PIN-kode";
-"Repeat New PIN code" = "Gentag ny PIN-kode";
+"Input old PIN code" = "Indtast gammel PIN-kode";
+"Input new PIN code" = "Indtast ny PIN-kode";
+"Repeat new PIN code" = "Gentag ny PIN-kode";
 "4 numbers" = "4 numre";
-"Your mower's firmware version:" = "Din plæneklipperen firmware version:";
-"Latest mower's firmware version:" = "Seneste plæneklipperen firmware version:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the mower's keyboard to start the updating." = "Tryk venligst på tast \"2\" (Boot-tilstand, 2-opdater firmware) på plæneklipperen tastatur for at starte klipperen";
+"Your robot's firmware version:" = "Din plæneklipperen firmware version:";
+"Latest robot's firmware version:" = "Seneste plæneklipperen firmware version:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Tryk venligst på tast \"2\" (Boot-tilstand, 2-opdater firmware) på plæneklipperen tastatur for at starte klipperen";
 
 //MBprogressHUD
 "Bluetooth not connected" = "Bluetooth ikke tilsluttet";
@@ -106,3 +105,32 @@
 "PM 11:00;"= "23:00";
 
 "Hours" = "Time";
+
+"Update" = "Update";
+"success" = "success";
+"error,again" = "error,again";
+"update succese" = "update succese";
+
+"Change password" = "Change password";
+"6-12 characters or numbers" = "6-12 characters or numbers";
+"Input Old Password" = "Input Old Password";
+"Input New Password" = "Input New Password";
+"Repeat New Password" = "Repeat New Password";
+"nodevice" = "nodevice";
+"Connection succeeded!"="Connection succeeded!";
+"Connect new devices." ="Connect new devices.";
+
+"Wi-Fi not connected" ="Wi-Fi not connected";
+"Bluetooth not connected" = "Bluetooth not connected";
+"Change to Wi-Fi" = "Change to Wi-Fi";
+"Change to Bluetooth" = "Change to Bluetooth";
+"Connect Wi-Fi" = "Connect Wi-Fi";
+
+"Robot Connect" = "Robot Connect";
+"Wi-Fi disconnected" = "Wi-Fi disconnected";
+"Wi-Fi connected" = "Wi-Fi connected";
+"Add Router" = "Add Router";
+"Configue Result" = "Configue Result";
+"SUCCESSFUL!" = "SUCCESSFUL!";
+"I know" = "I know";
+"FAILED!" = "FAILED!";
