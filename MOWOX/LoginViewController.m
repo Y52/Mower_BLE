@@ -130,50 +130,13 @@
         make.top.equalTo(self.connButton.mas_bottom).offset(ScreenHeight * 0.4);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-//    [self.changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-//        make.bottom.equalTo(self.LoginButton.mas_top).offset(- ScreenHeight * 0.05);
-//        make.centerX.equalTo(self.view.mas_centerX);
-//    }];
-}
-
-#pragma mark - resign keyboard control
-
-/****
- - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self.passwordTextfield resignFirstResponder];
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField*) textField
-{
-    [textField resignFirstResponder];
-    return YES;
-}
-
--(void)keyboardWillShow:(NSNotification *)notification{
-    //键盘最后的frame
-    CGRect keyboardFrame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-    CGFloat height = keyboardFrame.size.height;
-    //需要移动的距离
-    CGFloat rects = (ScreenHeight * 0.31 - 84) - height;
-    
-    if (rects <= 0) {
-        [UIView animateWithDuration:0.3 animations:^{
-            CGRect frame = self.view.frame;
-            frame.origin.y = rects;
-            self.view.frame = frame;
-        }];
-    }
-}
- 
--(void)keyboardWillHide:(NSNotification *)notification{
-    [UIView animateWithDuration:0.3 animations:^{
-        CGRect frame = self.view.frame;
-        frame.origin.y = 0.0;
-        self.view.frame = frame;
+    [self.changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
+        make.bottom.equalTo(self.LoginButton.mas_top).offset(- ScreenHeight * 0.05);
+        make.centerX.equalTo(self.view.mas_centerX);
     }];
 }
-****/
+
 #pragma mark - ViewController push and back
 - (void)connectMower
 {

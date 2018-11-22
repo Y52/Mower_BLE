@@ -58,15 +58,15 @@
 "Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating.";
 "Please check if Bluetooth is turned on in the control center" = "Please check if Bluetooth is turned on in the control center";
 "Confirm" = "Confirm";
-"Set pincode wrong" = "Set pincode wrong";
+"Set pincode wrong" = "Pin code set wrong";
 
 
 "Distribution network" = "Distribution network";
 "Device" = "Device";
 "Available Device" = "Available Device";
 "Connected Device" = "Connected Device";
-"Pull-down refresh" = "Pull-down refresh";
-"Release refresh" = "Release refresh";
+"Pull-down refresh" = "Pull-down to refresh";
+"Release refresh" = "Release to refresh";
 "Loading" = "Loading";
 "Add your gateway soon!" = "Add your gateway soon!";
 "Add GateWay" = "Add GateWay";
@@ -78,7 +78,7 @@
 "Update" = "Update";
 "success" = "success";
 "error,again" = "error,again";
-"update succese" = "update succese";
+"update succese" = "update success";
 
 "Change password" = "Change password";
 "6-12 characters or numbers" = "6-12 characters or numbers";
@@ -95,7 +95,7 @@
 "Change to Bluetooth" = "Change to Bluetooth";
 "Connect Wi-Fi" = "Connect Wi-Fi";
 
-"Robot Connect" = "Robot Connect";
+"Robot Connect" = "Robot Connection";
 "Wi-Fi disconnected" = "Wi-Fi disconnected";
 "Wi-Fi connected" = "Wi-Fi connected";
 "Add Router" = "Add Router";
