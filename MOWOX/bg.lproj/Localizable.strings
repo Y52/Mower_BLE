@@ -1,0 +1,148 @@
+/* 
+  Localizable.strings
+  MOWOX
+
+  Created by 杭州轨物科技有限公司 on 2018/1/31.
+  Copyright © 2018年 yusz. All rights reserved.
+*/
+"confail" = "Неусп.конф.";
+"consucc" = "Усп.конф.";
+"disconnect" = "прекъсни връзка";
+
+"Input old PIN code" = "Въведи стария PIN код";
+"Input new PIN code" = "Въведи новия PIN код";
+"4 numbers" = "4 цифри";
+"Repeat new PIN code" = "Повтори новия PIN код";
+"OK" = "OK";
+"Mow in the rain" = "косене в дъжд";
+"Yes" = "ДА";
+"NO" = "НЕ";
+"Boundary cut" = "Косене с граници";
+
+"Date" = "Дата";
+"Time" = "Час";
+"Language setting" = "Език";
+"Time setting" = "Време";
+"Working time setting" = "Настр. на време";
+"Robot setting" = "Настройки на робота";
+"PIN setting" = "PIN настройки";
+"Start" = "Старт";
+"Stop" = "Стоп";
+"Alerts" = "Предупреждения";
+"setting" = "Настройки";
+"Setting" = "Настройки";
+
+"Connect bluetooth" = "Свържи Bluetooth";
+"Control the Robot" = "Управ. Робота";
+"Connected device" = "Свързани устройства";
+"No device" = "Няма устройства";
+"Available devices" = "Налични устройства";
+"(please choose RobotMower_DYM)" = "(изберете RobotMower_DYM)";
+
+"Information" = "Информация";
+"Robot status" = "Състояние на Робота";
+"Update Robot’s Firmware" = "Актуал. фърмуер на Робота";
+"Please input PIN code" = "Въведете PIN код";
+"Cancel" = "Отказ";
+"Confirm" = "Потвърди";
+
+"Your robot's firmware version:" = "Версия на фърмуе на робота";
+"Latest robot's firmware version:" = "Последен фърмуер на робота";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Натисни бутон \"2\"(Boot режим,2-актуал.фърмуер) на клавиатурата за да започне актуал.";
+//
+"Done" = "Готово";
+"English" = "Английски";
+"Dansk" = "Датски";
+
+"Bluetooth connected" = "Bluetooth е свързан";
+"Robot on lawn" = "Робота е на тревата";
+"Back to station" = "Обратно към станцията";
+"Robot on station" = "Робота е на станцията";
+"Go to work" = "Започни работа";
+"Battery capacity" = "Капацитет на батерията";
+"Robot control" = "Управл. на робота";
+
+"Bluetooth not connected" = "Bluetooth не е свързан ";
+"Incorrect PIN code length" = "Неправилна дължина на PIN кода";
+"Incorrect PIN code" = "Неправилен PIN код";
+
+"Monday's time set wrong" = "Понеделник: грешно зададено време";
+"Tuesday's time set wrong" = "Вторник: грешно зададено време";
+"Wednesday's time set wrong" = "Сряда: грешно зададено време";
+"Thursday's time set wrong" = "Четвъртък: грешно зададено време";
+"Friday's time set wrong" = "Петък: грешно зададено време";
+"Saturday's time set wrong" = "Събота: грешно зададено време";
+"Sunday's time set wrong" = "Неделя: грешно зададено време";
+"PinCode restrictions 4 digits" = "PIN код приема само 4";
+"OldPinCode ERROR" = "ГРЕШКА в стария PIN код";
+"Two input is inconsistent" = "Не съвпадат";
+"Please check if Bluetooth is turned on in the control center" = "Проверете дали Bluetooth е включен от настройки";
+"Set pincode wrong" = "Зададен грешен PIN код";
+
+"Distribution network" = "Разпределителна мрежа";
+"Device" = "Устройство";
+"Available Device" = "Налично устройство";
+"Connected Device" = "Свързано устройство";
+"Pull-down refresh" = "Дръпни надолу за опресняване";
+"Release refresh" = "Пусни за опресняване";
+"Loading" = "Зареждане";
+"Add your gateway soon!" = "Добавете вашата gateway в скоро време!";
+"Add GateWay" = "Добавяне на gateway";
+"Next" = "Напред";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "Часове";
+
+
+"Update" = "Актуализация";
+"success" = "успешно";
+"error,again" = "грешка, отново";
+"update succese" = "успешна актуал.";
+
+"Change password" = "Смяна на парола";
+"6-12 characters or numbers" = "6-12 букви или цифри";
+"Input Old Password" = "Въведете старата парола";
+"Input New Password" = "Въведете новата парола";
+"Repeat New Password" = "Повторно новата парола";
+"nodevice" = "Няма устройство";
+"Connection succeeded!"="Успешно свързване!";
+"Connect new devices." ="Свържи ново устройства";
+
+"Wi-Fi not connected" ="Wi-Fi не е свързана";
+"Bluetooth not connected" = "Bluetooth не е свързан";
+"Change to Wi-Fi" = "Превкл. на Wi-Fi";
+"Change to Bluetooth" = "Превкл. на Bluetooth";
+"Connect Wi-Fi" = "Свържи се с Wi-Fi";
+
+"Robot Connect" = "Свързване на робота";
+"Wi-Fi disconnected" = "Wi-Fi не е свързана";
+"Wi-Fi connected" = "Wi-Fi свързана";
+"Add Router" = "Добави рутер";
+"Configue Result" = "Резултат от конфиг.";
+"SUCCESSFUL!" = "УСПЕШНО!";
+"I know" = "Разбрах";
+"FAILED!" = "НЕУСПЕШНО!";
