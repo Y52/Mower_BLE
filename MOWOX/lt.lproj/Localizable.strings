@@ -1,0 +1,148 @@
+/* 
+  Localizable.strings
+  MOWOX
+
+  Created by 杭州轨物科技有限公司 on 2018/1/31.
+  Copyright © 2018年 yusz. All rights reserved.
+*/
+"confail" = "prisijungimas pavyko";
+"consucc" = "prisijungti nepavyko";
+"disconnect" = "atjungti";
+
+"Input old PIN code" = "įvesti seną PIN kodą";
+"Input new PIN code" = "įvesti naują PIN kodą";
+"4 numbers" = "4 skaičiai";
+"Repeat new PIN code" = "pakartoti naują PIN kodą";
+"OK" = "Gerai";
+"Mow in the rain" = "pjauti lietui lyjant";
+"Yes" = "TAIP";
+"NO" = "NE";
+"Boundary cut" = "kraštų pjovimas";
+
+"Date" = "data";
+"Time" = "laikas";
+"Language setting" = "Kalbų nustatymas";
+"Time setting" = "Laiko nustatymai";
+"Working time setting" = "Darbo laiko nustatymai";
+"Robot setting" = "Roboto nustatymai";
+"PIN setting" = "Pin kodo nustatymai";
+"Start" = "Startas";
+"Stop" = "Stop";
+"Alerts" = "perspėjimai";
+"setting" = "Nustatymai";
+"Setting" = "Nustatymai";
+
+"Connect bluetooth" = "Prisijungti prie bluetooth";
+"Control the Robot" = "Kontroliuoti Robotą";
+"Connected device" = "Prijungti prietaisą";
+"No device" = "be prietaiso";
+"Available devices" = "pasiekiami prietaisai";
+"(please choose RobotMower_DYM)" = "(prašome pasirinkti RobotMower_DYM)+Q77";
+
+"Information" = "Informacija";
+"Robot status" = "Roboto padėtis";
+"Update Robot’s Firmware" = "Roboto padėtis";
+"Please input PIN code" = "prašome įvesti PIN kodą";
+"Cancel" = "atšaukti";
+"Confirm" = "Patvirtinti";
+
+"Your robot's firmware version:" = "Jūsų Roboto programinės įrangos versija";
+"Latest robot's firmware version:" = "naujausia Roboto programinė įranga";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "prašome paspausti ant Raktas \"2\( Įkrovos režimas, 2 - atnaujinti programinę įrangą )  ant roboto klaviatūros, kad pradėti atnaujinimą.";
+//
+"Done" = "Atlikta";
+"English" = "Angliškai";
+"Dansk" = "Daniškai";
+
+"Bluetooth connected" = "Prisijungta prie Bluetooth";
+"Robot on lawn" = "Robotas ant vejos";
+"Back to station" = "Sugrįžti atgal į pradinę padėtį";
+"Robot on station" = "Robotas pradinėje padėtyje";
+"Go to work" = "Pradėti darbą";
+"Battery capacity" = "Akumuliatoriaus galingumas";
+"Robot control" = "Roboto kontrolė";
+
+"Bluetooth not connected" = "neprisijungta prie bluetooth";
+"Incorrect PIN code length" = "Neteisingas PIN kodo ilgis";
+"Incorrect PIN code" = "Neteisingas PIN kodas";
+
+"Monday's time set wrong" = "Pirmadienio laikas nustatytas neteisingai";
+"Tuesday's time set wrong" = "Antradienio laikas nustatytas neteisingai";
+"Wednesday's time set wrong" = "Trečiadienio laikas nustatytas neteisingai";
+"Thursday's time set wrong" = "Ketvirtadienio laikas nustatytas neteisingai";
+"Friday's time set wrong" = "Penktadienio laikas nustatytas neteisingai";
+"Saturday's time set wrong" = "Šeštadienio laikas nustatytas neteisingai";
+"Sunday's time set wrong" = "Sekmadienio laikas nustatytas neteisingai";
+"PinCode restrictions 4 digits" = "Pin kodo apribojimai 4";
+"OldPinCode ERROR" = "Seno PIN kodo klaida";
+"Two input is inconsistent" = "2 įvedimai nesuderinami";
+"Please check if Bluetooth is turned on in the control center" = "Prašome patikrinti ar Bluetooth funkcija yra įjungta ant kontroliuojamo prietaiso";
+"Set pincode wrong" = "PIN kodas įvestas neteisingai";
+
+"Distribution network" = "Paskirstymo tinklas";
+"Device" = "Prietaisas";
+"Available Device" = "Pasiekiamas prietaisas";
+"Connected Device" = "Prijungiamas prietaisas";
+"Pull-down refresh" = "Pastatyti atnaujinimui";
+"Release refresh" = "Atleisti";
+"Loading" = "Kraunama";
+"Add your gateway soon!" = "Atrasti tinklų sąsają";
+"Add GateWay" = "Pridėti prie tinklų sąsajos";
+"Next" = "Kitas";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "valandos";
+
+
+"Update" = "A+Q108tnaujinti";
+"success" = "Pavykti";
+"error,again" = "klaida,bandyti dar kartą";
+"update succese" = "atnaujinti pasisekimą";
+
+"Change password" = "pakeisti slaptažodį";
+"6-12 characters or numbers" = "6-12 simbolių arba skaičių";
+"Input Old Password" = "įvesti seną slaptažodį";
+"Input New Password" = "įvesti naują slaptažodį";
+"Repeat New Password" = "pakartoti naują slaptažodį";
+"nodevice" = "be prietaiso";
+"Connection succeeded!"="prisijungta!";
+"Connect new devices." ="prijungti naujus prietaisus";
+
+"Wi-Fi not connected" ="neprisijungta prie wifi";
+"Bluetooth not connected" = "neprisijungta prie bluetooth";
+"Change to Wi-Fi" = "pakeisti į wifi";
+"Change to Bluetooth" = "pakeisti į bluetooth";
+"Connect Wi-Fi" = "prisijugti prie wifi";
+
+"Robot Connect" = "Roboto prijungimas";
+"Wi-Fi disconnected" = "atsijungta nuo wifi";
+"Wi-Fi connected" = "prisijugta prie wifi";
+"Add Router" = "pridėti maršrutizatorių";
+"Configue Result" = "konfiguruoti rezultatą";
+"SUCCESSFUL!" = "pavyko!";
+"I know" = "aš žinau";
+"FAILED!" = "Nepavyko!";
