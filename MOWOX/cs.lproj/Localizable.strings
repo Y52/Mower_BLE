@@ -1,0 +1,141 @@
+"confail" = "Připojení selhalo";
+"consucc" = "Úspěšné připojení";
+"disconnect" = "odpojit";
+
+"Input old PIN code" = "Vložte starý kód PIN";
+"Input new PIN code" = "Zadejte nový kód PIN";
+"4 numbers" = "4 čísla";
+"Repeat new PIN code" = "Opakujte nový kód PIN";
+"OK" = "OK";
+"Mow in the rain" = "sekat v dešti";
+"Yes" = "ANO";
+"NO" = "ANO";
+"Boundary cut" = "Hraniční řez";
+
+"Date" = "Datum";
+"Time" = "Čas";
+"Language setting" = "Nastavení jazyka";
+"Time setting" = "Nastavení času";
+"Working time setting" = "Nastavení pracovní doby";
+"Robot setting" = "Nastavení robota";
+"PIN setting" = "Nastavení PIN";
+"Start" = "Start";
+"Stop" = "Stop";
+"Alerts" = "Upozornění";
+"setting" = "Nastavení";
+"Setting" = "Nastavení";
+
+"Connect bluetooth" = "Připojte bluetooth";
+"Control the robot" = "Ovládejte robota";
+"Connected device" = "Připojená zařízení";
+"No device" = "Žádné zařízení";
+"Available devices" = "Dostupná zařízení";
+"(please choose RobotMower_DYM)" = "(prosím vyberte RobotMower_DYM)";
+
+"Information" = "Informace";
+"Robot status" = "Stav robota";
+"Update Robot’s Firmware" = "Aktualizujte firmware robota";
+"Please input PIN code" = "Zadejte prosím kód PIN";
+"Cancel" = "Zrušit";
+"Confirm" = "Potvrdit";
+
+"Your robot's firmware version:" = "Verze firmwaru vašeho robota:";
+"Latest robot's firmware version:" = "Nejnovější verze firmwaru robota:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Pro spuštění aktualizace stiskněte klávesu \"2\ (Boot Mód, 2-Aktualizace firmwaru) na klávesnici robota.";
+//
+"Done" = "Hotovo";
+"English" = "Angličtina";
+"Dansk" = "Dánština";
+
+"Bluetooth connected" = "Blueetooth připojeno";
+"Robot on lawn" = "Robot na trávníku";
+"Back to station" = "Zpět na stanici";
+"Robot on station" = "Robot na stanici";
+"Go to work" = "Jít do práce";
+"Battery capacity" = "Kapacita baterie";
+"Robot control" = "Řízení robota";
+
+"Bluetooth not connected" = "Bluetooth není připojeno";
+"Incorrect PIN code length" = "Nesprávná délka kódu PIN";
+"Incorrect PIN code" = "Nesprávný kód PIN";
+
+"Monday's time set wrong" = "Pondělní čas je špatně nastaven";
+"Tuesday's time set wrong" = "Úterní čas je špatně nastaven";
+"Wednesday's time set wrong" = "Středeční čas je špatně nastaven";
+"Thursday's time set wrong" = "Čtvrteční čas je špatně nastaven";
+"Friday's time set wrong" = "Páteční čas je špatně nastaven";
+"Saturday's time set wrong" = "Sobotní čas je špatně nastaven";
+"Sunday's time set wrong" = "Nedělní čas je špatně nastaven";
+"PinCode restrictions 4 digits" = "PIN kód je omezen 4mi číslicemi";
+"OldPinCode ERROR" = "CHYBA PIN kód je starý";
+"Two input is inconsistent" = "Dva vstupy jsou nekonzistentní";
+"Please check if Bluetooth is turned on in the control center" = "Zkontrolujte, zda je v řídícím centru zapnuto rozhraní Bluetooth";
+
+"Set pincode wrong" = "Špatně nastavený kód PIN";
+"Distribution network" = "Distribuční síť";
+"Device" = "Zařízení";
+"Available Device" = "Dostupné zařízení";
+"Connected Device" = "Připojené zařízení";
+"Pull-down refresh" = "Swipněte dolů pro aktualizování";
+"Release refresh" = "Obnovení aktualizace";
+"Loading" = "Načítání";
+"Add your gateway soon!" = "Přidejte brzy svůj gateway!";
+"Add GateWay" = "Přidat GateWay";
+"Next" = "Další";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "Hodiny";
+
+
+"Update" = "Aktualizace";
+"success" = "úspěch";
+"error,again" = "chyba, znovu";
+"update succese" = "Úspěšně aktualizováno";
+
+"Change password" = "Změnit heslo";
+"6-12 characters or numbers" = "6-12 znaků nebo čísel";
+"Input Old Password" = "Zadejte staré heslo";
+"Input New Password" = "Zadejte nové heslo";
+"Repeat New Password" = "Opakujte nové heslo";
+"nodevice" = "žádné zařízení";
+"Connection succeeded!"="Připojení bylo úspěšné!";
+"Connect new devices." ="Připojte nová zařízení.";
+
+"Wi-Fi not connected" ="Wi-Fi není připojeno";
+"Bluetooth not connected" = "Bluetooth není připojeno";
+"Change to Wi-Fi" = "Přepnout na Wi-Fi";
+"Change to Bluetooth" = "Přepnout na Bluetooth";
+"Connect Wi-Fi" = "Připojte k Wi-Fi";
+
+"Robot Connect" = "Připojení robota";
+"Wi-Fi disconnected" = "Wi-Fi je odpojeno";
+"Wi-Fi connected" = "Wi-Fi připojeno";
+"Add Router" = "Přidat směrovač Internetu";
+"Configue Result" = "Konfigurovat výsledek";
+"SUCCESSFUL!" = "ÚSPĚŠNÉ!";
+"I know" = "Vím";
+"FAILED!" = "NEÚSPĚŠNÉ!";

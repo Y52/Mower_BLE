@@ -1,0 +1,147 @@
+/* 
+  Localizable.strings
+  MOWOX
+
+  Created by 杭州轨物科技有限公司 on 2018/1/31.
+  Copyright © 2018年 yusz. All rights reserved.
+*/
+"Connect bluetooth" = "Tilslut bluetooth";
+"Control the robot" = "Styr robotten";
+"Connected device" = "Tilsluttet enhed";
+"No device" = "Ingen enhed";
+"Available devices" = "Tilgængelig enhed";
+"Available Device" = "Tilgængelig enhed";
+
+"Device" = "Enhed";
+"Connected Device" = "Tilsluttet enhed";
+"Pull-down refresh" = "Træk ned for at opdatere";
+"Release refresh" = "Slip for at opdatere";
+"Loading" = "Indlæser";
+"Add your gateway soon!" = "Tilføj din gateway snart!";
+"Add GateWay" = "Tilføj GateWay";
+"Next" = "Næste";
+
+"(please choose RobotMower_DYM)" = "(vælg RobotMower_DYM)";
+"Please input PIN code" = "Indtast PIN-kode";
+"Done" = "Fuldført";
+"Cancel" = "Annuller";
+"Robot status" = "Plæneklipper status";
+"Bluetooth connected" = "Bluetooth tilsluttet";
+"Bluetooth disconnected" = "Bluetooth frakoblet";
+"Robot on lawn" = "Robot på græsplæne";
+"Back to station" = "Tilbage til stationen";
+"Robot on station" = "Robot på station";
+"Go to work" = "Gå i gang";
+"Battery capacity" = "Batterikapacitet";
+"Robot control" = "Robotstyring";
+"Information" = "Information";
+"Robot status" = "Robotstatus";
+"setting" = "Indstillinger";
+"Robot control" = "Robotstyring";
+"Start" = "Start";
+"Stop" = "Stop";
+"Alerts" = "Notifikationer";
+"setting" = "Indstilling";
+"Setting" = "Indstilling";
+"Language setting" = "Sprogindstilling";
+"English" = "Engelsk";
+"Dansk" = "Dansk";
+"Time setting" = "Tidsindstilling";
+"Working time setting" = "Indstilling af arbejdstid";
+"Robot setting" = "Robot indstilling";
+"PIN setting" = "PIN-indstilling";
+"PIN code setting" = "Indstilling af PIN-kode";
+"Update Robot's Firmware" = "Opdater Robots firmware";
+"OK" = "OK";
+"Date" = "Dato";
+"Time" = "Tid";
+"MOW in the rain" = "Slå græs i regnen";
+"Yes" = "JA";
+"NO" = "NEJ";
+"Boundary cut" = "Grænseklip";
+"Input old PIN code" = "Indtast gammel PIN-kode";
+"Input new PIN code" = "Indtast gammel PIN-kode";
+"Repeat new PIN code" = "Gentag ny PIN-kode";
+"4 numbers" = "4 tal";
+"Your robot's firmware version:" = "Din robots firmware-version:";
+"Latest robot's firmware version:" = "Seneste robots firmware-version:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Tryk på tasten \"2\" (Boottilstand, 2-opdater firmware) på robottens tastatur for at starte opdateringen.";
+
+//MBprogressHUD
+"Bluetooth not connected" = "Bluetooth ikke tilsluttet";
+"Incorrect PIN code length" = "Forkert PIN-kode længde";
+"Incorrect PIN code" = "Forkert PIN-kode";
+
+"Monday's time set wrong" = "Mandags tid indstillet forkert";
+"Tuesday's time set wrong" = "Tirsdags tid indstillet forkert";
+"Wednesday's time set wrong" = "Onsdags tid indstillet forkert";
+"Thursday's time set wrong" = "Torsdags tid indstillet forkert";
+"Friday's time set wrong" = "Fredags tid indstillet forkert";
+"Saturday's time set wrong" = "Lørdags tid indstillet forkert";
+"Sunday's time set wrong" = "Søndags tid indstillet forkert";
+"PinCode restrictions 4 digits" = "Pinkode begrænset til 4 cifre";
+"OldPinCode ERROR" = "Gammel pinkode FEJL";
+"Two input is inconsistent" = "To inputs er inkonsistente";
+"consucc" = "forbsucc";
+"confail" = "forbfejl";
+"disconnect" = "Distributionsnetværk";
+"Distribution network" = "Distributionsnetværk";
+"Please check if Bluetooth is turned on in the control center" = "Kontrollér, om Bluetooth er tændt i kontrolcentret";
+"Confirm" = "Bekræft";
+"Set pincode wrong" = "PIN-kode indstillet forkert";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "Timer";
+
+"Update" = "Opdater";
+"success" = "gennemført";
+"error,again" = "fejl, prøv igen";
+"update succese" = "opdatering gennemført";
+
+"Change password" = "Skift adgangskode";
+"6-12 characters or numbers" = "6-12 tegn eller tal";
+"Input Old Password" = "Indtast gammel adgangskode";
+"Input New Password" = "Indtast ny adgangskode";
+"Repeat New Password" = "Gentag ny adgangskode";
+"nodevice" = "Ingen enhed";
+"Connection succeeded!"="Forbindelse oprettet!";
+"Connect new devices." ="Tilslut nye enheder.";
+
+"Wi-Fi not connected" ="Wi-Fi ikke tilsluttet";
+"Bluetooth not connected" = "Bluetooth ikke tilsluttet";
+"Change to Wi-Fi" = "Skift til Wi-Fi";
+"Change to Bluetooth" = "Skift til Bluetooth";
+"Connect Wi-Fi" = "Tilslut Wi-Fi";
+
+"Robot Connect" = "Robot forbindelse";
+"Wi-Fi disconnected" = "Wi-Fi frakoblet";
+"Wi-Fi connected" = "Wi-Fi tilsluttet";
+"Add Router" = "Tilføj router";
+"Configue Result" = "Resultat af konfiguration";
+"SUCCESSFUL!" = "VELLYKKET!";
+"I know" = "Jeg ved det";
+"FAILED!" = "MISLYKKET!";

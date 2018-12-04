@@ -1,0 +1,19 @@
+
+/* Class = "UIBarButtonItem"; title = "Refresh"; ObjectID = "EoB-dw-DH7"; */
+"EoB-dw-DH7.title" = "Refresh";
+
+/* Class = "UINavigationItem"; title = "Device List"; ObjectID = "GGS-ad-s7D"; */
+"GGS-ad-s7D.title" = "liste des périphériques";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Qpb-Q5-56N"; */
+"Qpb-Q5-56N.text" = "Label";
+
+/* Class = "UILabel"; text = "Robotic mower Connect"; ObjectID = "eXf-2o-8wL"; */
+"eXf-2o-8wL.text" = "connexion établiée";
+
+/* Class = "UILabel"; text = "App software version: V1.0 for iOS"; ObjectID = "hES-M8-ovO"; */
+"hES-M8-ovO.text" = "ogiciel d‘application:V1.0{1.0} pour {OS}";
+
+/* Class = "UILabel"; text = "Mower software version: V1.0"; ObjectID = "u87-ZO-ZQJ"; */
+"u87-ZO-ZQJ.text" = "version logicielle de la tondeuse:V{1.0} pour {OS}";
+

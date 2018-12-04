@@ -1,0 +1,141 @@
+"confail" = "csatlakozás sikertelen";
+"consucc" = "csatlakozás sikeres";
+"disconnect" = "leválasztás";
+
+"Input old PIN code" = "Adja meg a régi PIN kódot";
+"Input new PIN code" = "Adja meg az új PIN kódot";
+"Repeat new PIN code" = "Adja meg az új PIN kódot ismét";
+"4 numbers" = "4 szám";
+"OK" = "OK";
+"Mow in the rain" = "Fűnyírás esőben";
+"Yes" = "IGEN";
+"NO" = "NEM";
+"Boundary cut" = "Szélvágás";
+
+"Date" = "Dátum";
+"Time" = "Idő";
+"Language setting" = "Nyelv beállítása";
+"Time setting" = "Idő beállítása";
+"Working time setting" = "Üzemidő beállítása";
+"Robot setting" = "Robot beállítása";
+"PIN setting" = "PIN kód beállítása";
+"Start" = "Indítás";
+"Stop" = "Leállítás";
+"Alerts" = "Jelzések";
+"setting" = "Beállítás";
+"Setting" = "Beállítás";
+
+"Connect bluetooth" = "Bluetooth csatlakoztatása";
+"Control the Robot" = "A robot vezérlése";
+"Connected device" = "Csatlakoztatott eszköz";
+"No device" = "Nincs eszköz";
+"Available devices" = "Elérhető eszközök";
+"(please choose RobotMower_DYM)" = "(válassza ezt: RobotMower_DYM)";
+
+"Information" = "Információk";
+"Robot status" = "A robot állapota";
+"Update Robot’s Firmware" = "A robot firmware-frissítése";
+"Please input PIN code" = "Adja meg a PIN kódot";
+"Cancel" = "Mégse";
+"Confirm" = "Jóváhagyás";
+
+"Your robot's firmware version:" = "A robot firmware verziója:";
+"Latest robot's firmware version:" = "A robot legutóbbi firmware verziója:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "A frissítés indításához nyomja meg a \"2\"gombot(Indítási mód,2-A firmware frissítése) a robot billentyűzetén.";
+//
+"Done" = "Kész";
+"English" = "English";
+"Dansk" = "Dansk";
+
+"Bluetooth connected" = "Bluetooth csatlakoztatva";
+"Robot on lawn" = "A robot a gyepen van";
+"Back to station" = "Vissza az indulóállomásra";
+"Robot on station" = "Robot az indulóállomáson";
+"Go to work" = "Munka indítása";
+"Battery capacity" = "Akkutöltöttség";
+"Robot control" = "Robotvezérlés";
+
+"Bluetooth not connected" = "A Bluetooth nem csatlakozik";
+"Incorrect PIN code length" = "Hibás PIN-kód";
+"Incorrect PIN code" = "Hibás PIN-kód";
+
+"Monday's time set wrong" = "A hétfői időbeállítás hibás";
+"Tuesday's time set wrong" = "A keddi időbeállítás hibás";
+"Wednesday's time set wrong" = "A szerdai időbeállítás hibás";
+"Thursday's time set wrong" = "A csütörtöki időbeállítás hibás";
+"Friday's time set wrong" = "A pénteki időbeállítás hibás";
+"Saturday's time set wrong" = "A szombati időbeállítás hibás";
+"Sunday's time set wrong" = "A vasárnapi időbeállítás hibás";
+"PinCode restrictions 4 digits" = "A PIN kód korlátozásai";
+"OldPinCode ERROR" = "A régi PIN kód hibás";
+"Two input is inconsistent" = "A beírt kódok nem egyeznek";
+"Please check if Bluetooth is turned on in the control center" = "Ellenőrizze a vezérlőpanelen, hogy a Bluetooth be van-e kapcsolva";
+"Set pincode wrong" = "A megadott PIN kód hibás";
+
+"Distribution network" = "Elosztási hálózat";
+"Device" = "Eszköz";
+"Available Device" = "AElérhető eszköz";
+"Connected Device" = "Csatlakoztatott eszköz";
+"Pull-down refresh" = "A frissíítéshez húzza lefelé";
+"Release refresh" = "Engedje fel a frissítéshez";
+"Loading" = "Töltés";
+"Add your gateway soon!" = "Adja meg a használt átjárót";
+"Add GateWay" = "Átjáró hozzáadása";
+"Next" = "Következő";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "Óra";
+
+
+"Update" = "Frissítés";
+"success" = "sikeres";
+"error,again" = "hiba, újra futtat";
+"update succese" = "frissítés sikeres";
+
+"Change password" = "Jelszó csere";
+"6-12 characters or numbers" = "6-12 karakter vagy";
+"Input Old Password" = "Adja meg a régi jelszót";
+"Input New Password" = "Adja meg az új jelszót";
+"Repeat New Password" = "Adja meg az új jelszót ismét";
+"nodevice" = "Nincs eszköz";
+"Connection succeeded!"="Csatlakozás";
+"Connect new devices." ="Csatlakoztasson új eszközöket.";
+
+"Wi-Fi not connected" ="A wi-fi nem csatlakozik";
+"Bluetooth not connected" = "A Bluetooth nem csatlakozik";
+"Change to Wi-Fi" = "Váltás wi-fire";
+"Change to Bluetooth" = "Váltás Bluetooth-ra";
+"Connect Wi-Fi" = "Wi-fi csatlakoztatása";
+
+"Robot Connect" = "Robotc csatlakozás";
+"Wi-Fi disconnected" = "Wi-fi leválasztva";
+"Wi-Fi connected" = "Wi-fi csatlakoztatva";
+"Add Router" = "Router hozzáadása";
+"Configue Result" = "A konfigurálás eredménye";
+"SUCCESSFUL!" = "SIKERES!";
+"I know" = "Tudom";
+"FAILED!" = "SIKERTELEN!";

@@ -1,0 +1,141 @@
+"confail" = "соединение не удалось";
+"consucc" = "соединение удалось";
+"disconnect" = "отключить";
+
+"Input old PIN code" = "Ввести старый PIN -код";
+"Input new PIN code" = "Ввести новый PIN-код";
+"4 numbers" = "4 цифры";
+"Repeat new PIN code" = "Повторить новый PIN -код";
+"OK" = "OK";
+"Mow in the rain" = "Стрижка под дождём";
+"Yes" = "ДА";
+"NO" = "НЕТ";
+"Boundary cut" = "Стрижка по краям";
+
+"Date" = "Дата";
+"Time" = "Время";
+"Language setting" = "Установка языка";
+"Time setting" = "Установка времени";
+"Working time setting" = "Установка времени работы";
+"Robot setting" = "Настройка робота";
+"PIN setting" = "Настройка PIN-кода";
+"Start" = "Старт";
+"Stop" = "Стоп";
+"Alerts" = "Тревога";
+"setting" = "Установка";
+"Setting" = "Установка";
+
+"Connect bluetooth" = "Подключить блютуз";
+"Control the Robot" = "Управление роботом";
+"Connected device" = "Подключить устройство";
+"No device" = "нет устройства";
+"Available devices" = "Доступные устройства";
+"(please choose RobotMower_DYM)" = "пожалуйста, выберите Робот-газонокосилка_DYM)";
+
+"Information" = "Информация";
+"Robot status" = "Статус робота";
+"Update Robot’s Firmware" = "Обновить прошивку робота";
+"Please input PIN code" = "Введите PIN-код";
+"Cancel" = "Отменить";
+"Confirm" = "Подтвердить";
+
+"Your robot's firmware version:" = "Версия прошивки Вашего робота:";
+"Latest robot's firmware version:" = "Последняя версия прошивки робота";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Нажмите кнопку\"2\"(режим загрузка,2-обновление прошивки) на клавиатуре робота, чтобы начать обновление.";
+//
+"Done" = "Выполнено";
+"English" = "Английский";
+"Dansk" = "Датский";
+
+"Bluetooth connected" = "Блютуз подключён";
+"Robot on lawn" = "Робот на газоне";
+"Back to station" = "Вернуться на док-станцию";
+"Robot on station" = "Робот на док-станции";
+"Go to work" = "Приступить к работе";
+"Battery capacity" = "Ёмкость батареи";
+"Robot control" = "Управление роботом";
+
+"Bluetooth not connected" = "Блютуз не подключён";
+"Incorrect PIN code length" = "Неверная длина PIN-кода";
+"Incorrect PIN code" = "Неверный PIN-код";
+
+"Monday's time set wrong" = "Неверная настройка времени на понедельник";
+"Tuesday's time set wrong" = "Неверная настройка времени на вторник";
+"Wednesday's time set wrong" = "Неверная настройка времени на среду";
+"Thursday's time set wrong" = "Неверная настройка времени на четверг";
+"Friday's time set wrong" = "Неверная настройка времени на пятницу";
+"Saturday's time set wrong" = "Неверная настройка времени на субботу";
+"Sunday's time set wrong" = "Неверная настройка времени на воскресенье";
+"PinCode restrictions 4 digits" = "PIN-код ограничен 4 цифрами";
+"OldPinCode ERROR" = "ОШИБКА,старый PIN-код";
+"Two input is inconsistent" = "Два недопустимых ввода";
+"Please check if Bluetooth is turned on in the control center" = "Убедитесь, что  блютуз на центре управления включён";
+"Set pincode wrong" = "Неверная установка PIN-кода";
+
+"Distribution network" = "Распределительная сеть";
+"Device" = "Устройство";
+"Available Device" = "Доступное устройство";
+"Connected Device" = "Подключённое устройство";
+"Pull-down refresh" = "Потяните вниз для обновления";
+"Release refresh" = "Освободите, чтобы обновить";
+"Loading" = "Загрузка";
+"Add your gateway soon!" = "Добавьте выход на ближайшее время!";
+"Add GateWay" = "Добавить выход";
+"Next" = "Следующий";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "часы";
+
+
+"Update" = "Обновить";
+"success" = "успешно";
+"error,again" = "ошибка,повторите";
+"update succese" = "Обновление удалось";
+
+"Change password" = "Изменить пароль";
+"6-12 characters or numbers" = "6-12 букв или цифр";
+"Input Old Password" = "Ввести старый пароль";
+"Input New Password" = "Ввести новый пароль";
+"Repeat New Password" = "Повторить новый пароль";
+"nodevice" = "нет устройства";
+"Connection succeeded!"="Соединение установлено!";
+"Connect new devices." ="Подключить новое устройство";
+
+"Wi-Fi not connected" ="Wi-Fi не подключён";
+"Bluetooth not connected" = "Блютуз не подключён";
+"Change to Wi-Fi" = "Перейти к Wi-Fi";
+"Change to Bluetooth" = "Перейти к блютузу";
+"Connect Wi-Fi" = "Подключить Wi-Fi";
+
+"Robot Connect" = "Подключить робот";
+"Wi-Fi disconnected" = "Wi-Fi отключён";
+"Wi-Fi connected" = "Wi-Fi подключён";
+"Add Router" = "Добавить роутер";
+"Configue Result" = "Конфигурация результата";
+"SUCCESSFUL!" = "УДАЛОСЬ!";
+"I know" = "Я знаю";
+"FAILED!" = "НЕ УДАЛОСЬ!";

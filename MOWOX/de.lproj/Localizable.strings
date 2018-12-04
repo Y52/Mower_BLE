@@ -1,0 +1,144 @@
+"confail" = "Verbindungsfehler";
+"consucc" = "Verbunden";
+"disconnect" = "trennen";
+
+"Connect bluetooth" = "Bluetooth verbinden";
+"Control the Robot" = "Roboter steuern";
+"Connected device" = "Verbundenes Gerät";
+"No device" = "Kein Gerät";
+"Available devices" = "Verfügbare Geräte";
+"(please choose RobotMower_DYM)" = "(bitte wählen Sie RobotMower_DYM)";
+"Please input PIN code" = "PIN eingeben";
+
+"Done" = "Fertig";
+"Cancel" = "Abbrechen";
+"Confirm" = "Bestätigen";
+"Robot status" = "Mäher-Status";
+"English" = "Englisch";
+"Dansk" = "Dänisch";
+
+"Bluetooth connected" = "Bluetooth verbunden";
+"Robot on lawn" = "Roboter auf dem Rasen";
+"Back to station" = "Zurück zur Ladestation";
+"Robot on station" = "Roboter in der Ladestation";
+"Go to work" = "Betrieb starten";
+"Battery capacity" = "Batteriekapazität";
+"Robot control" = "Robotersteuerung";
+
+"Update Robot’s Firmware" = "Roboter-Firmware aktualisieren";
+"Information" = "Informationen";
+"Robot status" = "Roboterstatus";
+"setting" = "Einstellungen";
+"Robot control" = "Robot control";
+"Start" = "Start";
+"Stop" = "Stopp";
+"Alerts" = "Warnmeldungen";
+"setting" = "Einstellung";
+"Setting" = "Einstellung";
+"Language setting" ="Spracheinstellungen";
+"Time setting" = "Zeiteinstellungen";
+"Working time setting" ="Einstellungen Betriebszeit";
+"Robot setting" = "Robotereinstellungen";
+"PIN setting" = "PIN-Einstellungen";
+"Update Robot’s Firmware" = "Firmware-Update";
+"OK" = "OK";
+"Date" = "Datum";
+"Time" = "Uhrzeit";
+"Mow in the rain" = "Im Regen mähen";
+"YES" = "JA";
+"Yes" = "Ja";
+"NO" = "NEIN";
+"Boundary cut" = "Begrenzung verschneiden";
+"Input old PIN code" = "Alte PIN eingeben";
+"Input new PIN code" = "Neue PIN eingeben";
+"Repeat new PIN code" = "Neue PIN erneut eingeben";
+"4 numbers" = "4 Ziffern";
+"Your robot's firmware version:" = "Firmware-Version Ihres Roboters:";
+"Latest robot's firmware version:" = "Aktuellste Firmware-Version des Roboters:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Taste \"2\"(Startmodus, 2-Firmware-Aktualisierung) auf der Tastatur des Roboters drücken, um die Aktualisierung zu starten.";
+//MBprogressHUD
+"Bluetooth not connected" = "Bluetooth nicht verbunden";
+"Incorrect PIN code length" = "PIN-Länge inkorrekt";
+"Incorrect PIN code" = "PIN inkorrekt";
+
+"Monday's time set wrong" = "Zeiteinstellung für Montag falsch";
+"Tuesday's time set wrong" = "Zeiteinstellung für Dienstag falsch";
+"Wednesday's time set wrong" = "Zeiteinstellung für Mittwoch falsch";
+"Thursday's time set wrong" = "Zeiteinstellung für Donnerstag falsch";
+"Friday's time set wrong" = "Zeiteinstellung für Freitag falsch";
+"Saturday's time set wrong" = "Zeiteinstellung für Samstag falsch";
+"Sunday's time set wrong" = "Zeiteinstellung für Sonntag falsch";
+"PinCode restrictions 4 digits" = "Max. 4 Ziffern für die PIN";
+"OldPinCode ERROR" = "ERROR alte PIN";
+"Two input is inconsistent" = "Zwei Eingaben nicht übereinstimmend";
+
+"Please check if Bluetooth is turned on in the control center" = "Überprüfen Sie, ob Bluetooth in der Steuerung eingeschaltet wurde";
+
+"Set pincode wrong" = "PIN-Einstellung falsch";
+"Distribution network" = "Verteilernetzwerk";
+"Device" = "Gerät";
+"Available Device" = "Verfügbares Gerät";
+"Connected Device" = "Verbundenes Gerät";
+"Pull-down refresh" = "Aufklappen, um zu aktualisieren";
+"Release refresh" = "Loslassen, um zu aktualisieren";
+"Loading" = "Wird geladen";
+"Add your gateway soon!" = "Gateway bald hinzufügen!";
+"Add GateWay" = "GateWay hinzufügen";
+"Next" = "Weiter";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "Stunden";
+
+
+"Update" = "Aktualisieren";
+"success" = "erfolgreich";
+"error,again" = "Fehler,erneut";
+"update succese" = "erfolgreich aktualisiert";
+
+"Change password" = "Passwort ändern";
+"6-12 characters or numbers" = "6-12 Zeichen oder Ziffern";
+"Input Old Password" = "Altes Passwort eingeben";
+"Input New Password" = "Neues Passwort eingeben";
+"Repeat New Password" = "Neues Passwort erneut eingeben";
+"nodevice" = "kein Gerät";
+"Connection succeeded!"="Erfolgreich verbunden!";
+"Connect new devices." ="Neue Geräte verbinden.";
+
+"Wi-Fi not connected" ="Wi-Fi nicht verbunden";
+"Bluetooth not connected" = "Bluetooth nicht verbunden";
+"Change to Wi-Fi" = "Wi-Fi verwenden";
+"Change to Bluetooth" = "Bluetooth verwenden";
+"Connect Wi-Fi" = "Wi-Fi verbinden";
+
+"Robot Connect" = "Roboter verbinden";
+"Wi-Fi disconnected" = "Wi-Fi getrennt";
+"Wi-Fi connected" = "Wi-Fi verbunden";
+"Add Router" = "Router hinzufügen";
+"Configue Result" = "Ergebnis der Einstellung";
+"SUCCESSFUL!" = "ERFOLGREICH!";
+"I know" = "Ich weiß";
+"FAILED!" = "ERROR!";

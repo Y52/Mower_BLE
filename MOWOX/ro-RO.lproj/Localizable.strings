@@ -1,0 +1,148 @@
+/* 
+  Localizable.strings
+  MOWOX
+
+  Created by 杭州轨物科技有限公司 on 2018/1/31.
+  Copyright © 2018年 yusz. All rights reserved.
+*/
+"confail" = "Conectare eșuată";
+"consucc" = "Conectare cu succes";
+"disconnect" = "deconectați";
+
+"Input old PIN code" = "Introduceți codul PIN vechi";
+"Input new PIN code" = "Introduceți codul PIN nou";
+"4 numbers" = "4 cifre";
+"Repeat new PIN code" = "Repetați codul PIN nou";
+"OK" = "OK";
+"Mow in the rain" = "Cosire în ploaie";
+"Yes" = "DA";
+"NO" = "NU";
+"Boundary cut" = "Cosire de frontieră";
+
+"Date" = "Data";
+"Time" = "Ceas";
+"Language setting" = "Setarea limbii";
+"Time setting" = "Setarea ceasului";
+"Working time setting" = "Setarea timpului de lucru";
+"Robot setting" = "Setarea robotului";
+"PIN setting" = "Setarea PIN-ului";
+"Start" = "Start";
+"Stop" = "Stop";
+"Alerts" = "Alerte";
+"setting" = "Setare";
+"Setting" = "Setare";
+
+"Connect bluetooth" = "Conectați bluetooth";
+"Control the Robot" = "Controlați robotul";
+"Connected device" = "Dispozitiv conectat";
+"No device" = "Niciun dispozitiv";
+"Available devices" = "Dispozitive disponibile";
+"(please choose RobotMower_DYM)" = "(vă rugăm să alegeți RobotMower_DYM)";
+
+"Information" = "Informație";
+"Robot status" = "Starea robotului";
+"Update Robot’s Firmware" = "Actualizați firmware-ul robotului";
+"Please input PIN code" = "Introduceți codul PIN";
+"Cancel" = "Anulare";
+"Confirm" = "Confirmare";
+
+"Your robot's firmware version:" = "Versiunea firmware a robotului dvs.:";
+"Latest robot's firmware version:" = "Ultima versiune firmware a robotului:";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Vă rugăm să apăsați tasta \"2\" (Mod bootare, 2-Updatare firmware) de pe tastatura robotului pentru a începe actualizarea.";
+//
+"Done" = "Efectuat";
+"English" = "Engleză";
+"Dansk" = "Daneză";
+
+"Bluetooth connected" = "Bluetooth conectat";
+"Robot on lawn" = "Robot pe gazon";
+"Back to station" = "Înapoi la stație";
+"Robot on station" = "Robot în stație";
+"Go to work" = "Du-te la muncă";
+"Battery capacity" = "Capacitatea bateriei";
+"Robot control" = "Controlul robotului";
+
+"Bluetooth not connected" = "Bluetooth neconectat";
+"Incorrect PIN code length" = "Lungime cod PIN incorectă";
+"Incorrect PIN code" = "Cod PIN incorect";
+
+"Monday's time set wrong" = "Luni:ceasul setat greșit";
+"Tuesday's time set wrong" = "Marți:ceasul setat greșit";
+"Wednesday's time set wrong" = "Marți:ceasul setat greșit";
+"Thursday's time set wrong" = "Joi:ceasul setat greșit";
+"Friday's time set wrong" = "Vineri:ceasul setat greșit";
+"Saturday's time set wrong" = "Sâmbătă:ceasul setat greșit";
+"Sunday's time set wrong" = "Duminică:ceasul setat greșit";
+"PinCode restrictions 4 digits" = "Cod PIN restricționat la 4 cifre";
+"OldPinCode ERROR" = "EROARE Cod PIN vechi";
+"Two input is inconsistent" = "Două intrări sunt diferite";
+"Please check if Bluetooth is turned on in the control center" = "Verificați dacă Bluetooth este activat în centrul de control";
+"Set pincode wrong" = "Codul PIN este setat greșit";
+
+"Distribution network" = "Rețea de distribuție";
+"Device" = "Dispozitiv";
+"Available Device" = "Dispozitiv disponibil";
+"Connected Device" = "Dispozitiv conectat";
+"Pull-down refresh" = "Trageți în jos pentru a reîmprospăta";
+"Release refresh" = "Eliberați pentru a reîmprospăta";
+"Loading" = "Se încarcă";
+"Add your gateway soon!" = "Adăugați-vă gateway-ul în curând!";
+"Add GateWay" = "Adăugați GateWay";
+"Next" = "Următorul";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "Ore";
+
+
+"Update" = "Actualizați";
+"success" = "cu succes";
+"error,again" = "eroare, din nou";
+"update succese" = "Actualizați cu succes";
+
+"Change password" = "Schimbați parola";
+"6-12 characters or numbers" = "6-12 caractere sau numere";
+"Input Old Password" = "Introduceți vechea parolă";
+"Input New Password" = "Introduceți noua parolă";
+"Repeat New Password" = "Repetați noua parolă";
+"nodevice" = "Niciun dispozitiv";
+"Connection succeeded!"="Conectarea a reușit!";
+"Connect new devices." ="Conectați dispozitive noi.";
+
+"Wi-Fi not connected" ="Wi-Fi neconectat";
+"Bluetooth not connected" = "Bluetooth neconectat";
+"Change to Wi-Fi" = "Schimbați la Wi-Fi";
+"Change to Bluetooth" = "Schimbați la Bluetooth";
+"Connect Wi-Fi" = "Conectați Wi-Fi";
+
+"Robot Connect" = "Conectare robot";
+"Wi-Fi disconnected" = "Wi-Fi deconectat";
+"Wi-Fi connected" = "Wi-Fi conectat";
+"Add Router" = "Adăugați router";
+"Configue Result" = "Rezultatul configurării";
+"SUCCESSFUL!" = "CU SUCCES!";
+"I know" = "Știu";
+"FAILED!" = "EȘUAT!";

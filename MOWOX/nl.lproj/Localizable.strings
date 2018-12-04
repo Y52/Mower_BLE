@@ -1,0 +1,141 @@
+"confail" = "verbinden mislukt";
+"consucc" = "verbinden geslaagd";
+"disconnect" = "verbinding verbroken";
+
+"Input old PIN code" = "Voer oude pincode in";
+"Input new PIN code" = "Voer nieuwe pincode in";
+"4 numbers" = "4 cijfers";
+"Repeat new PIN code" = "Herhaal nieuwe pincode";
+"OK" = "OK";
+"Mow in the rain" = "Maaien in de regen";
+"Yes" = "JA";
+"NO" = "NEE";
+"Boundary cut" = "Grensmaaien";
+
+"Date" = "Datum";
+"Time" = "Tijd";
+"Language setting" = "Taalinstelling";
+"Time setting" = "Tijdinstelling";
+"Working time setting" = "Werktijd-instelling";
+"Robot setting" = "Robot-instelling";
+"PIN setting" = "Pincode-instelling";
+"Start" = "Starten";
+"Stop" = "Stoppen";
+"Alerts" = "Waarschuwingen";
+"setting" = "Instelling";
+"Setting" = "Instelling";
+
+"Connect bluetooth" = "Verbinden met Bluetooth";
+"Control the Robot" = "De robot besturen";
+"Connected device" = "Verbonden apparaat";
+"No device" = "Geen apparaat";
+"Available devices" = "Beschikbare apparaten";
+"(please choose RobotMower_DYM)" = "(kies RobotMower_DYM)";
+
+"Information" = "Informatie";
+"Robot status" = "Status robot";
+"Update Robot’s Firmware" = "Firmware robot bijwerken";
+"Please input PIN code" = "Voer pincode in";
+"Cancel" = "Annuleren";
+"Confirm" = "Bevestigen";
+
+"Your robot's firmware version:" = "Uw robots firmwareversie";
+"Latest robot's firmware version:" = "Nieuwste firmwareversie robot";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Druk op Toets \"2\"(Bootmodus,2-Firmware bijwerken) op het toetsenbord van de robot om het bijwerken te starten.";
+//
+"Done" = "Voltooid";
+"English" = "Engels";
+"Dansk" = "Deens";
+
+"Bluetooth connected" = "Verbonden met Bluetooth";
+"Robot on lawn" = "Robot op gazon";
+"Back to station" = "Terug naar station";
+"Robot on station" = "Robot op station";
+"Go to work" = "Werk starten";
+"Battery capacity" = "Accucapaciteit";
+"Robot control" = "Robotbediening";
+
+"Bluetooth not connected" = "Bluetooth niet verbonden";
+"Incorrect PIN code length" = "Onjuiste lengte pincode";
+"Incorrect PIN code" = "Onjuiste pincode";
+
+"Monday's time set wrong" = "Tijd van maandag onjuist ingesteld";
+"Tuesday's time set wrong" = "Tijd van dinsdag onjuist ingesteld";
+"Wednesday's time set wrong" = "Tijd van woensdag onjuist ingesteld";
+"Thursday's time set wrong" = "Tijd van donderdag onjuist ingesteld";
+"Friday's time set wrong" = "Tijd van vrijdag onjuist ingesteld";
+"Saturday's time set wrong" = "Tijd van zaterdag onjuist ingesteld";
+"Sunday's time set wrong" = "Tijd van zondag onjuist ingesteld";
+"PinCode restrictions 4 digits" = "Pincode beperkt tot 4 cijfers";
+"OldPinCode ERROR" = "Oude pincode FOUT";
+"Two input is inconsistent" = "Twee invoeren zijn inconsistent";
+"Please check if Bluetooth is turned on in the control center" = "Controleer of Bluetooth is ingeschakeld in het bedieningscentrum";
+"Set pincode wrong" = "Pincode onjuist ingesteld";
+
+"Distribution network" = "Distributienetwerk";
+"Device" = "Apparaat";
+"Available Device" = "Beschikbaar apparaat";
+"Connected Device" = "Verbonden apparaat";
+"Pull-down refresh" = "Trek omlaag om te vernieuwen";
+"Release refresh" = "Laat los om te vernieuwen";
+"Loading" = "Bezig met laden";
+"Add your gateway soon!" ="Voeg uw gateway snel toe!";
+"Add GateWay" = "Gateway toevoegen";
+"Next" = "Volgende";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "Uur";
+
+
+"Update" = "Bijwerken";
+"success" = "Succes";
+"error,again" = "Fout,alweer";
+"update succese" = "Bijwerken succes";
+
+"Change password" = "Wachtwoord wijzigen";
+"6-12 characters or numbers" = "6-12 tekens of cijfers";
+"Input Old Password" = "Voer oud wachtwoord in";
+"Input New Password" = "Voer nieuw wachtwoord in";
+"Repeat New Password" = "Herhaal nieuw wachtwoord";
+"nodevice" = "Geen apparaat";
+"Connection succeeded!"="Verbinden geslaagd!";
+"Connect new devices." ="Nieuwe apparaten verbinden.";
+
+"Wi-Fi not connected" = "Wifi niet verbonden";
+"Bluetooth not connected" = "Bluetooth niet verbonden";
+"Change to Wi-Fi" = "Wijzigen naar wifi";
+"Change to Bluetooth" = "Wijzigen naar Bluetooth";
+"Connect Wi-Fi" = "Verbinden met wifi";
+
+"Robot Connect" = "Verbinden met robot";
+"Wi-Fi disconnected" = "Wifi-verbinding verbroken";
+"Wi-Fi connected" = "Verbonden met wifi";
+"Add Router" = "Router toevoegen";
+"Configue Result" = "Configuratieresultaat";
+"SUCCESSFUL!" = "SUCCES!";
+"I know" = "Ik weet het";
+"FAILED!" = "MISLUKT!";

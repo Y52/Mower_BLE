@@ -1,0 +1,142 @@
+"confail" = "Yhdistys epäonnistui";
+"consucc" = "Yhdistys onnistui";
+"disconnect" = "katkaise yhteys";
+
+"Input old PIN code" = "Syötä vanha PIN-koodi";
+"Input new PIN code" = "Syötä uusi PIN-koodi";
+"4 numbers" = "4 numeroa";
+"Repeat new PIN code" = "Toista uusi PIN-koodi";
+"OK" = "OK";
+"Mow in the rain" = "Ruohonleikkaus sateella";
+"Yes" = "KYLLÄ";
+"NO" = "EI";
+"Boundary cut" = "Rajaleikkaus";
+
+"Date" = "PVM";
+"Time" = "Aika";
+"Language setting" = "Kieliasetus";
+"Time setting" = "Ajan asetus";
+"Working time setting" = "Työajan asetus";
+"Robot setting" = "Robotin asetus";
+"PIN setting" = "PIN-koodin asetus";
+"Start" = "Aloitus";
+"Stop" = "Lopetus";
+"Alerts" = "Hälyytykset";
+"setting" = "Asetus";
+"Setting" = "Asetus";
+
+"Connect bluetooth" = "Yhdistä Bluetooth";
+"Control the Robot" = "Ohjaa robottia";
+"Connected device" = "Yhdistetty laite";
+"No device" = "Ei laitetta";
+"Available devices" = "Saatavilla olevat laitteet";
+"(please choose RobotMower_DYM)" = "(valitse RobotMower_DYM)";
+
+"Information" = "Info";
+"Robot status" = "Robotin tila";
+"Update Robot’s Firmware" = "Päivitä robotin ohjelmisto";
+"Please input PIN code" = "Syötä PIN-koodi";
+"Cancel" = "Peruutus";
+"Confirm" = "Vahvista";
+
+"Done" = "Valmis";
+"English" = "englanti";
+"Dansk" = "tanska";
+
+"Bluetooth connected" ="Bluetooth yhdistetty";
+"Robot on lawn" = "Robotti nurmikolla";
+"Back to station" = "Takaisin asemaan";
+"Robot on station" = "Takaisin asemaan";
+"Go to work" = "Mene töihin";
+"Battery capacity" = "Akun kapasiteetti";
+"Robot control" = "Robotin  ohjaus";
+
+"Your robot's firmware version:" = "Robottisi ohjelmistoversio:";
+"Latest robot's firmware version:" ="Robotin viimeisin ohjelmisto";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Paina \"2\" -painiketta (Uudelleenkäynnistys, 2-Päivitä ohjelmist) robotin näppäimistössä päivityksen käynnistämiseksi.";
+//
+"Bluetooth not connected" = "Bluetooth ei yhdistetty";
+"Incorrect PIN code length" = "Väärä PIN-koodin pituus";
+"Incorrect PIN code" = "Väärä PIN-koodi";
+
+"Monday's time set wrong" = "Maanantain aika asetettu väärin";
+"Tuesday's time set wrong" = "Tiistain aika asetettu väärin";
+"Wednesday's time set wrong" = "Keskiviikon aika asetettu väärin";
+"Thursday's time set wrong" = "Torstain aika asetettu väärin";
+"Friday's time set wrong" = "Perjantain aika asetettu väärin";
+"Saturday's time set wrong" = "Lauantain aika asetettu väärin";
+"Sunday's time set wrong" = "Sunnuntain aika asetettu väärin";
+"PinCode restrictions 4 digits" = "PIN-koodin rajoitus 4";
+"OldPinCode ERROR" = "Vanha PIN-koodi VIRHE";
+"Two input is inconsistent" = "Kaksi syöttöä ovat erilaiset";
+"Please check if Bluetooth is turned on in the control center" = "Varmista, onko Bluetooth kytketty päällä ohjainkeskuksessa";
+
+"Set pincode wrong" = "PIN-koodi asetettu väärin";
+
+"Distribution network" = "Levitysverkko";
+"Device" = "Laite";
+"Available Device" = "Saatavilla oleva laite";
+"Connected Device" = "Yhdistetty laite";
+"Pull-down refresh" = "Päivitä alas vetämällä";
+"Release refresh" = "Päivitä irti päästämällä";
+"Loading" = "Lataa";
+"Add your gateway soon!" = "Lisää porttisi pian!";
+"Add GateWay" = "Lisää portti";
+"Next" = "Seuraava";
+
+"AM 0:00;" = "00:00";
+"AM 1:00;" = "01:00";
+"AM 2:00;" = "02:00";
+"AM 3:00;" = "03:00";
+"AM 4:00;" = "04:00";
+"AM 5:00;" = "05:00";
+"AM 6:00;" = "06:00";
+"AM 7:00;" = "07:00";
+"AM 8:00;" = "08:00";
+"AM 9:00;" = "09:00";
+"AM 10:00;"= "10:00";
+"AM 11:00;"= "11:00";
+"PM 0:00;" = "12:00";
+"PM 1:00;" = "13:00";
+"PM 2:00;" = "14:00";
+"PM 3:00;" = "15:00";
+"PM 4:00;" = "16:00";
+"PM 5:00;" = "17:00";
+"PM 6:00;" = "18:00";
+"PM 7:00;" = "19:00";
+"PM 8:00;" = "20:00";
+"PM 9:00;" = "21:00";
+"PM 10:00;"= "22:00";
+"PM 11:00;"= "23:00";
+
+"Hours" = "Tuntia";
+
+
+"Update" = "Päivitys";
+"success" = "Onnistui";
+"error,again" = "Virhe,uudelleen";
+"update succese" = "Vaihda salasana";
+
+"Change password" = "Vaihda salasana";
+"6-12 characters or numbers" = "6-12 kirjainta tai numeroa";
+"Input Old Password" = "Syötä vanha salasana";
+"Input New Password" = "Syötä uusi salasana";
+"Repeat New Password" = "Toista uusi salasana";
+"nodevice" = "Ei laitetta";
+"Connection succeeded!"="Yhdistys onnistui!";
+"Connect new devices." ="Yhdistä uusi laite.";
+
+"Wi-Fi not connected" ="WiFi ei yhdistetty";
+"Bluetooth not connected" = "Bluetooth ei yhdistetty";
+"Change to Wi-Fi" = "Vaihda WiFi-yhteyteen";
+"Change to Bluetooth" = "Vaihda Bluetooth-yhteyteen";
+"Connect Wi-Fi" = "Yhdistä WiFiin";
+
+"Robot Connect" = "Yhdistä robotti";
+"Wi-Fi disconnected" = "WiFi-yhteys katkennut";
+"Wi-Fi connected" = "WiFi yhdistetty";
+"Add Router" = "Lisää reititin";
+"Configue Result" = "Konfiguroinnin tulos";
+"SUCCESSFUL!" = "ONNISTUI!";
+"I know" = "Tiedän";
+"FAILED!" = "EPÄONNISTUI!";
