@@ -4,6 +4,7 @@
 
 "Connect bluetooth" = "Połącz Bluetooth";
 "Control the Robot" = "Połącz Robota";
+"Control the robot" = "Połącz Robota";
 "Connected device" = "Podłączone urządzenie";
 "No device" = "Brak urządzenia";
 "Available devices" = "Dostępne urządzenia";
@@ -22,6 +23,7 @@
 "Go to work" = "Idź do pracy";
 "Battery capacity" = "Pojemność baterii";
 "Robot control" = "Sterowanie robotem";
+"Robot Control" = "Sterowanie Robotem";
 "Information" = "Informacja";
 "Robot status" = "Status robota";
 
@@ -40,6 +42,7 @@
 "Date" = "Data";
 "Time" = "Czas";
 "Mow in the rain" = "Koszenie w deszczu";
+"MOW in the rain" = "Koszenie w deszczu";
 "YES" = "TAK";
 "Yes" = "TAK";
 "NO" = "NIE";

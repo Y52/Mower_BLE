@@ -115,7 +115,7 @@ static int version3 = 13;
     _WorktimeButton = [UIButton buttonWithTitle:LocalString(@"Working time setting") titleColor:[UIColor blackColor]];
     _PinButton = [UIButton buttonWithTitle:LocalString(@"PIN setting") titleColor:[UIColor blackColor]];
     _mowerButton = [UIButton buttonWithTitle:LocalString(@"Robot setting") titleColor:[UIColor blackColor]];
-    _updateButton = [UIButton buttonWithTitle:LocalString(@"Update Robot's Firmware") titleColor:[UIColor blackColor]];
+    _updateButton = [UIButton buttonWithTitle:LocalString(@"Update Robot’s Firmware") titleColor:[UIColor blackColor]];
     _secondaryButton = [UIButton buttonWithTitle:LocalString(@"Secondary area setting") titleColor:[UIColor blackColor]];
     _updateButton.hidden = YES;
     [_LanguageButton setButtonStyle1];

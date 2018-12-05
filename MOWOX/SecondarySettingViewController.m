@@ -30,6 +30,7 @@
 
 @property (strong, nonatomic) UIButton *okButton;
 
+@property (nonatomic) int number;//0:不发送,1:可以发送
 
 
 @end
@@ -63,7 +64,7 @@
     _area2_disTF.delegate = self;
     _area3_perTF.delegate = self;
     _area3_disTF.delegate = self;
-    
+    _number = 0;//默认不发送数据
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -135,8 +136,10 @@
     [_area2_disLabel setFont:[UIFont systemFontOfSize:8.0]];
     _area2_perTF = [UITextField textFieldWithPlaceholderText:LocalString(@"number")];
     _area2_perTF.keyboardType = UIKeyboardTypeNumberPad;
+    [_area2_perTF addTarget:self action:@selector(TFchange:) forControlEvents:UIControlEventEditingChanged];
     _area2_disTF = [UITextField textFieldWithPlaceholderText:LocalString(@"number")];
     _area2_disTF.keyboardType = UIKeyboardTypeNumberPad;
+    [_area2_disTF addTarget:self action:@selector(TFchange:) forControlEvents:UIControlEventEditingChanged];
     
     [_Per3Label setFont:[UIFont systemFontOfSize:17.0]];
     [_area3_perLabel setFont:[UIFont systemFontOfSize:8.0]];
@@ -144,8 +147,10 @@
     [_area3_disLabel setFont:[UIFont systemFontOfSize:8.0]];
     _area3_perTF = [UITextField textFieldWithPlaceholderText:LocalString(@"number")];
     _area3_perTF.keyboardType = UIKeyboardTypeNumberPad;
+    [_area3_perTF addTarget:self action:@selector(TFchange:) forControlEvents:UIControlEventEditingChanged];
     _area3_disTF = [UITextField textFieldWithPlaceholderText:LocalString(@"number")];
     _area3_disTF.keyboardType = UIKeyboardTypeNumberPad;
+    [_area3_disTF addTarget:self action:@selector(TFchange:) forControlEvents:UIControlEventEditingChanged];
     
     _okButton = [UIButton buttonWithTitle:LocalString(@"OK") titleColor:[UIColor blackColor]];
     _okButton.titleLabel.font = [UIFont systemFontOfSize:17.0];
@@ -304,15 +309,46 @@
     });
     
 }
-#pragma mark -UITextField delegate
+#pragma mark - resign keyboard control
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.area2_perTF resignFirstResponder];
+    [self.area2_disTF resignFirstResponder];
+    [self.area3_perTF resignFirstResponder];
+    [self.area3_disTF resignFirstResponder];
+}
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [_area2_perTF resignFirstResponder];
-    [_area2_disTF resignFirstResponder];
-    [_area3_perTF resignFirstResponder];
-    [_area3_disTF resignFirstResponder];
+    [textField resignFirstResponder];
     return YES;
 }
+//百分比文本输入限制两位
+- (void)TFchange:(UITextField *)textField{
+    
+    if (_area2_perTF.text.length >2) {
+        _area2_perTF.text = [_area2_perTF.text substringWithRange:NSMakeRange(0, 2)];
+        [NSObject showHudTipStr:LocalString(@"最多请输入两位数")];
+    }
+    if (_area3_perTF.text.length >2) {
+        _area3_perTF.text = [_area3_perTF.text substringWithRange:NSMakeRange(0, 2)];
+        [NSObject showHudTipStr:LocalString(@"最多请输入两位数")];
+    }
+    if (_area2_disTF.text.length >3) {
+        _area2_disTF.text = [_area2_disTF.text substringWithRange:NSMakeRange(0, 3)];
+        [NSObject showHudTipStr:LocalString(@"最多请输入三位数")];
+    }
+    if (_area3_disTF.text.length >3) {
+        _area3_disTF.text = [_area3_disTF.text substringWithRange:NSMakeRange(0, 3)];
+        [NSObject showHudTipStr:LocalString(@"最多请输入三位数")];
+    }
+    if ((([_area2_perTF.text intValue] + [_area3_perTF.text intValue]) >100 ) || ([_area2_disTF.text intValue] >500) || ([_area3_disTF.text intValue] >500) ){
+        _number = 0;
+        [NSObject showHudTipStr:LocalString(@"请输入小于或等于500的数")];
+    }else{
+        _number = 1;
+    }
+
+}
+
 
 #pragma mark - bluetooth control
 
@@ -322,20 +358,27 @@
 }
 
 - (void)ok{
-    NSLog(@"发送数据成功");
-    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area2_perTF.text integerValue]]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area2_disTF.text integerValue]/100]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area2_disTF.text integerValue]%100/10]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area2_disTF.text integerValue]%100%10]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area3_perTF.text integerValue]]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area3_disTF.text integerValue]/100]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area3_disTF.text integerValue]%100/10]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area3_disTF.text integerValue]%100%10]];
     
-    [self.bluetoothDataManage setDataType:0x0d];
-    [self.bluetoothDataManage setDataContent: dataContent];
-    [self.bluetoothDataManage sendBluetoothFrame];
+    if (_number == 1) {
+        NSLog(@"数据发送成功");
+        NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area2_perTF.text integerValue]]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area2_disTF.text integerValue]/100]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area2_disTF.text integerValue]%100/10]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area2_disTF.text integerValue]%100%10]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area3_perTF.text integerValue]]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area3_disTF.text integerValue]/100]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area3_disTF.text integerValue]%100/10]];
+        [dataContent addObject:[NSNumber numberWithUnsignedInteger:[_area3_disTF.text integerValue]%100%10]];
+        
+        [self.bluetoothDataManage setDataType:0x0d];
+        [self.bluetoothDataManage setDataContent: dataContent];
+        [self.bluetoothDataManage sendBluetoothFrame];
+        [NSObject showHudTipStr:LocalString(@"数据发送成功")];
+    }else{
+        [NSObject showHudTipStr:LocalString(@"数据发送失败")];
+    }
+    
 }
 
 @end
