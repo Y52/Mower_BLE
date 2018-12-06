@@ -41,7 +41,7 @@
 
 "Your robot's firmware version:" = "Uw robots firmwareversie";
 "Latest robot's firmware version:" = "Nieuwste firmwareversie robot";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Druk op Toets \"2\"(Bootmodus,2-Firmware bijwerken) op het toetsenbord van de robot om het bijwerken te starten.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Druk op Toets \"2\"(Bootmodus,2-Firmware bijwerken) op het toetsenbord van de robot om het bijwerken te starten.";
 //
 "Done" = "Voltooid";
 "English" = "Engels";

@@ -54,7 +54,7 @@
 
 "Your robot's firmware version:" = "Robottisi ohjelmistoversio:";
 "Latest robot's firmware version:" ="Robotin viimeisin ohjelmisto";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Paina \"2\" -painiketta (Uudelleenkäynnistys, 2-Päivitä ohjelmist) robotin näppäimistössä päivityksen käynnistämiseksi.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Paina \"2\" -painiketta (Uudelleenkäynnistys, 2-Päivitä ohjelmist) robotin näppäimistössä päivityksen käynnistämiseksi.";
 //
 "Bluetooth not connected" = "Bluetooth ei yhdistetty";
 "Incorrect PIN code length" = "Väärä PIN-koodin pituus";

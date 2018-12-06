@@ -48,7 +48,7 @@
 
 "Your robot's firmware version:" = "Versiunea firmware a robotului dvs.:";
 "Latest robot's firmware version:" = "Ultima versiune firmware a robotului:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Vă rugăm să apăsați tasta \"2\" (Mod bootare, 2-Updatare firmware) de pe tastatura robotului pentru a începe actualizarea.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Vă rugăm să apăsați tasta \"2\" (Mod bootare, 2-Updatare firmware) de pe tastatura robotului pentru a începe actualizarea.";
 //
 "Done" = "Efectuat";
 "English" = "Engleză";

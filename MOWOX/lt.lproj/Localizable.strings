@@ -48,7 +48,7 @@
 
 "Your robot's firmware version:" = "Jūsų Roboto programinės įrangos versija";
 "Latest robot's firmware version:" = "naujausia Roboto programinė įranga";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "prašome paspausti ant Raktas \"2\( Įkrovos režimas, 2 - atnaujinti programinę įrangą )  ant roboto klaviatūros, kad pradėti atnaujinimą.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "prašome paspausti ant Raktas \"2\( Įkrovos režimas, 2 - atnaujinti programinę įrangą )  ant roboto klaviatūros, kad pradėti atnaujinimą.";
 //
 "Done" = "Atlikta";
 "English" = "Angliškai";

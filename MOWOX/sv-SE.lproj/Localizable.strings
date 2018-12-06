@@ -48,7 +48,7 @@
 
 "Your robot's firmware version:" = "Din robots firmwareversion:";
 "Latest robot's firmware version:" = "Senaste robotens firmwareversion:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Tryck på tangent \"2\" (Boot-läge, 2 - uppdatera firmware) på robotens tangentbord för att starta uppdateringen.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Tryck på tangent \"2\" (Boot-läge, 2 - uppdatera firmware) på robotens tangentbord för att starta uppdateringen.";
 //
 "Done" = "Klar";
 "English" = "Engelsk";
