@@ -326,23 +326,25 @@
     
     if (_area2_perTF.text.length >2) {
         _area2_perTF.text = [_area2_perTF.text substringWithRange:NSMakeRange(0, 2)];
-        [NSObject showHudTipStr:LocalString(@"最多请输入两位数")];
+        [NSObject showHudTipStr:LocalString(@"Please enter up to two digits")];
     }
     if (_area3_perTF.text.length >2) {
         _area3_perTF.text = [_area3_perTF.text substringWithRange:NSMakeRange(0, 2)];
-        [NSObject showHudTipStr:LocalString(@"最多请输入两位数")];
+        [NSObject showHudTipStr:LocalString(@"Please enter up to two digits")];
     }
     if (_area2_disTF.text.length >3) {
         _area2_disTF.text = [_area2_disTF.text substringWithRange:NSMakeRange(0, 3)];
-        [NSObject showHudTipStr:LocalString(@"最多请输入三位数")];
+        [NSObject showHudTipStr:LocalString(@"Please enter up to three digits")];
     }
     if (_area3_disTF.text.length >3) {
         _area3_disTF.text = [_area3_disTF.text substringWithRange:NSMakeRange(0, 3)];
-        [NSObject showHudTipStr:LocalString(@"最多请输入三位数")];
+        [NSObject showHudTipStr:LocalString(@"Please enter up to three digits")];
+    }
+    if (([_area2_disTF.text intValue] >500) || ([_area3_disTF.text intValue] >500)) {
+        [NSObject showHudTipStr:LocalString(@"Input cannot be greater than 500")];
     }
     if ((([_area2_perTF.text intValue] + [_area3_perTF.text intValue]) >100 ) || ([_area2_disTF.text intValue] >500) || ([_area3_disTF.text intValue] >500) ){
         _number = 0;
-        [NSObject showHudTipStr:LocalString(@"请输入小于或等于500的数")];
     }else{
         _number = 1;
     }
@@ -374,9 +376,9 @@
         [self.bluetoothDataManage setDataType:0x0d];
         [self.bluetoothDataManage setDataContent: dataContent];
         [self.bluetoothDataManage sendBluetoothFrame];
-        [NSObject showHudTipStr:LocalString(@"数据发送成功")];
+        [NSObject showHudTipStr:LocalString(@"Data sent successfully")];
     }else{
-        [NSObject showHudTipStr:LocalString(@"数据发送失败")];
+        [NSObject showHudTipStr:LocalString(@"Data transmission failed")];
     }
     
 }
