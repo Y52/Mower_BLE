@@ -22,7 +22,7 @@
 @property (strong, nonatomic)  UIButton *connButton;
 @property (strong, nonatomic)  UILabel *passwordLimitLabel;
 @property (strong, nonatomic)  UIButton *LoginButton;
-@property (strong, nonatomic)  UIButton *changeButton;
+//@property (strong, nonatomic)  UIButton *changeButton;
 
 @property (strong, nonatomic)  UILabel *resultLabel;
 @property (strong, nonatomic)  LMPopInputPasswordView *popView;
@@ -65,7 +65,7 @@
     
     [self.LoginButton addTarget:self action:@selector(connectMower) forControlEvents:UIControlEventTouchUpInside];
     [self.connButton addTarget:self action:@selector(showConnView) forControlEvents:UIControlEventTouchUpInside];
-    [self.changeButton addTarget:self action:@selector(changeConnWay) forControlEvents:UIControlEventTouchUpInside];
+    //[self.changeButton addTarget:self action:@selector(changeConnWay) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 
     
@@ -95,25 +95,25 @@
     _connButton = [UIButton buttonWithType:UIButtonTypeCustom];
     if (_appDelegate.status == 1) {
         [_connButton setBackgroundImage:[UIImage imageNamed:@"蓝牙图标"] forState:UIControlStateNormal];
-        _changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Wi-Fi") titleColor:[UIColor whiteColor]];
+        //_changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Wi-Fi") titleColor:[UIColor whiteColor]];
         _bluetoothNameLabel.text = LocalString(@"Connect bluetooth");
     }else{
         [_connButton setBackgroundImage:[UIImage imageNamed:@"img_wifi"] forState:UIControlStateNormal];
-        _changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Bluetooth") titleColor:[UIColor whiteColor]];
+        //_changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Bluetooth") titleColor:[UIColor whiteColor]];
         _bluetoothNameLabel.text = LocalString(@"Connect Wi-Fi");
     }
     _LoginButton = [UIButton buttonWithTitle:LocalString(@"Control the robot") titleColor:[UIColor whiteColor]];
     
     [_passwordTextfield setTextFieldStyle1];
     [_LoginButton setButtonStyle1];
-    [_changeButton setButtonStyle1];
+    //[_changeButton setButtonStyle1];
     
     [self.view addSubview:_bluetoothNameLabel];
     [self.view addSubview:_passwordTextfield];
     [self.view addSubview:_passwordLimitLabel];
     [self.view addSubview:_LoginButton];
     [self.view addSubview:_connButton];
-    [self.view addSubview:_changeButton];
+    //[self.view addSubview:_changeButton];
     
     [_bluetoothNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.6, ScreenHeight * 0.04));
@@ -130,11 +130,11 @@
         make.top.equalTo(self.connButton.mas_bottom).offset(ScreenHeight * 0.4);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-    [self.changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.bottom.equalTo(self.LoginButton.mas_top).offset(- ScreenHeight * 0.05);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
+//    [self.changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
+//        make.bottom.equalTo(self.LoginButton.mas_top).offset(- ScreenHeight * 0.05);
+//        make.centerX.equalTo(self.view.mas_centerX);
+//    }];
 }
 
 #pragma mark - ViewController push and back
@@ -279,12 +279,12 @@
     if (_appDelegate.status == 0) {
         _appDelegate.status = 1;
         [_connButton setBackgroundImage:[UIImage imageNamed:@"蓝牙图标"] forState:UIControlStateNormal];
-        [_changeButton setTitle:LocalString(@"Change to Wi-Fi") forState:UIControlStateNormal];
+        //[_changeButton setTitle:LocalString(@"Change to Wi-Fi") forState:UIControlStateNormal];
         _bluetoothNameLabel.text = LocalString(@"Connect bluetooth");
     }else{
         _appDelegate.status = 0;
         [_connButton setBackgroundImage:[UIImage imageNamed:@"img_wifi"] forState:UIControlStateNormal];
-        [_changeButton setTitle:LocalString(@"Change to Bluetooth") forState:UIControlStateNormal];
+        //[_changeButton setTitle:LocalString(@"Change to Bluetooth") forState:UIControlStateNormal];
 
         _bluetoothNameLabel.text = LocalString(@"Connect Wi-Fi");
     }
