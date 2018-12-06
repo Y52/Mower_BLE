@@ -54,7 +54,7 @@
 "4 numbers" = "4 Ziffern";
 "Your robot's firmware version:" = "Firmware-Version Ihres Roboters:";
 "Latest robot's firmware version:" = "Aktuellste Firmware-Version des Roboters:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Taste \"2\"(Startmodus, 2-Firmware-Aktualisierung) auf der Tastatur des Roboters drücken, um die Aktualisierung zu starten.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Taste \"2\"(Startmodus, 2-Firmware-Aktualisierung) auf der Tastatur des Roboters drücken, um die Aktualisierung zu starten.";
 //MBprogressHUD
 "Bluetooth not connected" = "Bluetooth nicht verbunden";
 "Incorrect PIN code length" = "PIN-Länge inkorrekt";

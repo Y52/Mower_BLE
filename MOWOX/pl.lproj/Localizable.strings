@@ -51,7 +51,7 @@
 "4 numbers" = "4 cyfry";
 "Your robot's firmware version:" = "Wersja oprogramowania robota:";
 "Latest robot's firmware version:" = "Najnowsza wersja oprogramowania robota:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Naciśnij przycisk \"2\"(Tryb uruchamiania, 2-Aktualizacja oprogramowania) na klawiaturze robota, aby rozpocząć aktualizację.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Naciśnij przycisk \"2\"(Tryb uruchamiania, 2-Aktualizacja oprogramowania) na klawiaturze robota, aby rozpocząć aktualizację.";
 "Please check if Bluetooth is turned on in the control center" = "Sprawdź, czy funkcja Bluetooth jest włączona w centrum sterowania";
 "Confirm" = "Potwierdź";
 "Set pincode wrong" = "Ustawiony kod PIN jest niepoprawny";

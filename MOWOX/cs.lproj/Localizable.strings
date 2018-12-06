@@ -41,7 +41,7 @@
 
 "Your robot's firmware version:" = "Verze firmwaru vašeho robota:";
 "Latest robot's firmware version:" = "Nejnovější verze firmwaru robota:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Pro spuštění aktualizace stiskněte klávesu \"2\ (Boot Mód, 2-Aktualizace firmwaru) na klávesnici robota.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Pro spuštění aktualizace stiskněte klávesu \"2\ (Boot Mód, 2-Aktualizace firmwaru) na klávesnici robota.";
 //
 "Done" = "Hotovo";
 "English" = "Angličtina";

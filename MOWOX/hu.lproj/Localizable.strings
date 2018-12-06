@@ -41,7 +41,7 @@
 
 "Your robot's firmware version:" = "A robot firmware verziója:";
 "Latest robot's firmware version:" = "A robot legutóbbi firmware verziója:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "A frissítés indításához nyomja meg a \"2\"gombot(Indítási mód,2-A firmware frissítése) a robot billentyűzetén.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "A frissítés indításához nyomja meg a \"2\"gombot(Indítási mód,2-A firmware frissítése) a robot billentyűzetén.";
 //
 "Done" = "Kész";
 "English" = "English";

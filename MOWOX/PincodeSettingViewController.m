@@ -35,7 +35,7 @@
     [super viewDidLoad];
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
 
-    self.navigationItem.title = LocalString(@"PIN code setting");
+    self.navigationItem.title = LocalString(@"PIN setting");
     
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     

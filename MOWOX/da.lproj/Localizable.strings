@@ -66,7 +66,7 @@
 "4 numbers" = "4 tal";
 "Your robot's firmware version:" = "Din robots firmware-version:";
 "Latest robot's firmware version:" = "Seneste robots firmware-version:";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Tryk på tasten \"2\" (Boottilstand, 2-opdater firmware) på robottens tastatur for at starte opdateringen.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Tryk på tasten \"2\" (Boottilstand, 2-opdater firmware) på robottens tastatur for at starte opdateringen.";
 
 //MBprogressHUD
 "Bluetooth not connected" = "Bluetooth ikke tilsluttet";

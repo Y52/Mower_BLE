@@ -1,10 +1,10 @@
-/* 
-  Localizable.strings
-  MOWOX
-
-  Created by 杭州轨物科技有限公司 on 2018/1/31.
-  Copyright © 2018年 yusz. All rights reserved.
-*/
+/*
+ Localizable.strings
+ MOWOX
+ 
+ Created by 杭州轨物科技有限公司 on 2018/1/31.
+ Copyright © 2018年 yusz. All rights reserved.
+ */
 "confail" = "tilkobling mislykket";
 "consucc" = "tilkobling vellykket";
 "disconnect" = "frakoble";
@@ -48,7 +48,7 @@
 
 "Your robot's firmware version:" = "Robots fastvareversjon:";
 "Latest robot's firmware version:" = "Siste robots";
-"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start the updating." = "Trykk på tast \"2\"(Oppstartmodus,2-oppdater fastvare) på robots tastatur for å starte oppdateringen.";
+"Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Trykk på tast \"2\"(Oppstartmodus,2-oppdater fastvare) på robots tastatur for å starte oppdateringen.";
 //
 "Done" = "Fullført";
 "English" = "Engelsk";
