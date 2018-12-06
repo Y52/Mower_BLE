@@ -14,7 +14,7 @@
 "4 numbers" = "4 numeri";
 "Repeat new PIN code" = "Ripeti il";
 "OK" = "OK";
-"Mow in the rain" = "Falciare sotto la pioggia";
+"MOW in the rain" = "Falciare sotto la pioggia";
 "Yes" = "SÌ";
 "NO" = "NO";
 "Boundary cut" = "Taglio di confine";
@@ -33,7 +33,7 @@
 "Setting" = "Impostazione";
 
 "Connect bluetooth" = "Connetti bluetooth";
-"Control the Robot" = "Controlla il robot";
+"Control the robot" = "Controlla il robot";
 "Connected device" = "Dispositivo connesso";
 "No device" = "Nessun dispositivo";
 "Available devices" = "Dispositivi disponibili";
@@ -41,7 +41,7 @@
 
 "Information" = "Informazione";
 "Robot status" = "Stato del robot";
-"Update Robot’s Firmware" = "Aggiorna il firmware del robot";
+"Update Robot's Firmware" = "Aggiorna il firmware del robot";
 "Please input PIN code" = "Inserisci il codice PIN";
 "Cancel" = "Annulla";
 "Confirm" = "Conferma";
@@ -61,6 +61,7 @@
 "Go to work" = "Inizia a lavorare";
 "Battery capacity" = "Capacità della batteria";
 "Robot control" = "Controllo robot";
+"Robot Control" = "Controllo robot";
 
 "Bluetooth not connected" = "Bluetooth non connesso";
 "Incorrect PIN code length" = "Lunghezza del codice PIN errata";

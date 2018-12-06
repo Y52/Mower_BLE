@@ -7,7 +7,7 @@
 "Repeat new PIN code" = "Adja meg az új PIN kódot ismét";
 "4 numbers" = "4 szám";
 "OK" = "OK";
-"Mow in the rain" = "Fűnyírás esőben";
+"MOW in the rain" = "Fűnyírás esőben";
 "Yes" = "IGEN";
 "NO" = "NEM";
 "Boundary cut" = "Szélvágás";
@@ -26,7 +26,7 @@
 "Setting" = "Beállítás";
 
 "Connect bluetooth" = "Bluetooth csatlakoztatása";
-"Control the Robot" = "A robot vezérlése";
+"Control the robot" = "A robot vezérlése";
 "Connected device" = "Csatlakoztatott eszköz";
 "No device" = "Nincs eszköz";
 "Available devices" = "Elérhető eszközök";
@@ -34,7 +34,7 @@
 
 "Information" = "Információk";
 "Robot status" = "A robot állapota";
-"Update Robot’s Firmware" = "A robot firmware-frissítése";
+"Update Robot's Firmware" = "A robot firmware-frissítése";
 "Please input PIN code" = "Adja meg a PIN kódot";
 "Cancel" = "Mégse";
 "Confirm" = "Jóváhagyás";
@@ -54,6 +54,7 @@
 "Go to work" = "Munka indítása";
 "Battery capacity" = "Akkutöltöttség";
 "Robot control" = "Robotvezérlés";
+"Robot Control" = "Robotvezérlés";
 
 "Bluetooth not connected" = "A Bluetooth nem csatlakozik";
 "Incorrect PIN code length" = "Hibás PIN-kód";

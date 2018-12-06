@@ -7,6 +7,7 @@
 */
 "Connect bluetooth" = "Tilslut bluetooth";
 "Control the robot" = "Styr robotten";
+
 "Connected device" = "Tilsluttet enhed";
 "No device" = "Ingen enhed";
 "Available devices" = "Tilgængelig enhed";
@@ -33,11 +34,11 @@
 "Robot on station" = "Robot på station";
 "Go to work" = "Gå i gang";
 "Battery capacity" = "Batterikapacitet";
-"Robot control" = "Robotstyring";
 "Information" = "Information";
 "Robot status" = "Robotstatus";
 "setting" = "Indstillinger";
 "Robot control" = "Robotstyring";
+"Robot Control" = "Robotstyring";
 "Start" = "Start";
 "Stop" = "Stop";
 "Alerts" = "Notifikationer";

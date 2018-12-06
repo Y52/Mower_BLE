@@ -14,7 +14,7 @@
 "4 numbers" = "4 cifre";
 "Repeat new PIN code" = "Repetați codul PIN nou";
 "OK" = "OK";
-"Mow in the rain" = "Cosire în ploaie";
+"MOW in the rain" = "Cosire în ploaie";
 "Yes" = "DA";
 "NO" = "NU";
 "Boundary cut" = "Cosire de frontieră";
@@ -33,7 +33,7 @@
 "Setting" = "Setare";
 
 "Connect bluetooth" = "Conectați bluetooth";
-"Control the Robot" = "Controlați robotul";
+"Control the robot" = "Controlați robotul";
 "Connected device" = "Dispozitiv conectat";
 "No device" = "Niciun dispozitiv";
 "Available devices" = "Dispozitive disponibile";
@@ -41,7 +41,7 @@
 
 "Information" = "Informație";
 "Robot status" = "Starea robotului";
-"Update Robot’s Firmware" = "Actualizați firmware-ul robotului";
+"Update Robot's Firmware" = "Actualizați firmware-ul robotului";
 "Please input PIN code" = "Introduceți codul PIN";
 "Cancel" = "Anulare";
 "Confirm" = "Confirmare";
@@ -61,6 +61,7 @@
 "Go to work" = "Du-te la muncă";
 "Battery capacity" = "Capacitatea bateriei";
 "Robot control" = "Controlul robotului";
+"Robot Control" = "Controlul robotului";
 
 "Bluetooth not connected" = "Bluetooth neconectat";
 "Incorrect PIN code length" = "Lungime cod PIN incorectă";

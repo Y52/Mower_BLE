@@ -14,7 +14,7 @@
 "4 numbers" = "4 numbers";
 "Repeat new PIN code" = "Repeat new PIN code";
 "OK" = "OK";
-"Mow in the rain" = "Mow in the rain";
+"MOW in the rain" = "Mow in the rain";
 "Yes" = "Yes";
 "NO" = "NO";
 "Boundary cut" = "Boundary cut";
@@ -26,6 +26,7 @@
 "Working time setting" = "Working time setting";
 "Robot setting" = "Robot setting";
 "PIN setting" = "PIN setting";
+"PIN code setting" = "PIN code setting";
 "Start" = "Start";
 "Stop" = "Stop";
 "Alerts" = "Alerts";
@@ -33,15 +34,16 @@
 "Setting" = "Setting";
 
 "Connect bluetooth" = "Connect bluetooth";
-"Control the Robot" = "Control the Robot";
+"Control the robot" = "Control the Robot";
 "Connected device" = "Connected device";
 "No device" = "No device";
 "Available devices" = "Available devices";
+"Available Devices" = "Available Devices";
 "(please choose RobotMower_DYM)" = "(please choose RobotMower_DYM)";
 
 "Information" = "Information";
 "Robot status" = "Robot status";
-"Update Robot’s Firmware" = "Update Robot’s Firmware";
+"Update Robot's Firmware" = "Update Robot’s Firmware";
 "Please input PIN code" = "Please input PIN code";
 "Cancel" = "Cancel";
 "Confirm" = "Confirm";
@@ -61,6 +63,7 @@
 "Go to work" = "Go to work";
 "Battery capacity" = "Battery capacity";
 "Robot control" = "Robot control";
+"Robot Control" = "Robot Control";
 
 "Bluetooth not connected" = "Bluetooth not connected";
 "Incorrect PIN code length" = "Incorrect PIN code length";
@@ -81,7 +84,6 @@
 
 "Distribution network" = "Distribution network";
 "Device" = "Device";
-"Available Device" = "Available Device";
 "Connected Device" = "Connected Device";
 "Pull-down refresh" = "Pull-down refresh";
 "Release refresh" = "Release refresh";

@@ -7,7 +7,7 @@
 "4 numbers" = "4 numeroa";
 "Repeat new PIN code" = "Toista uusi PIN-koodi";
 "OK" = "OK";
-"Mow in the rain" = "Ruohonleikkaus sateella";
+"MOW in the rain" = "Ruohonleikkaus sateella";
 "Yes" = "KYLLÄ";
 "NO" = "EI";
 "Boundary cut" = "Rajaleikkaus";
@@ -26,7 +26,7 @@
 "Setting" = "Asetus";
 
 "Connect bluetooth" = "Yhdistä Bluetooth";
-"Control the Robot" = "Ohjaa robottia";
+"Control the robot" = "Ohjaa robottia";
 "Connected device" = "Yhdistetty laite";
 "No device" = "Ei laitetta";
 "Available devices" = "Saatavilla olevat laitteet";
@@ -34,7 +34,7 @@
 
 "Information" = "Info";
 "Robot status" = "Robotin tila";
-"Update Robot’s Firmware" = "Päivitä robotin ohjelmisto";
+"Update Robot's Firmware" = "Päivitä robotin ohjelmisto";
 "Please input PIN code" = "Syötä PIN-koodi";
 "Cancel" = "Peruutus";
 "Confirm" = "Vahvista";
@@ -50,6 +50,7 @@
 "Go to work" = "Mene töihin";
 "Battery capacity" = "Akun kapasiteetti";
 "Robot control" = "Robotin  ohjaus";
+"Robot Control" = "Robotin  ohjaus";
 
 "Your robot's firmware version:" = "Robottisi ohjelmistoversio:";
 "Latest robot's firmware version:" ="Robotin viimeisin ohjelmisto";

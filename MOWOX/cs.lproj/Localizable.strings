@@ -7,7 +7,7 @@
 "4 numbers" = "4 čísla";
 "Repeat new PIN code" = "Opakujte nový kód PIN";
 "OK" = "OK";
-"Mow in the rain" = "sekat v dešti";
+"MOW in the rain" = "sekat v dešti";
 "Yes" = "ANO";
 "NO" = "ANO";
 "Boundary cut" = "Hraniční řez";
@@ -34,7 +34,7 @@
 
 "Information" = "Informace";
 "Robot status" = "Stav robota";
-"Update Robot’s Firmware" = "Aktualizujte firmware robota";
+"Update Robot's Firmware" = "Aktualizujte firmware robota";
 "Please input PIN code" = "Zadejte prosím kód PIN";
 "Cancel" = "Zrušit";
 "Confirm" = "Potvrdit";
@@ -54,6 +54,7 @@
 "Go to work" = "Jít do práce";
 "Battery capacity" = "Kapacita baterie";
 "Robot control" = "Řízení robota";
+"Robot Control" = "Řízení Robota";
 
 "Bluetooth not connected" = "Bluetooth není připojeno";
 "Incorrect PIN code length" = "Nesprávná délka kódu PIN";

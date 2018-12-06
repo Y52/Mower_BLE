@@ -3,7 +3,6 @@
 "disconnect" = "rozłącz";
 
 "Connect bluetooth" = "Połącz Bluetooth";
-"Control the Robot" = "Połącz Robota";
 "Control the robot" = "Połącz Robota";
 "Connected device" = "Podłączone urządzenie";
 "No device" = "Brak urządzenia";
@@ -37,11 +36,10 @@
 "Working time setting" = "Ustawienia czasu pracy";
 "Robot setting" = "Ustawienia robota";
 "PIN setting" = "Ustawienia PIN";
-"Update Robot’s Firmware" = "Zaktualizuj oprogramowanie robota";
+"Update Robot's Firmware" = "Zaktualizuj oprogramowanie robota";
 "OK" = "OK.";
 "Date" = "Data";
 "Time" = "Czas";
-"Mow in the rain" = "Koszenie w deszczu";
 "MOW in the rain" = "Koszenie w deszczu";
 "YES" = "TAK";
 "Yes" = "TAK";

@@ -14,7 +14,7 @@
 "4 numbers" = "4 цифри";
 "Repeat new PIN code" = "Повтори новия PIN код";
 "OK" = "OK";
-"Mow in the rain" = "косене в дъжд";
+"MOW in the rain" = "косене в дъжд";
 "Yes" = "ДА";
 "NO" = "НЕ";
 "Boundary cut" = "Косене с граници";
@@ -33,7 +33,7 @@
 "Setting" = "Настройки";
 
 "Connect bluetooth" = "Свържи Bluetooth";
-"Control the Robot" = "Управ. Робота";
+"Control the robot" = "Управ. Робота";
 "Connected device" = "Свързани устройства";
 "No device" = "Няма устройства";
 "Available devices" = "Налични устройства";
@@ -41,7 +41,7 @@
 
 "Information" = "Информация";
 "Robot status" = "Състояние на Робота";
-"Update Robot’s Firmware" = "Актуал. фърмуер на Робота";
+"Update Robot's Firmware" = "Актуал. фърмуер на Робота";
 "Please input PIN code" = "Въведете PIN код";
 "Cancel" = "Отказ";
 "Confirm" = "Потвърди";
@@ -61,6 +61,7 @@
 "Go to work" = "Започни работа";
 "Battery capacity" = "Капацитет на батерията";
 "Robot control" = "Управл. на робота";
+"Robot Control" = "Управл. на робота";
 
 "Bluetooth not connected" = "Bluetooth не е свързан ";
 "Incorrect PIN code length" = "Неправилна дължина на PIN кода";

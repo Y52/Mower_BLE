@@ -14,7 +14,7 @@
 "4 numbers" = "ange 4 nummer";
 "Repeat new PIN code" = "Upprepa ny PIN-kod";
 "OK" = "OK";
-"Mow in the rain" = "Klippa i regn";
+"MOW in the rain" = "Klippa i regn";
 "Yes" = "JA";
 "NO" = "NEJ";
 "Boundary cut" = "Gränsklippning";
@@ -33,7 +33,7 @@
 "Setting" = "Inställning";
 
 "Connect bluetooth" = "Anslut Bluetooth";
-"Control the Robot" = "Kontrollera roboten";
+"Control the robot" = "Kontrollera roboten";
 "Connected device" = "Ansluten enhet";
 "No device" = "Ingen enhet";
 "Available devices" = "Tillgängliga enheter";
@@ -41,7 +41,7 @@
 
 "Information" = "Information";
 "Robot status" = "Robotstatus";
-"Update Robot’s Firmware" = "Uppdatera Robotens firmware";
+"Update Robot's Firmware" = "Uppdatera Robotens firmware";
 "Please input PIN code" = "Var god ange PIN-kod";
 "Cancel" = "Avbryt";
 "Confirm" = "Bekräfta";
@@ -61,6 +61,7 @@
 "Go to work" = "Börja jobba";
 "Battery capacity" = "Batterikapacitet";
 "Robot control" = "Robotstyrning";
+"Robot Control" = "Robotstyrning";
 
 "Bluetooth not connected" = "Bluetooth är inte ansluten";
 "Incorrect PIN code length" = "Fel PIN-kodslängd";

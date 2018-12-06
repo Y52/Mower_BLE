@@ -14,7 +14,7 @@
 "4 numbers" = "4 skaičiai";
 "Repeat new PIN code" = "pakartoti naują PIN kodą";
 "OK" = "Gerai";
-"Mow in the rain" = "pjauti lietui lyjant";
+"MOW in the rain" = "pjauti lietui lyjant";
 "Yes" = "TAIP";
 "NO" = "NE";
 "Boundary cut" = "kraštų pjovimas";
@@ -33,7 +33,7 @@
 "Setting" = "Nustatymai";
 
 "Connect bluetooth" = "Prisijungti prie bluetooth";
-"Control the Robot" = "Kontroliuoti Robotą";
+"Control the robot" = "Kontroliuoti Robotą";
 "Connected device" = "Prijungti prietaisą";
 "No device" = "be prietaiso";
 "Available devices" = "pasiekiami prietaisai";
@@ -41,7 +41,7 @@
 
 "Information" = "Informacija";
 "Robot status" = "Roboto padėtis";
-"Update Robot’s Firmware" = "Roboto padėtis";
+"Update Robot's Firmware" = "Roboto padėtis";
 "Please input PIN code" = "prašome įvesti PIN kodą";
 "Cancel" = "atšaukti";
 "Confirm" = "Patvirtinti";
@@ -61,6 +61,7 @@
 "Go to work" = "Pradėti darbą";
 "Battery capacity" = "Akumuliatoriaus galingumas";
 "Robot control" = "Roboto kontrolė";
+"Robot Control" = "Roboto kontrolė";
 
 "Bluetooth not connected" = "neprisijungta prie bluetooth";
 "Incorrect PIN code length" = "Neteisingas PIN kodo ilgis";

@@ -14,7 +14,7 @@
 "4 numbers" = "4 sifre";
 "Repeat new PIN code" = "Gjenta ny PIN-kode";
 "OK" = "OK";
-"Mow in the rain" = "Klippe i regnvær";
+"MOW in the rain" = "Klippe i regnvær";
 "Yes" = "JA";
 "NO" = "NEI";
 "Boundary cut" = "Kantklipping";
@@ -33,7 +33,7 @@
 "Setting" = "Innstillinger";
 
 "Connect bluetooth" = "Koble til Bluetooth";
-"Control the Robot" = "Kontroller Robot";
+"Control the robot" = "Kontroller Robot";
 "Connected device" = "Tilkoblet utstyr";
 "No device" = "Intet utstyr";
 "Available devices" = "Tilgjengelig utstyr";
@@ -41,7 +41,7 @@
 
 "Information" = "Informasjon";
 "Robot status" = "Robotstatus";
-"Update Robot’s Firmware" = "Oppdater Robots";
+"Update Robot's Firmware" = "Oppdater Robots";
 "Please input PIN code" = "Angi PIN";
 "Cancel" = "Angi PIN";
 "Confirm" = "Bekreft";
@@ -61,6 +61,7 @@
 "Go to work" = "Start arbeid";
 "Battery capacity" = "Batterikapasitet";
 "Robot control" = "Robotkontroll";
+"Robot Control" = "Robotkontroll";
 
 "Bluetooth not connected" = "Bluetooth ikke";
 "Incorrect PIN code length" = "Feil PIN-kode";

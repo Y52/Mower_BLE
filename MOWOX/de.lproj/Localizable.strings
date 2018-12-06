@@ -3,7 +3,7 @@
 "disconnect" = "trennen";
 
 "Connect bluetooth" = "Bluetooth verbinden";
-"Control the Robot" = "Roboter steuern";
+"Control the robot" = "Roboter steuern";
 "Connected device" = "Verbundenes Gerät";
 "No device" = "Kein Gerät";
 "Available devices" = "Verfügbare Geräte";
@@ -24,12 +24,12 @@
 "Go to work" = "Betrieb starten";
 "Battery capacity" = "Batteriekapazität";
 "Robot control" = "Robotersteuerung";
+"Robot Control" = "Robotersteuerung";
 
-"Update Robot’s Firmware" = "Roboter-Firmware aktualisieren";
+"Update Robot's Firmware" = "Roboter-Firmware aktualisieren";
 "Information" = "Informationen";
 "Robot status" = "Roboterstatus";
 "setting" = "Einstellungen";
-"Robot control" = "Robot control";
 "Start" = "Start";
 "Stop" = "Stopp";
 "Alerts" = "Warnmeldungen";
@@ -40,11 +40,10 @@
 "Working time setting" ="Einstellungen Betriebszeit";
 "Robot setting" = "Robotereinstellungen";
 "PIN setting" = "PIN-Einstellungen";
-"Update Robot’s Firmware" = "Firmware-Update";
 "OK" = "OK";
 "Date" = "Datum";
 "Time" = "Uhrzeit";
-"Mow in the rain" = "Im Regen mähen";
+"MOW in the rain" = "Im Regen mähen";
 "YES" = "JA";
 "Yes" = "Ja";
 "NO" = "NEIN";

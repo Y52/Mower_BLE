@@ -7,7 +7,7 @@
 "4 numbers" = "4 cijfers";
 "Repeat new PIN code" = "Herhaal nieuwe pincode";
 "OK" = "OK";
-"Mow in the rain" = "Maaien in de regen";
+"MOW in the rain" = "Maaien in de regen";
 "Yes" = "JA";
 "NO" = "NEE";
 "Boundary cut" = "Grensmaaien";
@@ -26,7 +26,7 @@
 "Setting" = "Instelling";
 
 "Connect bluetooth" = "Verbinden met Bluetooth";
-"Control the Robot" = "De robot besturen";
+"Control the robot" = "De robot besturen";
 "Connected device" = "Verbonden apparaat";
 "No device" = "Geen apparaat";
 "Available devices" = "Beschikbare apparaten";
@@ -34,7 +34,7 @@
 
 "Information" = "Informatie";
 "Robot status" = "Status robot";
-"Update Robot’s Firmware" = "Firmware robot bijwerken";
+"Update Robot's Firmware" = "Firmware robot bijwerken";
 "Please input PIN code" = "Voer pincode in";
 "Cancel" = "Annuleren";
 "Confirm" = "Bevestigen";
@@ -54,6 +54,7 @@
 "Go to work" = "Werk starten";
 "Battery capacity" = "Accucapaciteit";
 "Robot control" = "Robotbediening";
+"Robot Control" = "Robotbediening";
 
 "Bluetooth not connected" = "Bluetooth niet verbonden";
 "Incorrect PIN code length" = "Onjuiste lengte pincode";
