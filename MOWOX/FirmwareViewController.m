@@ -18,6 +18,7 @@
 @property (strong, nonatomic)  ProgressView *progressView;
 @property (strong, nonatomic)  UITextView *curVerTV;
 @property (strong, nonatomic)  UILabel *tipLabel;
+@property (strong, nonatomic)  UIImageView *tipImage;
 
 @property (strong, nonatomic)  UIActivityIndicatorView *activityIndicatorView;
 @property (strong, nonatomic)  ASProgressPopUpView *progressViewNew;
@@ -29,20 +30,33 @@
     NSString *dataName;
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (([BluetoothDataManage shareInstance].sectionvalve == 0) || ([BluetoothDataManage shareInstance].sectionvalve == 1)) {
+            if ([BluetoothDataManage shareInstance].sectionvalve == 0) {
+                if ([BluetoothDataManage shareInstance].deviceType == 0) {
+                    dataName = @"DY00243_20181210";
+                }else if ([BluetoothDataManage shareInstance].deviceType == 1){
+                    dataName = @"DY01243_20181210";
+                }else if ([BluetoothDataManage shareInstance].deviceType == 2){
+                    dataName = @"DY02243_20181210";
+                }else{
+                    dataName = @"DY1212";
+                }
+            }
+            if ([BluetoothDataManage shareInstance].sectionvalve == 1) {
+                if ([BluetoothDataManage shareInstance].deviceType == 1) {
+                    dataName = @"DY11243_20181210.bin";
+                }else if ([BluetoothDataManage shareInstance].deviceType == 2){
+                    dataName = @"DY12243_20181210.bin";
+                }else{
+                    dataName = @"DY1212";
+                }
+            }
     
-    if ([BluetoothDataManage shareInstance].deviceType == 0) {
-        dataName = @"DYM2206_42Motor_Vx.x.x_20xxXxXx.bin";
-    }else if ([BluetoothDataManage shareInstance].deviceType == 1){
-        dataName = @"DYM2206_35Motor_Vx.x.x_20xxXxXx.bin";
-    }else if ([BluetoothDataManage shareInstance].deviceType == 2){
-        dataName = @"DYM2205_35Motor_Vx.x.x_20xxXxXx.bin";
     }else{
-        dataName = @"AutoMower";
+         dataName = @"DY1212";
     }
-    
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
     
@@ -128,7 +142,7 @@
     
     //curVerTextView
     _curVerTV = [[UITextView alloc] init];
-    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d\n%@\n V1.2.7\n",LocalString(@"Your robot's firmware version:"),[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest robot's firmware version:")];
+    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d.%d\n%@\n V2.2.4.3\n",LocalString(@"Your robot's firmware version:"),[BluetoothDataManage shareInstance].deviceType,[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest robot's firmware version:")];
     _curVerTV.font = [UIFont fontWithName:@"Arial" size:17];
     _curVerTV.backgroundColor = [UIColor clearColor];
     _curVerTV.autocapitalizationType = UITextAutocapitalizationTypeSentences;
@@ -155,10 +169,13 @@
     _activityIndicatorView.backgroundColor = [UIColor grayColor];
     _activityIndicatorView.hidesWhenStopped = YES;
     [self.view addSubview:_activityIndicatorView];
-    
-    UIImageView *tipImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"updateFirmwareTip"]];
-    [self.view addSubview:tipImage];
-    
+    //根据设备类型显示相应图片
+    if ([BluetoothDataManage shareInstance].deviceType == 0) {
+        _tipImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"updateFirmwareTip0"]];
+    }else{
+        _tipImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"updateFirmwareTip"]];
+    }
+    [self.view addSubview:_tipImage];
     NSString *deviceType = [UIDevice currentDevice].model;
     
     if([deviceType isEqualToString:@"iPhone"]) {
@@ -176,7 +193,7 @@
             make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.01 + 64);
         }];
     }
-    [tipImage mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_tipImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth, ScreenHeight * 0.3));
         make.top.equalTo(self.curVerTV.mas_bottom);
         make.centerX.equalTo(self.view.mas_centerX);
@@ -184,7 +201,7 @@
     [_tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.15));
         make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(tipImage.mas_bottom);
+        make.top.equalTo(self.tipImage.mas_bottom);
     }];
     [_progressViewNew mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, 5.0));

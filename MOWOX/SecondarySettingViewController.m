@@ -202,23 +202,23 @@
         [_area2_perTF mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.15, ScreenHeight * 0.03));
             make.left.equalTo(self.view.mas_left).offset(ScreenWidth *0.54);
-            make.centerY.equalTo(_Per2Label.mas_centerY);
+            make.centerY.equalTo(self.Per2Label.mas_centerY);
         }];
         [_area2_disTF mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.15, ScreenHeight * 0.03));
             make.left.equalTo(self.view.mas_left).offset(ScreenWidth *0.54);
-            make.centerY.equalTo(_Dis2Label.mas_centerY);
+            make.centerY.equalTo(self.Dis2Label.mas_centerY);
         }];
         
         [_area3_perTF mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.15, ScreenHeight * 0.03));
             make.left.equalTo(self.view.mas_left).offset(ScreenWidth *0.54);
-            make.centerY.equalTo(_Per3Label.mas_centerY);
+            make.centerY.equalTo(self.Per3Label.mas_centerY);
         }];
         [_area3_disTF mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.15, ScreenHeight * 0.03));
             make.left.equalTo(self.view.mas_left).offset(ScreenWidth *0.54);
-            make.centerY.equalTo(_Dis3Label.mas_centerY);
+            make.centerY.equalTo(self.Dis3Label.mas_centerY);
         }];
     }
     
@@ -257,7 +257,7 @@
     //3区
     [_Per3Label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.88, ScreenHeight * 0.03));
-        make.top.equalTo(_thirdareaLabel.mas_bottom).offset(5);
+        make.top.equalTo(self.thirdareaLabel.mas_bottom).offset(5);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
     [_area3_perLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -302,10 +302,10 @@
         Apre = [Apresent intValue];
         Bdistance = [BdistanceHungred intValue] * 100 + [BdistanceTen intValue] * 10 + [BdistanceOne intValue];
         Bpre = [Bpresent intValue];
-        _area2_perTF.text = [NSString stringWithFormat:@"%d",Apre];
-        _area2_disTF.text = [NSString stringWithFormat:@"%d",Adistance];
-        _area3_perTF.text = [NSString stringWithFormat:@"%d",Bpre];
-        _area3_disTF.text = [NSString stringWithFormat:@"%d",Bdistance];
+        self.area2_perTF.text = [NSString stringWithFormat:@"%d",Apre];
+        self.area2_disTF.text = [NSString stringWithFormat:@"%d",Adistance];
+        self.area3_perTF.text = [NSString stringWithFormat:@"%d",Bpre];
+        self.area3_disTF.text = [NSString stringWithFormat:@"%d",Bdistance];
     });
     
 }
@@ -321,7 +321,7 @@
     [textField resignFirstResponder];
     return YES;
 }
-//百分比文本输入限制两位
+//百分比文本输入限制
 - (void)TFchange:(UITextField *)textField{
     
     if (_area2_perTF.text.length >2) {

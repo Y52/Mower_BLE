@@ -84,7 +84,7 @@
     [_settingButton setButtonStyle1];
     [self.view addSubview:_startButton];
     [self.view addSubview:_stopButton];
-    [self.view addSubview:_alertsButton];
+    //[self.view addSubview:_alertsButton];
     [self.view addSubview:_settingButton];
     
     [_startButton addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchUpInside];
@@ -114,14 +114,14 @@
         make.top.equalTo(self.startButton.mas_bottom).offset(ScreenHeight * 0.05);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-    [_alertsButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.stopButton.mas_bottom).offset(ScreenHeight * 0.05);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
+//    [_alertsButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
+//        make.top.equalTo(self.stopButton.mas_bottom).offset(ScreenHeight * 0.05);
+//        make.centerX.equalTo(self.view.mas_centerX);
+//    }];
     [_settingButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.alertsButton.mas_bottom).offset(ScreenHeight * 0.05);
+        make.top.equalTo(self.stopButton.mas_bottom).offset(ScreenHeight * 0.05);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
 }

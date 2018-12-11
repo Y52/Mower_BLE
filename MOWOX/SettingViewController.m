@@ -33,9 +33,7 @@
 
 @implementation SettingViewController
 
-static int version1 = 1;
-static int version2 = 2;
-static int version3 = 13;
+static int version = 244;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,47 +43,37 @@ static int version3 = 13;
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
     [self viewLayoutSet];
-    
-    if ([BluetoothDataManage shareInstance].deviceType == 0) {
-        version1 = 1;
-        version2 = 2;
-        version3 = 13;
-    }else if ([BluetoothDataManage shareInstance].deviceType == 1){
-
-    }else if ([BluetoothDataManage shareInstance].deviceType == 2){
-
+    if ([BluetoothDataManage shareInstance].versionupdate > version) {
+        _updateButton.hidden = NO;
     }else{
-        
-    }
-    
-    if (version1 > [BluetoothDataManage shareInstance].version1) {
-        _updateButton.hidden = NO;
-    }
-    if(version1 == [BluetoothDataManage shareInstance].version1 && version2 > [BluetoothDataManage shareInstance].version2){
-        _updateButton.hidden = NO;
-    }
-    if (version1 == [BluetoothDataManage shareInstance].version1 && version2 == [BluetoothDataManage shareInstance].version2 && version3 > [BluetoothDataManage shareInstance].version3){
-        _updateButton.hidden = NO;
-    }
-    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    if (appDelegate.status == 0) {
-        _updateButton.hidden = YES;
-    }
-    if (version1 == 0) {
         _updateButton.hidden = YES;
     }
 
+    //分区按钮显示
     if ([BluetoothDataManage shareInstance].sectionvalve == 0) {
       _secondaryButton.hidden = YES;
         
     }else{
-        _secondaryButton.hidden = NO;
+      _secondaryButton.hidden = NO;
     }
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    
+    [self.bluetoothDataManage setDataType:0x1d];
+    [self.bluetoothDataManage setDataContent: dataContent];
+    [self.bluetoothDataManage sendBluetoothFrame];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -221,19 +209,6 @@ static int version3 = 13;
     SecondarySettingViewController *VC = [[SecondarySettingViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
     
-    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    
-    [self.bluetoothDataManage setDataType:0x1d];
-    [self.bluetoothDataManage setDataContent: dataContent];
-    [self.bluetoothDataManage sendBluetoothFrame];
 }
 
 - (void)backAction{

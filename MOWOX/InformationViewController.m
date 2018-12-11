@@ -38,6 +38,8 @@
 {
     [super viewWillAppear:animated];
     //[self viewLayoutSet];
+    _label3.text = [NSString stringWithFormat:@"%@: V%d.%d.%d.%d",LocalString(@"Robot software version"),_bluetoothDataManage.deviceType,_bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -100,7 +102,7 @@
         _label2.textColor = [UIColor blackColor];
         _label2.textAlignment = NSTextAlignmentLeft;
         [self.view addSubview:_label2];
-        _label2.text = LocalString(@"App software version: V1.2.13 for iOS");
+        _label2.text = LocalString(@"App software version: V2.0.1 for iOS");
         
         [_label2 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(300/WScale, 21/HScale));
@@ -119,7 +121,7 @@
         _label3.textColor = [UIColor blackColor];
         _label3.textAlignment = NSTextAlignmentLeft;
         [self.view addSubview:_label3];
-    _label3.text = [NSString stringWithFormat:@"%@: V%d.%d.%d",LocalString(@"Robot software version"),_bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
+        _label3.text = [NSString stringWithFormat:@"%@: V%d.%d.%d.%d",LocalString(@"Robot software version"),_bluetoothDataManage.deviceType,_bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
         
         [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(300/WScale, 21/HScale));

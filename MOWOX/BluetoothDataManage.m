@@ -45,7 +45,7 @@ static BluetoothDataManage *sgetonInstanceData = nil;
         _bluetoothData = [[NSMutableArray alloc] init];
         _dataContent = [[NSMutableArray alloc] init];
         _receiveData = [[NSMutableArray alloc] init];
-        _deviceType = 100;
+        _deviceType = 10;
         _version3 = 0;
         _version2 = 0;
         _version1 = 0;
@@ -232,6 +232,7 @@ static BluetoothDataManage *sgetonInstanceData = nil;
             _version1 = [version1 intValue];
             _version2 = [version2 intValue];
             _version3 = [version3 intValue];
+            _versionupdate = _version1 * 100 + _version2 * 10 + _version3;
             [dataDic setObject:batterData forKey:@"batterData"];
             [dataDic setObject:CPUTemperature forKey:@"CPUTemperature"];
             [dataDic setObject:batterTemperature forKey:@"batterTemperature"];
@@ -330,7 +331,7 @@ static BluetoothDataManage *sgetonInstanceData = nil;
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
             [defaults setInteger:_pincode forKey:@"pincode"];
             [defaults synchronize];
-            _sectionvalve = (int)_receiveData[8];
+            _sectionvalve = [_receiveData[8] intValue];
             
         }else if (self.frameType == setPincodeResponse){
             if ([_receiveData[0] intValue] == 1) {

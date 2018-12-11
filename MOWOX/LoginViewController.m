@@ -164,7 +164,7 @@
             [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
             [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
             [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            
+
             [self.bluetoothDataManage setDataType:0x0c];
             [self.bluetoothDataManage setDataContent: dataContent];
             [self.bluetoothDataManage sendBluetoothFrame];
@@ -178,7 +178,7 @@
             [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
             [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
             [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            
+
             [self.bluetoothDataManage setDataType:0x0c];
             [self.bluetoothDataManage setDataContent: dataContent];
             [self.bluetoothDataManage sendBluetoothFrame];
@@ -214,7 +214,7 @@
 }
 
 - (IBAction)LoginViewControllerUnwindSegue:(UIStoryboardSegue *)unwindSegue {
-    
+
 }
 
 #pragma mark ---LMPopInputPassViewDelegate
@@ -231,11 +231,11 @@
         }else{
             _resultLabel.text = text;
             if ([text intValue] == [BluetoothDataManage shareInstance].pincode) {
-                [self setMowerTime];
-                
+
                 RDVViewController *rdvView = [[RDVViewController alloc] init];
                 rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
                 [self presentViewController:rdvView animated:YES completion:nil];
+                [self setMowerTime];
             }else{
                 NSMutableArray *dataContent = [[NSMutableArray alloc] init];
                 [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
@@ -246,11 +246,11 @@
                 [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
                 [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
                 [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                
+
                 [self.bluetoothDataManage setDataType:0x0c];
                 [self.bluetoothDataManage setDataContent: dataContent];
                 [self.bluetoothDataManage sendBluetoothFrame];
-                
+
                 [NSObject showHudTipStr:LocalString(@"Incorrect PIN code")];
             }
             /*if ([_resultLabel.text isEqualToString:@"1234"]) {

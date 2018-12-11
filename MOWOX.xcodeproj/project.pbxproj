@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36013BF121BE127600358D86 /* DY01243_20181210.bin in Resources */ = {isa = PBXBuildFile; fileRef = 36013BEC21BE127600358D86 /* DY01243_20181210.bin */; };
+		36013BF221BE127600358D86 /* DY12243_20181210.bin in Resources */ = {isa = PBXBuildFile; fileRef = 36013BED21BE127600358D86 /* DY12243_20181210.bin */; };
+		36013BF521BE127600358D86 /* DY11243_20181210.bin in Resources */ = {isa = PBXBuildFile; fileRef = 36013BF021BE127600358D86 /* DY11243_20181210.bin */; };
+		36013BF721BE169500358D86 /* DY00243_20181210.bin in Resources */ = {isa = PBXBuildFile; fileRef = 36013BF621BE169500358D86 /* DY00243_20181210.bin */; };
+		36013BFD21BE860A00358D86 /* DY02243_20181210.bin in Resources */ = {isa = PBXBuildFile; fileRef = 36013BFC21BE860A00358D86 /* DY02243_20181210.bin */; };
+		36013C0121BE9DDF00358D86 /* DY1212.bin in Resources */ = {isa = PBXBuildFile; fileRef = 36013C0021BE9DDF00358D86 /* DY1212.bin */; };
+		36067D9321BF5CEB00FB6865 /* updateFirmwareTip0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36067D9221BF5CEB00FB6865 /* updateFirmwareTip0@2x.png */; };
 		3E0D5ED81FDE1D1A0035857F /* WorktimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0D5ED71FDE1D1A0035857F /* WorktimeCell.m */; };
 		3E11A3851FD90AAD000CAA08 /* 120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A37D1FD90AAD000CAA08 /* 120@3x.png */; };
 		3E11A3861FD90AAD000CAA08 /* icon-150@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A37E1FD90AAD000CAA08 /* icon-150@3x.png */; };
@@ -129,7 +136,6 @@
 		3EFEF5061FADA83E00FA7850 /* 蓝牙@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEF5041FADA83E00FA7850 /* 蓝牙@1x.png */; };
 		3EFEF5071FADA83E00FA7850 /* 蓝牙断开@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFEF5051FADA83E00FA7850 /* 蓝牙断开@1x.png */; };
 		7138A13FCD6C16E10F452F74 /* libPods-MOWOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FFC2AA47A8A70D5B1A5F1F /* libPods-MOWOX.a */; };
-		83586B98DF23F4AC7377A1D0 /* libPods-MOWOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FFC2AA47A8A70D5B1A5F1F /* libPods-MOWOX.a */; };
 		BB0A37AF2015944D00E5FD94 /* A2_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AC2015944C00E5FD94 /* A2_50@2x.png */; };
 		BB0A37B02015944D00E5FD94 /* A1_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AD2015944C00E5FD94 /* A1_50@2x.png */; };
 		BB0A37B12015944D00E5FD94 /* A3_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0A37AE2015944D00E5FD94 /* A3_50@2x.png */; };
@@ -186,7 +192,6 @@
 		BB8D94B4213FE8970079EE63 /* PasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8D94AF213FE8960079EE63 /* PasswordTableViewCell.xib */; };
 		BB8D94B6213FE8970079EE63 /* SSIDTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8D94B0213FE8970079EE63 /* SSIDTableViewCell.xib */; };
 		BB8D94B8213FE8970079EE63 /* PasswordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8D94B1213FE8970079EE63 /* PasswordTableViewCell.m */; };
-		BBA446552101739700D3B30E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325361FA6BC5F00F14462 /* Info.plist */; };
 		BBB611212019B111007FA3D4 /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB611192019B111007FA3D4 /* 87x87@3x.png */; };
 		BBB611222019B111007FA3D4 /* 180x180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111A2019B111007FA3D4 /* 180x180@3x.png */; };
 		BBB611232019B111007FA3D4 /* 40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6111B2019B111007FA3D4 /* 40x40@2x.png */; };
@@ -207,6 +212,13 @@
 /* Begin PBXFileReference section */
 		0291E74477A8630ADD2815B9 /* Pods-MOWOXROBOT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOWOXROBOT.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOWOXROBOT/Pods-MOWOXROBOT.release.xcconfig"; sourceTree = "<group>"; };
 		1F864A63560DCE59776D4952 /* Pods-MOWOX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOWOX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOWOX/Pods-MOWOX.release.xcconfig"; sourceTree = "<group>"; };
+		36013BEC21BE127600358D86 /* DY01243_20181210.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = DY01243_20181210.bin; sourceTree = "<group>"; };
+		36013BED21BE127600358D86 /* DY12243_20181210.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = DY12243_20181210.bin; sourceTree = "<group>"; };
+		36013BF021BE127600358D86 /* DY11243_20181210.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = DY11243_20181210.bin; sourceTree = "<group>"; };
+		36013BF621BE169500358D86 /* DY00243_20181210.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = DY00243_20181210.bin; sourceTree = "<group>"; };
+		36013BFC21BE860A00358D86 /* DY02243_20181210.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = DY02243_20181210.bin; sourceTree = "<group>"; };
+		36013C0021BE9DDF00358D86 /* DY1212.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = DY1212.bin; sourceTree = "<group>"; };
+		36067D9221BF5CEB00FB6865 /* updateFirmwareTip0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "updateFirmwareTip0@2x.png"; path = "image/updateFirmwareTip0@2x.png"; sourceTree = SOURCE_ROOT; };
 		3E0D5ED61FDE1D1A0035857F /* WorktimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorktimeCell.h; sourceTree = "<group>"; };
 		3E0D5ED71FDE1D1A0035857F /* WorktimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorktimeCell.m; sourceTree = "<group>"; };
 		3E11A37D1FD90AAD000CAA08 /* 120@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120@3x.png"; sourceTree = "<group>"; };
@@ -557,7 +569,6 @@
 			files = (
 				3EF13DC621AD6D4000A575AF /* ExternalAccessory.framework in Frameworks */,
 				7138A13FCD6C16E10F452F74 /* libPods-MOWOX.a in Frameworks */,
-				83586B98DF23F4AC7377A1D0 /* libPods-MOWOX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +578,12 @@
 		3E0F567E1FF23F9400A4D339 /* bin */ = {
 			isa = PBXGroup;
 			children = (
+				36013C0021BE9DDF00358D86 /* DY1212.bin */,
+				36013BFC21BE860A00358D86 /* DY02243_20181210.bin */,
+				36013BF621BE169500358D86 /* DY00243_20181210.bin */,
+				36013BEC21BE127600358D86 /* DY01243_20181210.bin */,
+				36013BF021BE127600358D86 /* DY11243_20181210.bin */,
+				36013BED21BE127600358D86 /* DY12243_20181210.bin */,
 				BB64B9DA204FD5A5006531E5 /* AutoMower.bin */,
 				3E5FE0421FEDF5BC004B234D /* data.bin */,
 			);
@@ -597,6 +614,7 @@
 				3E458D1C21AFD687001FEB1F /* SecondaryAreaImage.png */,
 				BB513EEC2140C7A9000D2A5E /* wifi_img */,
 				BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */,
+				36067D9221BF5CEB00FB6865 /* updateFirmwareTip0@2x.png */,
 				BBB611182019B111007FA3D4 /* icon1 */,
 				3E11A37C1FD90AAD000CAA08 /* icon */,
 				3E14807D1FD00C0700FA8A2D /* A2@2x.png */,
@@ -1154,7 +1172,7 @@
 		3E63251A1FA6BC5F00F14462 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = yusz;
 				TargetAttributes = {
 					3E6325211FA6BC5F00F14462 = {
@@ -1214,6 +1232,7 @@
 			files = (
 				3E1480651FCFEF1400FA8A2D /* A6@2x.png in Resources */,
 				3E3561FF1FB4560E00135503 /* 返回绿色@1x.png in Resources */,
+				36067D9321BF5CEB00FB6865 /* updateFirmwareTip0@2x.png in Resources */,
 				3E43AD321FAAF4E100924616 /* 电量2@1x.png in Resources */,
 				3E11A3861FD90AAD000CAA08 /* icon-150@3x.png in Resources */,
 				BBB611252019B111007FA3D4 /* 120x120@2x.png in Resources */,
@@ -1241,7 +1260,6 @@
 				BBB611272019B111007FA3D4 /* 60x60@3x.png in Resources */,
 				3E11A38A1FD90AAD000CAA08 /* icon-60.png in Resources */,
 				BB479EFE208D6F9200B19D6A /* 87*87@3x.png in Resources */,
-				BBA446552101739700D3B30E /* Info.plist in Resources */,
 				3E11A3871FD90AAD000CAA08 /* icon-60@3x.png in Resources */,
 				BB12992E2021A79500285201 /* Localizable.strings in Resources */,
 				BB37DA422043B7FC0078504A /* B2_50@2x.png in Resources */,
@@ -1253,6 +1271,7 @@
 				3E14804C1FCFEF1400FA8A2D /* xianbuyong.png in Resources */,
 				3E43ACE31FAAB39C00924616 /* Pinsetting@1x.png in Resources */,
 				3EF771AA1FAAA38A00EC016A /* right@1x.png in Resources */,
+				36013BFD21BE860A00358D86 /* DY02243_20181210.bin in Resources */,
 				BB479EF9208D6F9200B19D6A /* 120*120@3x.png in Resources */,
 				3E11A38B1FD90AAD000CAA08 /* 80@3x.png in Resources */,
 				3E5815C01FAFF72300E93520 /* WorkingtimeSetting@1x.png in Resources */,
@@ -1261,6 +1280,7 @@
 				BBCCA4612019C71F00423650 /* launchImage1_4.7@2x.png in Resources */,
 				3EA7AE051FB14B87001FB406 /* backgroundco@2x.png in Resources */,
 				3EF771A91FAAA38A00EC016A /* left@1x.png in Resources */,
+				36013BF721BE169500358D86 /* DY00243_20181210.bin in Resources */,
 				3E1480631FCFEF1400FA8A2D /* 蓝牙连接@2x.png in Resources */,
 				BB479EF5208D6F9200B19D6A /* 1024.png in Resources */,
 				3E14806D1FCFFA8C00FA8A2D /* 电量3-2@1x.png in Resources */,
@@ -1281,6 +1301,7 @@
 				3EE3DC461FA8B2BE0049B8F7 /* 后退@2x.png in Resources */,
 				3E2454271FBD224E00095FBE /* 割草机@3x.png in Resources */,
 				3E11A38C1FD90AAD000CAA08 /* 87@3x.png in Resources */,
+				36013BF221BE127600358D86 /* DY12243_20181210.bin in Resources */,
 				3E11A3851FD90AAD000CAA08 /* 120@3x.png in Resources */,
 				3E1480811FD00C0700FA8A2D /* A3@2x.png in Resources */,
 				3EF771A71FAAA38A00EC016A /* down@1x.png in Resources */,
@@ -1292,12 +1313,14 @@
 				3EF771A81FAAA38A00EC016A /* home@1x.png in Resources */,
 				3E43AD331FAAF4E100924616 /* 电量3@1x.png in Resources */,
 				BBB611232019B111007FA3D4 /* 40x40@2x.png in Resources */,
+				36013C0121BE9DDF00358D86 /* DY1212.bin in Resources */,
 				BB513EF12140C7A9000D2A5E /* img_wifi@1x.png in Resources */,
 				BB479EFB208D6F9200B19D6A /* 120*120@2x.png in Resources */,
 				BB5C49CB207D9B28007B2508 /* updateFirmwareTip@2x.png in Resources */,
 				3E14806E1FCFFA8C00FA8A2D /* 电量4-2@1x.png in Resources */,
 				BBB6112B2019B1F3007FA3D4 /* 60x60@2x.png in Resources */,
 				3E14807A1FD0042D00FA8A2D /* A6@1x.png in Resources */,
+				36013BF521BE127600358D86 /* DY11243_20181210.bin in Resources */,
 				3E2F25301FB946EF00E79C23 /* Generalsetting@2x.png in Resources */,
 				3E14806C1FCFFA8C00FA8A2D /* 电量2-2@1x.png in Resources */,
 				3E22E2A61FA9A7B8000BC792 /* zx_code_line@2x.png in Resources */,
@@ -1317,6 +1340,7 @@
 				BBB611282019B111007FA3D4 /* 58x58@2x.png in Resources */,
 				3E2454251FBD1F1000095FBE /* 割草机@2x.png in Resources */,
 				3E43ACDD1FAAB39C00924616 /* backview@1x.png in Resources */,
+				36013BF121BE127600358D86 /* DY01243_20181210.bin in Resources */,
 				3EC2009C1FE275710005F15A /* 返回@2x.png in Resources */,
 				BBB611212019B111007FA3D4 /* 87x87@3x.png in Resources */,
 				3E2F25321FB946EF00E79C23 /* Pinsetting@2x.png in Resources */,
@@ -1570,15 +1594,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1621,15 +1653,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1782,15 +1822,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

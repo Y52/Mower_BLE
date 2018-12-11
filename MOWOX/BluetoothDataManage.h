@@ -52,6 +52,8 @@ static dispatch_queue_t queue;
 @property (nonatomic) int sectionvalve;
 //@获取分区信息1d
 @property (nonatomic) int getAeraMessage;
+//@更新版本信息
+@property (nonatomic) int versionupdate;
 
 + (instancetype)shareInstance;
 
