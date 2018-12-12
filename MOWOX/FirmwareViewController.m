@@ -32,31 +32,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if (([BluetoothDataManage shareInstance].sectionvalve == 0) || ([BluetoothDataManage shareInstance].sectionvalve == 1)) {
-            if ([BluetoothDataManage shareInstance].sectionvalve == 0) {
-                if ([BluetoothDataManage shareInstance].deviceType == 0) {
-                    dataName = @"DY00243_20181210";
-                }else if ([BluetoothDataManage shareInstance].deviceType == 1){
-                    dataName = @"DY01243_20181210";
-                }else if ([BluetoothDataManage shareInstance].deviceType == 2){
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults integerForKey:@"deviceType"]) {
+        [BluetoothDataManage shareInstance].deviceType = (int)[defaults integerForKey:@"deviceType"];
+        switch ([BluetoothDataManage shareInstance].deviceType) {
+             case 2:
+                if ([BluetoothDataManage shareInstance].sectionvalve ==0) {
                     dataName = @"DY02243_20181210";
                 }else{
-                    dataName = @"DY1212";
+                    dataName = @"DY01243_20181210";//@"DY12243_20181210";
                 }
-            }
-            if ([BluetoothDataManage shareInstance].sectionvalve == 1) {
-                if ([BluetoothDataManage shareInstance].deviceType == 1) {
-                    dataName = @"DY11243_20181210.bin";
-                }else if ([BluetoothDataManage shareInstance].deviceType == 2){
-                    dataName = @"DY12243_20181210.bin";
+                break;
+             case 1:
+                if ([BluetoothDataManage shareInstance].sectionvalve ==0) {
+                    dataName = @"DY01243_20181210";
                 }else{
-                    dataName = @"DY1212";
+                    dataName = @"DY11243_20181210";
                 }
-            }
-    
-    }else{
-         dataName = @"DY1212";
+                 break;
+             case 0:
+                dataName = @"DY00243_20181210";
+                 break;
+             default:
+                 break;
+        }
     }
+   
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
     
@@ -142,7 +143,7 @@
     
     //curVerTextView
     _curVerTV = [[UITextView alloc] init];
-    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d.%d\n%@\n V2.2.4.3\n",LocalString(@"Your robot's firmware version:"),[BluetoothDataManage shareInstance].deviceType,[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest robot's firmware version:")];
+    _curVerTV.text = [NSString stringWithFormat:@"%@\n V%d.%d.%d.%d\n%@\n V%d.2.4.3\n",LocalString(@"Your robot's firmware version:"),[BluetoothDataManage shareInstance].deviceType,[BluetoothDataManage shareInstance].version1,[BluetoothDataManage shareInstance].version2,[BluetoothDataManage shareInstance].version3,LocalString(@"Latest robot's firmware version:"),[BluetoothDataManage shareInstance].deviceType];
     _curVerTV.font = [UIFont fontWithName:@"Arial" size:17];
     _curVerTV.backgroundColor = [UIColor clearColor];
     _curVerTV.autocapitalizationType = UITextAutocapitalizationTypeSentences;

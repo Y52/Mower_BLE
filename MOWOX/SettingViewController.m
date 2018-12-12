@@ -50,12 +50,17 @@ static int version = 243;
     }
 
     //分区按钮显示
-    if ([BluetoothDataManage shareInstance].sectionvalve == 0) {
-      _secondaryButton.hidden = YES;
-        
-    }else{
-      _secondaryButton.hidden = NO;
+    NSUserDefaults *sectionvalveDefaults = [NSUserDefaults standardUserDefaults];
+    if ([sectionvalveDefaults integerForKey:@"sectionvalve"]) {
+        [BluetoothDataManage shareInstance].sectionvalve = (int)[sectionvalveDefaults integerForKey:@"sectionvalve"];
+        if ([BluetoothDataManage shareInstance].sectionvalve == 0) {
+            _secondaryButton.hidden = YES;
+            
+        }else{
+            _secondaryButton.hidden = NO;
+        }
     }
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated

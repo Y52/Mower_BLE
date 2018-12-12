@@ -45,7 +45,7 @@ static BluetoothDataManage *sgetonInstanceData = nil;
         _bluetoothData = [[NSMutableArray alloc] init];
         _dataContent = [[NSMutableArray alloc] init];
         _receiveData = [[NSMutableArray alloc] init];
-        _deviceType = 10;
+        _deviceType = 0;
         _version3 = 0;
         _version2 = 0;
         _version1 = 0;
@@ -238,6 +238,10 @@ static BluetoothDataManage *sgetonInstanceData = nil;
             [dataDic setObject:batterTemperature forKey:@"batterTemperature"];
             [dataDic setObject:mowerState forKey:@"mowerState"];
             [[NSNotificationCenter defaultCenter] postNotificationName:@"getMowerData" object:nil userInfo:dataDic];
+            
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            [defaults setInteger:_deviceType forKey:@"deviceType"];
+            [defaults synchronize];
         }else if (self.frameType == getAlerts){
             NSLog(@"接收到getAlerts");
             NSMutableDictionary *dataDic = [[NSMutableDictionary alloc] init];
@@ -331,8 +335,11 @@ static BluetoothDataManage *sgetonInstanceData = nil;
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
             [defaults setInteger:_pincode forKey:@"pincode"];
             [defaults synchronize];
-            _sectionvalve = [_receiveData[8] intValue];
             
+            _sectionvalve = [_receiveData[8] intValue];
+            NSUserDefaults *sectionvalveDefaults = [NSUserDefaults standardUserDefaults];
+            [sectionvalveDefaults setInteger:_sectionvalve forKey:@"sectionvalve"];
+            [sectionvalveDefaults synchronize];
         }else if (self.frameType == setPincodeResponse){
             if ([_receiveData[0] intValue] == 1) {
                 [NSObject showHudTipStr:LocalString(@"Set pincode wrong")];
