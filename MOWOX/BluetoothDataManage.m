@@ -337,9 +337,6 @@ static BluetoothDataManage *sgetonInstanceData = nil;
             [defaults synchronize];
             
             _sectionvalve = [_receiveData[8] intValue];
-            NSUserDefaults *sectionvalveDefaults = [NSUserDefaults standardUserDefaults];
-            [sectionvalveDefaults setInteger:_sectionvalve forKey:@"sectionvalve"];
-            [sectionvalveDefaults synchronize];
         }else if (self.frameType == setPincodeResponse){
             if ([_receiveData[0] intValue] == 1) {
                 [NSObject showHudTipStr:LocalString(@"Set pincode wrong")];
