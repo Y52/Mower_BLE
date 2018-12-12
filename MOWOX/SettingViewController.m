@@ -56,7 +56,10 @@ static int version = 243;
         }else{
             _secondaryButton.hidden = NO;
         }
-
+    NSLog(@"分区数值");
+    NSLog(@"%d",[BluetoothDataManage shareInstance].sectionvalve);
+    NSLog(@"设备数值");
+    NSLog(@"%d",[BluetoothDataManage shareInstance].deviceType);
     [self setMowerTime];
 }
 

@@ -36,25 +36,25 @@
     if ([defaults integerForKey:@"deviceType"]) {
         [BluetoothDataManage shareInstance].deviceType = (int)[defaults integerForKey:@"deviceType"];
         switch ([BluetoothDataManage shareInstance].deviceType) {
-             case 2:
+            case 0:
+                dataName = @"DY00243_20181210";
+                break;
+            case 1:
+                if ([BluetoothDataManage shareInstance].sectionvalve ==0) {
+                    dataName = @"DY01243_20181210";
+                }else{
+                    dataName = @"DY11243_20181210";
+                }
+                break;
+            case 2:
                 if ([BluetoothDataManage shareInstance].sectionvalve ==0) {
                     dataName = @"DY02243_20181210";
                 }else{
                     dataName = @"DY12243_20181210";
                 }
                 break;
-             case 1:
-                if ([BluetoothDataManage shareInstance].sectionvalve ==0) {
-                    dataName = @"DY01243_20181210";
-                }else{
-                    dataName = @"DY11243_20181210";
-                }
-                 break;
-             case 0:
-                dataName = @"DY00243_20181210";
-                 break;
              default:
-                 break;
+                break;
         }
     }
    
