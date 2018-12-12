@@ -53,8 +53,20 @@ static int version = 243;
         if ([BluetoothDataManage shareInstance].sectionvalve == 0) {
             _secondaryButton.hidden = YES;
             
+            [_updateButton mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
+                make.top.equalTo(self.PinButton.mas_bottom).offset(ScreenHeight * 0.05);
+                make.centerX.equalTo(self.view.mas_centerX);
+            }];
+            
         }else{
             _secondaryButton.hidden = NO;
+            
+            [_updateButton mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
+                make.top.equalTo(self.secondaryButton.mas_bottom).offset(ScreenHeight * 0.05);
+                make.centerX.equalTo(self.view.mas_centerX);
+            }];
         }
     NSLog(@"分区数值");
     NSLog(@"%d",[BluetoothDataManage shareInstance].sectionvalve);
@@ -176,11 +188,7 @@ static int version = 243;
         make.top.equalTo(self.PinButton.mas_bottom).offset(ScreenHeight * 0.05);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-    [_updateButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.secondaryButton.mas_bottom).offset(ScreenHeight * 0.05);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
+
 
 }
 //校准机器时间
