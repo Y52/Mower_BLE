@@ -40,7 +40,7 @@
                 if ([BluetoothDataManage shareInstance].sectionvalve ==0) {
                     dataName = @"DY02243_20181210";
                 }else{
-                    dataName = @"DY01243_20181210";//@"DY12243_20181210";
+                    dataName = @"DY12243_20181210";
                 }
                 break;
              case 1:

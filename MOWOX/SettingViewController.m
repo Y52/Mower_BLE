@@ -33,7 +33,7 @@
 
 @implementation SettingViewController
 
-static int version = 243;
+static int version = 244;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
