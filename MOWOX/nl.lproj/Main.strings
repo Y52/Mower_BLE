@@ -1,9 +1,9 @@
 
 /* Class = "UIBarButtonItem"; title = "Refresh"; ObjectID = "EoB-dw-DH7"; */
-"EoB-dw-DH7.title" = "Refresh";
+"EoB-dw-DH7.title" = "Vernieuwen";
 
 /* Class = "UINavigationItem"; title = "Device List"; ObjectID = "GGS-ad-s7D"; */
-"GGS-ad-s7D.title" = "Device List";
+"GGS-ad-s7D.title" = "Apparaatlijst";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "Qpb-Q5-56N"; */
 "Qpb-Q5-56N.text" = "Label";

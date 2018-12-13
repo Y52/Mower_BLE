@@ -151,8 +151,8 @@
 
 "Device Connection Successful" = "Устройството е свързано";
 "Secondary area setting" ="Настройки за втора зона";
-"App software version:" = "Софт. версия на прилож.";
-"Robot software version:" = "Софт. версия на робота";
+"App software version:" = "Софт. версия на прилож:";
+"Robot software version:" = "Софт. версия на робота:";
 "Data sent successfully" = "Успешно изпратено";
 "Data transmission failed" = "Неуспешно изпращане";
 "Please enter up to two digits" = "Въведете не повече от 2 цифри";
