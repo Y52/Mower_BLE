@@ -148,3 +148,25 @@
 "SUCCESSFUL!" = "SUCCESSFUL!";
 "I know" = "I know";
 "FAILED!" = "FAILED!";
+
+"Device Connection Successful" = "Device Connection Successful";
+"Secondary area setting" ="Secondary area setting";
+"App software version:" = "App software version:";
+"Robot software version:" = "Robot software version:";
+"Data sent successfully" = "Data sent successfully";
+"Data transmission failed" = "Data transmission failed";
+"Please enter up to two digits" = "Please enter up to two digits";
+"Please enter up to three digits" = "Please enter up to three digits";
+"Input cannot be greater than 500" = "Input cannot be greater than 500";
+"Refresh" = "Refresh";
+"Device List" = "Device List";
+"Second area" = "Second area";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(The proportion of the second area in relation with the entire surface)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(The distance (in meters) that the robot needs to reach the second area)";
+"Third area" = "Third area";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(The proportion of the third area in relation with the entire surface)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(The distance (in meters) that the robot needs to reach the third area)";

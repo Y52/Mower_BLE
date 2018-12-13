@@ -5,6 +5,7 @@
 "Input old PIN code" = "Syötä vanha PIN-koodi";
 "Input new PIN code" = "Syötä uusi PIN-koodi";
 "4 numbers" = "4 numeroa";
+"numbers" = "numeroa";
 "Repeat new PIN code" = "Toista uusi PIN-koodi";
 "OK" = "OK";
 "MOW in the rain" = "Ruohonleikkaus sateella";
@@ -141,3 +142,25 @@
 "SUCCESSFUL!" = "ONNISTUI!";
 "I know" = "Tiedän";
 "FAILED!" = "EPÄONNISTUI!";
+
+"Device Connection Successful" = "Laitteen yhdistys onnistui";
+"Secondary area setting" ="Toisen alueen asetus";
+"App software version:" = "Sovelluksen ohjelmistoversio:";
+"Robot software version:" = "Robotin ohjelmistoversio:";
+"Data sent successfully" = "Tietojen lähetys onnistui";
+"Data transmission failed" = "Tietojen lähetys epäonnistui";
+"Please enter up to two digits" = "Syötä enintään kaksi numeroa";
+"Please enter up to three digits" = "Syötä enintään kolme numeroa";
+"Input cannot be greater than 500" = "Arvo ei voi olla suurempi kuin 500";
+"Refresh" = "Lataa uudelleen";
+"Device List" = "Laitelista";
+"Second area" = "Toinen alue";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Toisen alueen koko suhteessa koko pinta-alaan)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Robotin etäisyys toisesta alueesta metreissä)";
+"Third area" = "Kolmas alue";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Kolmannen alueen koko suhteessa koko pinta-alaan)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Robotin etäisyys kolmannesta alueesta metreissä)";

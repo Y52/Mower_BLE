@@ -146,3 +146,27 @@
 "SUCCESSFUL!" = "VELLYKKET!";
 "I know" = "Jeg ved det";
 "FAILED!" = "MISLYKKET!";
+
+"Device Connection Successful" = "Enhedstilslutning gennemført";
+"Secondary area setting" ="Sekundær områdeindstilling";
+"App software version:" = "App softwareversion:";
+"Robot software version:" = "Robot-softwareversion:";
+"Data sent successfully" = "Afsendelse af data gennemført";
+"Data transmission failed" = "Dataoverførsel mislykket";
+"Please enter up to two digits" = "Indtast op til to cifre";
+"Please enter up to three digits" = "Indtast op til tre cifre";
+"Input cannot be greater than 500" = "Værdien må ikke være større end 500";
+"Refresh" = "Opdater";
+"Device List" = "Enhedsliste";
+
+"Second area" = "Sekundært område";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Andelen af det sekundære område i forhold til hele overfladen)";
+"Area2_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Afstanden (i meter), som robotten skal bevæge sig for at nå det sekundære område)";
+"Third area" = "Tredje område";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Andelen af det tredje område i forhold til hele overfladen)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Afstanden (i meter), som robotten skal bevæge sig for at nå det tredje område)";
+"numbers" = "tal";

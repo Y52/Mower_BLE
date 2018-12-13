@@ -140,3 +140,26 @@
 "SUCCESSFUL!" = "ÚSPĚŠNÉ!";
 "I know" = "Vím";
 "FAILED!" = "NEÚSPĚŠNÉ!";
+
+"Device Connection Successful" = "Připojení zařízení bylo úspěšné";
+"Secondary area setting" ="Nastavení sekundární oblasti";
+"App software version:" = "Verze softwaru aplikace:";
+"Robot software version:" = "Verze softwaru robota:";
+"Data sent successfully" = "Údaje byly úspěšně odeslány";
+"Data transmission failed" = "Přenos dat selhal";
+"Please enter up to two digits" = "Zadejte prosím až dvě číslice";
+"Please enter up to three digits" = "Zadejte prosím až tři číslice";
+"Input cannot be greater than 500" = "Zadaná hodnota nemůže být větší než 500";
+"Refresh" = "Obnovit";
+"Device List" = "Seznam zařízení";
+"Second area" = "Druhá oblast";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Podíl druhé oblasti ve vztahu k celému povrchu)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Vzdálenost (v metrech), kterou musí robot dostat do druhé oblasti)";
+"Third area" = "Třetí oblast";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Podíl třetí oblasti ve vztahu k celému povrchu)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Vzdálenost (v metrech), kterou musí robot dosáhnout do třetí oblasti)";
+"numbers" = "čísla";

@@ -5,6 +5,7 @@
 "Input old PIN code" = "Voer oude pincode in";
 "Input new PIN code" = "Voer nieuwe pincode in";
 "4 numbers" = "4 cijfers";
+"numbers" = "cijfers";
 "Repeat new PIN code" = "Herhaal nieuwe pincode";
 "OK" = "OK";
 "MOW in the rain" = "Maaien in de regen";
@@ -140,3 +141,25 @@
 "SUCCESSFUL!" = "SUCCES!";
 "I know" = "Ik weet het";
 "FAILED!" = "MISLUKT!";
+
+"Device Connection Successful" = "Apparaatverbinding geslaagd";
+"Secondary area setting" ="Instelling secundair gebied";
+"App software version:" = "Softwareversie app:";
+"Robot software version:" = "Softwareversie robot:";
+"Data sent successfully" = "Gegevens met succes verzonden";
+"Data transmission failed" = "Gegevensoverdracht mislukt";
+"Please enter up to two digits" = "Voer tot twee cijfers in";
+"Please enter up to three digits" = "Voer tot drie cijfers in";
+"Input cannot be greater than 500" = "Invoer mag niet groter zijn dan 500";
+"Refresh" = "Vernieuwen";
+"Device List" = "Apparaatlijst";
+"Second area" = "Tweede gebied";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(De verhoudingen van het tweede gebied ten opzichte van het gehele gebied)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(De afstand (in meter) die de robot moet afleggen om het tweede gebied te bereiken)";
+"Third area" = "Derde gebied";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(De verhoudingen van het derde gebied ten opzichte van het gehele gebied)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(De afstand (in meter) die de robot moet afleggen om het derde gebied te bereiken)";

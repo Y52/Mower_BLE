@@ -12,6 +12,7 @@
 "Input old PIN code" = "įvesti seną PIN kodą";
 "Input new PIN code" = "įvesti naują PIN kodą";
 "4 numbers" = "4 skaičiai";
+"numbers" = "skaičiai";
 "Repeat new PIN code" = "pakartoti naują PIN kodą";
 "OK" = "Gerai";
 "MOW in the rain" = "pjauti lietui lyjant";
@@ -147,3 +148,26 @@
 "SUCCESSFUL!" = "pavyko!";
 "I know" = "aš žinau";
 "FAILED!" = "Nepavyko!";
+
+"Device Connection Successful" = "Prietaisas sėkmingai prijungtas";
+"Secondary area setting" ="Aplinkos 2 nustatymai";
+"App software version:" = "APP programinės įrangos versija:";
+"Robot software version:" = "Robot programinės įrangos versija:";
+"Data sent successfully" = "Duomenys nusiųsti sėkmingai";
+"Data transmission failed" = "Duomenų persiuntimas nepavyko";
+"Please enter up to two digits" = "Prašome įvesti iki dviejų skaitmenų";
+"Please enter up to three digits" = "Prašome įvesti iki trijų skaitmenų";
+"Input cannot be greater than 500" = "Negali viršyti 500";
+"Refresh" = "Perkrauti";
+"Device List" = "Prietaisų sąrašas";
+"Second area" = "Aplinka 2";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Aplinkos 2 proporcijos pagal visą paviršių)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Atstumas (metrais), kurio robotui reikia, norint pasiekti Aplinką 2)";
+"Third area" = "Third area";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Aplinkos 3 proporcijos pagal visą paviršių)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Atstumas (metrais), kurio robotui reikia, norint pasiekti Aplinką 3)";
+

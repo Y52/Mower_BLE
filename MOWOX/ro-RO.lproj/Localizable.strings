@@ -12,6 +12,7 @@
 "Input old PIN code" = "Introduceți codul PIN vechi";
 "Input new PIN code" = "Introduceți codul PIN nou";
 "4 numbers" = "4 cifre";
+"numbers" = "cifre";
 "Repeat new PIN code" = "Repetați codul PIN nou";
 "OK" = "OK";
 "MOW in the rain" = "Cosire în ploaie";
@@ -147,3 +148,27 @@
 "SUCCESSFUL!" = "CU SUCCES!";
 "I know" = "Știu";
 "FAILED!" = "EȘUAT!";
+
+"Device Connection Successful" = "Conectarea dispozitivului a reușit";
+"Secondary area setting" ="Setarea zonei secundare";
+"App software version:" = "Versiune software aplicație:";
+"Robot software version:" = "Versiune software robot:";
+"Data sent successfully" = "Datele trimise cu succes";
+"Data transmission failed" = "Transmisia datelor a eșuat";
+"Please enter up to two digits" = "Introduceți până la două cifre";
+"Please enter up to three digits" = "Introduceți până la trei cifre";
+"Input cannot be greater than 500" = "Valorea nu poate fi mai mare de 500";
+"Refresh" = "Reîmprospătați";
+"Device List" = "Lista de dispozitive";
+"Second area" = "A doua zonă";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Proporția zonei a doua în raport cu întreaga suprafață)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Distanța (în metri) pentru ca robotul să atingă a doua zonă)";
+"Third area" = "Third area";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Proporția zonei a treia în raport cu întreaga suprafață)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" = "(Distanța (în metri) pentru ca robotul să atingă a treia zonă)";
+
+

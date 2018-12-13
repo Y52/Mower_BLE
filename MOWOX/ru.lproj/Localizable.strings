@@ -5,6 +5,7 @@
 "Input old PIN code" = "Ввести старый PIN -код";
 "Input new PIN code" = "Ввести новый PIN-код";
 "4 numbers" = "4 цифры";
+"numbers" = "цифры";
 "Repeat new PIN code" = "Повторить новый PIN -код";
 "OK" = "OK";
 "MOW in the rain" = "Стрижка под дождём";
@@ -140,3 +141,35 @@
 "SUCCESSFUL!" = "УДАЛОСЬ!";
 "I know" = "Я знаю";
 "FAILED!" = "НЕ УДАЛОСЬ!";
+
+"Device Connection Successful" = "Подключение устройства удалось";
+"Secondary area setting" ="Настройка вторичной зоны";
+"App software version:" = "Версия программного обеспечения приложения:";
+"Robot software version:" = "Версия программного обеспечения робота:";
+"Data sent successfully" = "Отправка данных удалась";
+"Data transmission failed" = "Передача данных не удалась";
+"Please enter up to two digits" = "Пожалуйста, введите максимум две цифры";
+"Please enter up to three digits" = "Пожалуйста, введите максимум три цифры";
+"Input cannot be greater than 500" = "Вводимое число не должно превышать 500";
+"Refresh" = "Обновить";
+"Device List" = "Список устройств";
+"Second area" = "Вторая зона";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Доля второй зоны по отношению ко всей поверхности)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Расстояние (в метрах), которое требуется роботу, чтобы доехать до второй зоны)";
+"Third area" = "Третья зона";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Доля третьей зоны по отношению ко всей поверхности)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Расстояние (в метрах), которое требуется роботу, чтобы доехать до третьей зоны)";
+
+Зона2_Площадь :
+
+Зона2_Расстояние:
+
+
+Зона3_Площадь :
+
+Зона3_Расстояние:
+

@@ -12,6 +12,7 @@
 "Input old PIN code" = "Ange gamla PIN-kod";
 "Input new PIN code" = "Ange ny PIN-kod";
 "4 numbers" = "ange 4 nummer";
+"numbers" = "nummers";
 "Repeat new PIN code" = "Upprepa ny PIN-kod";
 "OK" = "OK";
 "MOW in the rain" = "Klippa i regn";
@@ -147,3 +148,32 @@
 "SUCCESSFUL!" = "LYCKADES!";
 "I know" = "Jag vet";
 "FAILED!" = "MISSLYCKADES!";
+
+"Device Connection Successful" = "Enhetsanslutning lyckades";
+"Secondary area setting" ="Andra områdesinställning";
+"App software version:" = "Appprogramvaruversion:";
+"Robot software version:" = "Robot programvaruversion:";
+"Data sent successfully" = "Data skickat lyckades";
+"Data transmission failed" = "Datatransmission misslyckades";
+"Please enter up to two digits" = "Ange upp till två siffror";
+"Please enter up to three digits" = "Ange upp till tre siffror";
+"Input cannot be greater than 500" = "Inmatning får inte vara mer än 500";
+"Refresh" = "Uppdatera";
+"Device List" = "Enhetslista";
+"Second area" = "Andra området";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Andelen av det andra området i förhållande till hela ytan)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Avståndet (i meter) som roboten behöver nå det andra området)";
+"Third area" = "Tredje området";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Andelen av det tredje området i förhållande till hela ytan)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Avståndet (i meter) som roboten behöver nå det tredje området)";
+
+
+
+
+
+
+

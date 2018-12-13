@@ -52,6 +52,7 @@
 "Input new PIN code" = "Neue PIN eingeben";
 "Repeat new PIN code" = "Neue PIN erneut eingeben";
 "4 numbers" = "4 Ziffern";
+"numbers" = "Ziffern";
 "Your robot's firmware version:" = "Firmware-Version Ihres Roboters:";
 "Latest robot's firmware version:" = "Aktuellste Firmware-Version des Roboters:";
 "Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Taste \"2\"(Startmodus, 2-Firmware-Aktualisierung) auf der Tastatur des Roboters drücken, um die Aktualisierung zu starten.";
@@ -141,3 +142,25 @@
 "SUCCESSFUL!" = "ERFOLGREICH!";
 "I know" = "Ich weiß";
 "FAILED!" = "ERROR!";
+
+"Device Connection Successful" = "Geräteverbindung erfolgreich";
+"Secondary area setting" ="Sekundäre Bereichseinstellung";
+"App software version:" = "App-Softwareversion:";
+"Robot software version:" = "Version der Robotersoftware:";
+"Data sent successfully" = "Daten erfolgreich gesendet";
+"Data transmission failed" = "Datenübertragung fehlgeschlagen";
+"Please enter up to two digits" = "Bitte geben Sie bis zu zwei Ziffern ein";
+"Please enter up to three digits" = "Bitte geben Sie bis zu drei Ziffern ein";
+"Input cannot be greater than 500" = "Die Eingabe darf nicht größer als 500 sein";
+"Refresh" = "Aktualisieren";
+"Device List" = "Geräteliste";
+"Second area" = "Zweiter Bereich";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Der Anteil des zweiten Bereichs im Verhältnis zur gesamten Fläche)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Die Entfernung (in Metern), die der Roboter benötigt, um den zweiten Bereich zu erreichen.)";
+"Third area" = "Dritter Bereich";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Der Anteil des dritten Bereichs im Verhältnis zur gesamten Fläche)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Die Entfernung (in Metern), die der Roboter benötigt, um den dritten Bereich zu erreichen.)";

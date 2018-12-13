@@ -6,6 +6,7 @@
 "Input new PIN code" = "Adja meg az új PIN kódot";
 "Repeat new PIN code" = "Adja meg az új PIN kódot ismét";
 "4 numbers" = "4 szám";
+"numbers" = "szám";
 "OK" = "OK";
 "MOW in the rain" = "Fűnyírás esőben";
 "Yes" = "IGEN";
@@ -140,3 +141,25 @@
 "SUCCESSFUL!" = "SIKERES!";
 "I know" = "Tudom";
 "FAILED!" = "SIKERTELEN!";
+
+"Device Connection Successful" = "Eszköz csatlakoztatása sikeres";
+"Secondary area setting" ="Másodlagos terület beállítása";
+"App software version:" = "Az alkalmazás szoftververziója:";
+"Robot software version:" = "A robot szoftververziója:";
+"Data sent successfully" = "Adatküldés sikeres";
+"Data transmission failed" = "Adatátvitel sikertelen";
+"Please enter up to two digits" = "Legfeljebb két számjegyet adjon meg";
+"Please enter up to three digits" = "Legfeljebb három számjegyet adjon meg";
+"Input cannot be greater than 500" = "Az érték nem lehet 500-nál magasabb";
+"Refresh" = "Frissítés";
+"Device List" = "Eszközlista";
+"Second area" = "Második terület";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(a második terület aránya a teljes területhez képest)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(a távolság (méterben), amelyet a robotnak meg kell tennie a második területig)";
+"Third area" = "Harmadik terület";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(a harmadik terület aránya a teljes területhez képest)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(a távolság (méterben), amelyet a robotnak meg kell tennie a harmadik területig)";

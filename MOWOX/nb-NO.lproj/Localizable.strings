@@ -12,6 +12,7 @@
 "Input old PIN code" = "Angi gammel PIN-kode";
 "Input new PIN code" = "Angi ny PIN-kode";
 "4 numbers" = "4 sifre";
+"numbers" = "sifre";
 "Repeat new PIN code" = "Gjenta ny PIN-kode";
 "OK" = "OK";
 "MOW in the rain" = "Klippe i regnvær";
@@ -147,3 +148,31 @@
 "SUCCESSFUL!" = "VELLYKKET!";
 "I know" = "Jeg vet";
 "FAILED!" = "MISLYKKET!";
+
+"Device Connection Successful" = "Enhet tilkoblet";
+"Secondary area setting" ="Innstilling for sekundært område";
+"App software version:" = "Apps programvareversjon:";
+"Robot software version:" = "Robots programvareversjon:";
+"Data sent successfully" = "Data er sendt";
+"Data transmission failed" = "Dataoverføring var mislykket";
+"Please enter up to two digits" = "Angi inntil to siffer";
+"Please enter up to three digits" = "Angi inntil tre siffer";
+"Input cannot be greater than 500" = "Inndata kan ikke være mer enn 500";
+"Refresh" = "Oppdater";
+"Device List" = "Enhetsliste";
+"Second area" = "Sekundært område";
+"Area2_Per : ____ %" = "Område2_Per: ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Dimensjon på det sekundære området i forhold til hele overflaten)";
+"Area2_Dis : ____ m" = "Område2_Dis: ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Distansen (i meter) som roboten må nå på det sekundære området)";
+"Third area" = "Tredje område";
+"Area3_Per : ____ %" = "Område3_Per: ____ %";
+
+"(The proportion of the third area in relation with the entire surface)" = "(Dimensjon på det tredje området i forhold til hele overflaten)";
+"Area3_Dis : ____ m" = "Område3_Dis: ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Distansen (i meter) som roboten må nå på det tredje området)";
+
+
+
+
+

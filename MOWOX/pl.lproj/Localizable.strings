@@ -49,6 +49,7 @@
 "Input new PIN code" = "Wprowadź nowy kod PIN";
 "Repeat new PIN code" = "Powtóz nowy kod PIN";
 "4 numbers" = "4 cyfry";
+"numbers" = "cyfry";
 "Your robot's firmware version:" = "Wersja oprogramowania robota:";
 "Latest robot's firmware version:" = "Najnowsza wersja oprogramowania robota:";
 "Please press Key \"2\"(Boot Mode,2-Update firmware) on the robot's keyboard to start." = "Naciśnij przycisk \"2\"(Tryb uruchamiania, 2-Aktualizacja oprogramowania) na klawiaturze robota, aby rozpocząć aktualizację.";
@@ -137,3 +138,28 @@
 "SUCCESSFUL!" = "POWIODŁO SIĘ!";
 "I know" = "Wiem";
 "FAILED!" = "NIE POWIODŁO SIĘ!";
+
+"Device Connection Successful" = "Połączenie urządzenia powiodło się";
+"Secondary area setting" ="Ustawienie dodatkowego obszaru";
+"App software version:" = "Wersja oprogramowania aplikacji:";
+"Robot software version:" = "Wersja oprogramowania robota:";
+"Data sent successfully" = "Dane przesłane pomyślnie";
+"Data transmission failed" = "Transmisja danych nie powiodła się";
+"Please enter up to two digits" = "Wprowadź maksymalnie dwie cyfry";
+"Please enter up to three digits" = "Wprowadź maksymalnie trzy cyfry";
+"Input cannot be greater than 500" = "Wprowadzona wartość nie może przekroczyć 500";
+"Refresh" = "Odśwież";
+"Device List" = "Lista urządzeń";
+"Second area" = "Drugi obszar";
+"Area2_Per : ____ %" = "Obszar2_Prop____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Udział drugiego obszaru w stosunku do całej powierzchni)";
+"Area2_Dis : ____ m" = "Obszar2_Dys:____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(Odległość (w metrach), którą robot musi osiągnąć, aby dotrzeć do drugiego obszaru)";
+"Third area" = "Trzeci obszar";
+"Area3_Per : ____ %" = "Obszar3_Prop____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Udział trzeciego obszaru w stosunku do całej powierzchni)";
+"Area3_Dis : ____ m" = "Obszar3_Dys:____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(Odległość (w metrach), którą robot musi osiągnąć, aby dotrzeć do trzeciego obszaru)";
+
+
+

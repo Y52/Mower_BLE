@@ -125,19 +125,19 @@
     _area2_disLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:8] textColor:[UIColor blackColor] text:LocalString(@"(The distance (in meters) that the robot needs to reach the second area)")];
     //3区
     _Per3Label = [UILabel labelWithFont:[UIFont systemFontOfSize:17] textColor:[UIColor blackColor] text:LocalString(@"Area3_Per : ____ %")];
-    _area3_perLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:8] textColor:[UIColor blackColor] text:LocalString(@"(The proportion of the second area in relation with the entire surface)")];
+    _area3_perLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:8] textColor:[UIColor blackColor] text:LocalString(@"(The proportion of the third area in relation with the entire surface)")];
 
     _Dis3Label = [UILabel labelWithFont:[UIFont systemFontOfSize:17] textColor:[UIColor blackColor] text:LocalString(@"Area3_Dis : ____ m")];
-    _area3_disLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:8] textColor:[UIColor blackColor] text:LocalString(@"(The distance (in meters) that the robot needs to reach the second area)")];
+    _area3_disLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:8] textColor:[UIColor blackColor] text:LocalString(@"(The distance (in meters) that the robot needs to reach the third area)")];
     
     [_Per2Label setFont:[UIFont systemFontOfSize:17.0]];
     [_area2_perLabel setFont:[UIFont systemFontOfSize:8.0]];
     [_Dis2Label setFont:[UIFont systemFontOfSize:17.0]];
     [_area2_disLabel setFont:[UIFont systemFontOfSize:8.0]];
-    _area2_perTF = [UITextField textFieldWithPlaceholderText:LocalString(@"number")];
+    _area2_perTF = [UITextField textFieldWithPlaceholderText:LocalString(@"numbers")];
     _area2_perTF.keyboardType = UIKeyboardTypeNumberPad;
     [_area2_perTF addTarget:self action:@selector(TFchange:) forControlEvents:UIControlEventEditingChanged];
-    _area2_disTF = [UITextField textFieldWithPlaceholderText:LocalString(@"number")];
+    _area2_disTF = [UITextField textFieldWithPlaceholderText:LocalString(@"numbers")];
     _area2_disTF.keyboardType = UIKeyboardTypeNumberPad;
     [_area2_disTF addTarget:self action:@selector(TFchange:) forControlEvents:UIControlEventEditingChanged];
     
@@ -145,10 +145,10 @@
     [_area3_perLabel setFont:[UIFont systemFontOfSize:8.0]];
     [_Dis3Label setFont:[UIFont systemFontOfSize:17.0]];
     [_area3_disLabel setFont:[UIFont systemFontOfSize:8.0]];
-    _area3_perTF = [UITextField textFieldWithPlaceholderText:LocalString(@"number")];
+    _area3_perTF = [UITextField textFieldWithPlaceholderText:LocalString(@"numbers")];
     _area3_perTF.keyboardType = UIKeyboardTypeNumberPad;
     [_area3_perTF addTarget:self action:@selector(TFchange:) forControlEvents:UIControlEventEditingChanged];
-    _area3_disTF = [UITextField textFieldWithPlaceholderText:LocalString(@"number")];
+    _area3_disTF = [UITextField textFieldWithPlaceholderText:LocalString(@"numbers")];
     _area3_disTF.keyboardType = UIKeyboardTypeNumberPad;
     [_area3_disTF addTarget:self action:@selector(TFchange:) forControlEvents:UIControlEventEditingChanged];
     

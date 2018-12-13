@@ -5,6 +5,7 @@
 "Input old PIN code" = "Saisir l'ancien code PIN";
 "Input new PIN code" = "Saisir le nouveau code PIN";
 "4 numbers" = "Saisir 4 chiffres";
+"numbers" = "nombres";
 "Repeat new PIN code" = "Saisir à nouveau le code PIN";
 "OK" = "OK";
 "MOW in the rain" = "Tondre sous la pluie";
@@ -140,3 +141,25 @@
 "SUCCESSFUL!" = "RÉUSSI!";
 "I know" = "Je sais";
 "FAILED!" = "ÉCHEC!";
+
+"Device Connection Successful" = "Connexion au périphérique réussie";
+"Secondary area setting" ="Réglage de la zone secondaire";
+"App software version:" = "Version du programme d'application:";
+"Robot software version:" = "Version du logiciel du robot:";
+"Data sent successfully" = "Données envoyées avec succès";
+"Data transmission failed" = "Échec de la transmission des données";
+"Please enter up to two digits" = "Veuillez entrer deux chiffres max.";
+"Please enter up to three digits" = "Veuillez entrer trois chiffres max.";
+"Input cannot be greater than 500" = "La valeur entrée ne doit pas être supérieure à 500";
+"Refresh" = "Rafraîchir";
+"Device List" = "Liste des appareils";
+"Second area" = "Zone secondaire";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Le pourcentage de la zone secondaire par rapport à la surface entière)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(La distance (en mètres) que le robot doit parcourir pour atteindre la zone secondaire)";
+"Third area" = "Troisième zone";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Le pourcentage de la troisième zone par rapport à la surface entière)";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" = "(La distance (en mètres) que le robot doit parcourir pour atteindre la troisième zone)";

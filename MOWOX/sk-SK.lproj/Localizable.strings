@@ -12,6 +12,7 @@
 "Input old PIN code" = "Zadajte starý PIN kód";
 "Input new PIN code" = "Zadajte nový PIN kód";
 "4 numbers" = "4 čísla";
+"numbers" = "čísla";
 "Repeat new PIN code" = "Znova zadajte nový PIN kód";
 "OK" = "OK";
 "MOW in the rain" = "Kosenie v daždi";
@@ -147,3 +148,27 @@
 "SUCCESSFUL!" = "ÚSPEŠNÉ";
 "I know" = "Ja viem";
 "FAILED!" = "CHYBA!";
+
+"Device Connection Successful" = "pripojenie zariadenia úspešné";
+"Secondary area setting" ="nastavenie druhej zóny";
+"App software version:" = "Verzia software aplikácie:";
+"Robot software version:" = "Verzia software robota:";
+"Data sent successfully" = "Dáta úspešne odoslané";
+"Data transmission failed" = "Prenos dát zlyhal";
+"Please enter up to two digits" = "Zadajte maximálne 2 čísla";
+"Please enter up to three digits" = "Zadajte maximálne 3 čísla";
+"Input cannot be greater than 500" = "Vložené hodnota nesmie byť vyššia ako 500";
+"Refresh" = "Obnoviť";
+"Device List" = "Zoznam zariadení";
+"Second area" = "Druhá zóna";
+"Area2_Per : ____ %" = "Zóna2_Pomer:____ %";
+"(The proportion of the second area in relation with the entire surface)" = "(Pomer druhej zóny k celej ploche)";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the second area)" ="(vzdialenosť (v metroch), ktorú robot musí prejsť, aby dosiahol druhú zónu)";
+"Third area" = "Zóna3_Pomer";
+"Area3_Per : ____ %" = "Zóna3_Pomer:____ %";
+"(The proportion of the third area in relation with the entire surface)" = "(Pomer tretej zóny k celej ploche)";
+"Area3_Dis : ____ m" = "Zóna3_Dis : ____ m";
+"(The distance (in meters) that the robot needs to reach the third area)" ="(vzdialenosť (v metroch), ktorú robot musí prejsť, aby dosiahol tretiu zónu)";
+
+
