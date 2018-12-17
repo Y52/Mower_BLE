@@ -107,6 +107,7 @@ static BluetoothDataManage *sgetonInstanceData = nil;
     [self formData];
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     if (appDelegate.status == 0) {
+        [[NetWork shareNetWork] mowerSendWithData:_bluetoothData];
     }else{
         if (_bluetoothData) {
             NSUInteger len = _bluetoothData.count;

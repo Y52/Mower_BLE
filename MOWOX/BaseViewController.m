@@ -18,9 +18,8 @@
     [super viewDidLoad];
     
 #if RobotMower
-    UIImage *backImage = [UIImage imageNamed:@"loginView.png"];
+    UIImage *backImage = [UIImage imageNamed:@"backgroundnew"];
     self.view.layer.contents = (id)backImage.CGImage;
-
 #elif MOWOXROBOT
     UIImage *backImage = [UIImage imageNamed:@"App_BG_4"];
     self.view.layer.contents = (id)backImage.CGImage;

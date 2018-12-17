@@ -11,6 +11,7 @@
 #import "RDVTabBarController.h"
 #import "MainViewController.h"
 #import "SettingViewController.h"
+#import "InformationViewController.h"
 
 @interface RDVViewController ()<RDVTabBarControllerDelegate>
 {
@@ -33,6 +34,10 @@
     
 //    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 //    UIViewController *infoView = [storyboard instantiateViewControllerWithIdentifier:@"InformationViewController"];
+    InformationViewController *infoView = [[InformationViewController alloc] init];
+    UINavigationController *NAV1 = [[UINavigationController alloc] initWithRootViewController:infoView];
+    
+    [self setViewControllers:@[NAV1,NAV2,NAV3]];
     
     [self customizeTabBarForController];
     self.selectedIndex = 1;
@@ -81,6 +86,10 @@
 - (BOOL)tabBarController:(RDVTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
     if (viewController.rdv_tabBarItem.tag == 1002) {
         AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+        if (appDelegate.status == 0 && [[NetWork shareNetWork].mySocket isDisconnected]) {
+            [NSObject showHudTipStr:NSLocalizedString(@"Wi-Fi not connected", nil)];
+            return NO;
+        }
         if (appDelegate.currentPeripheral == nil && appDelegate.status == 1) {
             [NSObject showHudTipStr:NSLocalizedString(@"Bluetooth not connected", nil)];
             return NO;
