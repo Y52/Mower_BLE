@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
-
-@interface AppDelegate ()
+#import <GizWifiSDK/GizWifiSDK.h>
+@interface AppDelegate ()<GizWifiSDKDelegate>
 
 @end
 
@@ -27,6 +27,7 @@
     [NSThread sleepForTimeInterval:1.0];//设置启动页面时间
     
     [self customizeInterface];
+    [self initGiz];
     
     _status = 1;
     
@@ -93,6 +94,48 @@
                                      NSForegroundColorAttributeName: [UIColor whiteColor],
                                      };
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
+}
+
+- (void) initGiz{
+    [GizWifiSDK sharedInstance].delegate = self;
+    NSDictionary *parameters =@{@"appId":GizAppId,@"appSecret": GizAppSecret};
+    NSDictionary *product =@{@"productKey": GizAppproductKey, @"productSecret": GizAppproductSecret};
+    NSArray *productArray = @[product];
+    
+    [GizWifiSDK startWithAppInfo: parameters productInfo:productArray cloudServiceInfo: nil autoSetDeviceDomain:YES];
+    
+    
+}
+
+// 实现系统事件通知回调
+- (void)wifiSDK:(GizWifiSDK *)wifiSDK didNotifyEvent:(GizEventType)eventType eventSource:(id)eventSource eventID:(GizWifiErrorCode)eventID eventMessage: (NSString *)eventMessage {
+    if(eventType == GizEventSDK) {
+        // SDK发生异常的通知
+        NSLog(@"SDK event happened: [%@] = %@", @(eventID), eventMessage);
+        
+    } else if(eventType == GizEventDevice) {
+        // 设备连接断开时可能产生的通知
+        GizWifiDevice* mDevice = (GizWifiDevice*)eventSource;
+        NSLog(@"device mac %@ disconnect caused by %@", mDevice.macAddress, eventMessage);
+    } else if(eventType == GizEventM2MService) {
+        // M2M服务返回的异常通知
+        NSLog(@"M2M domain %@ exception happened: [%@] = %@", (NSString*)eventSource, @(eventID), eventMessage);
+    } else if(eventType == GizEventToken) {
+        // token失效通知
+        NSLog(@"token %@ expired: %@", (NSString*)eventSource, eventMessage);
+    }
+}
+
+- (void)wifiSDK:(GizWifiSDK *)wifiSDK didDiscovered:(NSError *)result deviceList:(NSArray<GizWifiDevice *> *)deviceList{
+    for (GizWifiDevice *device in deviceList) {
+        //[GizWifiSDK setDeviceServerInfo:@"eusite.gizwits.com" mac:@"84F3EBBE1F3C"];
+        //[GizWifiSDK getDevicesToSetServerInfo];
+        NSLog(@"%@",device.productName);
+    }
+}
+
+- (void)wifiSDK:(GizWifiSDK *)wifiSDK didSetDeviceServerInfo:(NSError *)result mac:(NSString *)mac{
+    NSLog(@"%@",result);
 }
 
 @end

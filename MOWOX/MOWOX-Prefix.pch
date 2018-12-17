@@ -23,7 +23,6 @@
 #import "RDVTabBarController.h"
 #import "BluetoothDataManage.h"
 #import "BaseViewController.h"
-#import "NetWork.h"
 
 
 #endif
@@ -53,5 +52,10 @@
 #define WScale (375.f / ScreenWidth)
 #define yCellHeight 44
 #define buttonHeight (50.f / HScale)
+
+#define GizAppId @"f59cf2ee6a684279a5fbedd641551f39"
+#define GizAppSecret @"c53e97849d864c519c3d126af5e07793"
+#define GizAppproductKey @"b50da224cd6745ababa0274c5607c4ad"
+#define GizAppproductSecret @"989817f3ea0548d7b3c0ba9d21d7090e"
 
 #endif /* PrefixHeader_pch */

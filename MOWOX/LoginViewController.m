@@ -7,295 +7,202 @@
 //
 
 #import "LoginViewController.h"
-#import "Masonry.h"
-#import "AppDelegate.h"
-#import "RDVViewController.h"
-#import "ChangePasswordViewController.h"
-#import "BlueTableViewController.h"
-#import "LMPopInputPasswordView.h"
-#import "QueryDeviceController.h"
+#import "RegisterViewController.h"
+#import <GizWifiSDK/GizWifiSDK.h>
+#import "MainViewController.h"
 
+@interface LoginViewController () <UITextFieldDelegate,GizWifiSDKDelegate>
 
-@interface LoginViewController () <UITextFieldDelegate,LMPopInputPassViewDelegate>
+@property (nonatomic, strong) UITextField *emailTF;
+@property (nonatomic, strong) UITextField *passwordTF;
+@property (nonatomic, strong) UIButton *loginBtn;
+@property (nonatomic, strong) UIButton *RegisterBtn;
+@property (nonatomic, strong) UIButton *forgetPWBtn;
 
-@property (strong, nonatomic)  UITextField *passwordTextfield;
-@property (strong, nonatomic)  UIButton *connButton;
-@property (strong, nonatomic)  UILabel *passwordLimitLabel;
-@property (strong, nonatomic)  UIButton *LoginButton;
-@property (strong, nonatomic)  UIButton *changeButton;
-
-@property (strong, nonatomic)  UILabel *resultLabel;
-@property (strong, nonatomic)  LMPopInputPasswordView *popView;
-
-@property (strong, nonatomic)  UILabel *bluetoothNameLabel;
-@property (strong, nonatomic)  BluetoothDataManage *bluetoothDataManage;
-
-@property (strong, nonatomic)  AppDelegate *appDelegate;
 @end
 
 @implementation LoginViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-#if RobotMower
-    UIImage *backImage = [UIImage imageNamed:@"loginView"];
-#elif MOWOXROBOT
-    UIImage *backImage = [UIImage imageNamed:@"App_BG_2-2"];
-    //self.view.alpha = 0.8;
-#endif
-    
-    self.view.layer.contents = (id)backImage.CGImage;
-    
-    self.bluetoothDataManage = [BluetoothDataManage shareInstance];
-    self.appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    //self.view.layer.backgroundColor = [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1].CGColor;
+    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"loginView.png"]];
 
-    [self viewLayoutSet];
-    //self.passwordTextfield.delegate = self;
+    //_headerImage = [self headerImage];
+    _emailTF = [self emailTF];
+    _passwordTF = [self passwordTF];
+    _loginBtn = [self loginBtn];
+    _RegisterBtn = [self RegisterBtn];
+    _forgetPWBtn = [self forgetPWBtn];
 
-    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(deviceOrientationDidChange:)
-                                                 name:UIDeviceOrientationDidChangeNotification
-                                               object:nil];
+    [GizWifiSDK sharedInstance].delegate = self;
+ 
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
-    
-    [self.LoginButton addTarget:self action:@selector(connectMower) forControlEvents:UIControlEventTouchUpInside];
-    [self.connButton addTarget:self action:@selector(showConnView) forControlEvents:UIControlEventTouchUpInside];
-    [self.changeButton addTarget:self action:@selector(changeConnWay) forControlEvents:UIControlEventTouchUpInside];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-
-    
+- (UITextField *)emailTF{
+    if (!_emailTF) {
+        _emailTF = [[UITextField alloc] init];
+        _emailTF.backgroundColor = [UIColor clearColor];
+        _emailTF.font = [UIFont systemFontOfSize:16.f];
+        _emailTF.textColor = [UIColor whiteColor];
+        _emailTF.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _emailTF.autocorrectionType = UITextAutocorrectionTypeNo;
+        _emailTF.delegate = self;
+        _emailTF.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+        _emailTF.borderStyle = UITextBorderStyleRoundedRect;
+        [_emailTF addTarget:self action:@selector(textFieldTextChange) forControlEvents:UIControlEventEditingChanged];
+        [self.view addSubview:_emailTF];
+        [_emailTF mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(280/WScale, 40/HScale));
+            make.top.equalTo(self.view.mas_top).offset(200/HScale);
+            make.centerX.mas_equalTo(self.view.mas_centerX);
+        }];
+        _emailTF.layer.borderWidth = 1.0;
+        _emailTF.layer.borderColor = [UIColor whiteColor].CGColor;
+        _emailTF.layer.cornerRadius = 10.f/HScale;
+        _emailTF.placeholder = LocalString(@"e-mail");
+        [_emailTF setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+        [_emailTF setValue:[UIFont boldSystemFontOfSize:16] forKeyPath:@"_placeholderLabel.font"];
+    }
+    return _emailTF;
 }
+- (UITextField *)passwordTF{
+    if (!_passwordTF) {
+        _passwordTF = [[UITextField alloc] init];
+        _passwordTF.backgroundColor = [UIColor clearColor];
+        _passwordTF.font = [UIFont systemFontOfSize:15.f];
+        _passwordTF.textColor = [UIColor whiteColor];
+        _passwordTF.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _passwordTF.autocorrectionType = UITextAutocorrectionTypeNo;
+        _passwordTF.delegate = self;
+        _passwordTF.secureTextEntry = YES;
+        _passwordTF.autocorrectionType = UITextAutocorrectionTypeNo;
+        _passwordTF.autocapitalizationType = UITextAutocapitalizationTypeNone;
+        _passwordTF.borderStyle = UITextBorderStyleRoundedRect;
+     
+        [_passwordTF addTarget:self action:@selector(textFieldTextChange) forControlEvents:UIControlEventEditingChanged];
+        [self.view addSubview:_passwordTF];
+        [_passwordTF mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(280/WScale, 40/HScale));
+            make.top.equalTo(self.emailTF.mas_bottom).offset(30);
+            make.centerX.mas_equalTo(self.view.mas_centerX);
+        }];
+        _passwordTF.layer.borderWidth = 1.0;
+        _passwordTF.layer.borderColor = [UIColor whiteColor].CGColor;
+        _passwordTF.layer.cornerRadius = 10.f/HScale;
+        _passwordTF.placeholder = LocalString(@"password");
+        [_passwordTF setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+        [_passwordTF setValue:[UIFont boldSystemFontOfSize:16] forKeyPath:@"_placeholderLabel.font"];
 
--(void)dealloc{
-    [[UIDevice currentDevice]endGeneratingDeviceOrientationNotifications];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+    }
+    return _passwordTF;
 }
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-}
-
-- (void)viewLayoutSet{
-    _bluetoothNameLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:20.0f] textColor:[UIColor whiteColor] text:LocalString(@"Connect bluetooth")];
-    _passwordTextfield = [UITextField textFieldWithPlaceholderText:LocalString(@"")];
-    _passwordTextfield.textAlignment = NSTextAlignmentCenter;
-    UIColor *color = [UIColor whiteColor];
-    _passwordTextfield.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Input password" attributes:@{NSForegroundColorAttributeName: color}];
-    _passwordTextfield.textColor = [UIColor whiteColor];
-    _passwordLimitLabel = [UILabel labelWithFont:[UIFont systemFontOfSize:10.f] textColor:[UIColor whiteColor] text:@"6-12 characters or numbers"];
-    [_passwordLimitLabel setFont:[UIFont systemFontOfSize:10.0]];
-    _connButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    if (_appDelegate.status == 1) {
-        [_connButton setBackgroundImage:[UIImage imageNamed:@"蓝牙图标"] forState:UIControlStateNormal];
-        _changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Wi-Fi") titleColor:[UIColor whiteColor]];
-        _bluetoothNameLabel.text = LocalString(@"Connect bluetooth");
+//监听文本框事件
+- (void)textFieldTextChange{
+    if (_emailTF.text.length >0 && _passwordTF.text.length > 0){
+        [_loginBtn setBackgroundColor:[UIColor colorWithRed:71/255.0 green:120/255.0 blue:204/255.0 alpha:1]];
+        _loginBtn.enabled = YES;
     }else{
-        [_connButton setBackgroundImage:[UIImage imageNamed:@"img_wifi"] forState:UIControlStateNormal];
-        _changeButton = [UIButton buttonWithTitle:LocalString(@"Change to Bluetooth") titleColor:[UIColor whiteColor]];
-        _bluetoothNameLabel.text = LocalString(@"Connect Wi-Fi");
-    }
-    _LoginButton = [UIButton buttonWithTitle:LocalString(@"Control the robot") titleColor:[UIColor whiteColor]];
-    
-    [_passwordTextfield setTextFieldStyle1];
-    [_LoginButton setButtonStyle1];
-    [_changeButton setButtonStyle1];
-    
-    [self.view addSubview:_bluetoothNameLabel];
-    [self.view addSubview:_passwordTextfield];
-    [self.view addSubview:_passwordLimitLabel];
-    [self.view addSubview:_LoginButton];
-    [self.view addSubview:_connButton];
-    [self.view addSubview:_changeButton];
-    
-    [_bluetoothNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.6, ScreenHeight * 0.04));
-        make.top.equalTo(self.view.mas_top).offset(ScreenHeight * 0.15);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
-    [_connButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(84, 84));
-        make.top.equalTo(self.bluetoothNameLabel.mas_bottom).offset(ScreenHeight * 0.08);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
-    [self.LoginButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.top.equalTo(self.connButton.mas_bottom).offset(ScreenHeight * 0.4);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
-    [self.changeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.066));
-        make.bottom.equalTo(self.LoginButton.mas_top).offset(- ScreenHeight * 0.05);
-        make.centerX.equalTo(self.view.mas_centerX);
-    }];
-}
-
-#pragma mark - ViewController push and back
-- (void)connectMower
-{
-    //测试用直接进入APP
-//    RDVViewController *rdvView = [[RDVViewController alloc] init];
-//    rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-//    [self presentViewController:rdvView animated:YES completion:nil];
-//    return;
-    if (_appDelegate.currentPeripheral == nil && [[NetWork shareNetWork].mySocket isDisconnected]) {
-        if (_appDelegate.status == 0) {
-            [NSObject showHudTipStr:LocalString(@"Wi-Fi not connected")];
-        }else{
-            [NSObject showHudTipStr:LocalString(@"Bluetooth not connected")];
-        }
-    }else{
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        if ([defaults integerForKey:@"pincode"]) {
-            [BluetoothDataManage shareInstance].pincode = (int)[defaults integerForKey:@"pincode"];
-        }else{
-            NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-            
-            [self.bluetoothDataManage setDataType:0x0c];
-            [self.bluetoothDataManage setDataContent: dataContent];
-            [self.bluetoothDataManage sendBluetoothFrame];
-        }
-
-        _resultLabel = [[UILabel alloc] init];
-        _popView = [[LMPopInputPasswordView alloc]init];
-        _popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
-        _popView.delegate = self;
-        [_popView pop];
-    }
-    /*
-    RDVViewController *rdvView = [[RDVViewController alloc] init];
-    rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:rdvView animated:YES completion:nil];
-     */
-}
-
-- (void)changeView{
-    ChangePasswordViewController *changeVC = [[ChangePasswordViewController alloc] init];
-    [self.navigationController pushViewController:changeVC animated:YES];
-}
-
-- (void)showConnView{
-    if (_appDelegate.status == 1) {
-        BlueTableViewController *detailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"BlueTableViewController"];
-        NSLog(@"%@", self.storyboard);
-        [self.navigationController pushViewController:detailVC animated:YES];
-    }else{
-        QueryDeviceController *wifiVC = [[QueryDeviceController alloc] init];
-        [self.navigationController pushViewController:wifiVC animated:YES];
+        [_loginBtn setBackgroundColor:[UIColor colorWithRed:71/255.0 green:120/255.0 blue:204/255.0 alpha:0.4]];
+        _loginBtn.enabled = NO;
     }
 }
+- (UIButton *)loginBtn{
+    if (!_loginBtn) {
+        _loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_loginBtn setTitle:LocalString(@"Sign In") forState:UIControlStateNormal];
+        [_loginBtn.titleLabel setFont:[UIFont systemFontOfSize:18.f]];
+        [_loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_loginBtn setBackgroundColor:[UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:0.6]];
+        [_loginBtn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
+        _loginBtn.enabled = YES;
+        [self.view addSubview:_loginBtn];
+        [_loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(280/WScale, 40/HScale));
+            make.top.equalTo(self.passwordTF.mas_bottom).offset(30/HScale);
+            make.centerX.mas_equalTo(self.view.mas_centerX);
+        }];
+        
+        _loginBtn.layer.borderWidth = 1.0;
+        _loginBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+        _loginBtn.layer.cornerRadius = 10.f/HScale;
+        
+       
+    }
+    return _loginBtn;
+}
+- (UIButton *)RegisterBtn{
+    if (!_RegisterBtn) {
+        _RegisterBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_RegisterBtn setTitle:LocalString(@"Register") forState:UIControlStateNormal];
+        [_RegisterBtn.titleLabel setFont:[UIFont systemFontOfSize:16.f]];
+        [_RegisterBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_RegisterBtn addTarget:self action:@selector(registerLogin) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:_RegisterBtn];
+        [_RegisterBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(54/WScale, 16/HScale));
+            make.centerX.equalTo(self.view.mas_centerX);
+            make.top.equalTo(self.loginBtn.mas_bottom).offset(50/HScale);
+        }];
+    }
+    return _RegisterBtn;
+}
+- (UIButton *) forgetPWBtn{
+    if (!_forgetPWBtn) {
+        _forgetPWBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_forgetPWBtn setTitle:LocalString(@"Forget Password") forState:UIControlStateNormal];
+        [_forgetPWBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_forgetPWBtn.titleLabel setFont:[UIFont systemFontOfSize:16.f]];
+        [_forgetPWBtn addTarget:self action:@selector(forgetPW) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:_forgetPWBtn];
+        [_forgetPWBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(120/WScale, 16/HScale));
+            make.centerX.equalTo(self.view.mas_centerX);
+            make.top.equalTo(self.RegisterBtn.mas_bottom).offset(30/HScale);
+        }];
+    }
+    return _forgetPWBtn;
+}
 
-- (IBAction)LoginViewControllerUnwindSegue:(UIStoryboardSegue *)unwindSegue {
+#pragma mark - uitextfield delegate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
     
 }
 
-#pragma mark ---LMPopInputPassViewDelegate
--(void)buttonClickedAtIndex:(NSUInteger)index withText:(NSString *)text
-{
-    NSLog(@"buttonIndex = %li password=%@",(long)index,text);
-    if(index == 1){
-        if(text.length == 0){
-            NSLog(@"密码长度不正确Incorrect password length");
-            [NSObject showHudTipStr:LocalString(@"Incorrect PIN code length")];
-        }else if(text.length < 4){
-            NSLog(@"密码长度不正确");
-            [NSObject showHudTipStr:LocalString(@"Incorrect PIN code length")];
-        }else{
-            _resultLabel.text = text;
-            if ([text intValue] == [BluetoothDataManage shareInstance].pincode) {
-                [self setMowerTime];
-                
-                RDVViewController *rdvView = [[RDVViewController alloc] init];
-                rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-                [self presentViewController:rdvView animated:YES completion:nil];
-            }else{
-                NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-                
-                [self.bluetoothDataManage setDataType:0x0c];
-                [self.bluetoothDataManage setDataContent: dataContent];
-                [self.bluetoothDataManage sendBluetoothFrame];
-                
-                [NSObject showHudTipStr:LocalString(@"Incorrect PIN code")];
-            }
-            /*if ([_resultLabel.text isEqualToString:@"1234"]) {
-                RDVViewController *rdvView = [[RDVViewController alloc] init];
-                rdvView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-                [self presentViewController:rdvView animated:YES completion:nil];
-            }*/
-        }
+#pragma mark - GizWifiSDK delegate
+// 实现回调
+- (void)wifiSDK:(GizWifiSDK *)wifiSDK didUserLogin:(NSError *)result uid:(NSString *)uid token:(NSString *)token {
+    if(result.code == GIZ_SDK_SUCCESS) {
+        // 登录成功
+        NSLog(@"登录成功,%@", result);
+//        MainViewController *VC = [[MainViewController alloc] init];
+//        [self.navigationController pushViewController:VC animated:YES];
+    } else {
+        // 登录失败
+        NSLog(@"登录失败,%@", result);
+        
     }
-}
-
--(void)deviceOrientationDidChange:(NSObject*)sender{
-    UIDevice* device = [sender valueForKey:@"object"];
-    if(device.orientation==UIInterfaceOrientationLandscapeLeft||device.orientation==UIInterfaceOrientationLandscapeRight)
-    {
-        _popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
-    }
-    else if(device.orientation==UIInterfaceOrientationPortrait||device.orientation==UIInterfaceOrientationPortraitUpsideDown)
-    {
-        _popView.frame = CGRectMake((self.view.frame.size.width - 250)*0.5, 50, 250, 150);
-    }
-}
-
-#pragma mark - change rootvc
-- (void)changeConnWay{
-    if (_appDelegate.status == 0) {
-        _appDelegate.status = 1;
-        [_connButton setBackgroundImage:[UIImage imageNamed:@"蓝牙图标"] forState:UIControlStateNormal];
-        [_changeButton setTitle:LocalString(@"Change to Wi-Fi") forState:UIControlStateNormal];
-        _bluetoothNameLabel.text = LocalString(@"Connect bluetooth");
-    }else{
-        _appDelegate.status = 0;
-        [_connButton setBackgroundImage:[UIImage imageNamed:@"img_wifi"] forState:UIControlStateNormal];
-        [_changeButton setTitle:LocalString(@"Change to Bluetooth") forState:UIControlStateNormal];
-
-        _bluetoothNameLabel.text = LocalString(@"Connect Wi-Fi");
-    }
-}
-
-- (void)setMowerTime{
-    NSDate *date = [NSDate date];
-    NSCalendar *currentCalendar = [NSCalendar currentCalendar];    //IOS 8 之后
-    NSUInteger integer = NSCalendarUnitYear | NSCalendarUnitMonth |NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute;
-    NSDateComponents *dataCom = [currentCalendar components:integer fromDate:date];
     
-    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom year] / 100]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom year] % 100]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom month]]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom day]]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom hour]]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:[dataCom minute]]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
-    
-    [self.bluetoothDataManage setDataType:0x02];
-    [self.bluetoothDataManage setDataContent: dataContent];
-    [self.bluetoothDataManage sendBluetoothFrame];
 }
+
+#pragma mark - Actions
+- (void)login{
+    
+    NSLog(@"saaaaaaas");
+    [[GizWifiSDK sharedInstance] userLogin:_emailTF.text password:_passwordTF.text];
+    MainViewController *VC = [[MainViewController alloc] init];
+    [self.navigationController pushViewController:VC animated:YES];
+    
+}
+
+- (void)registerLogin{
+    RegisterViewController *VC = [[RegisterViewController alloc] init];
+    [self.navigationController pushViewController:VC animated:YES];
+}
+- (void)forgetPW{
+    NSLog(@"qq");
+}
+
 
 @end
